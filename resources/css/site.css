@@ -3,25 +3,25 @@ html {
 }
 
 h1 {
-    @apply text-5xl font-semibold text-tertiary-dark;
+    @apply text-5xl font-semibold text-tertiary-dark mb-10;
 }
 
 h2 {
-    @apply text-3xl text-tertiary-dark;
+    @apply text-3xl text-tertiary-dark mb-8;
 }
 
 h3 {
-    @apply text-2xl text-tertiary-dark;
+    @apply text-2xl text-tertiary-dark mb-6;
 }
 
 h4 {
-    @apply text-xl font-semibold text-tertiary-dark;
+    @apply text-xl font-semibold text-tertiary-dark mb-4;
 }
 
 p {
-    @apply text-base text-tertiary-regular;
+    @apply text-base text-tertiary-regular mb-3;
 }
 
 span.meta {
-    @apply text-sm uppercase text-tertiary-light;
+    @apply text-sm uppercase text-tertiary-light mb-3;
 }

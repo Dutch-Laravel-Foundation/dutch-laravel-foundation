@@ -13,7 +13,7 @@ sections:
         handle: featured_image
         field:
           mode: grid
-          container: insights
+          container: assets
           restrict: false
           allow_uploads: true
           show_filename: true

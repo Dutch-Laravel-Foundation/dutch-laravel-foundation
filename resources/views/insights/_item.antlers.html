@@ -1,8 +1,10 @@
-<div class="flex flex-col p-12 shadow-custom w-1/2 ml-10 my-64">
-    <span class="meta mb-2">{{ if category-prefix }}{{ category-prefix }} - {{ /if }}{{ category }}</span>
-    <a class="mb-6" href="{{ url }}">
+<div class="flex flex-row w-3/4">
+    <img class="object-cover w-96" style="object-position: {{ featured_image:focus_css }}" src="{{ featured_image }}"
+        alt="{{ featured_image:alt ?? title }}" />
+    <div class="flex flex-col p-12 shadow-custom">
+        <span class="meta">{{ if category-prefix }}{{ category-prefix }} - {{ /if }}{{ category }}</span>
         <h3>{{ title }}</h3>
-    </a>
-    <p>{{ teaser }}</p>
-    {{ partial:buttons/more :url="url" :title="title" }}
+        <p class="mb-0">{{ teaser }}</p>
+        {{ partial:buttons/more :url="url" :title="title" }}
+    </div>
 </div>
