@@ -1,0 +1,8 @@
+<h1 class="text-2xl font-bold my-6">{{ title }}</h1>
+{{ content }}
+
+<section class="border border-green-400 mt-12">
+    {{ collection:insights }}
+        {{ partial:insights/item }}
+    {{ /collection:insights }}
+</section>
