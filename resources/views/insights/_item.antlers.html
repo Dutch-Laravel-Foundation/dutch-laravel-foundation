@@ -1,7 +1,8 @@
-<img src="{{ featured_image }}" class="border-2 border-green-400 p-1" alt="{{ featured_image:alt }}" />
-<span>{{ category }}</span>
-<a href="{{ url }}"
-    class="flex items-center justify-between p-5 border-t border-green-400 text-green-400 hover:text-green-900 hover:bg-green-400">
-    <span>{{ title }}</span>
-</a>
-<p>{{ teaser }}</p>
+<div class="flex flex-col p-12 shadow-custom w-1/2 ml-10 my-64">
+    <span class="meta mb-2">{{ if category-prefix }}{{ category-prefix }} - {{ /if }}{{ category }}</span>
+    <a class="mb-6" href="{{ url }}">
+        <h3>{{ title }}</h3>
+    </a>
+    <p>{{ teaser }}</p>
+    {{ partial:buttons/more :url="url" :title="title" }}
+</div>

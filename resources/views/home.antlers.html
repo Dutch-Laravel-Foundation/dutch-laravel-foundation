@@ -1,15 +1,13 @@
-<h1 class="text-2xl font-bold my-6">De kennis- en brancheorganisatie voor Laravel developers</h1>
+<h1>De kennis- en brancheorganisatie voor Laravel developers</h1>
 <p>De Dutch KLaravel Foundation zorgt voor de promotie van Laravel en stimuleert kennisuitwisseling tussen Laravel
     developers in Nederland. Opdrachtgevers van webapplicaties kunnen via de stichting geschikte Laravel developers
     vinden.</p>
 <a href="#">Zoek laravel experts</a>
 <a href="#">Word lid</a>
-
-<section class="border border-green-400 mt-12">
-    <a href="#">Bekijk al onze leden</a>
+<a href="#">Bekijk al onze leden</a>
+<section>
     {{ collection:insights limit="3" }}
-        {{ partial:insights/item }}
+        {{ partial:insights/item category-prefix="Insights" }}
     {{ /collection:insights }}
 </section>
-
 {{ content }}
