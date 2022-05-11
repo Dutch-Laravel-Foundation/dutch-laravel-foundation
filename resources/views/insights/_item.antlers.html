@@ -1,7 +1,7 @@
-<div class="flex flex-row w-3/4">
-    <img class="object-cover w-96" style="object-position: {{ featured_image:focus_css }}" src="{{ featured_image }}"
+<div class="flex flex-row bg-secondary-light mb-16 {{ if featured-image-size === 'large'}} ml-96 mt-48 {{ /if }}">
+    <img class="object-cover w-96 {{ if featured-image-size === 'large'}} absolute -z-10 w-[36rem] -translate-y-48 -translate-x-96 {{ /if }}" style="object-position: {{ featured_image:focus_css }}" src="{{ featured_image }}"
         alt="{{ featured_image:alt ?? title }}" />
-    <div class="flex flex-col p-12 shadow-custom">
+    <div class="flex flex-col p-12 shadow-custom w-2/3">
         <span class="meta">{{ if category-prefix }}{{ category-prefix }} - {{ /if }}{{ category }}</span>
         <h3>{{ title }}</h3>
         <p class="mb-0">{{ teaser }}</p>
