@@ -9,6 +9,42 @@ sections:
           required: true
           validate:
             - required
+          display: Titel
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          input_type: text
+          antlers: false
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+          display: Omschrijving
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+      -
+        handle: introduction
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: Introductietekst
+          type: markdown
+          icon: markdown
+          listable: hidden
+          instructions_position: above
+          read_only: false
       -
         handle: featured_image
         field:
@@ -24,23 +60,6 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
-      -
-        handle: teaser
-        field:
-          antlers: false
-          display: Teaser
-          type: textarea
-          icon: textarea
-          listable: hidden
-          instructions_position: above
-          read_only: false
-          validate:
-            - required
-      -
-        handle: content
-        field:
-          type: markdown
-          localizable: true
   sidebar:
     display: Sidebar
     fields:
@@ -50,20 +69,13 @@ sections:
           type: slug
           localizable: true
       -
-        handle: date
-        field:
-          type: date
-          required: true
-          validate:
-            - required
-      -
         handle: category
         field:
           options:
-            members: Leden
-            network: Netwerk
-            do_not_miss: 'Mis niet'
-            inspiration: Inspiratie
+            Leden: null
+            Netwerk: null
+            'Mis niet': null
+            Inspiratie: null
           multiple: false
           clearable: false
           searchable: true
@@ -77,4 +89,9 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
+      -
+        handle: date
+        field:
+          type: date
+          required: true
 title: Insights
