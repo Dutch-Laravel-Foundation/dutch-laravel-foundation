@@ -1,0 +1,171 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+          display: Naam
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          input_type: text
+          antlers: false
+      -
+        handle: description
+        field:
+          type: markdown
+          localizable: true
+          display: Omschrijving
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+      -
+        handle: logo
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: Logo
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          read_only: false
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: type
+        field:
+          options:
+            Bedrijf: null
+            Ontwikkelteam: null
+            'ZZP''er': null
+          multiple: false
+          max_items: 1
+          clearable: false
+          searchable: false
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          default: Bedrijf
+          display: Type
+          type: select
+          icon: select
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: employees
+        field:
+          options:
+            1-10: null
+            11-50: null
+            51-100: null
+          multiple: false
+          max_items: 1
+          clearable: false
+          searchable: false
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          default: 1-10
+          display: Werknemers
+          type: select
+          icon: select
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: province
+        field:
+          options:
+            Drenthe: null
+            Flevoland: null
+            Friesland: null
+            Gelderland: null
+            Groningen: null
+            Limburg: null
+            Noord-Brabant: null
+            Noord-Holland: null
+            Overijssel: null
+            Utrecht: null
+            Zeeland: null
+            Zuid-Holland: null
+          multiple: false
+          max_items: 1
+          clearable: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          display: Provincie
+          type: select
+          icon: select
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: city
+        field:
+          input_type: text
+          antlers: false
+          display: Stad
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: website
+        field:
+          input_type: url
+          prepend: 'https://'
+          antlers: false
+          display: Website
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: phone
+        field:
+          input_type: text
+          antlers: false
+          display: Telefoon
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: founding_partner
+        field:
+          inline: false
+          display: 'Founding partner'
+          type: checkboxes
+          icon: checkboxes
+          listable: hidden
+          instructions_position: above
+          read_only: false
+title: Leden
