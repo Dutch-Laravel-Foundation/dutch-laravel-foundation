@@ -6,6 +6,33 @@ module.exports = {
     './content/**/*.md'
   ],
   theme: {
+    fontFamily: {
+      sans: ['muli', 'sans-serif'],
+    },
+    fontSize: {
+      'xs': ['12px', {
+        'letterSpacing': '.12em',
+        'lineHeight': '2em',
+      }],
+      'sm': ['14px', {
+        'lineHeight': '1.714em',
+      }],
+      'base': ['16px', {
+        'lineHeight': '1.5em',
+      }],
+      'lg': ['18px', {
+        'lineHeight': '1.333em',
+      }],
+      'xl': ['24px', {
+        'lineHeight': '1.333em',
+      }],
+      '2xl': ['36px', {
+        'lineHeight': '1.333em',
+      }],
+      '3xl': ['48px', {
+        'lineHeight': '1.167em',
+      }],
+    },
     extend: {
       colors: {
         'primary': {

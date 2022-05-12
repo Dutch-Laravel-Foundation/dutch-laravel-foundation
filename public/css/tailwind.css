@@ -32,7 +32,7 @@ html {
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-family: muli, sans-serif; /* 4 */
 }
 
 /*
@@ -432,53 +432,65 @@ html {
 
 h1 {
   margin-bottom: 2.5rem;
-  font-size: 3rem;
-  line-height: 1;
-  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.167em;
+  font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(9 9 16 / var(--tw-text-opacity));
 }
 
 h2 {
   margin-bottom: 2rem;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 36px;
+  line-height: 1.333em;
   --tw-text-opacity: 1;
   color: rgb(9 9 16 / var(--tw-text-opacity));
 }
 
 h3 {
   margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 24px;
+  line-height: 1.333em;
   --tw-text-opacity: 1;
   color: rgb(9 9 16 / var(--tw-text-opacity));
 }
 
 h4 {
   margin-bottom: 1rem;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.333em;
+  font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(9 9 16 / var(--tw-text-opacity));
 }
 
 p {
   margin-bottom: 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  --tw-text-opacity: 1;
-  color: rgb(82 82 87 / var(--tw-text-opacity));
+  font-size: 16px;
+  line-height: 1.5em;
 }
 
 span.meta {
   margin-bottom: 0.75rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 12px;
+  line-height: 2em;
+  letter-spacing: .12em;
+  font-weight: 600;
   text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(132 132 135 / var(--tw-text-opacity));
+}
+
+nav {
+  font-size: 16px;
+  line-height: 1.5em;
+  --tw-text-opacity: 1;
+  color: rgb(9 9 16 / var(--tw-text-opacity));
+}
+
+footer {
+  font-size: 14px;
+  line-height: 1.714em;
 }
 
 .absolute {
@@ -648,17 +660,18 @@ span.meta {
 }
 
 .font-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: muli, sans-serif;
 }
 
 .text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
+  font-size: 12px;
+  line-height: 2em;
+  letter-spacing: .12em;
 }
 
 .text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 14px;
+  line-height: 1.714em;
 }
 
 .uppercase {
