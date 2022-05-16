@@ -2,36 +2,45 @@ tree:
   -
     id: 283ccda1-c507-41f9-90c7-71f0b7bedac3
     title: Home
-    url: home
+    data:
+      page: home
   -
     id: 44a62561-5453-40b2-9974-34b29469712c
     title: 'Wat is Laravel?'
-    url: wat-is-laravel
+    data:
+      page: b343e99d-f01e-4cd1-8587-cf8e99ccec76
   -
     id: 26a01c25-00a0-4559-a4e6-14fb9386c9d5
     title: 'Over ons'
-    url: over-ons
+    data:
+      page: c2893d75-5eb2-4840-b20d-d222a9155b4c
   -
     id: d4ea6e70-4705-497f-a3cb-04769aad95d3
     title: 'Onze leden'
-    url: onze-leden
+    data:
+      page: 645047c0-702b-40fd-9f72-621e0803318b
   -
     id: a9a9f3cb-c737-4d8e-99b9-18e4b50c60f3
     title: Cases
-    url: cases
+    data:
+      page: fedf1b6c-91e0-4ec7-920d-5d05d3007f22
   -
     id: 61836e23-68fd-4dad-9b90-af1fd1a00586
     title: Insights
-    url: insights
+    data:
+      page: 7840f9f9-3fba-4608-b877-250f18e634b2
   -
     id: 0686089d-49e7-4e88-bb03-6b4a1374262b
     title: Agenda
-    url: agenda
+    data:
+      page: 03aa1ce0-5b6a-42bc-b339-4972338cdada
   -
     id: 350214a4-8b3f-408b-81d7-f5011ae39345
     title: Contact
-    url: contact
+    data:
+      page: 35fe78ba-35d3-44a4-b514-55167c5e514c
   -
     id: 253a4fa6-e399-4960-937e-e781b5fa39c5
     title: 'Lid worden'
-    url: lid-worden
+    data:
+      page: 3e84afec-448e-4805-8eed-8e209475a28e

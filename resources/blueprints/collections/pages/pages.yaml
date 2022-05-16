@@ -41,4 +41,18 @@ sections:
           max_items: 1
           listable: false
           localizable: true
+      -
+        handle: call_to_action
+        field:
+          max_items: 1
+          mode: select
+          create: true
+          collections:
+            - cta
+          display: 'Call to action'
+          type: entries
+          icon: entries
+          listable: hidden
+          instructions_position: above
+          read_only: false
 title: 'Pagina''s'
