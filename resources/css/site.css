@@ -27,9 +27,13 @@ span.meta {
 }
 
 nav {
-    @apply text-base text-tertiary-dark;
+    @apply text-base font-bold text-tertiary-dark;
 }
 
 footer {
     @apply text-sm;
+}
+
+a:hover {
+    @apply text-tertiary-regular;
 }

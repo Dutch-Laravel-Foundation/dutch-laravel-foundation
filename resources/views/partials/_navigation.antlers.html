@@ -1,0 +1,11 @@
+{{# TODO: Make the 'home' integration nicer. Maybe use Routes? #}}
+{{# TODO: Make the permalink/slug integration nicer. #}}
+{{ nav:main include_home="true" }}
+    {{ if permalink == 'home' && show_home_logo == true }}
+        <a href="/" class="block flex-grow {{ class }}"><img class="h-full" alt="{{ title }}"></a>
+    {{ else }}
+        <a href="{{ if permalink == 'home' }}/{{ else }}{{ permalink }}{{ /if }}"
+            class="block h-auto my-auto {{ class }} {{ highlight_current && permalink == page:slug ? 'text-primary-accent' : 'hover:border-b-[1px] hover:border-primary-accent hover:text-inherit' }}">{{
+            title }}</a>
+    {{ /if }}
+{{ /nav:main }}

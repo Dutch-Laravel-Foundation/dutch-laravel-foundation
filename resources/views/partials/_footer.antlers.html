@@ -1,0 +1,39 @@
+<footer class="container mx-auto bg-secondary-light p-10 mt-10">
+    {{# TODO: CTA Block for current page #}}
+    <h1 class="text-primary-accent mb-0">{{ site.name }}</h1>
+    <nav class="w-full flex h-16 mb-10 space-x-10 align-middle">
+        {{ partial:navigation class="font-normal" }}
+    </nav>
+
+    <div class="flex flex-col">
+        <h4>Leden</h4>
+        <div class="flex flex-col md:flex-row justify-between mb-5">
+            <div class="w-full md:w-7/12">
+                <div class="columns-3">
+                    <ul>
+                        {{ collection:members }}
+                        <li><a href="{{ url }}">{{ title }}</a></li>
+                        {{ /collection:members }}
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full md:w-5/12 pl-10">
+                De Dutch Laravel Foundation zorgt voor de promotie van Laravel en stimuleert
+                kennisuitwisseling tussen Laravel developers in Nederland.
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between">
+            <div class="w-full md:w-7/12">
+                {{ nav:legal }}
+                    <a href="{{ url }}">{{ title }}</a>
+                    {{ if !last }}
+                        <span class="mx-1">|</span>
+                    {{ /if }}
+                {{ /nav:legal }}
+            </div>
+            <div class="w-full md:w-5/12 pl-10 text-right">
+                &copy 2020 - {{ site.name }}
+            </div>
+        </div>
+    </div>
+</footer>
