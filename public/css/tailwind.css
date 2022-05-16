@@ -681,7 +681,25 @@ a:hover {
   width: 25%;
 }
 
+.w-48 {
+  width: 12rem;
+}
+
+.w-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.flex-none {
+  flex: none;
+}
+
 .flex-grow {
+  flex-grow: 1;
+}
+
+.grow {
   flex-grow: 1;
 }
 
@@ -941,6 +959,11 @@ a:hover {
 .hover\:\!text-primary-accent:hover {
   --tw-text-opacity: 1 !important;
   color: rgb(255 45 32 / var(--tw-text-opacity)) !important;
+}
+
+.hover\:text-primary-contrast:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-outer-primary:hover {
