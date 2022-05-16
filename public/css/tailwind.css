@@ -815,6 +815,11 @@ a:hover {
   color: rgb(255 45 32 / var(--tw-text-opacity));
 }
 
+.text-tertiary-regular {
+  --tw-text-opacity: 1;
+  color: rgb(82 82 87 / var(--tw-text-opacity));
+}
+
 .shadow-inner-light {
   --tw-shadow: inset 0 0 0 1px rgba(9, 9, 16, .2);
   --tw-shadow-colored: inset 0 0 0 1px var(--tw-shadow-color);
