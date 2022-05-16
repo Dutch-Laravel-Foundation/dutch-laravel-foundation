@@ -64,10 +64,10 @@ sections:
         handle: button_style
         field:
           options:
-            Primair: null
-            Donker: null
-            Licht: null
-            'Licht (alternatief)': null
+            primary: Primair
+            dark: Donker
+            light: Licht
+            light-alt: 'Licht (alternatief)'
           multiple: false
           max_items: 1
           clearable: false
