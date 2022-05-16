@@ -16,7 +16,7 @@ sections:
           input_type: text
           antlers: false
       -
-        handle: content
+        handle: description
         field:
           type: markdown
           localizable: true
@@ -30,36 +30,6 @@ sections:
           escape_markup: false
           smartypants: false
           antlers: false
-      -
-        handle: introduction
-        field:
-          restrict: false
-          automatic_line_breaks: true
-          automatic_links: false
-          escape_markup: false
-          smartypants: false
-          antlers: false
-          display: Introductietekst
-          type: markdown
-          icon: markdown
-          listable: hidden
-          instructions_position: above
-          read_only: false
-      -
-        handle: featured_image
-        field:
-          mode: grid
-          container: assets
-          restrict: false
-          allow_uploads: true
-          show_filename: true
-          max_files: 1
-          display: 'Featured image'
-          type: assets
-          icon: assets
-          listable: hidden
-          instructions_position: above
-          read_only: false
   sidebar:
     display: Sidebar
     fields:
@@ -69,29 +39,35 @@ sections:
           type: slug
           localizable: true
       -
-        handle: category
+        handle: button_text
+        field:
+          input_type: text
+          antlers: false
+          display: 'Knop tekst'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: button_style
         field:
           options:
-            Leden: null
-            Netwerk: null
-            'Mis niet': null
-            Inspiratie: null
+            Primair: null
+            Donker: null
+            Licht: null
+            'Licht (alternatief)': null
           multiple: false
+          max_items: 1
           clearable: false
           searchable: true
           taggable: false
           push_tags: false
           cast_booleans: false
-          default: network
-          display: Category
+          display: 'Knop stijl'
           type: select
           icon: select
           listable: hidden
           instructions_position: above
           read_only: false
-      -
-        handle: date
-        field:
-          type: date
-          required: true
-title: Insights
+title: CTA

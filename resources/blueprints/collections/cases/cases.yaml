@@ -1,0 +1,72 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: introduction
+        field:
+          type: markdown
+          localizable: true
+          display: Introductie
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+      -
+        handle: description
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: Omschrijving
+          type: markdown
+          icon: markdown
+          listable: hidden
+          instructions_position: above
+          read_only: false
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: member
+        field:
+          collections:
+            - members
+          display: 'Door lid'
+          type: link
+          icon: link
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: client
+        field:
+          collections:
+            - clients
+          display: Opdrachtgever
+          type: link
+          icon: link
+          listable: hidden
+          instructions_position: above
+          read_only: false
+title: Cases
