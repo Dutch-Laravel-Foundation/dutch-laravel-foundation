@@ -4,10 +4,10 @@
     {{ if page.slug == 'home' && show_home_logo == true }}
         <a href="{{ homepage }}" class="block grow {{ class }}"><img class="h-full" alt="{{ title }}"></a>
     {{ elseif slug == page.slug }}
-        <span class="block h-auto my-auto cursor-default {{ class }} {{ active_class }}">{{ title }}</span>
+        <span class="block h-auto my-auto cursor-default border-b-[1px] border-b-transparent {{ class }} {{ active_class }}">{{ title }}</span>
     {{ else }}
         <a href="{{ if page.slug == 'home' }}/{{ else }}{{ page.slug }}{{ /if }}"
-            class="block h-auto my-auto {{ class }} hover:border-b-[1px] hover:border-primary-accent hover:text-inherit">{{
+            class="block h-auto my-auto border-b-[1px] border-transparent hover:border-primary-accent hover:text-inherit {{ class }}">{{
             title }}</a>
     {{ /if }}
 {{ /nav:main }}

@@ -58,9 +58,17 @@ module.exports = {
         'outer-primary': '4px 4px 0 -1px #FFFFFF, 4px 4px 0 0 #FF2D20',
         'outer-dark': '4px 4px 0 -1px #FFFFFF, 4px 4px 0 0 #000000',
       },
+      backgroundImage: {
+        'floor-primary': "url(/assets/img/backgrounds/floor-primary.svg)",
+      },
     },
     plugins: [
       require('@tailwindcss/typography'),
     ],
-  }
+  },
+  purge: {
+    options: {
+      safelist: ['ml-auto'],
+    },
+  },
 }

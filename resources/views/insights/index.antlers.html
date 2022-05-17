@@ -2,6 +2,19 @@
 {{ content }}
 <section>
     {{ collection:insights }}
-        {{ partial:insights/item }}
+        {{# TODO: Solve with variable #}}
+        {{ if first }}
+            {{ partial:blocks/image-left-large class="!w-11/12" :image="featured_image" :category="category" }}
+                {{ introduction }}
+            {{ /partial:blocks/image-left-large }}
+        {{ elseif category == 'Mis niet' }}
+            {{ partial:blocks/image-highlight :image="featured_image" :category="category" }}
+                {{ introduction }}
+            {{ /partial:blocks/image-highlight }}
+        {{ else }}
+            {{ partial:blocks/image-left class="!w-11/12 { switch between='ml-auto|' }" :image="featured_image" :category="category" }}
+                {{ introduction }}
+            {{ /partial:blocks/image-left }}
+        {{ /if }}
     {{ /collection:insights }}
 </section>

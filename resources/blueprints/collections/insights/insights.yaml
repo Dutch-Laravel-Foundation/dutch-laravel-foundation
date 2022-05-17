@@ -16,21 +16,6 @@ sections:
           input_type: text
           antlers: false
       -
-        handle: content
-        field:
-          type: markdown
-          localizable: true
-          display: Omschrijving
-          instructions_position: above
-          listable: hidden
-          read_only: false
-          restrict: false
-          automatic_line_breaks: true
-          automatic_links: false
-          escape_markup: false
-          smartypants: false
-          antlers: false
-      -
         handle: introduction
         field:
           restrict: false
@@ -46,10 +31,25 @@ sections:
           instructions_position: above
           read_only: false
       -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+          display: Omschrijving
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+      -
         handle: featured_image
         field:
           mode: grid
-          container: assets
+          container: insights
           restrict: false
           allow_uploads: true
           show_filename: true
@@ -72,10 +72,10 @@ sections:
         handle: category
         field:
           options:
-            Leden: null
-            Netwerk: null
-            'Mis niet': null
-            Inspiratie: null
+            members: Leden
+            network: Netwerk
+            do_not_miss: 'Mis niet'
+            inspiration: Inspiratie
           multiple: false
           clearable: false
           searchable: true
@@ -94,4 +94,6 @@ sections:
         field:
           type: date
           required: true
+          validate:
+            - required
 title: Insights

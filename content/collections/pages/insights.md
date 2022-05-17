@@ -2,7 +2,8 @@
 id: 7840f9f9-3fba-4608-b877-250f18e634b2
 blueprint: pages
 title: Insights
-template: default
-updated_by: 9342694a-2c6c-4640-8da1-91a61cfda771
-updated_at: 1652720888
+template: insights/index
+updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
+updated_at: 1652789647
+call_to_action: 6bc4ea55-2728-4615-8d45-75d49d29d157
 ---
