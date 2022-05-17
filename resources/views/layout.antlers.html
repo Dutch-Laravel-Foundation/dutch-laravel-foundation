@@ -11,10 +11,13 @@
 </head>
 
 {{# TODO: Multiple background images, adjustable per page #}}
+
 <body class="bg-white font-sans leading-normal text-tertiary-dark">
-    {{ partial:header }}
-    {{ partial:content }}
-    {{ partial:footer }}
+    <div class="flex flex-col h-screen justify-between">
+        {{ partial:header }}
+        {{ partial:content }}
+        {{ partial:footer }}
+    </div>
     <script src="{{ mix src='/js/site.js' }}"></script>
 </body>
 
