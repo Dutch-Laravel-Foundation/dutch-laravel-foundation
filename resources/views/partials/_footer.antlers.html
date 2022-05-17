@@ -1,0 +1,66 @@
+
+<footer
+    class="container mx-auto bg-secondary-light p-10 {{ if call_to_action }} mt-[14.5rem] {{ else }} mt-10 {{ /if }}">
+    {{ call_to_action }}
+        {{ partial:cta class="bg-white -mt-48 mb-10 z-[999]" :title="title" }}
+            <div class="flex flex-row items-center justify-between">
+                <div>{{ description }}</div>
+                <div>
+                    {{ partial:if_exists src="buttons/{ button_style }" }}
+                        {{ button_text }}
+                    {{ /partial:if_exists }}
+                </div>
+            </div>
+        {{ /partial:cta }}
+    {{ /call_to_action }}
+    <h1 class="text-primary-accent mb-0">{{ site.name }}</h1>
+    <nav class="w-full flex h-16 mb-10 space-x-10 align-middle">
+        {{ partial:navigation class="font-normal" active_class="border-b-[1px] border-tertiary-light" }}
+    </nav>
+
+    <div class="flex flex-col">
+        <h4>Leden</h4>
+        <div class="flex flex-col md:flex-row justify-between mb-5">
+            <div class="w-full md:w-7/12">
+                <div class="columns-3">
+                    <ul>
+                        {{ collection:members }}
+                        <li><a href="{{ url }}">{{ title }}</a></li>
+                        {{ /collection:members }}
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full md:w-5/12 pl-10 flex-flex-col">
+                <div class="mb-5">
+                    De Dutch Laravel Foundation zorgt voor de promotie van Laravel en stimuleert
+                    kennisuitwisseling tussen Laravel developers in Nederland.
+                </div>
+                <div class="mb-10">
+                    {{# TODO: Add icons #}}
+                </div>
+                <div>
+                    <h4>Aanmelden nieuwsbrief</h4>
+                    <form>
+                        {{# TODO: /style form, add icon etc. #}}
+                        {{ csrf_field }}
+                        <input type="text" name="email" class="text-tertiary-regular" placeholder="Jouw E-mailadres">
+                        <button type="submit">Aanmelden</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between">
+            <div class="w-full md:w-7/12">
+                {{ nav:legal }}
+                    <a href="{{ page.slug }}">{{ title }}</a>
+                    {{ if !last }}
+                        <span class="mx-1">|</span>
+                    {{ /if }}
+                {{ /nav:legal }}
+            </div>
+            <div class="w-full md:w-5/12 pl-10 text-right">
+                &copy 2020 - {{ site.name }}
+            </div>
+        </div>
+    </div>
+</footer>

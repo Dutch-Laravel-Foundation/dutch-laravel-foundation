@@ -1,8 +1,8 @@
 ---
-id: 7840f9f9-3fba-4608-b877-250f18e634b2
+id: 03aa1ce0-5b6a-42bc-b339-4972338cdada
 blueprint: pages
-title: Insights
+title: Agenda
 template: default
 updated_by: 9342694a-2c6c-4640-8da1-91a61cfda771
-updated_at: 1652720888
+updated_at: 1652720892
 ---
