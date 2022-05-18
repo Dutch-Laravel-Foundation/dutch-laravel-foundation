@@ -783,6 +783,10 @@ a:hover {
   max-height: 66%;
 }
 
+.max-h-full {
+  max-height: 100%;
+}
+
 .\!w-11\/12 {
   width: 91.666667% !important;
 }
