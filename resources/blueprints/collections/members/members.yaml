@@ -161,10 +161,10 @@ sections:
       -
         handle: founding_partner
         field:
-          inline: false
+          default: false
           display: 'Founding partner'
-          type: checkboxes
-          icon: checkboxes
+          type: toggle
+          icon: toggle
           listable: hidden
           instructions_position: above
           read_only: false
