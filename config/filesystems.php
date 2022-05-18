@@ -61,6 +61,48 @@ return [
             'visibility' => 'public',
         ],
 
+        'insights' => [
+            'driver' => 'local',
+            'root' => public_path('insights'),
+            'url' => '/insights',
+            'visibility' => 'public',
+        ],
+
+        'cases' => [
+            'driver' => 'local',
+            'root' => public_path('cases'),
+            'url' => '/cases',
+            'visibility' => 'public',
+        ],
+
+        'members' => [
+            'driver' => 'local',
+            'root' => public_path('members'),
+            'url' => '/members',
+            'visibility' => 'public',
+        ],
+
+        'board' => [
+            'driver' => 'local',
+            'root' => public_path('board'),
+            'url' => '/board',
+            'visibility' => 'public',
+        ],
+
+        'clients' => [
+            'driver' => 'local',
+            'root' => public_path('clients'),
+            'url' => '/clients',
+            'visibility' => 'public',
+        ],
+
+        'agenda' => [
+            'driver' => 'local',
+            'root' => public_path('agenda'),
+            'url' => '/agenda',
+            'visibility' => 'public',
+        ],
+
     ],
 
     /*

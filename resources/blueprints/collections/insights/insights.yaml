@@ -30,6 +30,7 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
+          container: insights
       -
         handle: content
         field:

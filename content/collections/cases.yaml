@@ -1,4 +1,5 @@
 title: Cases
+template: cases/show
 revisions: false
 date_behavior:
   past: public

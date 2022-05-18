@@ -19,7 +19,7 @@ sections:
         handle: logo
         field:
           mode: list
-          container: assets
+          container: clients
           restrict: false
           allow_uploads: true
           show_filename: true
@@ -35,6 +35,16 @@ sections:
         field:
           type: markdown
           localizable: true
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          container: clients
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
       -
         handle: contact
         field:
