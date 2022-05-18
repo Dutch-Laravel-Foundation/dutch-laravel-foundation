@@ -1,9 +1,9 @@
 <div class="flex flex-col w-full {{ class }}">
+    {{ if title }}
+        <h4 class="block w-full mb-[.3rem]">{{ title }}</h4>
+    {{ /if }}
     {{ if subtitle }}
         <span class="meta">{{ subtitle }}</span>
-    {{ /if }}
-    {{ if title }}
-        <h3 class="block w-full">{{ title }}</h3>
     {{ /if }}
     {{ slot }}
 </div>

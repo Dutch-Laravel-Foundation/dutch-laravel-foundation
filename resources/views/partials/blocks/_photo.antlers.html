@@ -1,0 +1,8 @@
+<div class="flex flex-col w-full {{ class }}">
+    {{ if !image }}
+        <div class="w-7/12 h-52 bg-secondary-light"></div>
+    {{ else }}
+        <img class="block w-7/12 h-52" src="{{ image }}" alt="{{ title }}">
+    {{ /if }}
+    {{ partial:blocks/meta-alt :title="title" :subtitle="subtitle" class="mt-6" }}
+</div>
