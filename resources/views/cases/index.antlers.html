@@ -3,7 +3,7 @@
 <section>
     {{ collection:cases }}
         {{ case_block = { switch between='blocks/image-left-large|blocks/image-right-large' } }}
-        {{ partial:{ case_block } class="!w-11/12" :image="featured_image" title="zzz" category="xxx" }}
+        {{ partial:{ case_block } class="!w-11/12" :image="featured_image" :title="long_title" :category="member:title" }}
             {{ introduction }}
         {{ /partial:{ case_block } }}
     {{ /collection:cases }}

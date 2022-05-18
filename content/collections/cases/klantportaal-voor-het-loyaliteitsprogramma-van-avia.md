@@ -18,6 +18,8 @@ description: |-
   Voor AVIA zijn er daarnaast de nodige beheerfunctionaliteiten ontwikkeld om bijvoorbeeld klanten te ondersteunen bij het aanvragen en beheren van hun spaarkaart.
 featured_image: avia.png
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1652880426
+updated_at: 1652881699
 long_title: 'Klantportaal voor het loyaliteitsprogramma van AVIA'
+member: 04a005c0-a5b1-4208-8aac-4954cf2c687e
+client: 80cc74c4-a969-4f1f-9987-8172889ed13d
 ---
