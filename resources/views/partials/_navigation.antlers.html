@@ -1,13 +1,16 @@
 {{# TODO: Use is_homepage (if it works) #}}
 {{# TODO: Use is_current (if it works) #}}
+{{ nav_url_class = style == 'contrast' ? '!text-white hover:border-primary-contrast': 'hover:border-primary-accent' }}
+{{ nav_logo = style == 'contrast' ? 'assets/img/logo-alt.png': 'assets/img/logo.png' }}
+
 {{ nav:main }}
     {{ if page.slug == 'home' && show_home_logo == true }}
-        <a href="{{ homepage }}" class="block grow {{ class }}"><img class="h-full" alt="{{ title }}"></a>
+        <a href="{{ homepage }}" class="block grow {{ class }}"><img class="h-full max-h-full" src="{{ nav_logo }}" alt="{{ title }}"></a>
     {{ elseif slug == page.slug }}
         <span class="block h-auto my-auto cursor-default border-b-[1px] border-b-transparent {{ class }} {{ active_class }}">{{ title }}</span>
     {{ else }}
-        <a href="{{ if page.slug == 'home' }}/{{ else }}{{ page.slug }}{{ /if }}"
-            class="block h-auto my-auto border-b-[1px] border-transparent hover:border-primary-accent hover:text-inherit {{ class }}">{{
+        <a href="{{ page.slug == 'home' ? '/': page.slug }}"
+            class="block h-auto my-auto border-b-[1px] border-transparent hover:text-inherit {{ nav_url_class }} {{ class }}">{{
             title }}</a>
     {{ /if }}
 {{ /nav:main }}
