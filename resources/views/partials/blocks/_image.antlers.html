@@ -3,7 +3,7 @@
         {{ yield:before_image }}
         <img class="object-cover w-96 {{ if featured-image-size === 'large'}} absolute -z-10 w-[36rem] -translate-y-48 -translate-x-96 {{ /if }}"
             {{# TODO: Set Antlers view var using focus_css #}} style="object-position: {{ featured_image:focus_css }}"
-            src="{{ featured_image }}" alt="{{ featured_image:alt ?? title }}" />
+            :src="featured_image" alt="{{ featured_image:alt ?? title }}" />
         {{ yield:after_image }}
     {{ /if }}
     {{ yield:before_block }}
