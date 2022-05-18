@@ -1,0 +1,9 @@
+<div class="flex flex-col w-full {{ class }}">
+    {{ if category }}
+        <span class="meta">{{ category }}</span>
+    {{ /if }}
+    {{ if title }}
+        <h3 class="block w-full">{{ title }}</h3>
+    {{ /if }}
+    {{ slot }}
+</div>
