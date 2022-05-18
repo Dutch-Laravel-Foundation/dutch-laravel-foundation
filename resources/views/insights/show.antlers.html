@@ -1,7 +1,10 @@
-<h1>{{ title }}</h1>
-<div>
-    Published on {{ date }} by {{ author:name }}
-</div>
 <article>
-    {{ content }}
+    <img src="{{ featured_image }}" class="object-cover w-full h-[48rem]" style="object-position: {{ featured_image:focus_css }}">
+    <div class="relative w-11/12 mx-auto bg-white -mt-48 min-h-[10rem] p-16 z-10">
+        <h1>{{ title }}</h1>
+        {{ content }}
+    </div>
 </article>
+<div class="flex mx-auto w-[calc(91.666667%-8rem)] mb-10 mt-1">
+    {{ partial:buttons/light url="/insights" }}Naar alle insights{{ /partial:buttons/light }}
+</div>

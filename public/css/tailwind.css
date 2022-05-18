@@ -499,6 +499,23 @@ a:hover {
   color: rgb(82 82 87 / var(--tw-text-opacity));
 }
 
+article a {
+  --tw-text-opacity: 1;
+  color: rgb(255 45 32 / var(--tw-text-opacity));
+}
+
+article a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 45 32 / var(--tw-text-opacity));
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-underline-offset: 4px;
+}
+
+article img {
+  width: 100%;
+}
+
 .container {
   width: 100%;
 }
@@ -558,6 +575,10 @@ a:hover {
   bottom: 0px;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .z-\[999\] {
   z-index: 999;
 }
@@ -608,20 +629,24 @@ a:hover {
   margin-top: 2.5rem;
 }
 
-.mb-auto {
-  margin-bottom: auto;
-}
-
-.mt-\[14\.5rem\] {
-  margin-top: 14.5rem;
-}
-
 .-mt-48 {
   margin-top: -12rem;
 }
 
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
+
+.mt-\[14\.5rem\] {
+  margin-top: 14.5rem;
 }
 
 .mb-0 {
@@ -684,6 +709,10 @@ a:hover {
   height: 100vh;
 }
 
+.h-\[48rem\] {
+  height: 48rem;
+}
+
 .h-16 {
   height: 4rem;
 }
@@ -732,6 +761,10 @@ a:hover {
   max-height: 66%;
 }
 
+.min-h-\[10rem\] {
+  min-height: 10rem;
+}
+
 .w-5\/6 {
   width: 83.333333%;
 }
@@ -742,6 +775,14 @@ a:hover {
 
 .\!w-11\/12 {
   width: 91.666667% !important;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
+}
+
+.w-\[calc\(91\.666667\%-8rem\)\] {
+  width: calc(91.666667% - 8rem);
 }
 
 .w-\[100vw\] {
@@ -960,6 +1001,10 @@ a:hover {
      object-fit: cover;
 }
 
+.p-16 {
+  padding: 4rem;
+}
+
 .p-10 {
   padding: 2.5rem;
 }
@@ -1063,6 +1108,11 @@ a:hover {
   color: rgb(132 132 135 / var(--tw-text-opacity));
 }
 
+.\!text-tertiary-dark {
+  --tw-text-opacity: 1 !important;
+  color: rgb(9 9 16 / var(--tw-text-opacity)) !important;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1108,11 +1158,6 @@ a:hover {
 
 .hover\:-translate-x-0:hover {
   --tw-translate-x: -0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:translate-y-40:hover {
-  --tw-translate-y: 10rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 

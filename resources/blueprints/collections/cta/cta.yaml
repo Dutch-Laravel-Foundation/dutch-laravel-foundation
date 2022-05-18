@@ -35,7 +35,7 @@ sections:
         field:
           input_type: text
           antlers: false
-          display: url
+          display: URL
           type: text
           icon: text
           listable: hidden

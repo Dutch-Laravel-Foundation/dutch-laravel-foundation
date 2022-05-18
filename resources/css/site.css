@@ -37,3 +37,15 @@ footer {
 a:hover {
     @apply text-tertiary-regular;
 }
+
+article a {
+    @apply text-primary-accent;
+}
+
+article a:hover {
+    @apply text-primary-accent underline underline-offset-4;
+}
+
+article img {
+    @apply w-full;
+}
