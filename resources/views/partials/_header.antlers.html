@@ -1,5 +1,8 @@
 <div class="container mx-auto flex flex-col items-center justify-center">
-    <nav class="w-full flex h-[8rem] pt-10 mb-20 space-x-10  align-middle">
-        {{ partial:navigation show_home_logo="true" active_class="text-primary-accent" class="pb-4" }}
+    {{# TODO: Make it possible to select a header per page in Statamic #}}
+    {{ header = {partial:if_exists src="headers/{ slug }"} }}
+    <nav class="w-full flex h-[8rem] pt-10 mb-20 space-x-10 align-middle">
+        {{ partial:navigation show_home_logo="true" active_class="text-primary-accent" class="pb-4" :style="header ?= 'contrast'" }}
     </nav>
+    {{ header }}
 </div>

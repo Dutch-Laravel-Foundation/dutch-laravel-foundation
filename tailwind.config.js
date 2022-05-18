@@ -60,6 +60,7 @@ module.exports = {
       },
       backgroundImage: {
         'floor-primary': "url(/assets/img/backgrounds/floor-primary.svg)",
+        'floor-filled-light': "url(/assets/img/backgrounds/floor-filled-light.svg)",
       },
     },
     plugins: [
