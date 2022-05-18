@@ -2,7 +2,7 @@
     {{ if !image }}
         <div class="w-7/12 h-52 bg-secondary-light"></div>
     {{ else }}
-        <img class="object-cover block w-7/12 h-52" src="{{ image }}" alt="{{ title }}, {{ subtitle}}" style="object-position: {{ image:focus_css }}">
+        <img class="object-cover block w-7/12 h-52" src="{{ image }}" alt="{{ title }}, {{ subtitle}}" style="object-position:{{ image:focus_css }}">
     {{ /if }}
     {{ partial:blocks/meta-alt :title="title" :subtitle="subtitle" class="mt-6" }}
 </div>

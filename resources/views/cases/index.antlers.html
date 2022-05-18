@@ -1,9 +1,9 @@
 <h1>{{ title }}</h1>
 {{ content }}
-<section>
+<section class="mt-10">
     {{ collection:cases }}
-        {{ case_block = { switch between='blocks/image-left-large|blocks/image-right-large' } }}
-        {{ partial:{ case_block } class="!w-11/12" :image="featured_image" title="zzz" category="xxx" }}
+        {{ case_block = { switch between='blocks/image-left-larger|blocks/image-right-larger' } }}
+        {{ partial:{ case_block } class="!w-2/3" :image="featured_image" :title="long_title" :category="member:title" }}
             {{ introduction }}
         {{ /partial:{ case_block } }}
     {{ /collection:cases }}

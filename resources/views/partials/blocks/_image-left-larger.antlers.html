@@ -1,12 +1,11 @@
 <div
     class="relative flex flex-row w-full mb-[6.5rem] {{ class }}">
     {{ if image }}
-        <img class="object-cover w-1/2" style="object-position:{{ featured_image:focus_css }}"
+        <img class="object-cover w-3/4 h-96" style="object-position:{{ featured_image:focus_css }}"
             src="{{ featured_image }}" alt="{{ featured_image:alt ?? title }}" />
     {{ /if }}
     {{ partial:blocks/base class="w-2/3 absolute right-0 bottom-0 translate-y-10" }}
         {{ slot }}
+        {{ partial:buttons/more url="insights/{ slug }" class="" }}
     {{ /partial:blocks/base }}
-    {{# TODO: Better fix for bottom right button alignment #}}
-    {{ partial:buttons/more url="insights/{ slug }" class="translate-y-10 hover:!translate-y-[calc(2.5rem-4px)]" }}
 </div>

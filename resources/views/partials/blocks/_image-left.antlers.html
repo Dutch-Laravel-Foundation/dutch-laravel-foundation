@@ -1,8 +1,7 @@
 <div class="relative flex flex-row w-full mb-16 {{ class }}">
     {{ if image }}
-    <img class="object-cover w-1/3" {{# TODO: Set Antlers view var using focus_css #}}
-        style="object-position: {{ featured_image:focus_css }}" src="{{ featured_image }}"
-        alt="{{ featured_image:alt ?? title }}" />
+    <img class="object-cover w-1/3" style="object-position:{{ featured_image:focus_css }}"
+        src="{{ featured_image }}" alt="{{ featured_image:alt ?? title }}" />
     {{ /if }}
     {{ partial:blocks/base class="w-2/3" }}
     {{ slot }}

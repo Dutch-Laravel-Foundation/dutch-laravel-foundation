@@ -77,22 +77,28 @@ sections:
       -
         handle: member
         field:
+          max_items: 1
+          mode: select
+          create: true
           collections:
             - members
-          display: 'Door lid'
-          type: link
-          icon: link
+          display: Lid
+          type: entries
+          icon: entries
           listable: hidden
           instructions_position: above
           read_only: false
       -
         handle: client
         field:
+          max_items: 1
+          mode: select
+          create: true
           collections:
             - clients
           display: Opdrachtgever
-          type: link
-          icon: link
+          type: entries
+          icon: entries
           listable: hidden
           instructions_position: above
           read_only: false

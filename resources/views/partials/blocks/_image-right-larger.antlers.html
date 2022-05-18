@@ -1,0 +1,11 @@
+<div
+    class="relative flex flex-row w-full mb-[6.5rem] ml-auto {{ class }}">
+    {{ if image }}
+        <img class="object-cover w-3/4 h-96 ml-auto" style="object-position:{{ featured_image:focus_css }}"
+            src="{{ featured_image }}" alt="{{ featured_image:alt ?? title }}" />
+    {{ /if }}
+    {{ partial:blocks/base class="w-2/3 absolute bottom-0 translate-y-10" }}
+        {{ slot }}
+        {{ partial:buttons/more url="insights/{ slug }" class="" }}
+    {{ /partial:blocks/base }}
+</div>
