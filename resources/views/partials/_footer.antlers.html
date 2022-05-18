@@ -5,7 +5,7 @@
         {{ partial:blocks/base class="-mt-48 mb-10 z-[999]" :title="title" }}
             <div class="flex flex-row items-center justify-between">
                 <div>{{ description }}</div>
-                <div>
+                <div class="pl-10">
                     {{ partial:if_exists src="buttons/{ button_style }" }}
                         {{ button_text }}
                     {{ /partial:if_exists }}
