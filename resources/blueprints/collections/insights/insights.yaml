@@ -45,6 +45,7 @@ sections:
           escape_markup: false
           smartypants: false
           antlers: false
+          container: insights
       -
         handle: featured_image
         field:

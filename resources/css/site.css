@@ -45,3 +45,7 @@ article a {
 article a:hover {
     @apply text-primary-accent underline underline-offset-4;
 }
+
+article img {
+    @apply w-full;
+}
