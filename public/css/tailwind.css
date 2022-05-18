@@ -765,6 +765,10 @@ article img {
   min-height: 10rem;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .w-5\/6 {
   width: 83.333333%;
 }
@@ -787,10 +791,6 @@ article img {
 
 .w-\[100vw\] {
   width: 100vw;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .w-2\/3 {
@@ -1216,6 +1216,14 @@ article img {
 
 @media (min-width: 640px) {
 
+  .sm\:ml-\[50\%\] {
+    margin-left: 50%;
+  }
+
+  .sm\:mr-\[50\%\] {
+    margin-right: 50%;
+  }
+
   .sm\:w-1\/2 {
     width: 50%;
   }
@@ -1237,6 +1245,14 @@ article img {
 }
 
 @media (min-width: 1280px) {
+
+  .xl\:ml-\[25\%\] {
+    margin-left: 25%;
+  }
+
+  .xl\:mr-\[25\%\] {
+    margin-right: 25%;
+  }
 
   .xl\:w-1\/4 {
     width: 25%;

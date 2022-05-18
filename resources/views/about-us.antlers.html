@@ -1,13 +1,13 @@
 {{ content }}
 
-<h2>Bestuur</h2>
-<p>De Dutch Laravel Foundation wordt gerund door een enthousiast bestuur van zes vrijwilligers die in de dagelijkse praktijk ook met Laravel werken.</p>
+<h2 class="mt-10">Bestuur</h2>
+<p class="block w-1/2 mb-5">De Dutch Laravel Foundation wordt gerund door een enthousiast bestuur van zes vrijwilligers die in de dagelijkse praktijk ook met Laravel werken.</p>
 
 <div class="flex flex-wrap -mx-6 overflow-hidden">
     {{ collection:board }}
-        {{ partial:blocks/photo :image="photo" :title="title" :subtitle="function" class="my-6 px-6 overflow-hidden sm:w-1/2 xl:w-1/4" }}
+        {{ partial:blocks/photo :image="photo" :title="title" :subtitle="function" class="my-6 px-6 overflow-hidden sm:w-1/2 xl:w-1/4 { switch between='||sm:mr-[50%] xl:mr-[25%]|sm:ml-[50%] xl:ml-[25%]||' }" }}
     {{ /collection:board }}
 </div>
 
-<h2>Founding partners</h2>
-<p>De volgende bedrijven hebben in 2019 gezamenlijk gewerkt aan de oprichting van de Dutch Laravel Foundation.</p>
+<h2 class="mt-10">Founding partners</h2>
+<p class="block w-1/2 mb-5">De volgende bedrijven hebben in 2019 gezamenlijk gewerkt aan de oprichting van de Dutch Laravel Foundation.</p>
