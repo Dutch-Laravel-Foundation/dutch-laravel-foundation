@@ -10,8 +10,6 @@ sections:
           validate:
             - required
       -
-        import: content
-      -
         handle: highlight_text
         field:
           always_show_set_button: false
@@ -50,6 +48,8 @@ sections:
           read_only: false
           if:
             title: 'equals Home'
+      -
+        import: content
   sidebar:
     display: Sidebar
     fields:

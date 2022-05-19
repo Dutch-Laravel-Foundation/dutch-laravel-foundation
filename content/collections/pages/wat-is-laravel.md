@@ -4,23 +4,29 @@ blueprint: pages
 title: 'Wat is Laravel?'
 template: default
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1652963473
+updated_at: 1652964291
 call_to_action: c3238da9-592c-4906-9b11-183e37e4b2d3
 content:
   -
-    type: heading
+    type: set
     attrs:
-      level: 1
-    content:
-      -
-        type: text
-        text: 'Laravel: het #1 framework binnen PHP'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Laravel is een framework binnen de PHP wereld. PHP is een programmeertaal die gebruikt wordt om websites en webapplicaties in te bouwen. De taal is in 1994 ontworpen en naar schatting gebruikt ruim 80% van alle websites PHP als programmeertaal. Ook populaire sites zoals Facebook gebruiken PHP onder de motorkap. Om het bouwen van websites en webapplicaties makkelijker en sneller te maken, wordt er binnen PHP vaak gewerkt met frameworks. Een framework is een set aan code componenten die het programmeren makkelijker en sneller maakt; denk daarbij bijvoorbeeld aan een Ideal betaling, een inlogscherm of het gebruikersbeheer. Vaak maken de gebruikers van een framework afspraken hoe die componenten gebruikt moeten worden. Zo wordt een applicatie - gebouwd in een framework - overdraagbaar tussen verschillende developers. Het Laravel framework bestaat al sinds 2011. Wereldwijd maken ruim 50.000 developers gebruik van het framework, waarmee het één van de populairste en grootste frameworks ter wereld is.'
+      values:
+        type: 3_4_column
+        content:
+          -
+            type: heading
+            attrs:
+              level: 1
+            content:
+              -
+                type: text
+                text: 'Laravel: het #1 framework binnen PHP'
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Laravel is een framework binnen de PHP wereld. PHP is een programmeertaal die gebruikt wordt om websites en webapplicaties in te bouwen. De taal is in 1994 ontworpen en naar schatting gebruikt ruim 80% van alle websites PHP als programmeertaal. Ook populaire sites zoals Facebook gebruiken PHP onder de motorkap. Om het bouwen van websites en webapplicaties makkelijker en sneller te maken, wordt er binnen PHP vaak gewerkt met frameworks. Een framework is een set aan code componenten die het programmeren makkelijker en sneller maakt; denk daarbij bijvoorbeeld aan een Ideal betaling, een inlogscherm of het gebruikersbeheer. Vaak maken de gebruikers van een framework afspraken hoe die componenten gebruikt moeten worden. Zo wordt een applicatie - gebouwd in een framework - overdraagbaar tussen verschillende developers. Het Laravel framework bestaat al sinds 2011. Wereldwijd maken ruim 50.000 developers gebruik van het framework, waarmee het één van de populairste en grootste frameworks ter wereld is.'
   -
     type: paragraph
     content:

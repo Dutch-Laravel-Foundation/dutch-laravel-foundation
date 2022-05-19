@@ -4,21 +4,30 @@ blueprint: pages
 title: Agenda
 template: default
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1652963560
+updated_at: 1652964479
 call_to_action: 6bc4ea55-2728-4615-8d45-75d49d29d157
 content:
   -
-    type: heading
+    type: set
     attrs:
-      level: 1
-    content:
-      -
-        type: text
-        text: 'DLF Agenda'
+      values:
+        type: double_column
+        title:
+          -
+            type: heading
+            attrs:
+              level: 1
+            content:
+              -
+                type: text
+                text: 'DLF Agenda'
+        left:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Meerdere keren per jaar organiseren Fusce egestas, quam ut faucibus facilisis, justo elit interdum ligula, vitae accumsan erat mi non erat. Curabitur at cursus ipsum, in lacinia mi. Integer a metus cursus, tempus lacus non, vestibulum sapien. Donec semper mi tortor, sit amet efficitur mauris tristique et.'
   -
     type: paragraph
-    content:
-      -
-        type: text
-        text: 'Meerdere keren per jaar organiseren Fusce egestas, quam ut faucibus facilisis, justo elit interdum ligula, vitae accumsan erat mi non erat. Curabitur at cursus ipsum, in lacinia mi. Integer a metus cursus, tempus lacus non, vestibulum sapien. Donec semper mi tortor, sit amet efficitur mauris tristique et.'
 ---

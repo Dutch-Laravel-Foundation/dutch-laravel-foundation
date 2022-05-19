@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 9342694a-2c6c-4640-8da1-91a61cfda771
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1652963309
+updated_at: 1652964712
 call_to_action: ee5d33de-9a24-4860-92dd-3503740b62af
 highlight_text:
   -
@@ -54,17 +54,44 @@ highlight_text:
                 text: 'De Laravel applicaties zijn licht en snel'
 content:
   -
-    type: heading
+    type: set
     attrs:
-      level: 1
-    content:
-      -
-        type: text
-        text: 'DLF, een initiatief om het gebruik van Laravel in Nederland verder te professionaliseren.'
+      values:
+        type: 3_4_column
+        content:
+          -
+            type: heading
+            attrs:
+              level: 1
+            content:
+              -
+                type: text
+                text: 'DLF, een initiatief om het gebruik van Laravel in Nederland verder te professionaliseren.'
   -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Met goedkeuring van Taylor Otwell, bedenker van het Laravel Framework, heeft een zevental bedrijven het initiatief genomen om het gebruik van Laravel in Nederland verder te professionaliseren. In juni 2019 is daarom de Dutch Laravel Foundation opgericht.'
+    type: set
+    attrs:
+      values:
+        type: double_column
+        left:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Met goedkeuring van Taylor Otwell, bedenker van het Laravel Framework, heeft een zevental bedrijven het initiatief genomen om het gebruik van Laravel in Nederland verder te professionaliseren. In juni 2019 is daarom de Dutch Laravel Foundation opgericht.'
+        right:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: /over-ons
+                      rel: null
+                      target: null
+                      title: null
+                text: 'Lees meer over ons'
 ---
