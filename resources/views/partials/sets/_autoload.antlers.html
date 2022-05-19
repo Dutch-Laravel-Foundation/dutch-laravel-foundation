@@ -1,0 +1,8 @@
+{{# Autoload sets that specifically match the current template #}}
+{{# Otherwise load the default set #}}
+{{# The replace makes sure naming conventions are met #}}
+{{ autoload = { partial:if_exists src="sets/{ current_template }/{ type | replace:'_':'-' }" } }}
+{{ if !autoload }}
+    {{ autoload = { partial src="sets/{ type | replace:'_':'-' }" } }}
+{{ /if }}
+{{ autoload }}
