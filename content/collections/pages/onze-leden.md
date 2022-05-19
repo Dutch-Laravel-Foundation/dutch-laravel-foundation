@@ -4,9 +4,13 @@ blueprint: pages
 title: 'Onze leden'
 template: members
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1652863901
-call_to_action: f9dba4c5-5493-4afb-b8fd-e4628f0ccdc8
+updated_at: 1652953236
+call_to_action: c3238da9-592c-4906-9b11-183e37e4b2d3
+content:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: '# Onze leden #De Dutch Laravel Foundation zorgt voor de promotie van Laravel en stimuleert kennisuitwisseling tussen Laravel developers in Nederland. Opdrachtgevers van webapplicaties kunnen via de stichting geschikte Laravel developers vinden.'
 ---
-# Onze leden #
-
-De Dutch Laravel Foundation zorgt voor de promotie van Laravel en stimuleert kennisuitwisseling tussen Laravel developers in Nederland. Opdrachtgevers van webapplicaties kunnen via de stichting geschikte Laravel developers vinden.
