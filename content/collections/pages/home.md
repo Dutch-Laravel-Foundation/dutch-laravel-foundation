@@ -5,8 +5,53 @@ title: Home
 template: home
 author: 9342694a-2c6c-4640-8da1-91a61cfda771
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1652959139
+updated_at: 1652963309
 call_to_action: ee5d33de-9a24-4860-92dd-3503740b62af
+highlight_text:
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        text: 'Waarom is dit de #1?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.'
+  -
+    type: bullet_list
+    content:
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Het is Open Source'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Het is betrouwbaar en veilig'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'De Laravel applicaties zijn licht en snel'
 content:
   -
     type: heading

@@ -48,8 +48,6 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
-          validate:
-            - required
           if:
             title: 'equals Home'
   sidebar:
