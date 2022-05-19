@@ -10,20 +10,7 @@ sections:
           validate:
             - required
       -
-        handle: content
-        field:
-          type: markdown
-          localizable: true
-          instructions_position: above
-          listable: hidden
-          read_only: false
-          container: assets
-          restrict: false
-          automatic_line_breaks: true
-          automatic_links: false
-          escape_markup: false
-          smartypants: false
-          antlers: false
+        import: content
       -
         handle: template
         field:

@@ -1,0 +1,24 @@
+title: 'Meta block'
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    handle: content
+    field:
+      input_type: text
+      antlers: false
+      display: Content
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      read_only: false

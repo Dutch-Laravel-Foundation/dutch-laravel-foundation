@@ -1,0 +1,173 @@
+title: Content
+fields:
+  -
+    handle: content
+    field:
+      always_show_set_button: false
+      sets:
+        double_column:
+          display: 'Double column'
+          fields:
+            -
+              handle: title
+              field:
+                always_show_set_button: false
+                buttons:
+                  - h1
+                  - h2
+                  - h3
+                  - h4
+                  - removeformat
+                save_html: false
+                toolbar_mode: fixed
+                link_noopener: false
+                link_noreferrer: false
+                target_blank: true
+                reading_time: false
+                fullscreen: true
+                allow_source: true
+                enable_input_rules: true
+                enable_paste_rules: true
+                antlers: false
+                display: Title
+                type: bard
+                icon: bard
+                listable: hidden
+                instructions_position: above
+                read_only: false
+            -
+              handle: left
+              field:
+                always_show_set_button: false
+                buttons:
+                  - h1
+                  - h2
+                  - h3
+                  - h4
+                  - bold
+                  - italic
+                  - unorderedlist
+                  - orderedlist
+                  - removeformat
+                  - quote
+                  - anchor
+                  - image
+                  - table
+                save_html: false
+                toolbar_mode: fixed
+                link_noopener: false
+                link_noreferrer: false
+                target_blank: true
+                reading_time: false
+                fullscreen: true
+                allow_source: true
+                enable_input_rules: true
+                enable_paste_rules: true
+                antlers: false
+                display: Left
+                type: bard
+                icon: bard
+                listable: hidden
+                instructions_position: above
+                read_only: false
+                sets:
+                  meta_block:
+                    display: 'Meta block'
+                    fields:
+                      -
+                        import: meta_block
+                  image:
+                    display: Image
+                    fields:
+                      -
+                        import: image
+                container: assets
+            -
+              handle: right
+              field:
+                always_show_set_button: false
+                buttons:
+                  - h1
+                  - h2
+                  - h3
+                  - h4
+                  - bold
+                  - italic
+                  - unorderedlist
+                  - orderedlist
+                  - removeformat
+                  - quote
+                  - anchor
+                  - image
+                  - table
+                save_html: false
+                toolbar_mode: fixed
+                link_noopener: false
+                link_noreferrer: false
+                target_blank: true
+                reading_time: false
+                fullscreen: true
+                allow_source: true
+                enable_input_rules: true
+                enable_paste_rules: true
+                antlers: false
+                display: Right
+                type: bard
+                icon: bard
+                listable: hidden
+                instructions_position: above
+                read_only: false
+                sets:
+                  meta_block:
+                    display: 'Meta block'
+                    fields:
+                      -
+                        import: meta_block
+                  image:
+                    display: Image
+                    fields:
+                      -
+                        import: image
+                container: assets
+        meta_block:
+          display: 'Meta block'
+          fields:
+            -
+              import: meta_block
+        image:
+          display: Image
+          fields:
+            -
+              import: image
+      buttons:
+        - h1
+        - h2
+        - h3
+        - h4
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+      save_html: false
+      toolbar_mode: fixed
+      link_noopener: false
+      link_noreferrer: false
+      target_blank: true
+      reading_time: false
+      fullscreen: true
+      allow_source: true
+      enable_input_rules: true
+      enable_paste_rules: true
+      antlers: false
+      display: Content
+      type: bard
+      icon: bard
+      listable: hidden
+      instructions_position: above
+      read_only: false
+      container: assets
