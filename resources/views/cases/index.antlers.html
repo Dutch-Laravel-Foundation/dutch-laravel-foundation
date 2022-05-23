@@ -1,4 +1,7 @@
 {{ content }}
+    {{ partial src="sets/autoload" }}
+{{ /content }}
+
 <section class="mt-10">
     {{ collection:cases }}
         {{ case_block = { switch between='blocks/image-left-larger|blocks/image-right-larger' } }}
