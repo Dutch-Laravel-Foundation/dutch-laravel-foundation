@@ -96,10 +96,10 @@ return [
             'visibility' => 'public',
         ],
 
-        'agenda' => [
+        'events' => [
             'driver' => 'local',
-            'root' => public_path('agenda'),
-            'url' => '/agenda',
+            'root' => public_path('events'),
+            'url' => '/events',
             'visibility' => 'public',
         ],
 

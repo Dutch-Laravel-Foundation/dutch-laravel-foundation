@@ -872,10 +872,6 @@ article img {
   width: 58.333333%;
 }
 
-.w-12 {
-  width: 3rem;
-}
-
 .max-w-\[66\%\] {
   max-width: 66%;
 }
@@ -1079,10 +1075,6 @@ article img {
 
 .p-12 {
   padding: 3rem;
-}
-
-.p-0 {
-  padding: 0px;
 }
 
 .\!p-0 {

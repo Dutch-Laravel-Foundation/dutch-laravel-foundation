@@ -8,6 +8,6 @@
     {{ /partial:blocks/base }}
     {{ if image }}
         <img class="absolute top-0 right-0 object-cover w-1/2 h-[calc(100%+3rem)] -mt-[1.5rem] z-[-1]" style="object-position:{{ featured_image:focus_css }}"
-            src="{{ featured_image }}" alt="{{ featured_image:alt ?? title }}" />
+            src="{{ image }}" alt="{{ image:alt ?? title }}" />
     {{ /if }}
 </div>

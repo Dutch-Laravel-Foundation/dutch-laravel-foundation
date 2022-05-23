@@ -1,4 +1,5 @@
-title: Agenda
+title: Events
+template: events/show
 revisions: false
 date_behavior:
   past: public
