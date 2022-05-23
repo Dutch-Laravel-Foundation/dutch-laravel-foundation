@@ -4,7 +4,7 @@ blueprint: pages
 title: 'Wat is Laravel?'
 template: what-is-laravel
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1653297646
+updated_at: 1653298855
 call_to_action: c3238da9-592c-4906-9b11-183e37e4b2d3
 content:
   -
@@ -13,14 +13,6 @@ content:
       values:
         type: 3_4_column
         content:
-          -
-            type: heading
-            attrs:
-              level: 1
-            content:
-              -
-                type: text
-                text: 'Laravel: het #1 framework binnen PHP'
           -
             type: paragraph
             content:
@@ -39,20 +31,21 @@ content:
               -
                 type: text
                 text: 'Het Laravel framework bestaat al sinds 2011. Wereldwijd maken ruim 50.000 developers gebruik van het framework, waarmee het één van de populairste en grootste frameworks ter wereld is.'
+        heading:
+          -
+            type: heading
+            attrs:
+              level: 1
+            content:
+              -
+                type: text
+                text: 'Laravel: het #1 framework binnen PHP'
   -
     type: set
     attrs:
       values:
         type: image
         image: whatis-main@2x.jpg
-  -
-    type: heading
-    attrs:
-      level: 2
-    content:
-      -
-        type: text
-        text: Voordelen
   -
     type: set
     attrs:
@@ -156,6 +149,15 @@ content:
                       -
                         type: text
                         text: 'Een community van ruim 50.000 developers voegt dagelijks nieuwe componenten aan het framework toe'
+        heading:
+          -
+            type: heading
+            attrs:
+              level: 2
+            content:
+              -
+                type: text
+                text: Voordelen
   -
     type: set
     attrs:
