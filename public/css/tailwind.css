@@ -599,10 +599,6 @@ article img {
   z-index: -10;
 }
 
-.float-left {
-  float: left;
-}
-
 .-mx-6 {
   margin-left: -1.5rem;
   margin-right: -1.5rem;
@@ -717,12 +713,12 @@ article img {
   display: block;
 }
 
-.inline-block {
-  display: inline-block;
-}
-
 .flex {
   display: flex;
+}
+
+.aspect-photo {
+  aspect-ratio: 17 / 21;
 }
 
 .aspect-square {
