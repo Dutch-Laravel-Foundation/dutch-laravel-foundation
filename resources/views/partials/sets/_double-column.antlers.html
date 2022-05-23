@@ -1,1 +1,12 @@
-double_column
+<div class="flex justify-start">
+    <div class="w-1/2 pr-10">
+        {{ left }}
+            {{ partial src="sets/autoload" }}
+        {{ /left }}
+    </div>
+    <div class="w-1/2 pl-10">
+        {{ right }}
+            {{ partial src="sets/autoload" }}
+        {{ /right }}
+    </div>
+</div>

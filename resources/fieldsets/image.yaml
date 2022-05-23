@@ -14,3 +14,4 @@ fields:
       listable: hidden
       instructions_position: above
       read_only: false
+      max_files: 1
