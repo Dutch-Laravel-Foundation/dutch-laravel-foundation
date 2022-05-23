@@ -1,0 +1,8 @@
+{{ content }}
+<section>
+    {{ collection:agenda sort_by="date" show_future="true" sort_dir="desc" }}
+        {{ partial:blocks/agenda :image="image" :category="location" }}
+            {{ description }}
+        {{ /partial:blocks/agenda }}
+    {{ /collection:agenda }}
+</section>

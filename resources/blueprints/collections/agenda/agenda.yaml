@@ -49,22 +49,6 @@ sections:
           type: slug
           localizable: true
       -
-        handle: date
-        field:
-          mode: single
-          time_enabled: false
-          time_seconds_enabled: false
-          full_width: false
-          inline: true
-          columns: 1
-          rows: 1
-          display: Datum
-          type: date
-          icon: date
-          listable: hidden
-          instructions_position: above
-          read_only: false
-      -
         handle: location
         field:
           placeholder: 'Eg: online'
@@ -73,6 +57,22 @@ sections:
           display: Locatie
           type: text
           icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: date
+        field:
+          mode: single
+          time_enabled: false
+          time_seconds_enabled: false
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: Datum
+          type: date
+          icon: date
           listable: hidden
           instructions_position: above
           read_only: false
