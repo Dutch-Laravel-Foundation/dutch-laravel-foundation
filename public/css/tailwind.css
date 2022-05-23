@@ -709,6 +709,10 @@ article img {
   margin-bottom: 12rem;
 }
 
+.mr-auto {
+  margin-right: auto;
+}
+
 .block {
   display: block;
 }

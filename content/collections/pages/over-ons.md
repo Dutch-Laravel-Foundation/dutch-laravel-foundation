@@ -4,25 +4,9 @@ blueprint: pages
 title: 'Over ons'
 template: about-us
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1653297668
+updated_at: 1653298531
 call_to_action: 6bc4ea55-2728-4615-8d45-75d49d29d157
 content:
-  -
-    type: set
-    attrs:
-      values:
-        type: double_column
-        left:
-          -
-            type: heading
-            attrs:
-              level: 1
-            content:
-              -
-                type: text
-                text: 'De kennis- en brancheorganisatie voor Laravel developers'
-  -
-    type: paragraph
   -
     type: set
     attrs:
@@ -116,4 +100,13 @@ content:
               -
                 type: text
                 text: 'Het doel van de stichting is tweeledig. Enerzijds mogen opdrachtgevers, die één van onze leden inschakelt voor het bouwen van een webapplicatie, ervan uitgaan dat ze met professionele Laravel developers in zee gaan. Dat is prettig werken! Anderzijds zorgt de stichting voor onderlinge kennisuitwisseling tussen de leden, om zo de kennis en kwaliteit van het Laravel framework in Nederland naar een nog hoger niveau te tillen. Als stichting zijn we in Nederland tevens actief in het promoten van Laravel onder potentiële opdrachtgevers voor nieuwe webapplicaties.'
+        heading:
+          -
+            type: heading
+            attrs:
+              level: 1
+            content:
+              -
+                type: text
+                text: 'De kennis- en brancheorganisatie voor Laravel developers'
 ---

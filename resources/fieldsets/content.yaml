@@ -9,6 +9,8 @@ fields:
           display: 'Double column'
           fields:
             -
+              import: heading
+            -
               handle: left
               field:
                 always_show_set_button: false
@@ -105,6 +107,8 @@ fields:
         3_4_column:
           display: '75% width column'
           fields:
+            -
+              import: heading
             -
               handle: content
               field:
