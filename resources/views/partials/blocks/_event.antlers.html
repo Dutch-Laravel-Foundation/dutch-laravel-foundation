@@ -1,8 +1,8 @@
 <div class="relative flex flex-row w-full mb-32 {{ class }}">
     {{ partial:blocks/base class="w-2/3 pl-36" }}
         <div class="absolute h-full bg-tertiary-regular top-0 left-0 w-24 p-6 text-center text-white">
-            <span class="block text-2xl">{{ date format="j" }}</span>
-            <span class="block text-lg">{{ date format="M" | strtolower }}</span>
+            <span class="block text-2xl">{{ takes_place format="j" }}</span>
+            <span class="block text-lg">{{ takes_place format="M" | strtolower }}</span>
         </div>
         {{ slot }}
     {{ /partial:blocks/base }}

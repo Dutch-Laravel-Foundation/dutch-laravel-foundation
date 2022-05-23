@@ -6,5 +6,6 @@ description: 'Op 11 maart 2021 om 19:00 geeft Mohamed Said een online een talk o
 image: meetup.jpeg
 locatie: Online
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1653306466
+updated_at: 1653307066
+takes_place: '2022-05-27 13:57'
 ---

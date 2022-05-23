@@ -3,7 +3,7 @@
 {{ /content }}
 
 <section>
-    {{ collection:events sort_by="date" show_future="true" sort_dir="desc" }}
+    {{ collection:events sort="takes_place:desc" }}
         {{ partial:blocks/event :image="image" :category="location" }}
             {{ description }}
         {{ /partial:blocks/event }}

@@ -60,16 +60,16 @@ sections:
           instructions_position: above
           read_only: false
       -
-        handle: date
+        handle: takes_place
         field:
           mode: single
-          time_enabled: false
+          time_enabled: true
           time_seconds_enabled: false
           full_width: false
           inline: true
           columns: 1
           rows: 1
-          display: Datum
+          display: Datum/tijd
           type: date
           icon: date
           listable: hidden
