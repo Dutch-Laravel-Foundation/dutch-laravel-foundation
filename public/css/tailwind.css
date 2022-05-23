@@ -1081,6 +1081,14 @@ article img {
   padding: 3rem;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
+.\!p-0 {
+  padding: 0px !important;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
