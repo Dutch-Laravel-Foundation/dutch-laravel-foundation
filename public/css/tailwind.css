@@ -504,6 +504,25 @@ article a {
   color: rgb(255 45 32 / var(--tw-text-opacity));
 }
 
+ul {
+  list-style-type: disc;
+}
+
+ul li {
+  padding-left: .5em;
+}
+
+ul li::marker {
+  margin-left: -1em;
+  display: inline-block;
+  width: 1em;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 45 32 / var(--tw-text-opacity));
+  --tw-content: "\2022";
+  content: var(--tw-content);
+}
+
 article a:hover {
   --tw-text-opacity: 1;
   color: rgb(255 45 32 / var(--tw-text-opacity));
@@ -763,10 +782,6 @@ article img {
 
 .h-96 {
   height: 24rem;
-}
-
-.h-52 {
-  height: 13rem;
 }
 
 .h-12 {
