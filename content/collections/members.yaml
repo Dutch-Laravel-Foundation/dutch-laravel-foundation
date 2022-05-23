@@ -1,6 +1,9 @@
 title: Leden
-template: members/index
+template: members/show
+layout: layout
 revisions: false
+route: '/leden/{slug}'
+sort_dir: asc
 date_behavior:
   past: public
   future: private

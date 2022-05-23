@@ -1,0 +1,12 @@
+{{ content }}
+    {{ partial src="sets/autoload" }}
+{{ /content }}
+
+<section class="mt-10">
+    {{ collection:cases where="" }}
+        {{ case_block = { switch between='blocks/image-left-larger|blocks/image-right-larger' } }}
+        {{ partial:{ case_block } class="!w-2/3" :image="featured_image" :title="long_title" :category="member:title" }}
+            {{ introduction }}
+        {{ /partial:{ case_block } }}
+    {{ /collection:cases }}
+</section>

@@ -1,0 +1,9 @@
+{{ content }}
+
+<section class="mt-10">
+    {{ collection:cases member:is="{ id }" limit="3" }}
+        {{ partial:blocks/image-center-larger :image="featured_image" :title="long_title" :category="member:title" class="" }}
+            {{ introduction }}
+        {{ /partial:blocks/image-center-larger }}
+    {{ /collection:cases }}
+</section>
