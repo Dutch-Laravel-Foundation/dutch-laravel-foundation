@@ -1,0 +1,52 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+          display: Titel
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          input_type: text
+          antlers: false
+      -
+        handle: link
+        field:
+          display: Link
+          type: link
+          icon: link
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - url
+      -
+        handle: icon
+        field:
+          mode: list
+          container: socials
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: Icoon
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          read_only: false
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+title: Socials

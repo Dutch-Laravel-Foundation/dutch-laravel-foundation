@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Send</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-/-Footer" transform="translate(-1254.000000, -586.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="//Footer" transform="translate(215.000000, 0.000000)">
+                <g id="Nieuwsbrief" transform="translate(702.000000, 530.000000)">
+                    <g id="Form" transform="translate(0.000000, 40.000000)">
+                        <g id="bt" transform="translate(322.000000, 0.000000)">
+                            <g id="Send" transform="translate(15.000322, 15.999078)">
+                                <path d="M14.8746428,0.100961482 L0.390302299,8.45717325 C-0.175309145,8.78218468 -0.10344042,9.56968891 0.459058239,9.80717613 L3.78091922,11.2009411 L12.7590167,3.28845388 C12.9308913,3.13531704 13.1746346,3.36969148 13.0277844,3.54782216 L5.49966512,12.7196753 L5.49966512,15.2352943 C5.49966512,15.9727803 6.39028799,16.2634291 6.82778695,15.729037 L8.81215722,13.3134239 L12.7058857,14.9446761 C13.1496408,15.1321756 13.6558957,14.8540391 13.7371333,14.3759213 L15.9871279,0.875953531 C16.0933899,0.244698932 15.4152604,-0.211537773 14.8746428,0.100961482 Z" id="Path"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

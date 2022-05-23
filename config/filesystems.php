@@ -103,6 +103,13 @@ return [
             'visibility' => 'public',
         ],
 
+        'socials' => [
+            'driver' => 'local',
+            'root' => public_path('socials'),
+            'url' => '/socials',
+            'visibility' => 'public',
+        ],
+
     ],
 
     /*

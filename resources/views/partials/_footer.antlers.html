@@ -23,7 +23,7 @@
         <div class="flex flex-col md:flex-row justify-between mb-5">
             <div class="w-full md:w-7/12">
                 <div class="columns-3">
-                    <ul>
+                    <ul class="list-style-none">
                         {{ collection:members }}
                         <li><a href="{{ url }}">{{ title }}</a></li>
                         {{ /collection:members }}
@@ -35,8 +35,10 @@
                     De Dutch Laravel Foundation zorgt voor de promotie van Laravel en stimuleert
                     kennisuitwisseling tussen Laravel developers in Nederland.
                 </div>
-                <div class="mb-10">
-                    {{# TODO: Add icons #}}
+                <div class="mb-10 flex flex-row items-center space-x-4">
+                    {{ collection:socials }}
+                        <a href="{{ link }}" target="_blank"><img src="{{ icon }}"></a>
+                    {{ /collection:socials }}
                 </div>
                 <div>
                     <h4>Aanmelden nieuwsbrief</h4>
