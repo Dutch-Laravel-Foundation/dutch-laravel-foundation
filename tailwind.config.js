@@ -38,6 +38,7 @@ module.exports = {
         'primary': {
           'accent': '#FF2D20',
           'contrast': '#FFFFFF',
+          'text': '#5F6464'
         },
         'secondary': {
           'light': '#F5F5FA',
