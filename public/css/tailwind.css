@@ -602,18 +602,6 @@ article img {
   bottom: 0px;
 }
 
-.left-10 {
-  left: 2.5rem;
-}
-
-.\!left-10 {
-  left: 2.5rem !important;
-}
-
-.\!right-10 {
-  right: 2.5rem !important;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -681,8 +669,16 @@ article img {
   margin-top: 5rem;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .ml-4 {
   margin-left: 1rem;
+}
+
+.\!mb-0 {
+  margin-bottom: 0px !important;
 }
 
 .-mt-48 {
@@ -703,10 +699,6 @@ article img {
 
 .mt-\[14\.5rem\] {
   margin-top: 14.5rem;
-}
-
-.mb-0 {
-  margin-bottom: 0px;
 }
 
 .mb-20 {
@@ -741,10 +733,6 @@ article img {
   margin-top: 12rem;
 }
 
-.\!mb-0 {
-  margin-bottom: 0px !important;
-}
-
 .mb-\[\.3rem\] {
   margin-bottom: .3rem;
 }
@@ -765,6 +753,10 @@ article img {
   display: block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -781,8 +773,8 @@ article img {
   height: 100vh;
 }
 
-.h-48 {
-  height: 12rem;
+.h-\[20rem\] {
+  height: 20rem;
 }
 
 .h-\[48rem\] {
@@ -829,16 +821,8 @@ article img {
   height: calc(100% + 13rem + 7.5rem);
 }
 
-.h-80 {
-  height: 20rem;
-}
-
-.h-\[22rem\] {
-  height: 22rem;
-}
-
-.h-\[20rem\] {
-  height: 20rem;
+.max-h-\[20rem\] {
+  max-height: 20rem;
 }
 
 .max-h-full {
@@ -847,14 +831,6 @@ article img {
 
 .max-h-\[66\%\] {
   max-height: 66%;
-}
-
-.max-h-\[22rem\] {
-  max-height: 22rem;
-}
-
-.max-h-\[20rem\] {
-  max-height: 20rem;
 }
 
 .min-h-\[10rem\] {
@@ -873,8 +849,8 @@ article img {
   width: 100%;
 }
 
-.w-1\/6 {
-  width: 16.666667%;
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .\!w-2\/3 {
@@ -899,10 +875,6 @@ article img {
 
 .w-2\/6 {
   width: 33.333333%;
-}
-
-.w-2\/3 {
-  width: 66.666667%;
 }
 
 .w-24 {
@@ -931,10 +903,6 @@ article img {
 
 .w-7\/12 {
   width: 58.333333%;
-}
-
-.w-12 {
-  width: 3rem;
 }
 
 .\!w-12 {
@@ -1000,20 +968,12 @@ article img {
   flex-wrap: wrap;
 }
 
-.items-end {
-  align-items: flex-end;
-}
-
 .items-center {
   align-items: center;
 }
 
 .items-baseline {
   align-items: baseline;
-}
-
-.items-stretch {
-  align-items: stretch;
 }
 
 .justify-start {
@@ -1046,14 +1006,14 @@ article img {
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.overflow-hidden {
-  overflow: hidden;
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }
 
-.truncate {
+.overflow-hidden {
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .whitespace-nowrap {
@@ -1154,12 +1114,12 @@ article img {
      object-fit: cover;
 }
 
-.p-10 {
-  padding: 2.5rem;
-}
-
 .p-16 {
   padding: 4rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .p-12 {
@@ -1174,10 +1134,6 @@ article img {
   padding: 0px !important;
 }
 
-.p-20 {
-  padding: 5rem;
-}
-
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1188,6 +1144,11 @@ article img {
   padding-right: 2.5rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -1196,21 +1157,6 @@ article img {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .pl-10 {
@@ -1276,11 +1222,6 @@ article img {
   line-height: 1.714em;
 }
 
-.\!text-sm {
-  font-size: 14px !important;
-  line-height: 1.714em !important;
-}
-
 .font-normal {
   font-weight: 400;
 }
@@ -1333,11 +1274,6 @@ article img {
   color: rgb(9 9 16 / var(--tw-text-opacity)) !important;
 }
 
-.text-secondary-light {
-  --tw-text-opacity: 1;
-  color: rgb(245 245 250 / var(--tw-text-opacity));
-}
-
 .\!text-secondary-light {
   --tw-text-opacity: 1 !important;
   color: rgb(245 245 250 / var(--tw-text-opacity)) !important;
@@ -1359,12 +1295,6 @@ article img {
   --tw-shadow: inset 0 0 0 1px #FF2D20;
   --tw-shadow-colored: inset 0 0 0 1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.after\:text-sm::after {
-  content: var(--tw-content);
-  font-size: 14px;
-  line-height: 1.714em;
 }
 
 .after\:\!text-sm::after {

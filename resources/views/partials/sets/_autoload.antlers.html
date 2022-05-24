@@ -1,8 +1,25 @@
 {{# Autoload sets that specifically match the current template #}}
 {{# Otherwise load the default set #}}
 {{# The replace makes sure naming conventions are met #}}
+
 {{ autoload = { partial:if_exists src="sets/{ current_template }/{ type | replace:'_':'-' }" } }}
 {{ if !autoload }}
     {{ autoload = { partial src="sets/{ type | replace:'_':'-' }" } }}
 {{ /if }}
+
+{{# Grouping meta is used to align multiple meta blocks inline #}}
+{{ if first }}
+    {{ grouping_meta = false }}
+{{ /if }}
+
+{{ if type == 'meta_block' && !grouping_meta }}
+    {{ grouping_meta = true }}
+    <div class="w-full flex flex-row space-x-4">
+{{ /if }}
+
 {{ autoload }}
+
+{{ if grouping_meta && (type != 'meta_block' || last) }}
+    {{ grouping_meta = false }}
+    </div>
+{{ /if }}
