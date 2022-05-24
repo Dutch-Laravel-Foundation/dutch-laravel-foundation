@@ -39,7 +39,7 @@
                         {{ else }}
                             <div class="mb-6 flex flex-row justify-between">
                                 <div class="flex flex-row w-4/6 text-tertiary-light">{{ field replace="<br>|" }}<span class="ml-2">{{ display }}</span></div>
-                                <button class="flex items-center justify-center bg-primary-accent text-primary-contrast hover:text-primary-contrast h-12 hover:-translate-x-[4px] hover:-translate-y-[4px] hover:shadow-outer-primary px-8 text-sm uppercase whitespace-nowrap" type="submit">Versturen</button>
+                                {{ partial:buttons/primary type="submit" }}Versturen{{ /partial:buttons/primary }}
                             </div>
                         {{ /if }}
                     {{ /fields }}
