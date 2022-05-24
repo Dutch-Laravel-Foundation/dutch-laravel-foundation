@@ -1,0 +1,67 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: name
+        field:
+          input_type: text
+          antlers: false
+          display: Naam
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+      -
+        handle: company_name
+        field:
+          input_type: text
+          antlers: false
+          display: Bedrijfsnaam
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: email
+        field:
+          input_type: text
+          antlers: false
+          display: E-mailadres
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+            - email
+      -
+        handle: remarks
+        field:
+          antlers: false
+          display: Opmerkingen
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+      -
+        handle: agree
+        field:
+          inline: false
+          display: 'Bij het gebruiken van dit formulier ga je akkoord met de bepalingen uit ons privacy statement.'
+          type: checkboxes
+          icon: checkboxes
+          listable: hidden
+          instructions_position: below
+          read_only: false
+          validate:
+            - required
+          default: '0'

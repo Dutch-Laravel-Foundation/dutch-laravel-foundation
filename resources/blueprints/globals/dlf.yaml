@@ -1,0 +1,81 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          input_type: text
+          antlers: false
+          display: Titel
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: address
+        field:
+          input_type: text
+          antlers: false
+          display: Adres
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: zipcode
+        field:
+          input_type: text
+          antlers: false
+          display: Postcode
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: city
+        field:
+          input_type: text
+          antlers: false
+          display: Plaats
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: phone
+        field:
+          input_type: text
+          antlers: false
+          display: Telefoonnummer
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: email
+        field:
+          input_type: text
+          antlers: false
+          display: E-mailadres
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: coc
+        field:
+          input_type: text
+          antlers: false
+          display: 'KVK nummer'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false

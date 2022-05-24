@@ -61,3 +61,18 @@ article a:hover {
 article img {
     @apply w-full;
 }
+
+input:not([type="checkbox"]),
+textarea {
+    @apply w-full !bg-secondary-light border-transparent;
+}
+
+input[type="checkbox"] {
+    @apply bg-secondary-light text-primary-accent w-6 h-6 mr-2 focus:ring-primary-accent focus:ring-opacity-25 border border-tertiary-light border-opacity-40 rounded;
+}
+
+input:not([type="checkbox"]):focus,
+textarea:focus {
+    outline: none !important;
+    @apply border-primary-accent;
+}
