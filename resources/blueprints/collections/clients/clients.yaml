@@ -46,42 +46,7 @@ sections:
           smartypants: false
           antlers: false
       -
-        handle: contact
-        field:
-          input_type: text
-          antlers: false
-          display: Contactpersoon
-          type: text
-          icon: text
-          listable: hidden
-          instructions_position: above
-          read_only: false
-      -
-        handle: contact_function
-        field:
-          input_type: text
-          antlers: false
-          display: 'Functie contactpersoon'
-          type: text
-          icon: text
-          listable: hidden
-          instructions_position: above
-          read_only: false
-      -
-        handle: review
-        field:
-          restrict: false
-          automatic_line_breaks: true
-          automatic_links: false
-          escape_markup: false
-          smartypants: false
-          antlers: false
-          display: 'Review contactpersoon'
-          type: markdown
-          icon: markdown
-          listable: hidden
-          instructions_position: above
-          read_only: false
+        import: review
   sidebar:
     display: Sidebar
     fields:

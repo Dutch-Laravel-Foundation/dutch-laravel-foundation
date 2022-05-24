@@ -1,3 +1,21 @@
 {{ content }}
     {{ partial src="sets/autoload" }}
 {{ /content }}
+
+<div class="swiper swiper-carousel w-full bg-secondary-light mt-20">
+    <div class="swiper-wrapper">
+    {{ collection:clients review_text:isset="true" }}
+        <div class="swiper-slide">
+            <div class="w-2/3 mx-auto h-[20rem] max-h-[20rem] py-16 flex flex-col justify-between">
+                <h3>&quot;{{ review_text }}&quot;</h3>
+                <div class="flex flex-row items-baseline">
+                    {{ if review_name }}<h4 class="mb-0">{{ review_name }}</h4>{{ /if }}
+                    <span class="meta ml-4 !mb-0">{{ arr({ review_function }, { title }) | remove_empty | list }}</span>
+                </div>
+            </div>
+        </div>
+    {{ /collection:clients }}
+    </div>
+    <div class="swiper-button-prev flex items-center justify-center h-12 !w-12 hover:-translate-x-[4px] hover:-translate-y-[4px] after:!text-sm uppercase whitespace-nowrap hover:!shadow-outer-dark bg-tertiary-dark !text-secondary-light !left-10"></div>
+    <div class="swiper-button-next flex items-center justify-center h-12 !w-12 hover:-translate-x-[4px] hover:-translate-y-[4px] after:!text-sm uppercase whitespace-nowrap hover:!shadow-outer-dark bg-tertiary-dark !text-secondary-light !right-10"></div>
+</div>
