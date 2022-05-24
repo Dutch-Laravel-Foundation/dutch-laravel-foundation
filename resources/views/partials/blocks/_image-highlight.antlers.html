@@ -7,7 +7,7 @@
         {{ /if }}
         {{ partial:blocks/base class="w-2/3 absolute right-0 bottom-0 translate-y-10" }}
             {{ slot }}
-            {{ partial:buttons/more url="insights/{ slug }" class="" }}
+            {{ partial:buttons/more :url="link" class="" }}
         {{ /partial:blocks/base }}
     </div>
 </div>
