@@ -24,14 +24,14 @@
                     {{ fields }}
                         {{ if handle != 'agree' }}
                         <div class="mb-6">
-                            <label :for="handle"><span class="meta">{{ display }}</span></label>
+                            <label for="{{ handle }}"><span class="meta">{{ display }}</span></label>
                             {{ if error }}
                                 <p class="text-primary-accent">{{ error }}</p>
                             {{ /if }}
                             {{ if instructions_position == 'above' }}
                                 {{ instructions }}
                             {{ /if }}
-                            {{ field }}
+                            {{ field regex_replace="^<([a-z]+)|<\\1 id={ handle }" }}
                             {{ if instructions_position == 'below' }}
                                 {{ instructions }}
                             {{ /if }}
