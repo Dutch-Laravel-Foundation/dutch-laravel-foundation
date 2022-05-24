@@ -6,44 +6,42 @@
                     {{ success }}
                 </div>
             {{ else }}
-                <div class="mt-20">
-                    {{ content }}
-                        {{ partial src="sets/autoload" }}
-                    {{ /content }}
+                {{ content }}
+                    {{ partial src="sets/autoload" }}
+                {{ /content }}
 
-                    {{ if errors }}
-                        <div class="bg-primary-accent text-primary-contrast p-10 mb-6">
-                            {{ errors }}
-                                {{ value }}<br>
-                            {{ /errors }}
+                {{ if errors }}
+                    <div class="bg-primary-accent text-primary-contrast p-10 mb-6">
+                        {{ errors }}
+                            {{ value }}<br>
+                        {{ /errors }}
+                    </div>
+                {{ /if }}
+
+                <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+
+                {{ fields }}
+                    {{ if handle != 'agree' }}
+                    <div class="mb-6">
+                        <label for="{{ handle }}"><span class="meta">{{ display }}</span></label>
+                        {{ if error }}
+                            <p class="text-primary-accent">{{ error }}</p>
+                        {{ /if }}
+                        {{ if instructions_position == 'above' }}
+                            {{ instructions }}
+                        {{ /if }}
+                        {{ field regex_replace="^<([a-z]+)|<\\1 id={ handle }" }}
+                        {{ if instructions_position == 'below' }}
+                            {{ instructions }}
+                        {{ /if }}
+                    </div>
+                    {{ else }}
+                        <div class="mb-6 flex flex-row justify-between">
+                            <div class="flex flex-row w-4/6 text-tertiary-light">{{ field replace="<br>|" }}<span class="ml-2">{{ display regex_replace="(privacy statement)|<a href='/privacy-statement'>\\1</a>" }}</span></div>
+                            {{ partial:buttons/primary type="submit" }}Versturen{{ /partial:buttons/primary }}
                         </div>
                     {{ /if }}
-
-                    <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
-
-                    {{ fields }}
-                        {{ if handle != 'agree' }}
-                        <div class="mb-6">
-                            <label for="{{ handle }}"><span class="meta">{{ display }}</span></label>
-                            {{ if error }}
-                                <p class="text-primary-accent">{{ error }}</p>
-                            {{ /if }}
-                            {{ if instructions_position == 'above' }}
-                                {{ instructions }}
-                            {{ /if }}
-                            {{ field regex_replace="^<([a-z]+)|<\\1 id={ handle }" }}
-                            {{ if instructions_position == 'below' }}
-                                {{ instructions }}
-                            {{ /if }}
-                        </div>
-                        {{ else }}
-                            <div class="mb-6 flex flex-row justify-between">
-                                <div class="flex flex-row w-4/6 text-tertiary-light">{{ field replace="<br>|" }}<span class="ml-2">{{ display regex_replace="(privacy statement)|<a href='/privacy-statement'>\\1</a>" }}</span></div>
-                                {{ partial:buttons/primary type="submit" }}Versturen{{ /partial:buttons/primary }}
-                            </div>
-                        {{ /if }}
-                    {{ /fields }}
-                </div>
+                {{ /fields }}
             {{ /if }}
         {{ /form:contact }}
     </div>
