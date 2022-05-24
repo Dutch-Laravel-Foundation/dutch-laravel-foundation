@@ -660,6 +660,11 @@ article img {
   margin-bottom: auto;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .ml-auto {
   margin-left: auto;
 }

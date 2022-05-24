@@ -16,6 +16,6 @@
         </div>
     {{ /collection:clients }}
     </div>
-    <div class="swiper-button-prev flex items-center justify-center h-12 !w-12 hover:-translate-x-[4px] hover:-translate-y-[4px] after:!text-sm uppercase whitespace-nowrap hover:!shadow-outer-dark bg-tertiary-dark !text-secondary-light !left-10"></div>
-    <div class="swiper-button-next flex items-center justify-center h-12 !w-12 hover:-translate-x-[4px] hover:-translate-y-[4px] after:!text-sm uppercase whitespace-nowrap hover:!shadow-outer-dark bg-tertiary-dark !text-secondary-light !right-10"></div>
+    {{ partial:buttons/swiper class="swiper-button-prev" }}
+    {{ partial:buttons/swiper class="swiper-button-next" }}
 </div>
