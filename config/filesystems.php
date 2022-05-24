@@ -110,6 +110,13 @@ return [
             'visibility' => 'public',
         ],
 
+        'globals' => [
+            'driver' => 'local',
+            'root' => public_path('globals'),
+            'url' => '/globals',
+            'visibility' => 'public',
+        ],
+
     ],
 
     /*

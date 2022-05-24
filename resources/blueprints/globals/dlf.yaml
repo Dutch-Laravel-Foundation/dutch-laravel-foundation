@@ -3,11 +3,26 @@ sections:
     display: Main
     fields:
       -
+        handle: logo
+        field:
+          mode: list
+          container: globals
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: Logo
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
         handle: title
         field:
           input_type: text
           antlers: false
-          display: Titel
+          display: Naam
           type: text
           icon: text
           listable: hidden
