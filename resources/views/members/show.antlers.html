@@ -1,9 +1,33 @@
-{{ content }}
+<div class="flex flex-row w-full">
+<div class="w-4/6 pr-20">
+    <h1>{{ title }}</h1>
+    {{ description }}
+    <div class="mt-20">
+        {{ collection:cases member:is="{ id }" limit="3" }}
+            {{ partial:blocks/image-center-larger :image="featured_image" :title="long_title" :category="member:title" class="" }}
+                {{ introduction }}
+            {{ /partial:blocks/image-center-larger }}
+        {{ /collection:cases }}
+    </div>
+</div>
 
-<section class="mt-10">
-    {{ collection:cases member:is="{ id }" limit="3" }}
-        {{ partial:blocks/image-center-larger :image="featured_image" :title="long_title" :category="member:title" class="" }}
-            {{ introduction }}
-        {{ /partial:blocks/image-center-larger }}
-    {{ /collection:cases }}
-</section>
+<div class="w-2/6">
+    {{ partial:company/base :logo="logo" class="mt-10 pb-10 px-10 w-full overflow-hidden" }}
+    {{ if city || province }}
+        {{ partial:blocks/meta title="Locatie" text="{ arr({ city }, { province }) | remove_empty | list }" }}
+    {{ /if }}
+    {{ if website }}
+        {{ partial:blocks/meta title="Website" :text="website" link="https://{ website }" }}
+    {{ /if }}
+    {{ if email }}
+        {{ partial:blocks/meta title="E-mail" :text="email" link="mailto:{ email }" }}
+    {{ /if }}
+    {{ if phone }}
+        {{ partial:blocks/meta title="Telefoonnummer" :text="phone" link="tel:{ phone }" }}
+    {{ /if }}
+    {{ if employees }}
+        {{ partial:blocks/meta title="Aantal developers" :text="employees" }}
+    {{ /if }}
+    {{ /partial:company/base }}
+</div>
+</div>

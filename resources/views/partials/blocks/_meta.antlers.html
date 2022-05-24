@@ -1,9 +1,13 @@
 <div class="flex flex-col w-full {{ class }}">
-    {{ if subtitle }}
-        <span class="meta">{{ subtitle }}</span>
-    {{ /if }}
     {{ if title }}
-        <h3 class="block w-full">{{ title }}</h3>
+        <h4 class="block w-full mb-[.3rem]">{{ title }}</h4>
+    {{ /if }}
+    {{ if text }}
+        {{ if link }}
+            <a href="{{ link }}" target="_blank"><span class="meta text-primary-accent">{{ text }}</span></a>
+        {{ else }}
+            <span class="meta">{{ text }}</span>
+        {{ /if }}
     {{ /if }}
     {{ slot }}
 </div>
