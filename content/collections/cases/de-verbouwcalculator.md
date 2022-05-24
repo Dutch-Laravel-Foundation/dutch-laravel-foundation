@@ -2,7 +2,7 @@
 id: 9a7a90ec-54fe-490d-a60f-924505e82da7
 blueprint: cases
 title: 'De Verbouwcalculator'
-introduction: 'De Verbouwcalculator. Een huis verbouwen.. een nieuwe woning naar jouw wensen maken of jouw huidige woning een opknapbeurt geven. Vaak een kostbaar project en waar moet je beginnen?'
+introduction: 'Een huis verbouwen.. een nieuwe woning naar jouw wensen maken of jouw huidige woning een opknapbeurt geven. Vaak een kostbaar project en waar moet je beginnen?'
 description: |-
   Een huis verbouwen.. een nieuwe woning naar jouw wensen maken of jouw huidige woning een opknapbeurt geven. Vaak een kostbaar project en waar moet je beginnen? De Verbouwcalculator helpt inzicht te geven in de kosten die bij een verbouwing komen kijken. Dit helpt niet alleen om inzicht te geven of een verbouwing wel mogelijk is, maar ook kan er middels het gebruik van de Verbouwcalculator worden bepaald of je een woning überhaupt wel wilt kopen. Nadat de keuze voor het verbouwen gemaakt is, kan het rapport gebruikt worden om de juiste aannemer voor de klus te vinden.
 
@@ -35,8 +35,79 @@ description: |-
   Het beheer van de hardware en Docker images wordt gedaan door Kubernetes. De software zorgt ervoor dat een verzameling van hardware tot een cluster gecombineerd wordt. Vervolgens kan er on demand meer vermogen aan het project worden geleverd. Dit kan bijvoorbeeld gebruikt worden, wanneer de queue oploopt en er tijdelijk meer workers nodig zijn.
 featured_image: verbouwing.png
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1652881708
-long_title: 'Weten wat je verbouwing kost, de volgende showcase helpt je daarbij!'
+updated_at: 1653395870
+title_long: 'Weten wat je verbouwing kost, de volgende showcase helpt je daarbij!'
 member: 4a0f57f4-997d-4532-9c9d-c5322a3ae05a
 client: 964d6872-f078-4702-ba76-de96e3123ba5
+content:
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        text: 'Hoe heeft Laravel ondersteunt in de ontwikkeling van Verbouwcalculator?'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Vervolgens nam Ruud Schaaphuizen de aanwezigen mee in zijn ervaringen met meertaligheid in applicaties. Welke valkuilen kom je daarbij tegen, welke technische oplossingen zijn er beschikbaar en welke oplossing gebruikt hij binnen Sqits. En als bonus heeft Ruud een tipje van de sluier opgelicht over een package die zij momenteel ontwikkelen voor vertalingen in een single page application (vue.js).'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Tot slot was het aan de ervaren spreker Bobby Bouwman om een introductie over Kubernetes te geven om vervolgens in te zoomen op het gebruik van Kubernetes in een Laravel project. Databases, logging, storage, queues en sessies kwamen allemaal voorbij. Net als de drie gouden regels die Bobbie binnen zijn projecten hanteert (zie zijn presentatie). Tot slot kwam ook Laravel Vapor nog even aan de orde.'
+  -
+    type: set
+    attrs:
+      values:
+        type: image
+        image: whatis-main@2x.jpg
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        text: Techniek
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: Authorisatie
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Vervolgens nam Ruud Schaaphuizen de aanwezigen mee in zijn ervaringen met meertaligheid in applicaties. Welke valkuilen kom je daarbij tegen, welke technische oplossingen zijn er beschikbaar en welke oplossing gebruikt hij binnen Sqits. En als bonus heeft Ruud een tipje van de sluier opgelicht over een package die zij momenteel ontwikkelen voor vertalingen in een single page application (vue.js).'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Tot slot was het aan de ervaren spreker Bobby Bouwman om een introductie over Kubernetes te geven om vervolgens in te zoomen op het gebruik van Kubernetes in een Laravel project. Databases, logging, storage, queues en sessies kwamen allemaal voorbij. Net als de drie gouden regels die Bobbie binnen zijn projecten hanteert (zie zijn presentatie). Tot slot kwam ook Laravel Vapor nog even aan de orde.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: Queue
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Tot slot was het aan de ervaren spreker Bobby Bouwman om een introductie over Kubernetes te geven om vervolgens in te zoomen op het gebruik van Kubernetes in een Laravel project. Databases, logging, storage, queues en sessies kwamen allemaal voorbij. Net als de drie gouden regels die Bobbie binnen zijn projecten hanteert (zie zijn presentatie). Tot slot kwam ook Laravel Vapor nog even aan de orde.'
 ---

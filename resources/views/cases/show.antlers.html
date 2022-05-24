@@ -1,12 +1,20 @@
-{{ content }}
-    {{ partial src="sets/autoload" }}
-{{ /content }}
-
-<section class="mt-10">
-    {{ collection:cases }}
-        {{ case_block = { switch between='blocks/image-left-larger|blocks/image-right-larger' } }}
-        {{ partial:{ case_block } class="!w-2/3" :image="featured_image" :title="long_title" :category="member:title" }}
-            {{ introduction }}
-        {{ /partial:{ case_block } }}
-    {{ /collection:cases }}
-</section>
+<article class="relative">
+    {{ partial:company/simple :logo="member:logo" :title="member:title" text="Dutch Laravel Foundation lid" class="absolute w-3/12 top-[40rem] right-0 z-20" link="/leden/{ member:slug }" }}
+    <img src="{{ featured_image }}" class="object-cover w-full h-[48rem]" style="object-position:{{ featured_image:focus_css }}">
+    <div class="relative w-11/12 mx-auto bg-white -mt-48 min-h-[10rem] p-16 z-10">
+        <div class="w-4/6">
+            <h1>{{ title_long }}</h1>
+            <div class="mb-10">{{ introduction }}</div>
+            {{ if client:title }}
+                {{ partial:blocks/meta-alt title="Opdrachtgever" :text="client:title" }}
+            {{ /if }}
+            <div class="h-4 border-b-[1px] border-tertiary-dark mb-10"></div>
+            {{ content }}
+                {{ partial src="sets/autoload" }}
+            {{ /content }}
+        </div>
+    </div>
+</article>
+<div class="flex mx-auto w-[calc(91.666667%-8rem)] mb-10 mt-1">
+    {{ partial:buttons/light url="/cases" }}Naar alle cases{{ /partial:buttons/light }}
+</div>
