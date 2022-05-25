@@ -5,9 +5,8 @@ title: Bitfactory
 number_of_employees: 51-100
 founding_partner: false
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1653474311
+updated_at: 1653474714
 province: Zuid-Holland
 city: Rotterdam
-member_type:
-  - bedrijf
+member_type: bedrijf
 ---

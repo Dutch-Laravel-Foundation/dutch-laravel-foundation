@@ -4,6 +4,7 @@ layout: layout
 taxonomies:
   - number_of_employees
   - member_type
+  - province
 revisions: false
 route: '/leden/{slug}'
 sort_dir: asc

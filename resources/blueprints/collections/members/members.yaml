@@ -83,32 +83,16 @@ sections:
       -
         handle: province
         field:
-          options:
-            Drenthe: null
-            Flevoland: null
-            Friesland: null
-            Gelderland: null
-            Groningen: null
-            Limburg: null
-            Noord-Brabant: null
-            Noord-Holland: null
-            Overijssel: null
-            Utrecht: null
-            Zeeland: null
-            Zuid-Holland: null
-          multiple: false
-          max_items: 1
-          clearable: false
-          searchable: true
-          taggable: false
-          push_tags: false
-          cast_booleans: false
+          type: terms
+          taxonomies:
+            - province
           display: Provincie
-          type: select
-          icon: select
-          listable: hidden
+          mode: select
           instructions_position: above
+          listable: hidden
           read_only: false
+          max_items: 1
+          create: true
       -
         handle: city
         field:
