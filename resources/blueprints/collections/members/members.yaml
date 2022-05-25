@@ -160,12 +160,12 @@ sections:
           instructions_position: above
           read_only: false
       -
-        handle: employees
+        handle: number_of_employees
         field:
           type: terms
           taxonomies:
-            - employees
-          display: Employees
+            - number_of_employees
+          display: Aantal werknemers
           mode: select
           instructions_position: above
           listable: hidden

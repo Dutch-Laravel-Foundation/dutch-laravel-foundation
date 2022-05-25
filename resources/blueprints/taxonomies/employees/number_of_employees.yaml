@@ -25,4 +25,4 @@ sections:
           required: true
           validate:
             - required
-title: Employees
+title: 'Aantal werknemers'

@@ -13,7 +13,7 @@ description: |-
 
   Wij gebruiken Laravel omdat we op deze manier kwaliteit kunnen garanderen aan onze klanten, zowel op de korte termijn met het ontwikkelen van een snelle Minimum Viable Product (MVP) maar ook voor de langere termijn. Waarin de continuerende vraagstukken van onze klanten over de jaren heen doorontwikkeld moeten worden en het leveren van onderhoud en services steeds belangrijker is geworden.
 type: Bedrijf
-employees: 1-10
+number_of_employees: 1-10
 province: Gelderland
 city: Nijmegen
 website: vormkracht10.nl

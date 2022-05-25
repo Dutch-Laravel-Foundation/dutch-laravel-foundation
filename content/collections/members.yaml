@@ -2,7 +2,7 @@ title: Leden
 template: members/show
 layout: layout
 taxonomies:
-  - employees
+  - number_of_employees
 revisions: false
 route: '/leden/{slug}'
 sort_dir: asc
