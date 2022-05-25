@@ -6,7 +6,8 @@
             <div class="flex flex-row items-center justify-between">
                 <div>{{ description }}</div>
                 <div class="pl-10">
-                    {{ partial:if_exists src="buttons/{ button_style }" :url="url" }}
+                    {{ url }}
+                    {{ partial:if_exists src="buttons/{ button_style }" :link="link" }}
                         {{ button_text }}
                     {{ /partial:if_exists }}
                 </div>

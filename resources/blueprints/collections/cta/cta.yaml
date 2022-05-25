@@ -31,11 +31,11 @@ sections:
           smartypants: false
           antlers: false
       -
-        handle: url
+        handle: link
         field:
           input_type: text
           antlers: false
-          display: URL
+          display: Link
           type: text
           icon: text
           listable: hidden
