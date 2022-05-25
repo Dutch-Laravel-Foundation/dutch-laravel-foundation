@@ -656,6 +656,26 @@ span.meta {
   color: rgb(132 132 135 / var(--tw-text-opacity));
 }
 
+a {
+  --tw-text-opacity: 1;
+  color: rgb(9 9 16 / var(--tw-text-opacity));
+}
+
+a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 45 32 / var(--tw-text-opacity));
+}
+
+#content a {
+  --tw-text-opacity: 1;
+  color: rgb(255 45 32 / var(--tw-text-opacity));
+}
+
+#content a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(82 82 87 / var(--tw-text-opacity));
+}
+
 nav {
   font-size: 16px;
   line-height: 1.5em;
@@ -667,16 +687,6 @@ nav {
 footer {
   font-size: 14px;
   line-height: 1.714em;
-}
-
-a:hover {
-  --tw-text-opacity: 1;
-  color: rgb(82 82 87 / var(--tw-text-opacity));
-}
-
-article a {
-  --tw-text-opacity: 1;
-  color: rgb(255 45 32 / var(--tw-text-opacity));
 }
 
 ul {
@@ -698,14 +708,6 @@ ul li::marker {
   content: var(--tw-content);
 }
 
-article a:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 45 32 / var(--tw-text-opacity));
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  text-underline-offset: 4px;
-}
-
 article img {
   width: 100%;
 }
@@ -715,6 +717,16 @@ input:not([type="checkbox"]), textarea {
   border-color: transparent;
   --tw-bg-opacity: 1 !important;
   background-color: rgb(245 245 250 / var(--tw-bg-opacity)) !important;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color) !important;
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000) !important;
+}
+
+input:not([type="checkbox"]):focus, textarea:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 45 32 / var(--tw-border-opacity));
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
 }
 
 input[type="checkbox"] {
@@ -734,13 +746,6 @@ input[type="checkbox"] {
 input[type="checkbox"]:focus {
   --tw-ring-color: rgb(255 45 32 / var(--tw-ring-opacity));
   --tw-ring-opacity: 0.25;
-}
-
-input:not([type="checkbox"]):focus,
-textarea:focus {
-    outline: none !important;
-    --tw-border-opacity: 1;
-    border-color: rgb(255 45 32 / var(--tw-border-opacity));
 }
 
 .container {
@@ -881,16 +886,16 @@ textarea:focus {
   margin-bottom: 1.25rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mb-6 {
   margin-bottom: 1.5rem;
 }
 
 .ml-2 {
   margin-left: 0.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mb-0 {
@@ -997,10 +1002,6 @@ textarea:focus {
   aspect-ratio: 1 / 1;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
 .h-screen {
   height: 100vh;
 }
@@ -1043,6 +1044,10 @@ textarea:focus {
 
 .h-\[calc\(100\%\+2\.5rem\+5rem\)\] {
   height: calc(100% + 2.5rem + 5rem);
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .h-64 {
@@ -1089,6 +1094,10 @@ textarea:focus {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
+}
+
+.w-5\/6 {
+  width: 83.333333%;
 }
 
 .w-2\/3 {
@@ -1189,6 +1198,14 @@ textarea:focus {
   cursor: default;
 }
 
+.list-none {
+  list-style-type: none;
+}
+
+.\!list-none {
+  list-style-type: none !important;
+}
+
 .columns-3 {
   -moz-columns: 3;
        columns: 3;
@@ -1283,14 +1300,9 @@ textarea:focus {
   border-bottom-color: transparent;
 }
 
-.bg-green-300 {
+.bg-secondary-light {
   --tw-bg-opacity: 1;
-  background-color: rgb(134 239 172 / var(--tw-bg-opacity));
-}
-
-.bg-red-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+  background-color: rgb(245 245 250 / var(--tw-bg-opacity));
 }
 
 .bg-primary-accent {
@@ -1301,11 +1313,6 @@ textarea:focus {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-secondary-light {
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 245 250 / var(--tw-bg-opacity));
 }
 
 .bg-tertiary-regular {
@@ -1365,10 +1372,6 @@ textarea:focus {
   padding: 2.5rem;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
 .p-16 {
   padding: 4rem;
 }
@@ -1395,11 +1398,6 @@ textarea:focus {
   padding-right: 2.5rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -1408,6 +1406,11 @@ textarea:focus {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pl-10 {
@@ -1442,6 +1445,10 @@ textarea:focus {
   padding-top: 16rem;
 }
 
+.pl-0 {
+  padding-left: 0px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1458,11 +1465,6 @@ textarea:focus {
   font-family: muli, sans-serif;
 }
 
-.text-sm {
-  font-size: 14px;
-  line-height: 1.714em;
-}
-
 .text-2xl {
   font-size: 36px;
   line-height: 1.333em;
@@ -1471,6 +1473,11 @@ textarea:focus {
 .text-lg {
   font-size: 18px;
   line-height: 1.333em;
+}
+
+.text-sm {
+  font-size: 14px;
+  line-height: 1.714em;
 }
 
 .font-normal {
@@ -1485,7 +1492,7 @@ textarea:focus {
   line-height: 1.5;
 }
 
-.text-white {
+.text-primary-contrast {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -1498,11 +1505,6 @@ textarea:focus {
 .text-tertiary-light {
   --tw-text-opacity: 1;
   color: rgb(132 132 135 / var(--tw-text-opacity));
-}
-
-.text-primary-contrast {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-primary-text {
@@ -1518,6 +1520,11 @@ textarea:focus {
 .\!text-white {
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .\!text-tertiary-dark {
@@ -1546,6 +1553,24 @@ textarea:focus {
   --tw-shadow: inset 0 0 0 1px #FF2D20;
   --tw-shadow-colored: inset 0 0 0 1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.marker\:hidden *::marker {
+  display: none;
+}
+
+.marker\:content-\[\] *::marker {
+  --tw-content: ;
+  content: var(--tw-content);
+}
+
+.marker\:hidden::marker {
+  display: none;
+}
+
+.marker\:content-\[\]::marker {
+  --tw-content: ;
+  content: var(--tw-content);
 }
 
 .after\:\!text-sm::after {
@@ -1589,13 +1614,13 @@ textarea:focus {
   border-color: rgb(255 45 32 / var(--tw-border-opacity));
 }
 
+.hover\:text-inherit:hover {
+  color: inherit;
+}
+
 .hover\:text-primary-contrast:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-inherit:hover {
-  color: inherit;
 }
 
 .hover\:text-tertiary-dark:hover {

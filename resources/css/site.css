@@ -26,20 +26,20 @@ span.meta {
     @apply text-xs uppercase font-semibold text-tertiary-light mb-3;
 }
 
+a {
+    @apply text-tertiary-dark hover:text-primary-accent;
+}
+
+#content a {
+    @apply text-primary-accent hover:text-tertiary-regular;
+}
+
 nav {
     @apply text-base font-bold text-tertiary-dark;
 }
 
 footer {
     @apply text-sm;
-}
-
-a:hover {
-    @apply text-tertiary-regular;
-}
-
-article a {
-    @apply text-primary-accent;
 }
 
 ul {
@@ -54,25 +54,15 @@ ul li::marker {
     @apply text-primary-accent font-bold inline-block w-[1em] -ml-[1em] content-["\2022"];
 }
 
-article a:hover {
-    @apply text-primary-accent underline underline-offset-4;
-}
-
 article img {
     @apply w-full;
 }
 
 input:not([type="checkbox"]),
 textarea {
-    @apply w-full !bg-secondary-light border-transparent;
+    @apply w-full !bg-secondary-light border-transparent !ring-0 focus:!outline-none focus:border-primary-accent;
 }
 
 input[type="checkbox"] {
     @apply bg-secondary-light text-primary-accent w-6 h-6 mr-2 focus:ring-primary-accent focus:ring-opacity-25 border border-tertiary-light border-opacity-40 rounded;
-}
-
-input:not([type="checkbox"]):focus,
-textarea:focus {
-    outline: none !important;
-    @apply border-primary-accent;
 }
