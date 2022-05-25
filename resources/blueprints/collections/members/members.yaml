@@ -76,27 +76,6 @@ sections:
           instructions_position: above
           read_only: false
       -
-        handle: employees
-        field:
-          options:
-            1-10: null
-            11-50: null
-            51-100: null
-          multiple: false
-          max_items: 1
-          clearable: false
-          searchable: false
-          taggable: false
-          push_tags: false
-          cast_booleans: false
-          default: 1-10
-          display: Werknemers
-          type: select
-          icon: select
-          listable: hidden
-          instructions_position: above
-          read_only: false
-      -
         handle: province
         field:
           options:
@@ -180,4 +159,17 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
+      -
+        handle: employees
+        field:
+          type: terms
+          taxonomies:
+            - employees
+          display: Employees
+          mode: select
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          max_items: 1
+          create: true
 title: Leden

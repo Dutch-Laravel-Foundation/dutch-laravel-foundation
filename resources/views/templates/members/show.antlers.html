@@ -25,9 +25,9 @@
         {{ if phone }}
             {{ partial:blocks/meta-alt title="Telefoonnummer" :text="phone" link="tel:{ phone }" }}
         {{ /if }}
-        {{ if employees }}
-            {{ partial:blocks/meta-alt title="Aantal developers" :text="employees" }}
-        {{ /if }}
+        {{ employees }}
+            {{ partial:blocks/meta-alt title="Aantal developers" :text="title" }}
+        {{ /employees }}
     {{ /partial:company/base }}
 </div>
 </div>

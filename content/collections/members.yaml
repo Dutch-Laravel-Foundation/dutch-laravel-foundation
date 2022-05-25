@@ -1,6 +1,8 @@
 title: Leden
 template: members/show
 layout: layout
+taxonomies:
+  - employees
 revisions: false
 route: '/leden/{slug}'
 sort_dir: asc
