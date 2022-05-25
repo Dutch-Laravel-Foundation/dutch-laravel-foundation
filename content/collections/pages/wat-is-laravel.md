@@ -2,9 +2,9 @@
 id: b343e99d-f01e-4cd1-8587-cf8e99ccec76
 blueprint: pages
 title: 'Wat is Laravel?'
-template: what-is-laravel
+template: templates/what-is-laravel/index
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1653298855
+updated_at: 1653472741
 call_to_action: c3238da9-592c-4906-9b11-183e37e4b2d3
 content:
   -
