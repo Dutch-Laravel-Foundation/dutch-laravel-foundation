@@ -2,13 +2,15 @@
 <div class="w-4/6 pr-20">
     <h1>{{ title }}</h1>
     {{ description }}
-    <div class="mt-20">
-        {{ collection:cases member:is="{ id }" limit="3" }}
-            {{ partial:blocks/image-center-larger :image="featured_image" :title="title_long" :category="member:title" class="" link="/cases/{ slug }" }}
-                {{ introduction }}
-            {{ /partial:blocks/image-center-larger }}
-        {{ /collection:cases }}
-    </div>
+    {{ if { collection:count in="cases" member:is="{ id }" } > 0 }}
+    {{ collection:cases member:is="{ id }" limit="3" }}
+        {{ if first }}<div class="mt-20">{{ /if }}
+        {{ partial:blocks/image-center-larger :image="featured_image" :title="title_long" :category="member:title" class="" link="/cases/{ slug }" }}
+            {{ introduction }}
+        {{ /partial:blocks/image-center-larger }}
+        {{ if first }}</div>{{ /if }}
+    {{ /collection:cases }}
+    {{ /if }}
 </div>
 
 <div class="w-2/6">
