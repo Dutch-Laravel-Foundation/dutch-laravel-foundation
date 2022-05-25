@@ -1557,6 +1557,11 @@ input[type="checkbox"]:focus {
   color: rgb(245 245 250 / var(--tw-text-opacity)) !important;
 }
 
+.\!text-primary-contrast {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
 .opacity-20 {
   opacity: 0.2;
 }
@@ -1642,6 +1647,11 @@ input[type="checkbox"]:focus {
 .hover\:text-tertiary-dark:hover {
   --tw-text-opacity: 1;
   color: rgb(9 9 16 / var(--tw-text-opacity));
+}
+
+.hover\:\!text-primary-contrast:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 .hover\:shadow-outer-primary:hover {
