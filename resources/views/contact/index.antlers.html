@@ -6,16 +6,15 @@
                     {{ success }}
                 </div>
             {{ else }}
-                {{ content }}
-                    {{ partial src="sets/autoload" }}
-                {{ /content }}
 
                 {{ if errors }}
                     <div class="bg-primary-accent text-primary-contrast p-10 mb-6">
-                        {{ errors }}
-                            {{ value }}<br>
-                        {{ /errors }}
+                        Er ging iets mis. Controleer de foutmelding(en) hieronder.
                     </div>
+                {{ else }}
+                    {{ content }}
+                        {{ partial src="sets/autoload" }}
+                    {{ /content }}
                 {{ /if }}
 
                 <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
@@ -24,15 +23,16 @@
                     {{ if handle != 'agree' }}
                     <div class="mb-6">
                         <label for="{{ handle }}"><span class="meta">{{ display }}</span></label>
-                        {{ if error }}
-                            <p class="text-primary-accent">{{ error }}</p>
-                        {{ /if }}
                         {{ if instructions_position == 'above' }}
                             {{ instructions }}
                         {{ /if }}
-                        {{ field regex_replace="^<([a-z]+)|<\\1 id={ handle }" }}
+                        {{# Add ID to field #}}
+                        {{ field regex_replace="^<([a-z]+)|<\\1 id='{ handle }'" regex_replace="" }}
                         {{ if instructions_position == 'below' }}
                             {{ instructions }}
+                        {{ /if }}
+                        {{ if error }}
+                            <p class="text-primary-accent">{{ error }}</p>
                         {{ /if }}
                     </div>
                     {{ else }}

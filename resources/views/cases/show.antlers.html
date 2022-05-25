@@ -8,7 +8,7 @@
             {{ if client:title }}
                 {{ partial:blocks/meta-alt title="Opdrachtgever" :text="client:title" }}
             {{ /if }}
-            <div class="h-4 border-b-[1px] border-tertiary-dark mb-10"></div>
+            {{ partial:decoration/line }}
             {{ content }}
                 {{ partial src="sets/autoload" }}
             {{ /content }}

@@ -2,9 +2,9 @@
 id: 3e84afec-448e-4805-8eed-8e209475a28e
 blueprint: pages
 title: 'Lid worden'
-template: become-member
+template: become-member/index
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1652964866
+updated_at: 1653468505
 call_to_action: c3238da9-592c-4906-9b11-183e37e4b2d3
 content:
   -
@@ -12,7 +12,7 @@ content:
     attrs:
       values:
         type: 3_4_column
-        content:
+        heading:
           -
             type: heading
             attrs:
@@ -21,6 +21,7 @@ content:
               -
                 type: text
                 text: 'Lid worden van de Dutch Laravel Foundation'
+        content:
           -
             type: paragraph
             content:
@@ -116,6 +117,15 @@ content:
                         type: text
                         text: 'Het is goed te onderhouden en uitbreidbaar'
         title:
+          -
+            type: heading
+            attrs:
+              level: 2
+            content:
+              -
+                type: text
+                text: Voordelen
+        heading:
           -
             type: heading
             attrs:

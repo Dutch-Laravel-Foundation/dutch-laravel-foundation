@@ -1,0 +1,53 @@
+<div class="flex flex-row w-full">
+    <div class="w-5/6 pr-20">
+        {{ form:become_member }}
+            {{ if success }}
+                <div class="bg-secondary-light p-10">
+                    {{ success }}
+                </div>
+            {{ else }}
+
+                {{ if errors }}
+                    <div class="bg-primary-accent text-primary-contrast p-10 mb-6">
+                        {{ errors }}
+                            {{ value }}<br>
+                        {{ /errors }}
+                    </div>
+                {{ else }}
+                    {{ content }}
+                        {{ partial src="sets/autoload" }}
+                    {{ /content }}
+                    {{ partial:decoration/line }}
+                {{ /if }}
+
+                <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+
+                <div class="grid grid-cols-2 gap-6">
+                    {{ fields }}
+                        {{ if handle != 'agree' }}
+                            <div class="{{ type != "text" ?= 'col-span-2' }}">
+                                <label for="{{ handle }}"><span class="meta">{{ display }}</span></label>
+                                {{ if instructions_position == 'above' }}
+                                    {{ instructions }}
+                                {{ /if }}
+                                {{# Add ID to field #}}
+                                {{ field = field regex_replace="^<([a-z]+)|<\\1 id='{ handle }'" }}
+                                {{ if instructions_position == 'below' }}
+                                    {{ instructions }}
+                                {{ /if }}
+                                {{ if error }}
+                                    <p class="text-primary-accent">{{ error }}</p>
+                                {{ /if }}
+                            </div>
+                        {{ else }}
+                            <div class="col-span-2 flex flex-row justify-between">
+                                <div class="flex flex-row w-4/6 text-tertiary-light">{{ field replace="<br>|" }}<span class="ml-2">{{ display regex_replace="(privacy statement)|<a href='/privacy-statement'>\\1</a>" }}</span></div>
+                                {{ partial:buttons/primary type="submit" }}Versturen{{ /partial:buttons/primary }}
+                            </div>
+                        {{ /if }}
+                    {{ /fields }}
+                </div>
+            {{ /if }}
+        {{ /form:become_member }}
+    </div>
+</div>
