@@ -81,6 +81,19 @@ sections:
           max_items: 1
           create: true
       -
+        handle: founding_partner
+        field:
+          default: false
+          display: 'Founding partner'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          read_only: false
+  contact:
+    display: Contactgegevens
+    fields:
+      -
         handle: province
         field:
           type: terms
@@ -99,6 +112,17 @@ sections:
           input_type: text
           antlers: false
           display: Stad
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: email
+        field:
+          input_type: text
+          antlers: false
+          display: E-mail
           type: text
           icon: text
           listable: hidden
@@ -124,27 +148,6 @@ sections:
           display: Telefoon
           type: text
           icon: text
-          listable: hidden
-          instructions_position: above
-          read_only: false
-      -
-        handle: email
-        field:
-          input_type: text
-          antlers: false
-          display: E-mail
-          type: text
-          icon: text
-          listable: hidden
-          instructions_position: above
-          read_only: false
-      -
-        handle: founding_partner
-        field:
-          default: false
-          display: 'Founding partner'
-          type: toggle
-          icon: toggle
           listable: hidden
           instructions_position: above
           read_only: false
