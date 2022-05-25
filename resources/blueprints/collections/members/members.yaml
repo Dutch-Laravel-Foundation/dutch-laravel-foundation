@@ -55,26 +55,31 @@ sections:
           type: slug
           localizable: true
       -
-        handle: type
+        handle: member_type
         field:
-          options:
-            Bedrijf: null
-            Ontwikkelteam: null
-            'ZZP''er': null
-          multiple: false
-          max_items: 1
-          clearable: false
-          searchable: false
-          taggable: false
-          push_tags: false
-          cast_booleans: false
-          default: Bedrijf
-          display: Type
-          type: select
-          icon: select
-          listable: hidden
+          type: terms
+          taxonomies:
+            - member_type
+          display: 'Type lid'
+          mode: select
           instructions_position: above
+          listable: hidden
           read_only: false
+          max_items: 1
+          create: true
+      -
+        handle: number_of_employees
+        field:
+          type: terms
+          taxonomies:
+            - number_of_employees
+          display: 'Aantal werknemers'
+          mode: select
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          max_items: 1
+          create: true
       -
         handle: province
         field:
@@ -159,17 +164,4 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
-      -
-        handle: number_of_employees
-        field:
-          type: terms
-          taxonomies:
-            - number_of_employees
-          display: Aantal werknemers
-          mode: select
-          instructions_position: above
-          listable: hidden
-          read_only: false
-          max_items: 1
-          create: true
 title: Leden

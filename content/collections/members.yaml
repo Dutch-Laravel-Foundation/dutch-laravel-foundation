@@ -3,6 +3,7 @@ template: members/show
 layout: layout
 taxonomies:
   - number_of_employees
+  - member_type
 revisions: false
 route: '/leden/{slug}'
 sort_dir: asc
