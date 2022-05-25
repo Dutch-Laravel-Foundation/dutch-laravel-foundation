@@ -28,6 +28,9 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
+  contact:
+    display: Contactgegevens
+    fields:
       -
         handle: address
         field:
