@@ -1,19 +1,30 @@
 {{ content }}
+    {{ partial src="sets/autoload" }}
+{{ /content }}
+
+{{# Clean up this entire file when we find out how to set global vars (to exclude the highlight id and just use a single loop) #}}
 <section>
-    {{ collection:insights }}
-        {{# TODO: Solve with variable #}}
-        {{ if first }}
-            {{ partial:blocks/image-left-large class="!w-11/12" :image="featured_image" :category="category" link="/insights/{ slug }" }}
-                {{ introduction }}
-            {{ /partial:blocks/image-left-large }}
-        {{ elseif category == 'Mis niet' }}
-            {{ partial:blocks/image-highlight :image="featured_image" :category="category" link="/insights/{ slug }" }}
-                {{ introduction }}
-            {{ /partial:blocks/image-highlight }}
-        {{ else }}
-            {{ partial:blocks/image-left class="!w-11/12 { switch between='ml-auto|' }" :image="featured_image" :category="category" link="/insights/{ slug }" }}
-                {{ introduction }}
-            {{ /partial:blocks/image-left }}
-        {{ /if }}
+    {{ collection:insights highlight:not="true" limit="1" }}
+        {{ partial:blocks/image-left-large class="!w-11/12" :image="featured_image" :category="category" link="/insights/{ slug }" }}
+            {{ introduction }}
+        {{ /partial:blocks/image-left-large }}
+    {{ /collection:insights }}
+
+    {{ collection:insights highlight:not="true" limit="1" offset="1" }}
+        {{ partial:blocks/image-left class="!w-11/12 ml-auto" :image="featured_image" :category="category" link="/insights/{ slug }" }}
+            {{ introduction }}
+        {{ /partial:blocks/image-left }}
+    {{ /collection:insights }}
+
+    {{ collection:insights highlight:is="true" limit="1" }}
+        {{ partial:blocks/image-highlight :image="featured_image" :category="category" link="/insights/{ slug }" }}
+            {{ introduction }}
+        {{ /partial:blocks/image-highlight }}
+    {{ /collection:insights }}
+
+    {{ collection:insights highlight:not="true" offset="2" }}
+        {{ partial:blocks/image-left class="!w-11/12 { switch between='ml-auto|' }" :image="featured_image" :category="category" link="/insights/{ slug }" }}
+            {{ introduction }}
+        {{ /partial:blocks/image-left }}
     {{ /collection:insights }}
 </section>

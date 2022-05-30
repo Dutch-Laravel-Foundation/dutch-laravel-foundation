@@ -1519,6 +1519,10 @@ input[type="checkbox"]:focus {
   padding-bottom: 2.5rem;
 }
 
+.pr-\[8\.333333\%\] {
+  padding-right: 8.333333%;
+}
+
 .text-center {
   text-align: center;
 }
