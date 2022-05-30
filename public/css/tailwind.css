@@ -819,6 +819,22 @@ input[type="checkbox"]:focus {
   top: 40rem;
 }
 
+.right-12 {
+  right: 3rem;
+}
+
+.right-1\/2 {
+  right: 50%;
+}
+
+.right-\[10rem\] {
+  right: 10rem;
+}
+
+.right-\[8rem\] {
+  right: 8rem;
+}
+
 .z-\[999\] {
   z-index: 999;
 }
@@ -876,6 +892,11 @@ input[type="checkbox"]:focus {
 .-mx-10 {
   margin-left: -2.5rem;
   margin-right: -2.5rem;
+}
+
+.-my-40 {
+  margin-top: -10rem;
+  margin-bottom: -10rem;
 }
 
 .ml-auto {
@@ -1164,6 +1185,14 @@ input[type="checkbox"]:focus {
   width: 91.666667% !important;
 }
 
+.\!w-1\/2 {
+  width: 50% !important;
+}
+
+.w-5\/12 {
+  width: 41.666667%;
+}
+
 .max-w-\[66\%\] {
   max-width: 66%;
 }
@@ -1199,6 +1228,11 @@ input[type="checkbox"]:focus {
 
 .translate-y-40 {
   --tw-translate-y: 10rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-40 {
+  --tw-translate-y: -10rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1408,6 +1442,11 @@ input[type="checkbox"]:focus {
   padding: 4rem;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -1428,11 +1467,6 @@ input[type="checkbox"]:focus {
   padding-right: 2.5rem;
 }
 
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -1444,6 +1478,10 @@ input[type="checkbox"]:focus {
 
 .pr-10 {
   padding-right: 2.5rem;
+}
+
+.pr-12 {
+  padding-right: 3rem;
 }
 
 .pl-0 {
@@ -1567,6 +1605,11 @@ input[type="checkbox"]:focus {
   color: rgb(245 245 250 / var(--tw-text-opacity)) !important;
 }
 
+.text-tertiary-dark {
+  --tw-text-opacity: 1;
+  color: rgb(9 9 16 / var(--tw-text-opacity));
+}
+
 .opacity-20 {
   opacity: 0.2;
 }
@@ -1657,6 +1700,11 @@ input[type="checkbox"]:focus {
 .hover\:\!text-primary-contrast:hover {
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+.hover\:text-primary-accent:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 45 32 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-outer-primary:hover {

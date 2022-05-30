@@ -77,7 +77,7 @@ module.exports = {
         // Margins
         'ml-auto', 'xl:ml-[25%]', 'sm:ml-[50%]', 'xl:mr-[25%]', 'sm:mr-[50%]',
         // Paddings
-        'pl-10', 'pr-10',
+        'pl-10', 'pr-10', 'pr-12', 'px-12'
       ],
     },
   },

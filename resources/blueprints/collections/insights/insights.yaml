@@ -74,10 +74,10 @@ sections:
         handle: category
         field:
           options:
-            members: Leden
-            network: Netwerk
-            do_not_miss: 'Mis niet'
-            inspiration: Inspiratie
+            Leden: null
+            Netwerk: null
+            'Mis niet': null
+            Inspiratie: null
           multiple: false
           clearable: false
           searchable: true
