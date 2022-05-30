@@ -1,0 +1,15 @@
+<div class="w-2/3 mr-auto">
+    {{ heading }}
+</div>
+<div class="flex justify-start">
+    <div class="w-1/2 pr-10">
+        {{ left }}
+            {{ partial src="sets/autoload" }}
+        {{ /left }}
+    </div>
+    <div class="flex w-1/2 pl-10 flex-row-reverse items-end">
+        {{ right }}
+            {{ partial src="sets/autoload" }}
+        {{ /right }}
+    </div>
+</div>
