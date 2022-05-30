@@ -3,9 +3,11 @@
 {{ /content }}
 
 <section>
-    {{ collection:events sort="takes_place:desc" takes_place:is_after="{today | modify_date:-1 day}" }}
-        {{ partial:blocks/event :image="image" :category="location" }}
-            {{ description }}
-        {{ /partial:blocks/event }}
-    {{ /collection:events }}
+    {{ if { collection:count in="events" sort="takes_place:desc" takes_place:is_after="{today | modify_date:-1 day}" } > 0 }}
+        {{ collection:events sort="takes_place:desc" takes_place:is_after="{today | modify_date:-1 day}" }}
+            {{ partial:blocks/event :image="image" :category="location" }}
+                {{ description }}
+            {{ /partial:blocks/event }}
+        {{ /collection:events }}
+    {{ /if }}
 </section>
