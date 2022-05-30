@@ -16,6 +16,16 @@
     </section>
 {{ /if }}
 
+{{ if { collection:count in="insights" highlight:is="true" sort="updated:desc" limit="1" } > 0 }}
+    <div class="flex flex-row">
+        {{ collection:insights highlight:is="true" limit="1" }}
+            {{ partial:blocks/image-highlight-text :image="featured_image" category="Mis niet" link="/insights/{ slug }" }}
+                {{ introduction }}
+            {{ /partial:blocks/image-highlight-text }}
+        {{ /collection:insights }}
+    </div>
+{{ /if }}
+
 <div class="bg-secondary-light py-10 px-12">
     {{ content }}
         {{ partial src="sets/autoload" }}

@@ -1003,6 +1003,10 @@ input[type="checkbox"]:focus {
   margin-left: 1rem;
 }
 
+.mb-40 {
+  margin-bottom: 10rem;
+}
+
 .block {
   display: block;
 }
