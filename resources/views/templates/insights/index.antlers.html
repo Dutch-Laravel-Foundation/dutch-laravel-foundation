@@ -2,18 +2,12 @@
     {{ partial src="sets/autoload" }}
 {{ /content }}
 
-{{ highlighted_id = null }}
-{{ if { collection:count in="insights" highlight:is="true" sort="updated:desc" } > 0 }}
-    {{ collection:insights highlight:is="true" limit="1" }}
-        {{ highlighted_id = { id } }}
-    {{ /collection:insights }}
-{{ /if }}
+{{ highlighted_id = {collection:insights highlight:is="true" limit="1" sort="updated:desc"} pluck('id') }}
 
-
-{{ insight_count = { collection:count in="insights" :id:not="highlighted_id" } }}
+{{ insight_count = { collection:count in="insights" id:not="{ highlighted_id.0 }" } }}
 <section>
     {{ if insight_count > 0 }}
-        {{ collection:insights :id:not="highlighted_id" limit="1" }}
+        {{ collection:insights id:not="{ highlighted_id.0 }" limit="1" }}
             {{ partial:blocks/image-left-large class="!w-11/12" :image="featured_image" :category="category" link="/insights/{ slug }" }}
                 {{ introduction }}
             {{ /partial:blocks/image-left-large }}
@@ -21,15 +15,15 @@
     {{ /if }}
 
     {{ if insight_count > 1 }}
-        {{ collection:insights :id:not="highlighted_id" limit="1" offset="1" }}
+        {{ collection:insights id:not="{ highlighted_id.0 }" limit="1" offset="1" }}
             {{ partial:blocks/image-left class="!w-11/12 ml-auto" :image="featured_image" :category="category" link="/insights/{ slug }" }}
                 {{ introduction }}
             {{ /partial:blocks/image-left }}
         {{ /collection:insights }}
     {{ /if }}
 
-    {{ if highlighted_id }}
-        {{ collection:insights :id:is="highlighted_id" limit="1" }}
+    {{ if highlighted_id.0 }}
+        {{ collection:insights id:is="{ highlighted_id.0 }" limit="1" }}
             {{ partial:blocks/image-highlight :image="featured_image" :category="category" link="/insights/{ slug }" }}
                 {{ introduction }}
             {{ /partial:blocks/image-highlight }}
@@ -37,8 +31,8 @@
     {{ /if }}
 
     {{ if insight_count > 2 }}
-        {{ collection:insights :id:not="highlighted_id" offset="2" }}
-            {{ partial:blocks/image-left class="!w-11/12 { switch between='{{ highlighted_id ? "ml-auto|" : "|ml-auto" }}' }" :image="featured_image" :category="category" link="/insights/{ slug }" }}
+        {{ collection:insights id:not="{ highlighted_id.0 }" offset="2" }}
+            {{ partial:blocks/image-left class="!w-11/12 { switch between='{{ highlighted_id.0 ? "ml-auto|" : "|ml-auto" }}' }" :image="featured_image" :category="category" link="/insights/{ slug }" }}
                 {{ introduction }}
             {{ /partial:blocks/image-left }}
         {{ /collection:insights }}
