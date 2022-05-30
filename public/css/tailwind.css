@@ -994,6 +994,10 @@ input[type="checkbox"]:focus {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .grid {
   display: grid;
 }
@@ -1164,6 +1168,10 @@ input[type="checkbox"]:focus {
   width: 91.666667% !important;
 }
 
+.w-1\/4 {
+  width: 25%;
+}
+
 .max-w-\[66\%\] {
   max-width: 66%;
 }
@@ -1223,12 +1231,20 @@ input[type="checkbox"]:focus {
   flex-direction: row;
 }
 
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
 .flex-col {
   flex-direction: column;
 }
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -1249,6 +1265,10 @@ input[type="checkbox"]:focus {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-items-end {
+  justify-items: end;
 }
 
 .gap-6 {
@@ -1425,6 +1445,26 @@ input[type="checkbox"]:focus {
   padding-bottom: 4rem;
 }
 
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-\[5\.5rem\] {
+  padding-left: 5.5rem;
+  padding-right: 5.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .pl-10 {
   padding-left: 2.5rem;
 }
@@ -1471,6 +1511,14 @@ input[type="checkbox"]:focus {
 
 .align-middle {
   vertical-align: middle;
+}
+
+.align-bottom {
+  vertical-align: bottom;
+}
+
+.align-text-bottom {
+  vertical-align: text-bottom;
 }
 
 .font-sans {
