@@ -5,7 +5,7 @@ title: Home
 template: templates/home/index
 author: 9342694a-2c6c-4640-8da1-91a61cfda771
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1653472730
+updated_at: 1653900548
 call_to_action: ee5d33de-9a24-4860-92dd-3503740b62af
 highlight_text:
   -
@@ -52,6 +52,30 @@ highlight_text:
               -
                 type: text
                 text: 'De Laravel applicaties zijn licht en snel'
+header_text:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'De Dutch Laravel Foundation zorgt voor de promotie van Laravel en stimuleert kennisuitwisseling tussen Laravel developers in Nederland. Opdrachtgevers van webapplicaties kunnen via de stichting geschikte Laravel developers vinden.'
+heading:
+  -
+    type: heading
+    attrs:
+      level: 1
+    content:
+      -
+        type: text
+        text: 'De kennis- en brancheorganisatie voor Laravel developers'
+header_title: 'De kennis- en brancheorganisatie voor Laravel developers'
+header_content:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'De Dutch Laravel Foundation zorgt voor de promotie van Laravel en stimuleert kennisuitwisseling tussen Laravel developers in Nederland. Opdrachtgevers van webapplicaties kunnen via de stichting geschikte Laravel developers vinden.'
 content:
   -
     type: set
@@ -59,6 +83,13 @@ content:
       values:
         type: 3_4_column
         content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'De Dutch Laravel Foundation zorgt voor de promotie van Laravel en stimuleert kennisuitwisseling tussen Laravel developers in Nederland. Opdrachtgevers van webapplicaties kunnen via de stichting geschikte Laravel developers vinden.'
+        heading:
           -
             type: heading
             attrs:

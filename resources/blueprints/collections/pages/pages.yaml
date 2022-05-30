@@ -10,45 +10,6 @@ sections:
           validate:
             - required
       -
-        handle: highlight_text
-        field:
-          always_show_set_button: false
-          buttons:
-            - h1
-            - h2
-            - h3
-            - h4
-            - bold
-            - italic
-            - unorderedlist
-            - orderedlist
-            - removeformat
-            - quote
-            - anchor
-            - image
-            - table
-          container: assets
-          save_html: false
-          toolbar_mode: fixed
-          link_noopener: false
-          link_noreferrer: true
-          target_blank: false
-          reading_time: false
-          fullscreen: true
-          allow_source: true
-          enable_input_rules: true
-          enable_paste_rules: true
-          antlers: false
-          display: 'Highlight text'
-          type: bard
-          icon: bard
-          instructions: 'Shown next to the latest "do not miss" insight'
-          listable: hidden
-          instructions_position: above
-          read_only: false
-          if:
-            title: 'equals Home'
-      -
         import: content
   sidebar:
     display: Sidebar
@@ -91,4 +52,92 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
+  page-specific:
+    display: Pagina-specifiek
+    fields:
+      -
+        handle: header_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Header titel'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          if:
+            title: 'equals Home'
+      -
+        handle: header_content
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          display: 'Header content'
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          if:
+            title: 'equals Home'
+      -
+        handle: highlight_text
+        field:
+          always_show_set_button: false
+          buttons:
+            - h1
+            - h2
+            - h3
+            - h4
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+          container: assets
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: true
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          display: 'Highlight tekst'
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          if:
+            title: 'equals Home'
+          instructions: 'Wordt getoond naast de uitgelichte insight.'
 title: 'Pagina''s'
