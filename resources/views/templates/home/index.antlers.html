@@ -37,12 +37,28 @@
 </div>
 
 <div class="flex justify-center mb-20">
-    <div class="absolute w-[200vw] -ml-[75vw] left-1/2 h-24">
-        <div class="swiper swiper-autoplay w-full h-full">
-            <div class="swiper-wrapper">
+    <div class="absolute w-[100vw] -ml-[50vw] left-1/2 h-24">
+    {{# <div class="w-full h-24"> #}}
+        <div
+            class="js-logos-swiper w-full h-full"
+            data-autoplay="true"
+            data-delay="2000"
+            data-drag="true"
+            data-loop="true"
+            data-items="auto"
+            data-maxItems="6"
+            data-nav="false"
+            data-order="left"
+            data-orderDirection="ASC"
+            data-random="false"
+            data-swiper="true"
+            data-speed="2000"
+            data-space="0"
+        >
+            <div class="swiper-wrapper flex">
                 {{ collection:clients logo:isset="true" sort="random" }}
-                    <div class="swiper-slide flex justify-center items-center w-24">
-                        <img src="{{ logo }}" class="max-h-full max-w-full" />
+                    <div class="swiper-slide flex justify-center items-center px-4 mx-auto xl:!w-48 lg:!max-w-24 md:!w-1/4 !w-1/2">
+                        <img src="{{ logo }}" alt="{{ title }} logo" class="max-h-24" />
                     </div>
                 {{ /collection:clients }}
             </div>
