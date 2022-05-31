@@ -153,9 +153,7 @@ if(document.body.contains(reviewsSwiper)) {
 
     const reviewsSwiperSlider = new Swiper(reviewsSwiper, {
         modules: [Autoplay, Navigation, Pagination],
-        spaceBetween: reviewSettings.spaceBetween,
-        autoplay: reviewSettings.autoplay,
-        loop: reviewSettings.loop,
+        ...reviewSettings,
         navigation: {
             nextEl: reviewsSwiper.querySelector('.swiper-button-next'),
             prevEl: reviewsSwiper.querySelector('.swiper-button-prev'),
