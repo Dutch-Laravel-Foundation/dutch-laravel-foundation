@@ -34,7 +34,7 @@ if (swiperElements.length > 0) {
                 [Autoplay, Navigation, Pagination],
             // Module settings
             autoplay: {
-                enabled: swiper.dataset.autoplay === 'true' ? true : false,
+                enabled: swiper.dataset.autoplay ?? false,
                 delay: swiper.dataset.speed >= 1 ? swiper.dataset.speed : 1000,
             },
             navigation: {
@@ -66,14 +66,15 @@ if (swiperElements.length > 0) {
             },
             // Other options
             loop:
-                swiper.dataset.loop === 'true' ? true : false,
+                swiper.dataset.loop ?? false,
             simulateTouch:
-                swiper.dataset.drag === 'true' ? true : false,
+                swiper.dataset.drag ?? false,
         };
         const swiperInstance = new Swiper(swiper, settings);
     });
 }
 
+// Logo swiper
 if(document.body.contains(logosSwiper)) {
     // Define default settings or get them from HTML data-attributes
     let logoSettings = {
@@ -84,17 +85,16 @@ if(document.body.contains(logosSwiper)) {
                 ? (logosSwiper.dataset.delay >= 1 ? { delay: parseInt(logosSwiper.dataset.delay) } : true)
                 : false,
         nav:
-            logosSwiper.dataset.nav === 'true' ? true : false,
+            logosSwiper.dataset.nav ?? false,
         space:
             logosSwiper.dataset.space >= 0 ? parseInt(logosSwiper.dataset.space) : 20,
         speed:
             logosSwiper.dataset.speed >= 1 ? parseInt(logosSwiper.dataset.speed) : 1000,
         loop:
-            logosSwiper.dataset.loop === 'true' ? true : false,
+            logosSwiper.dataset.loop ?? false,
         drag:
-            logosSwiper.dataset.drag === 'true' ? true : false,
+            logosSwiper.dataset.drag ?? false,
     };
-    console.log(logoSettings);
 
     // Logo swiper
     const logosSwiperSlider = new Swiper(logosSwiper, {
@@ -137,16 +137,25 @@ if(document.body.contains(logosSwiper)) {
     });
 }
 
+// Review swiper
 if(document.body.contains(reviewsSwiper)) {
-    // Review swiper
-    const reviewsSwiperSlider = new Swiper(reviewsSwiper.querySelector('.swiper'), {
-        modules: [Autoplay, Navigation, Pagination],
-        spaceBetween: 40,
-        autoplay: {
-            delay: 6000,
-            pauseOnMouseEnter: true,
-        },
+    // Define default settings or get them from HTML data-attributes
+    let reviewSettings = {
+        spaceBetween:
+            reviewsSwiper.dataset.spaceBetween >= 0 ? parseInt(reviewsSwiper.dataset.spaceBetween) : 40,
+        autoplay:
+            reviewsSwiper.dataset.autoplay === 'true'
+                ? (reviewsSwiper.dataset.delay >= 1 ? { delay: parseInt(reviewsSwiper.dataset.delay), pauseOnMouseEnter: true } : true)
+                : false,
+        loop:
+            reviewsSwiper.dataset.loop ?? false,
+    };
 
+    const reviewsSwiperSlider = new Swiper(reviewsSwiper, {
+        modules: [Autoplay, Navigation, Pagination],
+        spaceBetween: reviewSettings.spaceBetween,
+        autoplay: reviewSettings.autoplay,
+        loop: reviewSettings.loop,
         navigation: {
             nextEl: reviewsSwiper.querySelector('.swiper-button-next'),
             prevEl: reviewsSwiper.querySelector('.swiper-button-prev'),

@@ -1,20 +1,22 @@
 {{ content }}
     {{ partial src="sets/autoload" :first="first" :last="last" }}
 {{ /content }}
-
-<div class="swiper swiper-carousel w-full bg-secondary-light mt-20">
-    <div class="swiper-wrapper">
-    {{ collection:clients review_text:isset="true" }}
-        <div class="swiper-slide">
-            <div class="w-2/3 mx-auto h-[20rem] max-h-[20rem] py-16 flex flex-col justify-between">
-                <h3>&quot;{{ review_text }}&quot;</h3>
-                <div class="flex flex-row items-baseline">
-                    {{ if review_name }}<h4 class="mb-0">{{ review_name }}</h4>{{ /if }}
-                    <span class="meta ml-4 !mb-0">{{ arr({ review_function }, { title }) | remove_empty | list }}</span>
+    <div
+        class="swiper js-reviews-swiper w-full bg-secondary-light mt-20"
+        data-loop="true"
+    >
+        <div class="swiper-wrapper">
+        {{ collection:clients review_text:isset="true" sort="random" }}
+            <div class="swiper-slide">
+                <div class="w-2/3 mx-auto h-[20rem] max-h-[20rem] py-16 flex flex-col justify-between">
+                    <h3>&quot;{{ review_text }}&quot;</h3>
+                    <div class="flex flex-row items-baseline">
+                        {{ if review_name }}<h4 class="mb-0">{{ review_name }}</h4>{{ /if }}
+                        <span class="meta ml-4 !mb-0">{{ arr({ review_function }, { title }) | remove_empty | list }}</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    {{ /collection:clients }}
+        {{ /collection:clients }}
     </div>
     {{ partial:buttons/swiper class="swiper-button-prev" }}
     {{ partial:buttons/swiper class="swiper-button-next" }}
