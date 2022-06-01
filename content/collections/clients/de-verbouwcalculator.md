@@ -4,7 +4,4 @@ blueprint: clients
 title: 'De Verbouwcalculator'
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
 updated_at: 1653382865
-review_text: 'Werkt top!'
-review_function: Webdesigner
-review_name: 'Lara Vel'
 ---

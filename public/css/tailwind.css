@@ -1963,6 +1963,11 @@ input[type="checkbox"]:focus {
   content: var(--tw-content);
 }
 
+.before\:content-\[\&quot\;\]::before {
+  --tw-content: &quot;;
+  content: var(--tw-content);
+}
+
 .after\:\!text-sm::after {
   content: var(--tw-content);
   font-size: 14px !important;
