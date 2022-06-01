@@ -1,6 +1,6 @@
 {{ number_of_member_insights = { collection:count in="insights" category:is="Leden" } }}
 {{ if number_of_member_insights > 0 }}
-    <section class="mb-20 -my-40">
+    <section class="mb-20 -my-[22rem]">
         {{ collection:insights category:is="Leden" limit="1" }}
             {{ partial:blocks/image-left-large class="!w-11/12" :image="featured_image" :category="category" link="/insights/{ slug }" }}
                 {{ introduction }}
@@ -57,9 +57,9 @@
         >
             <div class="swiper-wrapper flex">
                 {{ collection:clients logo:isset="true" sort="random" }}
-                    <div class="swiper-slide flex justify-center items-center px-4 mx-auto xl:!w-48 lg:!max-w-24 md:!w-1/4 !w-1/2">
-                        <img src="{{ logo }}" alt="{{ title }} logo" class="max-h-24" />
-                    </div>
+                <div class="swiper-slide flex justify-center items-center px-4 mx-auto xl:!w-48 lg:!max-w-24 md:!w-1/4 !w-1/2">
+                    <img src="{{ logo }}" alt="{{ title }} logo" class="max-h-24" />
+                </div>
                 {{ /collection:clients }}
             </div>
         </div>

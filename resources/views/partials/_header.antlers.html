@@ -1,78 +1,88 @@
-{{ header = { partial:if_exists src="headers/{ slug }" } }}
 
-<div class="container mx-auto flex flex-col items-center justify-center">
-{{# TODO: Make it possible to select a header per page in Statamic #}}
-    <nav class="hidden lg:flex w-full h-[8rem] pt-10 mb-20 space-x-10 align-middle" x-cloak role="navigation">
-        {{ partial:navigation show_home_logo="true" active_class="text-primary-accent" class="pb-4" :style="header ?= 'contrast'" }}
-    </nav>
-</div>
+{{ banner = { partial:if_exists src="banners/{ slug }" } }}
 
-{{# Mobile menu #}}
-<div class="relative pt-2 pr-4 lg:hidden js-alpine-init lg:ml-0" x-data="menu()" x-init="init()" x-cloak role="navigation">
-    {{# Toggle button #}}
-    <div class="flex items-center justify-end">
-        <button type="button" @click="toggleMenu()" disabled x-bind:disabled="disabled" class="inline-flex items-center justify-center w-12 h-12 transition duration-150 ease-in-out rounded-md svg-fill text-grey-500 hover:text-grey-500 hover:bg-grey-100 focus:outline-none focus:bg-grey-100 focus:text-grey-500">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </button>
+<script>
+// Menu toggle
+function isiOS() {
+    return (
+        ['iPad Simulator', 'iPhone Simulator', 'iPod Simulator', 'iPad', 'iPhone', 'iPod'].includes(navigator.platform) ||
+        (navigator.userAgent.includes('Mac') && 'ontouchend' in document)
+    );
+}
+
+function menu() {
+    return {
+        open: false,
+        disabled: true,
+        init() {
+            this.disabled = false;
+        },
+        toggleMenu() {
+            const content = document.querySelector('.frontend');
+            this.disabled = true;
+            this.open = !this.open;
+            if (this.open === true) {
+                content.style.position = 'fixed';
+                content.style.top = `-${window.pageYOffset}px`;
+                // Fixes bug in Safari iOS 15.2 where screen height is not fully filled due to empty space address bar on bottom
+                if(isiOS() === true) document.documentElement.style.height = window.innerHeight + 'px';
+            } else {
+                content.style.removeProperty('position');
+                content.style.removeProperty('top');
+                window.scrollTo(0, window.pageYOffset);
+                if(isiOS() === true) document.documentElement.style.removeProperty('height');
+            }
+            this.disabled = false;
+        },
+    };
+}
+</script>
+
+<header class="fixed w-full z-[999] {{ banner ? 'bg-primary-accent': 'bg-white' }}">
+
+    {{# Desktop navigation #}}
+    <div class="container mx-auto flex flex-col items-center justify-center p-10">
+        <nav class="hidden lg:flex w-full h-18 space-x-10 align-middle" x-cloak role="navigation">
+            {{ partial:navigation show_home_logo="true" active_class="text-primary-accent" class="" :style="banner ?= 'contrast'" }}
+        </nav>
     </div>
-    {{# Mobile menu container with transitions #}}
-    <div class="fixed inset-x-0 top-0 z-50 w-full h-full overflow-scroll transition origin-top-right transform lg:hidden"
-        x-show="open" @click.outside="open = false"
-        x-transition:enter="duration-200 ease-out" x-transition:enter-start="opacity-0"
-        x-transition:enter-end="opacity-100" x-transition:leave="duration-100 ease-in"
-        x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
-        <div class="w-full overflow-scroll">
-            <div class="absolute top-0 flex-col flex left-0 w-full min-h-full bg-primary-contrast">
-                {{# Menu items wrapper #}}
-                <div class="absolute top-0 right-0 z-10">
-                    <button type="button" @click="toggleMenu()"
-                        disabled x-bind:disabled="disabled"
-                        class="relative m-4 p-2 px-4 bg-primary-accent text-white transition duration-150 ease-in-out svg-fill focus:outline-none uppercase font-heading text-10">
-                        X
-                    </button>
+
+    {{# Mobile navigation #}}
+    <div class="relative pt-2 pr-4 lg:hidden js-alpine-init lg:ml-0" x-data="menu()" x-init="init()" x-cloak role="navigation">
+        {{# Toggle button #}}
+        <div class="flex items-center justify-end">
+            <button type="button" @click="toggleMenu()" disabled x-bind:disabled="disabled" class="inline-flex items-center justify-center w-12 h-12 transition duration-150 ease-in-out rounded-md svg-fill text-grey-500 hover:text-grey-500 hover:bg-grey-100 focus:outline-none focus:bg-grey-100 focus:text-grey-500">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        {{# Mobile menu container with transitions #}}
+        <div class="fixed inset-x-0 top-0 z-50 w-full h-full overflow-scroll transition origin-top-right transform lg:hidden"
+            x-show="open" @click.outside="open = false"
+            x-transition:enter="duration-200 ease-out" x-transition:enter-start="opacity-0"
+            x-transition:enter-end="opacity-100" x-transition:leave="duration-100 ease-in"
+            x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+            <div class="w-full overflow-scroll">
+                <div class="absolute top-0 flex-col flex left-0 w-full min-h-full bg-primary-contrast">
+                    {{# Menu items wrapper #}}
+                    <div class="absolute top-0 right-0 z-10">
+                        <button type="button" @click="toggleMenu()"
+                            disabled x-bind:disabled="disabled"
+                            class="relative m-4 p-2 px-4 bg-primary-accent text-white transition duration-150 ease-in-out svg-fill focus:outline-none uppercase font-heading text-10">
+                            X
+                        </button>
+                    </div>
+                    {{ partial:navigation_mobile show_home_logo="true" active_class="text-primary-accent" class="" }}
                 </div>
-                {{ partial:navigation_mobile show_home_logo="true" active_class="text-primary-accent" class="" }}
             </div>
         </div>
     </div>
-</div>
+</header>
 
-{{ header }}
-
-<script type="text/javascript" >
-    function isiOS() {
-        return (
-            ['iPad Simulator', 'iPhone Simulator', 'iPod Simulator', 'iPad', 'iPhone', 'iPod'].includes(navigator.platform) ||
-            (navigator.userAgent.includes('Mac') && 'ontouchend' in document)
-        );
-    }
-    // Mobile menu Alpine JS init
-    function menu() {
-        return {
-            open: false,
-            disabled: true,
-            init() {
-                this.disabled = false;
-            },
-            toggleMenu() {
-                const content = document.querySelector('.frontend');
-                this.disabled = true;
-                this.open = !this.open;
-                if (this.open === true) {
-                    content.style.position = 'fixed';
-                    content.style.top = `-${window.pageYOffset}px`;
-                    // Fixes bug in Safari iOS 15.2 where screen height is not fully filled due to empty space address bar on bottom
-                    if(isiOS() === true) document.documentElement.style.height = window.innerHeight + 'px';
-                } else {
-                    content.style.removeProperty('position');
-                    content.style.removeProperty('top');
-                    window.scrollTo(0, window.pageYOffset);
-                    if(isiOS() === true) document.documentElement.style.removeProperty('height');
-                }
-                this.disabled = false;
-            },
-        };
-    }
-</script>
+{{# Optional banner #}}
+{{ if banner }}
+    <div class="banner w-full pt-52">
+        {{ banner }}
+    </div>
+{{ /if }}

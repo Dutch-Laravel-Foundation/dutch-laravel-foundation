@@ -70,3 +70,26 @@ textarea {
 input[type="checkbox"] {
     @apply bg-secondary-light text-primary-accent w-6 h-6 mr-2 focus:ring-primary-accent focus:ring-opacity-25 border border-tertiary-light border-opacity-40 rounded;
 }
+
+.animated {
+    will-change: transform;
+    -webkit-transition: transform 200ms linear;
+    -moz-transition: transform 200ms linear;
+    -ms-transition: transform 200ms linear;
+    -o-transition: transform 200ms linear;
+    transition: transform 200ms linear;
+}
+.animated.slideDown {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+}
+.animated.slideUp {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
