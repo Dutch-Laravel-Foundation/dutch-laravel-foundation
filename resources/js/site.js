@@ -30,7 +30,6 @@ if (header != null && isIE === false) {
         'load',
         function () {
             headerHide.offset = { down: combinedHeaderHeight(includeBannerHeight), up: combinedHeaderHeight(includeBannerHeight) };
-            console.log(headerHide.offset);
         },
         false,
     );
@@ -58,3 +57,4 @@ if (!(window.console && window.console.log && window.console.group)) {
 
 window.console.group('DEVELOPER ALERT!');
 window.console.log('\nHallo daar! Wil jij ook zulke mooie dingen maken zoals deze website? Neem eens een kijkje bij ons op:\n\nwww.vormkracht10.nl\n\n');
+window.console.groupEnd();
