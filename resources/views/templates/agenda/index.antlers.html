@@ -6,7 +6,7 @@
     {{ if { collection:count in="events" sort="date_start:desc" date_start:is_after="{today | modify_date:-1 day}" } > 0 }}
         {{ collection:events sort="date_start:desc" date_start:is_after="{today | modify_date:-1 day}" }}
             {{ partial:blocks/event :image="image" :category="location" link="/events/{{ slug }}" }}
-                {{ description }}
+                {{ introduction }}
             {{ /partial:blocks/event }}
         {{ /collection:events }}
     {{ /if }}
