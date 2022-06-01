@@ -2,7 +2,7 @@ title: Cases
 template: cases/show
 layout: layout
 revisions: false
-route: 'cases/{slug}'
+route: '/cases/{slug}'
 sort_dir: asc
 date_behavior:
   past: public

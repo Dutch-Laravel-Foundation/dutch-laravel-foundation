@@ -868,6 +868,10 @@ input[type="checkbox"]:focus {
   grid-column: span 2 / span 2;
 }
 
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
 .m-4 {
   margin: 1rem;
 }
@@ -1038,8 +1042,16 @@ input[type="checkbox"]:focus {
   margin-left: 2rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .inline {
@@ -1052,6 +1064,10 @@ input[type="checkbox"]:focus {
 
 .inline-flex {
   display: inline-flex;
+}
+
+.table {
+  display: table;
 }
 
 .grid {
@@ -1294,6 +1310,12 @@ input[type="checkbox"]:focus {
   width: 2rem;
 }
 
+.w-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .max-w-\[66\%\] {
   max-width: 66%;
 }
@@ -1312,6 +1334,14 @@ input[type="checkbox"]:focus {
 
 .grow {
   flex-grow: 1;
+}
+
+.table-auto {
+  table-layout: auto;
+}
+
+.border-separate {
+  border-collapse: separate;
 }
 
 .origin-top-right {
@@ -1369,6 +1399,14 @@ input[type="checkbox"]:focus {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-\[1fr_3fr\] {
+  grid-template-columns: 1fr 3fr;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1417,6 +1455,10 @@ input[type="checkbox"]:focus {
   gap: 1.5rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(2.5rem * var(--tw-space-x-reverse));
@@ -1455,8 +1497,24 @@ input[type="checkbox"]:focus {
   border-width: 1px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-b-\[1px\] {
   border-bottom-width: 1px;
+}
+
+.border-b-\[2px\] {
+  border-bottom-width: 2px;
+}
+
+.border-b-\[\.5rem\] {
+  border-bottom-width: .5rem;
+}
+
+.border-b-\[5rem\] {
+  border-bottom-width: 5rem;
 }
 
 .\!border-tertiary-light {
@@ -1476,6 +1534,16 @@ input[type="checkbox"]:focus {
 .border-tertiary-dark {
   --tw-border-opacity: 1;
   border-color: rgb(9 9 16 / var(--tw-border-opacity));
+}
+
+.border-primary-contrast {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-tertiary-light {
+  --tw-border-opacity: 1;
+  border-color: rgb(132 132 135 / var(--tw-border-opacity));
 }
 
 .border-b-transparent {
@@ -1646,6 +1714,21 @@ input[type="checkbox"]:focus {
   padding-bottom: 2rem;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .pl-10 {
   padding-left: 2.5rem;
 }
@@ -1698,6 +1781,10 @@ input[type="checkbox"]:focus {
   padding-right: 1rem;
 }
 
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1735,6 +1822,14 @@ input[type="checkbox"]:focus {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .leading-normal {

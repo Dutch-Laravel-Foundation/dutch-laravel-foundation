@@ -1,6 +1,9 @@
 title: Events
-template: events/show
+template: templates/events/show
+layout: layout
 revisions: false
+route: '/events/{slug}'
+sort_dir: asc
 date_behavior:
   past: public
   future: private
