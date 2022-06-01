@@ -649,7 +649,7 @@ p {
   line-height: 1.5em;
 }
 
-span.meta {
+span.meta, span.meta-dark {
   margin-bottom: 0.75rem;
   font-size: 12px;
   line-height: 2em;
@@ -660,7 +660,13 @@ span.meta {
   color: rgb(132 132 135 / var(--tw-text-opacity));
 }
 
+span.meta-dark {
+  --tw-text-opacity: 1;
+  color: rgb(9 9 16 / var(--tw-text-opacity));
+}
+
 a {
+  cursor: pointer;
   --tw-text-opacity: 1;
   color: rgb(9 9 16 / var(--tw-text-opacity));
 }
@@ -849,20 +855,16 @@ input[type="checkbox"]:focus {
   top: 40rem;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .z-\[999\] {
   z-index: 999;
 }
 
 .z-50 {
   z-index: 50;
-}
-
-.z-10 {
-  z-index: 10;
-}
-
-.z-\[-1\] {
-  z-index: -1;
 }
 
 .-z-10 {
@@ -1023,6 +1025,10 @@ input[type="checkbox"]:focus {
 
 .mt-1 {
   margin-top: 0.25rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-20 {
@@ -1372,6 +1378,10 @@ input[type="checkbox"]:focus {
   gap: 1.5rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(2.5rem * var(--tw-space-x-reverse));
@@ -1418,10 +1428,6 @@ input[type="checkbox"]:focus {
   border-bottom-width: 5rem;
 }
 
-.border-r-\[4px\] {
-  border-right-width: 4px;
-}
-
 .\!border-tertiary-light {
   --tw-border-opacity: 1 !important;
   border-color: rgb(132 132 135 / var(--tw-border-opacity)) !important;
@@ -1439,11 +1445,6 @@ input[type="checkbox"]:focus {
 .border-tertiary-dark {
   --tw-border-opacity: 1;
   border-color: rgb(9 9 16 / var(--tw-border-opacity));
-}
-
-.border-blue-900 {
-  --tw-border-opacity: 1;
-  border-color: rgb(30 58 138 / var(--tw-border-opacity));
 }
 
 .border-b-transparent {
@@ -1679,6 +1680,10 @@ input[type="checkbox"]:focus {
   font-weight: 400;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -1725,9 +1730,9 @@ input[type="checkbox"]:focus {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-tertiary-light {
-  --tw-text-opacity: 1;
-  color: rgb(132 132 135 / var(--tw-text-opacity));
+.\!text-tertiary-regular {
+  --tw-text-opacity: 1 !important;
+  color: rgb(82 82 87 / var(--tw-text-opacity)) !important;
 }
 
 .\!text-tertiary-dark {
@@ -1743,6 +1748,11 @@ input[type="checkbox"]:focus {
 .\!text-secondary-light {
   --tw-text-opacity: 1 !important;
   color: rgb(245 245 250 / var(--tw-text-opacity)) !important;
+}
+
+.text-tertiary-light {
+  --tw-text-opacity: 1;
+  color: rgb(132 132 135 / var(--tw-text-opacity));
 }
 
 .text-tertiary-dark {
@@ -1828,16 +1838,6 @@ input[type="checkbox"]:focus {
   line-height: 1.714em !important;
 }
 
-.hover\:-mx-\[4px\]:hover {
-  margin-left: -4px;
-  margin-right: -4px;
-}
-
-.hover\:-my-\[4px\]:hover {
-  margin-top: -4px;
-  margin-bottom: -4px;
-}
-
 .hover\:\!translate-y-\[calc\(13rem-4px\)\]:hover {
   --tw-translate-y: calc(13rem - 4px) !important;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
@@ -1861,10 +1861,6 @@ input[type="checkbox"]:focus {
 .hover\:-translate-x-0:hover {
   --tw-translate-x: -0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:border-b-\[4px\]:hover {
-  border-bottom-width: 4px;
 }
 
 .hover\:border-primary-contrast:hover {
@@ -1896,9 +1892,9 @@ input[type="checkbox"]:focus {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:text-tertiary-dark:hover {
-  --tw-text-opacity: 1;
-  color: rgb(9 9 16 / var(--tw-text-opacity));
+.hover\:\!text-tertiary-dark:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(9 9 16 / var(--tw-text-opacity)) !important;
 }
 
 .hover\:\!text-primary-contrast:hover {
@@ -1933,10 +1929,6 @@ input[type="checkbox"]:focus {
   --tw-shadow: inset 0 0 0 1px #FF2D20, 4px 4px 0 -1px #FFFFFF, 4px 4px 0 0 #FF2D20;
   --tw-shadow-colored: inset 0 0 0 1px var(--tw-shadow-color), 4px 4px 0 -1px var(--tw-shadow-color), 4px 4px 0 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.hover\:outline-\[4px\]:hover {
-  outline-width: 4px;
 }
 
 .focus\:outline-none:focus {

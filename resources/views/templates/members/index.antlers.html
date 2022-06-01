@@ -2,6 +2,47 @@
     {{ partial src="sets/autoload" }}
 {{ /content }}
 
+{{# Filter #}}
+<div class="bg-secondary-light p-10">
+    <div class="flex flex-row justify-between w-full items-baseline">
+        <h2 class="block">Kunnen wij je helpen zoeken?</h2>
+        <div><a class="font-bold">Filters wissen</a></div>
+    </div>
+    <div class="grid grid-cols-2 w-full">
+        <div class="">
+            <span class="block meta-dark">Ik zoek een</span>
+            <div class="flex flex-row gap-2">
+                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}ZZP'er{{ /partial:buttons/light-alt }}
+                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Bedrijf{{ /partial:buttons/light-alt }}
+                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Ontwikkelteam{{ /partial:buttons/light-alt }}
+            </div>
+        </div>
+        <div class="">
+            <span class="block meta-dark">Aantal werknemers</span>
+            <div class="flex flex-row gap-2">
+                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}1-10{{ /partial:buttons/light-alt }}
+                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}11-50{{ /partial:buttons/light-alt }}
+                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}51-100{{ /partial:buttons/light-alt }}
+            </div>
+        </div>
+        <div class="col-span-2 mt-4">
+            <span class="block meta-dark">Provincie</span>
+            <div class="flex flex-wrap gap-2">
+                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Friesland{{ /partial:buttons/light-alt }}
+                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Groningen{{ /partial:buttons/light-alt }}
+                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Noord-Holland{{ /partial:buttons/light-alt }}
+                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Utrecht{{ /partial:buttons/light-alt }}
+                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Zuid-Holland{{ /partial:buttons/light-alt }}
+                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Friesland{{ /partial:buttons/light-alt }}
+                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Groningen{{ /partial:buttons/light-alt }}
+                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Noord-Holland{{ /partial:buttons/light-alt }}
+                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Utrecht{{ /partial:buttons/light-alt }}
+                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Zuid-Holland{{ /partial:buttons/light-alt }}
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="w-full p-10">
     <div class="flex flex-wrap -mx-10 overflow-hidden">
         {{ collection:members }}

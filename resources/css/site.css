@@ -26,12 +26,17 @@ p {
     @apply text-base mb-3;
 }
 
-span.meta {
+span.meta,
+span.meta-dark {
     @apply text-xs uppercase font-semibold text-tertiary-light mb-3;
 }
 
+span.meta-dark {
+    @apply text-tertiary-dark;
+}
+
 a {
-    @apply text-tertiary-dark hover:text-primary-accent;
+    @apply text-tertiary-dark hover:text-primary-accent cursor-pointer;
 }
 
 #content a {
