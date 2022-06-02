@@ -88,13 +88,13 @@ if(document.body.contains(logosSwiper)) {
             logosSwiper.dataset.nav ?? false,
         space:
             logosSwiper.dataset.space >= 0 ? parseInt(logosSwiper.dataset.space) : 20,
-        speed:
-            logosSwiper.dataset.speed >= 1 ? parseInt(logosSwiper.dataset.speed) : 1000,
+        speed: logosSwiper.dataset.speed >= 1 ? parseInt(logosSwiper.dataset.speed) : 1000,
         loop:
             logosSwiper.dataset.loop ?? false,
         drag:
             logosSwiper.dataset.drag ?? false,
     };
+    console.log(logoSettings);
 
     // Logo swiper
     const logosSwiperSlider = new Swiper(logosSwiper, {
@@ -121,10 +121,11 @@ if(document.body.contains(logosSwiper)) {
         // Options
         simulateTouch: logoSettings.drag,
         loop: logoSettings.loop,
+        speed: logoSettings.speed,
         // Modules
         autoplay: {
             enabled: logoSettings.autoplay,
-            delay: logoSettings.speed,
+            delay: logoSettings.delay,
         },
         navigation: {
             nextEl: logosSwiper.querySelector('.swiper-button-next'),
