@@ -58,6 +58,20 @@ import Alpine from 'alpinejs';
 window.Alpine = Alpine;
 Alpine.start();
 
+// Footer title position
+var footer = document.querySelector('footer'),
+    footerTitle = footer.querySelector('#footer-title');
+
+function moveFooterTitle() {
+    if (((document.documentElement.clientWidth-footer.offsetWidth)/2) >= 112) {
+        footerTitle.classList.add('-translate-x-28');
+        return;
+    }
+    footerTitle.classList.remove('-translate-x-28');
+}
+moveFooterTitle();
+window.addEventListener('resize', () => { moveFooterTitle(); });
+
 // Footprint
 if (!(window.console && window.console.log && window.console.group)) {
     window.console = {
