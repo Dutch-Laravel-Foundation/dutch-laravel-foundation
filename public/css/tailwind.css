@@ -773,6 +773,16 @@ input[type="checkbox"]:focus {
     transform: translateY(-100%);
 }
 
+header nav.animated.make-small {
+    transition: max-height 200ms;
+    max-height: 2.5rem;
+}
+
+header nav.animated.make-large {
+    transition: max-height 200ms;
+    max-height: 5rem;
+}
+
 /* Filter (members page) */
 
 button[data-checked="true"] {
@@ -1091,6 +1101,10 @@ button[data-checked="true"] {
 
 .h-16 {
   height: 4rem;
+}
+
+.h-20 {
+  height: 5rem;
 }
 
 .h-12 {
@@ -1461,11 +1475,6 @@ button[data-checked="true"] {
   border-color: rgb(9 9 16 / var(--tw-border-opacity));
 }
 
-.border-primary-contrast {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .border-secondary-light {
   --tw-border-opacity: 1;
   border-color: rgb(245 245 250 / var(--tw-border-opacity));
@@ -1633,6 +1642,10 @@ button[data-checked="true"] {
   padding-left: 0px;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -1667,10 +1680,6 @@ button[data-checked="true"] {
 
 .pb-2 {
   padding-bottom: 0.5rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
 }
 
 .text-center {

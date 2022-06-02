@@ -2,7 +2,8 @@
 import Headroom from "headroom.js";
 
 var header = document.querySelector('header'),
-    banner = document.querySelector('.banner');
+    banner = document.querySelector('.banner'),
+    nav = header.querySelector('nav.animated');
 
 var includeBannerHeight = false;
 var bannerHeight = combinedHeaderHeight(includeBannerHeight);
@@ -33,6 +34,16 @@ if (header != null && isIE === false) {
         },
         false,
     );
+
+    window.addEventListener('scroll', (event) => {
+        if (window.scrollY > (bannerHeight/2)) {
+            nav.classList.add('make-small');
+            nav.classList.remove('make-large');
+        } else {
+            nav.classList.add('make-large');
+            nav.classList.remove('make-small');
+        }
+    });
 }
 
 function combinedHeaderHeight(includeBanner = true) {

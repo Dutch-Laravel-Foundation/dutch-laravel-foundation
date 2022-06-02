@@ -100,6 +100,24 @@ input[type="checkbox"] {
     transform: translateY(-100%);
 }
 
+header nav.animated.make-small {
+    -webkit-transition: max-height 200ms;
+    -moz-transition: max-height 200ms;
+    -ms-transition: max-height 200ms;
+    -o-transition: max-height 200ms;
+    transition: max-height 200ms;
+    max-height: 2.5rem;
+}
+
+header nav.animated.make-large {
+    -webkit-transition: max-height 200ms;
+    -moz-transition: max-height 200ms;
+    -ms-transition: max-height 200ms;
+    -o-transition: max-height 200ms;
+    transition: max-height 200ms;
+    max-height: 5rem;
+}
+
 /* Filter (members page) */
 button[data-checked="true"] {
     @apply shadow-inner-primary;

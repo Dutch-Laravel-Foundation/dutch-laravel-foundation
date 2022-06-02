@@ -41,8 +41,8 @@ function menu() {
 <header class="fixed w-full z-[999] {{ banner ? 'bg-primary-accent': 'bg-white' }}">
 
     {{# Desktop navigation #}}
-    <div class="container mx-auto flex flex-col items-center justify-center p-10">
-        <nav class="hidden lg:flex w-full h-18 space-x-10 align-middle" x-cloak>
+    <div class="container mx-auto flex flex-col items-center justify-center p-10 pb-4">
+        <nav class="animated hidden lg:flex w-full space-x-10 align-middle h-20" x-cloak>
             {{ partial:navigation show_home_logo="true" active_class="text-primary-accent" class="" :style="banner ?= 'contrast'" }}
         </nav>
     </div>
