@@ -5,7 +5,7 @@ title: 'Web Whales'
 number_of_employees: 1-10
 founding_partner: false
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1653915830
+updated_at: 1654093681
 city: 'Den Haag'
 province: zuid-holland
 description: |-
@@ -17,4 +17,7 @@ website: webwhales.nl
 phone: '+31 (0)70 205 4810'
 email: info@webwhales.nl
 member_type: bedrijf
+type: Ontwikkelteam
+employees: 51-100
+provincie: Zuid-Holland
 ---
