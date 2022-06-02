@@ -2,51 +2,138 @@
     {{ partial src="sets/autoload" }}
 {{ /content }}
 
-{{# Filter #}}
-<div class="bg-secondary-light p-10">
-    <div class="flex flex-row justify-between w-full items-baseline">
-        <h2 class="block">Kunnen wij je helpen zoeken?</h2>
-        <div><a class="font-bold">Filters wissen</a></div>
+<div class="container pt-8 mx-auto" x-data="loadMembers()">
+    <div class="bg-secondary-light p-10">
+        <div class="flex flex-row justify-between w-full items-baseline">
+            <h2 class="block">Kunnen wij je helpen zoeken?</h2>
+            <div><a class="font-bold" x-on:click="resetFilters()">Filters wissen</a></div>
+        </div>
+        <div class="grid grid-cols-2 w-full">
+            <div>
+                <span class="block meta-dark">Ik zoek een</span>
+                <div class="flex flex-row gap-2">
+                    <template x-for="type in types" :key="type">
+                        <button x-on:click="updateFilter(event.target)" data-checked="false" data-type="types" :data-value="type" x-text="type" class="flex items-center justify-center h-12 px-8 text-sm uppercase whitespace-nowrap bg-primary-contrast shadow-inner-light !text-tertiary-regular hover:!text-tertiary-dark hover:-translate-y-0 hover:-translate-x-0 hover:shadow-inner-primary"></button>
+                    </template>
+                </div>
+            </div>
+            <div>
+                <span class="block meta-dark">Aantal werknemers</span>
+                <div class="flex flex-row gap-2">
+                    <template x-for="employee in employees" :key="employee">
+                        <button x-on:click="updateFilter(event.target)" data-checked="false" data-type="employees" :data-value="employee" x-text="employee" class="flex items-center justify-center h-12 px-8 text-sm uppercase whitespace-nowrap bg-primary-contrast shadow-inner-light !text-tertiary-regular hover:!text-tertiary-dark hover:-translate-y-0 hover:-translate-x-0 hover:shadow-inner-primary"></button>
+                    </template>
+                </div>
+            </div>
+            <div class="col-span-2 mt-4">
+                <span class="block meta-dark">Provincie</span>
+                <div class="flex flex-wrap gap-2">
+                    <template x-for="province in provinces" :key="province">
+                        <button x-on:click="updateFilter(event.target)" data-checked="false" data-type="provinces" :data-value="province" x-text="province" class="flex items-center justify-center h-12 px-8 text-sm uppercase whitespace-nowrap bg-primary-contrast shadow-inner-light !text-tertiary-regular hover:!text-tertiary-dark hover:-translate-y-0 hover:-translate-x-0 hover:shadow-inner-primary"></button>
+                    </template>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="grid grid-cols-2 w-full">
-        <div class="">
-            <span class="block meta-dark">Ik zoek een</span>
-            <div class="flex flex-row gap-2">
-                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}ZZP'er{{ /partial:buttons/light-alt }}
-                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Bedrijf{{ /partial:buttons/light-alt }}
-                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Ontwikkelteam{{ /partial:buttons/light-alt }}
+    <div class="w-full p-10">
+        <div class="flex flex-wrap -mx-10 overflow-hidden">
+            <div x-show="filteredMembers.length === 0" class="w-full p-10 border border-secondary-light text-center">
+                Er zijn geen leden gevonden die voldoen aan je zoekopdracht.
             </div>
-        </div>
-        <div class="">
-            <span class="block meta-dark">Aantal werknemers</span>
-            <div class="flex flex-row gap-2">
-                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}1-10{{ /partial:buttons/light-alt }}
-                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}11-50{{ /partial:buttons/light-alt }}
-                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}51-100{{ /partial:buttons/light-alt }}
-            </div>
-        </div>
-        <div class="col-span-2 mt-4">
-            <span class="block meta-dark">Provincie</span>
-            <div class="flex flex-wrap gap-2">
-                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Friesland{{ /partial:buttons/light-alt }}
-                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Groningen{{ /partial:buttons/light-alt }}
-                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Noord-Holland{{ /partial:buttons/light-alt }}
-                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Utrecht{{ /partial:buttons/light-alt }}
-                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Zuid-Holland{{ /partial:buttons/light-alt }}
-                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Friesland{{ /partial:buttons/light-alt }}
-                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Groningen{{ /partial:buttons/light-alt }}
-                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Noord-Holland{{ /partial:buttons/light-alt }}
-                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Utrecht{{ /partial:buttons/light-alt }}
-                {{ partial:buttons/light-alt link="{{ segment_1 }}" }}Zuid-Holland{{ /partial:buttons/light-alt }}
-            </div>
+            <template x-for="item in filteredMembers" :key="item.id">
+                {{# This is actually the company/simple template, pasted to save some time #}}
+                <div class="mt-10 pb-10 px-10 w-full overflow-hidden sm:w-1/2 xl:w-1/3">
+                    <div class="flex flex-col bg-white shadow-custom w-full">
+                        <div class="w-full h-64 flex items-center justify-center bg-gradient-to-b from-white to-secondary-light">
+                            <img x-show="item.logo" class="block max-w-[66%] max-h-[66%]" :src="item.logo" :alt="item.title">
+                        </div>
+                        <div class="relative p-10 min-h-40 w-full ">
+                            <div class="flex flex-col w-full ">
+                                <h4 class="block w-full mb-[.3rem]" x-text="item.title"></h4>
+                                <a x-bind:href="'/{{ segment_1 }}/' + item.slug"><span class="meta text-primary-accent" x-text="item.title"></span></a>
+                            </div>
+                            <a x-bind:href="'/{{ segment_1 }}/' + item.slug" class="flex items-center justify-center bg-primary-accent hover:-translate-x-[4px] hover:-translate-y-[4px] hover:shadow-outer-primary px-8 text-sm uppercase whitespace-nowrap !p-0 h-12 absolute right-0 bottom-0 aspect-square !text-primary-contrast hover:!text-primary-contrast ">&gt;</a>
+                        </div>
+                    </div>
+                </div>
+            </template>
         </div>
     </div>
 </div>
 
-<div class="w-full p-10">
-    <div class="flex flex-wrap -mx-10 overflow-hidden">
-        {{ collection:members }}
-            {{ partial:company/simple :logo="logo" :title="title" text="{ arr({ city }, { province:title }) | remove_empty | list }" class="mt-10 pb-10 px-10 w-full overflow-hidden sm:w-1/2 xl:w-1/3" link="/leden/{ slug }" }}
-        {{ /collection:members }}
-    </div>
-</div>
+{{# Fix the initiation of members later, maybe somehow with Statamics to_json #}}
+<script>
+var members = [{{ members = {collection:members} }}{{ noparse }}{ {{ /noparse }}{{ "id:'" + $id + "',slug:'" + $slug + "',title:'" + $title + "',logo:'" + $logo + "',type:'" + $type + "',employees:'" + $employees + "',province:'" + $province + "',city:'" + $city + "'" }}{{ noparse }}}{{ /noparse }}{{ !last ?= ',' }}{{ /members }}],
+types = members.map((obj) => { return obj.type; }).filter((item, index, arr) => { return arr.indexOf(item) == index; }),
+employees = members.map((obj) => { return obj.employees; }).filter((item, index, arr) => { return arr.indexOf(item) == index; }),
+provinces = members.map((obj) => { return obj.province; }).filter((item, index, arr) => { return arr.indexOf(item) == index; });
+
+function loadMembers() {
+    return {
+        dataToFilter: members,
+        filter: {
+            types: [],
+            employees: [],
+            provinces: [],
+        },
+        // Reset all filters to show all members
+        resetFilters() {
+            this.filter = {
+                types: [],
+                employees: [],
+                provinces: [],
+            };
+            const checkedFilters = document.querySelectorAll('button[data-checked="true"]');
+            for (let i = 0; i < checkedFilters.length; i++) {
+                checkedFilters[i].setAttribute('data-checked', false);
+            }
+        },
+        // Update the filter
+        updateFilter(target) {
+            const checked = target.getAttribute('data-checked'),
+                type = target.getAttribute('data-type'),
+                value = target.getAttribute('data-value');
+
+            // Toggle checked state for the clicked element
+            target.setAttribute('data-checked', checked == 'false');
+
+            // Add or remove the value from the filter
+            if (this.filter[type].includes(value)) {
+                this.filter[type].splice(this.filter[type].indexOf(value), 1);
+            } else {
+                this.filter[type].push(value);
+            }
+        },
+        // Check if conditions match
+        checkFilter(type, value) {
+            return (this.filter[type].length == 0 || (this.filter[type].length > 0 && this.filter[type].includes(value)));
+        },
+        // Loop to check all filters
+        checkFilters(item) {
+            return this.checkFilter('types', item.type)
+                && this.checkFilter('employees', item.employees)
+                && this.checkFilter('provinces', item.province);
+        },
+        // Check if all filters are empty
+        allFiltersEmpty() {
+            return this.filter.types.length === 0
+                && this.filter.employees.length === 0
+                && this.filter.provinces.length === 0;
+        },
+        // Return filtered member data
+        get filteredMembers() {
+            if (this.allFiltersEmpty()) {
+                return this.dataToFilter;
+            }
+
+            return [
+                ...new Set(
+                    this.dataToFilter.filter((item) => {
+                        return this.checkFilters(item);
+                    })
+                )
+            ];
+        }
+    };
+}
+</script>

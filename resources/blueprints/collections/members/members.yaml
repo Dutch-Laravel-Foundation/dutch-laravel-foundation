@@ -55,32 +55,6 @@ sections:
           type: slug
           localizable: true
       -
-        handle: member_type
-        field:
-          type: terms
-          taxonomies:
-            - member_type
-          display: 'Type lid'
-          mode: select
-          instructions_position: above
-          listable: hidden
-          read_only: false
-          max_items: 1
-          create: true
-      -
-        handle: number_of_employees
-        field:
-          type: terms
-          taxonomies:
-            - number_of_employees
-          display: 'Aantal werknemers'
-          mode: select
-          instructions_position: above
-          listable: hidden
-          read_only: false
-          max_items: 1
-          create: true
-      -
         handle: founding_partner
         field:
           default: false
@@ -90,22 +64,54 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
+      -
+        handle: type
+        field:
+          options:
+            ZZPer: null
+            Bedrijf: null
+            Ontwikkelteam: null
+          multiple: false
+          max_items: 1
+          clearable: false
+          searchable: true
+          taggable: true
+          push_tags: false
+          cast_booleans: false
+          default: Bedrijf
+          display: 'Type lid'
+          type: select
+          icon: select
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: employees
+        field:
+          options:
+            1-10: null
+            11-50: null
+            51-100: null
+          multiple: false
+          max_items: 1
+          clearable: false
+          searchable: true
+          taggable: true
+          push_tags: false
+          cast_booleans: false
+          default: 1-10
+          display: 'Aantal werknemers'
+          type: select
+          icon: select
+          listable: hidden
+          instructions_position: above
+          read_only: false
   contact:
     display: Contactgegevens
     fields:
       -
-        handle: province
-        field:
-          type: terms
-          taxonomies:
-            - province
-          display: Provincie
-          mode: select
-          instructions_position: above
-          listable: hidden
-          read_only: false
-          max_items: 1
-          create: true
+        handle: provincie
+        field: provincie.province
       -
         handle: city
         field:
