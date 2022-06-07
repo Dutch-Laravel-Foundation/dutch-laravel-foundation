@@ -36,11 +36,11 @@ span.meta-dark {
 }
 
 a {
-    @apply text-tertiary-dark hover:text-primary-accent cursor-pointer;
+    @apply text-tertiary-dark hover:text-primary-accent cursor-pointer transition-all;
 }
 
 #content a {
-    @apply text-primary-accent hover:text-tertiary-regular;
+    @apply text-primary-accent hover:text-tertiary-regular transition-colors;
 }
 
 nav {
@@ -120,5 +120,5 @@ header nav.animated.make-large {
 
 /* Filter (members page) */
 button[data-checked="true"] {
-    @apply shadow-inner-primary;
+    @apply border-primary-accent opacity-100 !text-tertiary-dark;
 }

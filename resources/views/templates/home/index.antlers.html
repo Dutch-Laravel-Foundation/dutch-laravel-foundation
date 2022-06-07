@@ -3,6 +3,7 @@
     <section class="mb-20 -my-[22rem]">
         {{ collection:insights category:is="Leden" limit="1" }}
             {{ partial:blocks/image-left-large class="!w-11/12" :image="featured_image" :category="category" link="/insights/{ slug }" }}
+                {{ partial:buttons/primary link="/leden" class="!absolute right-0 -top-24 z-50" button_class="" background_class="" }}Bekijk al onze leden{{ /partial:buttons/primary }}
                 {{ introduction }}
             {{ /partial:blocks/image-left-large }}
         {{ /collection:insights }}

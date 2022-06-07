@@ -13,7 +13,7 @@
                 <span class="block meta-dark">Ik zoek een</span>
                 <div class="flex flex-wrap gap-2">
                     <template x-for="type in types" :key="type">
-                        <button x-on:click="updateFilter(event.target)" data-checked="false" data-type="types" :data-value="type" x-text="type" class="flex items-center justify-center h-12 px-8 text-sm uppercase whitespace-nowrap bg-primary-contrast shadow-inner-light !text-tertiary-regular hover:!text-tertiary-dark hover:-translate-y-0 hover:-translate-x-0 hover:shadow-inner-primary"></button>
+                        <button x-on:click="updateFilter(event.target)" data-checked="false" data-type="types" :data-value="type" x-text="type" class="flex items-center justify-center h-12 px-8 text-xs font-bold uppercase whitespace-nowrap transition-colors bg-transparent border border-tertiary-light !text-tertiary-regular hover:!text-tertiary-dark hover:border-primary-accent opacity-80 hover:opacity-100"></button>
                     </template>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                 <span class="block meta-dark">Aantal werknemers</span>
                 <div class="flex flex-wrap gap-2">
                     <template x-for="employee in employees" :key="employee">
-                        <button x-on:click="updateFilter(event.target)" data-checked="false" data-type="employees" :data-value="employee" x-text="employee" class="flex items-center justify-center h-12 px-8 text-sm uppercase whitespace-nowrap bg-primary-contrast shadow-inner-light !text-tertiary-regular hover:!text-tertiary-dark hover:-translate-y-0 hover:-translate-x-0 hover:shadow-inner-primary"></button>
+                        <button x-on:click="updateFilter(event.target)" data-checked="false" data-type="employees" :data-value="employee" x-text="employee" class="flex items-center justify-center h-12 px-8 text-xs font-bold uppercase whitespace-nowrap transition-colors bg-transparent border border-tertiary-light !text-tertiary-regular hover:!text-tertiary-dark hover:border-primary-accent opacity-80 hover:opacity-100"></button>
                     </template>
                 </div>
             </div>
@@ -29,7 +29,7 @@
                 <span class="block meta-dark">Provincie</span>
                 <div class="flex flex-wrap gap-2">
                     <template x-for="province in provinces" :key="province">
-                        <button x-on:click="updateFilter(event.target)" data-checked="false" data-type="provinces" :data-value="province" x-text="province" class="flex items-center justify-center h-12 px-8 text-sm uppercase whitespace-nowrap bg-primary-contrast shadow-inner-light !text-tertiary-regular hover:!text-tertiary-dark hover:-translate-y-0 hover:-translate-x-0 hover:shadow-inner-primary"></button>
+                        <button x-on:click="updateFilter(event.target)" data-checked="false" data-type="provinces" :data-value="province" x-text="province" class="flex items-center justify-center h-12 px-8 text-xs font-bold uppercase whitespace-nowrap transition-colors bg-transparent border border-tertiary-light !text-tertiary-regular hover:!text-tertiary-dark hover:border-primary-accent opacity-80 hover:opacity-100"></button>
                     </template>
                 </div>
             </div>
@@ -53,7 +53,10 @@
                                 <h4 class="block w-full mb-[.3rem]" x-text="item.title"></h4>
                                 <a x-bind:href="'/{{ segment_1 }}/' + item.slug"><span class="meta text-primary-accent" x-text="item.title"></span></a>
                             </div>
-                            <a x-bind:href="'/{{ segment_1 }}/' + item.slug" class="flex items-center justify-center bg-primary-accent hover:-translate-x-[4px] hover:-translate-y-[4px] hover:shadow-outer-primary px-8 text-sm uppercase whitespace-nowrap !p-0 h-12 absolute right-0 bottom-0 aspect-square !text-primary-contrast hover:!text-primary-contrast ">&gt;</a>
+                            <a x-bind:href="'/{{ segment_1 }}/' + item.slug" class="relative flex h-12 items-center justify-center group !absolute right-0 bottom-0 " href="/cases/klantportaal-voor-het-loyaliteitsprogramma-van-avia">
+                                <div class="text-xs uppercase whitespace-nowrap font-bold flex items-center justify-center px-8 h-full transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1 z-20 bg-primary-accent text-white w-12 aspect-square ">&gt;</div>
+                                <div class="absolute bottom-0 right-0 w-full h-full border z-10 border-primary-accent "></div>
+                            </a>
                         </div>
                     </div>
                 </div>

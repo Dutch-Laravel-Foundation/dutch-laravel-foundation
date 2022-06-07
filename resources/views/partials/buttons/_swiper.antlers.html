@@ -1,1 +1,4 @@
-<div class="flex items-center justify-center h-12 !w-12 hover:-translate-x-[4px] hover:-translate-y-[4px] after:!text-sm uppercase whitespace-nowrap hover:!shadow-outer-dark bg-tertiary-dark !text-secondary-light mx-10 {{ class }}"></div>
+<div class="relative flex h-12 !w-12 items-center justify-center group {{ class }}">
+    <div class="text-xs uppercase whitespace-nowrap font-bold flex items-center justify-center px-8 h-full transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1 z-20 bg-tertiary-dark! text-secondary-light mx-10 after:!text-sm {{ class }}">{{ slot }}</div>
+    <div class="absolute bottom-0 right-0 w-full h-full border z-10 border-tertiary-dark {{ background_class }}"></div>
+</div>
