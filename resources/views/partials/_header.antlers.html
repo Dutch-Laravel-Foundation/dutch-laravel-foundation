@@ -38,17 +38,17 @@ function menu() {
 }
 </script>
 
-<header class="fixed w-full z-[999] {{ banner ? 'bg-primary-accent': 'bg-white' }}">
+<header class="fixed w-screen z-[999] {{ banner ? 'bg-primary-accent': 'bg-white' }}">
 
     {{# Desktop navigation #}}
-    <div class="container mx-auto flex flex-col items-center justify-center p-10 pb-4">
+    <div class="container mx-auto hidden lg:flex flex-col items-center justify-center p-10 pb-4">
         <nav class="animated hidden lg:flex w-full space-x-10 align-middle h-20" x-cloak>
             {{ partial:navigation show_home_logo="true" active_class="text-primary-accent" class="" :style="banner ?= 'contrast'" }}
         </nav>
     </div>
 
     {{# Mobile navigation #}}
-    <div class="relative pt-2 pr-4 lg:hidden js-alpine-init lg:ml-0" x-data="menu()" x-init="init()" x-cloak role="navigation">
+    <div class="relative lg:hidden pt-2 pr-4 js-alpine-init lg:ml-0" x-data="menu()" x-init="init()" x-cloak role="navigation">
         {{# Toggle button #}}
         <div class="flex items-center justify-end">
             <button type="button" @click="toggleMenu()" disabled x-bind:disabled="disabled" class="inline-flex items-center justify-center w-12 h-12 transition duration-150 ease-in-out rounded-md svg-fill text-grey-500 hover:text-grey-500 hover:bg-grey-100 focus:outline-none focus:bg-grey-100 focus:text-grey-500">
@@ -58,7 +58,7 @@ function menu() {
             </button>
         </div>
         {{# Mobile menu container with transitions #}}
-        <div class="fixed inset-x-0 top-0 z-50 w-full h-full overflow-scroll transition origin-top-right transform lg:hidden"
+        <div class="fixed inset-x-0 top-0 z-50 w-screen h-screen overflow-scroll transition origin-top-right transform"
             x-show="open" @click.outside="open = false"
             x-transition:enter="duration-200 ease-out" x-transition:enter-start="opacity-0"
             x-transition:enter-end="opacity-100" x-transition:leave="duration-100 ease-in"

@@ -1155,6 +1155,10 @@ button[data-checked="true"] {
   height: 20rem;
 }
 
+.h-\[100vw\] {
+  height: 100vw;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -1277,6 +1281,14 @@ button[data-checked="true"] {
 
 .w-5\/12 {
   width: 41.666667%;
+}
+
+.w-\[100vh\] {
+  width: 100vh;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .max-w-full {
