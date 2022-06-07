@@ -56,64 +56,64 @@ return [
 
         'assets' => [
             'driver' => 'local',
-            'root' => public_path('assets'),
-            'url' => '/assets',
+            'root' => public_path('assets/uploads/assets'),
+            'url' => '/assets/uploads/assets',
             'visibility' => 'public',
         ],
 
         'insights' => [
             'driver' => 'local',
-            'root' => public_path('insights'),
-            'url' => '/insights',
+            'root' => public_path('assets/uploads/insights'),
+            'url' => '/assets/uploads/insights',
             'visibility' => 'public',
         ],
 
         'cases' => [
             'driver' => 'local',
-            'root' => public_path('cases'),
-            'url' => '/cases',
+            'root' => public_path('assets/uploads/cases'),
+            'url' => '/assets/uploads/cases',
             'visibility' => 'public',
         ],
 
         'members' => [
             'driver' => 'local',
-            'root' => public_path('members'),
-            'url' => '/members',
+            'root' => public_path('assets/uploads/members'),
+            'url' => '/assets/uploads/members',
             'visibility' => 'public',
         ],
 
         'board' => [
             'driver' => 'local',
-            'root' => public_path('board'),
-            'url' => '/board',
+            'root' => public_path('assets/uploads/board'),
+            'url' => '/assets/uploads/board',
             'visibility' => 'public',
         ],
 
         'clients' => [
             'driver' => 'local',
-            'root' => public_path('clients'),
-            'url' => '/clients',
+            'root' => public_path('assets/uploads/clients'),
+            'url' => '/assets/uploads/clients',
             'visibility' => 'public',
         ],
 
         'events' => [
             'driver' => 'local',
-            'root' => public_path('events'),
-            'url' => '/events',
+            'root' => public_path('assets/uploads/events'),
+            'url' => '/assets/uploads/events',
             'visibility' => 'public',
         ],
 
         'socials' => [
             'driver' => 'local',
-            'root' => public_path('socials'),
-            'url' => '/socials',
+            'root' => public_path('assets/uploads/socials'),
+            'url' => '/assets/uploads/socials',
             'visibility' => 'public',
         ],
 
         'globals' => [
             'driver' => 'local',
-            'root' => public_path('globals'),
-            'url' => '/globals',
+            'root' => public_path('assets/uploads/globals'),
+            'url' => '/assets/uploads/globals',
             'visibility' => 'public',
         ],
 
