@@ -4,7 +4,7 @@
     {{ call_to_action }}
         {{ partial:blocks/base class="-mt-48 mb-10 z-10" :title="title" category="" }}
             <div class="flex flex-col base:flex-row items-center justify-between">
-                <div class="w-full lg:w-2/3 3xl:w-7/12 4xl:w-1/2">{{ description | strip_tags }}{{ description | strip_tags }}{{ description | strip_tags }}{{ description | strip_tags }}</div>
+                <div class="w-full lg:w-2/3 3xl:w-7/12 4xl:w-1/2">{{ description }}</div>
                 <div class="pl-0 pt-6 base:pl-10 base:pt-0 ml-auto">
                     {{ url }}
                     {{ partial:if_exists src="buttons/{ button_style }" :link="link" }}
