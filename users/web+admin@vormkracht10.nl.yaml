@@ -1,4 +1,10 @@
 name: Vormkracht10
 super: true
 id: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-password_hash: $2y$10$/wbjW/lXnwyFKIGvzQW2R.DPkGcSE14RJjO9hpBsZxnkP.ZXGWgJy
+password_hash: $2y$10$iiF7vQwmcZiHjl9KFtKjCeh1vnac9kPo2f8s7mNgWJl.c5QMSPK3a
+preferences:
+  collections:
+    insights:
+      columns:
+        - title
+        - category
