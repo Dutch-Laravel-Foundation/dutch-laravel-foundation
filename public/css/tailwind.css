@@ -2220,6 +2220,11 @@ button[data-checked="true"] {
     padding: 3rem;
   }
 
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .lg\:pl-10 {
     padding-left: 2.5rem;
   }
