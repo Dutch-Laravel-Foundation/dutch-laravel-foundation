@@ -1,11 +1,11 @@
 
 <footer
-    class="container mx-auto bg-secondary-light p-10 {{ if call_to_action }} mt-[14.5rem] {{ else }} mt-10 {{ /if }}">
+    class="container mx-0 lg:mx-auto bg-secondary-light p-6 lg:p-10 {{ if call_to_action }} mt-[15rem] {{ else }} mt-20 {{ /if }}">
     {{ call_to_action }}
         {{ partial:blocks/base class="-mt-48 mb-10 z-10" :title="title" category="" }}
-            <div class="flex flex-row items-center justify-between">
-                <div>{{ description }}</div>
-                <div class="pl-10">
+            <div class="flex flex-col base:flex-row items-center justify-between">
+                <div class="w-full lg:w-2/3 3xl:w-7/12 4xl:w-1/2">{{ description | strip_tags }}{{ description | strip_tags }}{{ description | strip_tags }}{{ description | strip_tags }}</div>
+                <div class="pl-0 pt-6 base:pl-10 base:pt-0 ml-auto">
                     {{ url }}
                     {{ partial:if_exists src="buttons/{ button_style }" :link="link" }}
                         {{ button_text }}
@@ -14,16 +14,16 @@
             </div>
         {{ /partial:blocks/base }}
     {{ /call_to_action }}
-    <h1 id="footer-title" class="text-primary-accent mb-0">{{ site.name }}</h1>
-    <nav class="w-full flex h-16 mb-10 space-x-10 align-middle">
+    <h1 id="footer-title" class="text-primary-accent mb-6 lg:mb-0">{{ site.name }}</h1>
+    <nav class="w-full hidden lg:flex h-16 mb-10 space-x-10 align-middle">
         {{ partial:navigation class="font-normal" active_class="!border-tertiary-light" style="default" }}
     </nav>
 
     <div class="flex flex-col">
-        <h4>Leden</h4>
-        <div class="flex flex-col md:flex-row justify-between mb-5">
+        <h4 class="hidden lg:block">Leden</h4>
+        <div class="hidden sm:flex flex-col md:flex-row justify-between mb-5">
             <div class="w-full md:w-7/12">
-                <div class="columns-3">
+                <div class="columns-2 lg:columns-3 2xl:columns-4 4xl:columns-5">
                     <ul class="list-none">
                         {{ collection:members }}
                         <li class="pl-0 marker:content-[]"><a href="{{ url }}">{{ title }}</a></li>
@@ -61,7 +61,7 @@
                     {{ /if }}
                 {{ /nav:legal }}
             </div>
-            <div class="w-full md:w-5/12 pl-10 text-right">
+            <div class="w-full md:w-5/12 pl-0 lg:pl-10 text-left: lg:text-right">
                 &copy 2020 - {{ site.name }}
             </div>
         </div>
