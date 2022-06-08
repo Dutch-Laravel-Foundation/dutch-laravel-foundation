@@ -90,7 +90,7 @@ module.exports = {
         // Paddings
         'pl-10', 'pr-10', 'pr-12', 'px-12',
         // Translates
-        '-translate-x-28', // Footer title
+        '-translate-x-44', // Footer title
       ],
     },
   },

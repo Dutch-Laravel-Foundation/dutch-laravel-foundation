@@ -63,11 +63,11 @@ var footer = document.querySelector('footer'),
     footerTitle = footer.querySelector('#footer-title');
 
 function moveFooterTitle() {
-    if (((document.documentElement.clientWidth-footer.offsetWidth)/2) >= 112) {
-        footerTitle.classList.add('-translate-x-28');
+    if (((document.documentElement.clientWidth-footer.offsetWidth)/2) >= 80) {
+        footerTitle.classList.add('-translate-x-44');
         return;
     }
-    footerTitle.classList.remove('-translate-x-28');
+    footerTitle.classList.remove('-translate-x-44');
 }
 moveFooterTitle();
 window.addEventListener('resize', () => { moveFooterTitle(); });
