@@ -88,7 +88,7 @@ module.exports = {
         // Margins
         'ml-auto', 'xl:ml-[25%]', 'xl:mr-[25%]',
         // Paddings
-        'pl-10', 'pr-10', 'pr-12', 'px-12',
+        'pl-10', 'pr-10', 'pr-5', 'pl-5',
         // Translates
         '-translate-x-44', // Footer title
       ],

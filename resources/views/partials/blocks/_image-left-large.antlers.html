@@ -1,10 +1,10 @@
 <div
-    class="relative flex flex-row w-full mb-[6.5rem] {{ class }}">
+    class="relative flex flex-row w-full mb-[6.5rem] xl:mb-[9rem] {{ class }}">
     {{ if image }}
         <img class="object-cover w-1/2" style="object-position:{{ featured_image:focus_css }}"
             src="{{ featured_image }}" alt="{{ featured_image:alt ?? title }}" />
     {{ /if }}
-    {{ partial:blocks/base class="w-2/3 absolute right-0 bottom-0 translate-y-10" }}
+    {{ partial:blocks/base class="w-2/3 absolute right-0 bottom-0 translate-y-10 xl:translate-y-20" }}
         {{ slot }}
         {{ partial:buttons/more :link="link" class="" button_class="" background_class="" }}
     {{ /partial:blocks/base }}

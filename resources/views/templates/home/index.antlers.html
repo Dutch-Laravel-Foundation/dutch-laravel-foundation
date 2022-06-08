@@ -1,16 +1,15 @@
 {{ number_of_member_insights = { collection:count in="insights" category:is="Leden" } }}
 {{ if number_of_member_insights > 0 }}
-    <section class="mb-20 -my-[22rem]">
+    <section class="mb-20 xs:-mt-24 xl:-mt-[22rem] px-10 lg:px-0">
         {{ collection:insights category:is="Leden" limit="1" }}
-            {{ partial:blocks/image-left-large class="!w-11/12" :image="featured_image" :category="category" link="/insights/{ slug }" }}
-                {{ partial:buttons/primary link="/leden" class="!absolute right-0 -top-24 z-50" button_class="" background_class="" }}Bekijk al onze leden{{ /partial:buttons/primary }}
+            {{ partial:blocks/image-left-large class="!w-full xl:!w-11/12" :image="featured_image" :category="category" link="/insights/{ slug }" }}
                 {{ introduction }}
             {{ /partial:blocks/image-left-large }}
         {{ /collection:insights }}
         {{ if number_of_member_insights > 1 }}
             <div class="flex flex-row">
                 {{ collection:insights category:is="Leden" limit="2" offset="1" }}
-                    {{ partial:blocks/meta-alt class="!w-1/2 { switch between="px-12|pr-12" }" :text="title" title="Insights - { category }" link="/insights/{ slug }" link_class="text-tertiary-dark hover:text-primary-accent" }}
+                    {{ partial:blocks/meta-alt class="!w-1/2 { switch between="pr-5|pl-5" }" :text="title" title="Insights - { category }" link="/insights/{ slug }" link_class="text-tertiary-dark hover:text-primary-accent" }}
                 {{ /collection:insights }}
             </div>
         {{ /if }}
@@ -18,7 +17,7 @@
 {{ /if }}
 
 {{ if { collection:count in="insights" highlight:is="true" sort="updated:desc" limit="1" } > 0 }}
-    <div class="flex flex-row">
+    <div class="flex flex-row px-10 lg:px-0">
         {{ collection:insights highlight:is="true" limit="1" }}
             {{ partial:blocks/image-highlight-text :image="featured_image" category="Mis niet" link="/insights/{ slug }" }}
                 {{ introduction }}
@@ -27,14 +26,14 @@
     </div>
 {{ /if }}
 
-<div class="bg-secondary-light py-10 px-12 mb-20">
+<div class="bg-secondary-light px-4 py-4 sm:py-10 sm:px-10 mb-20">
     {{ content }}
         {{ partial src="sets/autoload" }}
     {{ /content }}
 </div>
 
 <div class="flex justify-center mb-20">
-    <h3 class="block text-center w-1/3">Klanten van onze leden die vertrouwen op het Laravel framework</h3>
+    <h3 class="block text-center w-full sm:w-2/3 lg:w-1/2 2xl:w-1/3">Klanten van onze leden die vertrouwen op het Laravel framework</h3>
 </div>
 
 <div class="flex justify-center mb-20">
