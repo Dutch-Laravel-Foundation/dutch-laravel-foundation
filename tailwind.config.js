@@ -86,7 +86,7 @@ module.exports = {
     options: {
       safelist: [
         // Margins
-        'ml-auto', 'xl:ml-[25%]', 'sm:ml-[50%]', 'xl:mr-[25%]', 'sm:mr-[50%]',
+        'ml-auto', 'xl:ml-[25%]', 'xl:mr-[25%]',
         // Paddings
         'pl-10', 'pr-10', 'pr-12', 'px-12',
         // Translates

@@ -1,8 +1,8 @@
 <div class="flex flex-col w-full {{ class }}">
     {{ if !image }}
-        <div class="w-7/12 aspect-photo bg-secondary-light"></div>
+        <div class="w-full sm:w-2/3 md:w-7/12 aspect-photo bg-secondary-light"></div>
     {{ else }}
-        <img class="object-cover block w-7/12 aspect-photo" src="{{ image }}" alt="{{ arr({ title }, { text }) | remove_empty | list }}" style="object-position:{{ image:focus_css }}">
+        <img class="object-cover block w-full sm:w-2/3 md:w-7/12 aspect-photo" src="{{ image }}" alt="{{ arr({ title }, { text }) | remove_empty | list }}" style="object-position:{{ image:focus_css }}">
     {{ /if }}
     {{ partial:blocks/meta :title="title" :text="text" class="mt-6" }}
 </div>
