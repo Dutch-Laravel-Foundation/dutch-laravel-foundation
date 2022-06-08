@@ -1,4 +1,4 @@
 {
-    "/js/site.js": "/assets/js/site.js",
-    "/css/tailwind.css": "/assets/css/tailwind.css"
+    "/assets/js/site.js": "/assets/js/site.js",
+    "/assets/css/tailwind.css": "/assets/css/tailwind.css"
 }
