@@ -2467,6 +2467,11 @@ button[data-checked="true"] {
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
+  .xl\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .xl\:pt-0 {
     padding-top: 0px;
   }
