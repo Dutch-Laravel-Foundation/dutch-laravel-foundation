@@ -7,4 +7,36 @@ preferences:
     insights:
       columns:
         - title
-        - category
+        - highlight
+    socials:
+      columns:
+        - title
+    reviews:
+      columns:
+        - title
+        - function
+        - client
+    clients:
+      columns:
+        - title
+    members:
+      columns:
+        - title
+        - city
+    events:
+      columns:
+        - title
+        - date_start
+        - location
+    cases:
+      columns:
+        - title
+        - member
+        - client
+    cta:
+      columns:
+        - title
+    board:
+      columns:
+        - title
+        - function
