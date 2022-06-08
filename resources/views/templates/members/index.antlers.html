@@ -3,7 +3,7 @@
 {{ /content }}
 
 <div class="container mx-auto" x-data="loadMembers()">
-    <div class="bg-secondary-light p-10">
+    <div class="bg-secondary-light p-10 px-4 sm:px-10">
         <div class="flex flex-col base:flex-row justify-between w-full items-baseline">
             <h2 class="block mb-8 base:mb-0">Kunnen wij je helpen zoeken?</h2>
             <div class="hidden base:block"><a class="font-bold" x-on:click="resetFilters()">Filters wissen</a></div>
@@ -13,7 +13,7 @@
                 <span class="block meta-dark">Ik zoek een</span>
                 <div class="flex flex-wrap gap-2">
                     <template x-for="type in types" :key="type">
-                        <button x-on:click="updateFilter(event.target)" data-checked="false" data-type="types" :data-value="type" x-text="type" class="flex items-center justify-center h-12 px-8 text-xs font-bold uppercase whitespace-nowrap transition-colors bg-transparent border border-tertiary-light !text-tertiary-regular hover:!text-tertiary-dark hover:border-primary-accent opacity-80 hover:opacity-100"></button>
+                        <button x-on:click="updateFilter(event.target)" data-checked="false" data-type="types" :data-value="type" x-text="type" class="flex items-center justify-center w-full sm:w-auto h-12 px-8 text-xs font-bold uppercase whitespace-nowrap transition-colors bg-transparent border border-tertiary-light !text-tertiary-regular hover:!text-tertiary-dark hover:border-primary-accent opacity-80 hover:opacity-100"></button>
                     </template>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                 <span class="block meta-dark">Aantal werknemers</span>
                 <div class="flex flex-wrap gap-2">
                     <template x-for="employee in employees" :key="employee">
-                        <button x-on:click="updateFilter(event.target)" data-checked="false" data-type="employees" :data-value="employee" x-text="employee" class="flex items-center justify-center h-12 px-8 text-xs font-bold uppercase whitespace-nowrap transition-colors bg-transparent border border-tertiary-light !text-tertiary-regular hover:!text-tertiary-dark hover:border-primary-accent opacity-80 hover:opacity-100"></button>
+                        <button x-on:click="updateFilter(event.target)" data-checked="false" data-type="employees" :data-value="employee" x-text="employee" class="flex items-center justify-center w-full sm:w-auto h-12 px-8 text-xs font-bold uppercase whitespace-nowrap transition-colors bg-transparent border border-tertiary-light !text-tertiary-regular hover:!text-tertiary-dark hover:border-primary-accent opacity-80 hover:opacity-100"></button>
                     </template>
                 </div>
             </div>
@@ -29,26 +29,26 @@
                 <span class="block meta-dark">Provincie</span>
                 <div class="flex flex-wrap gap-2">
                     <template x-for="province in provinces" :key="province">
-                        <button x-on:click="updateFilter(event.target)" data-checked="false" data-type="provinces" :data-value="province" x-text="province" class="flex items-center justify-center h-12 px-8 text-xs font-bold uppercase whitespace-nowrap transition-colors bg-transparent border border-tertiary-light !text-tertiary-regular hover:!text-tertiary-dark hover:border-primary-accent opacity-80 hover:opacity-100"></button>
+                        <button x-on:click="updateFilter(event.target)" data-checked="false" data-type="provinces" :data-value="province" x-text="province" class="flex items-center justify-center w-full sm:w-auto h-12 px-8 text-xs font-bold uppercase whitespace-nowrap transition-colors bg-transparent border border-tertiary-light !text-tertiary-regular hover:!text-tertiary-dark hover:border-primary-accent opacity-80 hover:opacity-100"></button>
                     </template>
                 </div>
             </div>
         </div>
         <div class="block base:hidden w-full mt-8 text-left sm:text-right"><a class="font-bold" x-on:click="resetFilters()">Filters wissen</a></div>
     </div>
-    <div class="w-full lg:w-11/12 mx-auto pt-10">
+    <div class="w-full lg:w-11/12 mx-auto p-10 pb-0">
         <div class="flex flex-wrap -mx-10 overflow-hidden">
             <div x-show="filteredMembers.length === 0" class="w-full p-10 border border-secondary-light text-center">
                 Er zijn geen leden gevonden die voldoen aan je zoekopdracht.
             </div>
             <template x-for="item in filteredMembers" :key="item.id">
                 {{# This is actually the company/simple template, pasted to save some time #}}
-                <div class="mt-10 pb-10 px-10 overflow-hidden w-full sm:w-1/2 xl:w-1/3 3xl:w-1/4 4xl:w-1/5">
+                <div class="mt-4 pb-4 px-4 sm:mt-10 sm:pb-10 sm:px-10 overflow-hidden w-full sm:w-1/2 xl:w-1/3 3xl:w-1/4 4xl:w-1/5">
                     <div class="flex flex-col bg-white shadow-custom w-full">
                         <div class="w-full h-64 flex items-center justify-center bg-gradient-to-b from-white to-secondary-light">
                             <img x-show="item.logo" class="block max-w-[66%] max-h-[66%]" :src="item.logo" :alt="item.title">
                         </div>
-                        <div class="relative p-10 min-h-40 w-full ">
+                        <div class="relative p-10 pb-16 min-h-40 w-full ">
                             <div class="flex flex-col w-full ">
                                 <h4 class="block w-full mb-[.3rem]" x-text="item.title"></h4>
                                 <a x-bind:href="'/{{ segment_1 }}/' + item.slug"><span class="meta text-primary-accent" x-text="item.title"></span></a>
