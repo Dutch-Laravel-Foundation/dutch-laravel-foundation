@@ -1,14 +1,17 @@
-<div class="relative flex flex-row w-full mb-32 {{ class }}">
-    {{ partial:blocks/base class="relative w-2/3 !pl-36" :category="category" }}
-        <div class="absolute h-full bg-tertiary-regular top-0 left-0 w-24 p-6 text-center text-white">
+<div class="relative flex flex-col lg:flex-row w-full mb {{ class }}">
+    <div class="lg:absolute bg-secondary-light h-full w-full lg:w-1/2 right-0">
+        {{ if featured_image }}
+            <img class="object-cover w-full max-w-full h-full max-h-full" style="object-position:{{ featured_image:focus_css }}"
+                src="{{ featured_image }}" alt="{{ featured_image:alt ?? title }}" />
+        {{ /if }}
+    </div>
+    <div class="lg:hidden flex flex-row items-center text-lg text-white py-4 bg-tertiary-light pl-6">{{ date_start format="j M" | strtolower }}</div>
+    {{ partial:blocks/base class="relative w-full lg:w-2/3 lg:my-10 z-10 lg:!pl-32" :category="category" }}
+        <div class="hidden lg:block absolute h-full bg-tertiary-regular top-0 left-0 w-24 p-6 text-center text-white">
             <span class="block text-2xl">{{ date_start format="j" }}</span>
             <span class="block text-lg">{{ date_start format="M" | strtolower }}</span>
         </div>
         {{ slot }}
         {{ partial:buttons/more :link="link" class="" button_class="" background_class="" }}
     {{ /partial:blocks/base }}
-    {{ if featured_image }}
-        <img class="absolute top-0 right-0 object-cover w-1/2 h-[calc(100%+3rem)] -mt-[1.5rem] -z-10" style="object-position:{{ featured_image:focus_css }}"
-            src="{{ featured_image }}" alt="{{ featured_image:alt ?? title }}" />
-    {{ /if }}
 </div>
