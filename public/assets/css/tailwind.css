@@ -2056,6 +2056,10 @@ button[data-checked="true"] {
     margin-top: 1.5rem;
   }
 
+  .sm\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -2139,6 +2143,10 @@ button[data-checked="true"] {
 
   .sm\:pr-20 {
     padding-right: 5rem;
+  }
+
+  .sm\:pt-0 {
+    padding-top: 0px;
   }
 
   .sm\:text-right {
@@ -2295,6 +2303,10 @@ button[data-checked="true"] {
     margin-left: 1rem;
   }
 
+  .lg\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -2371,6 +2383,11 @@ button[data-checked="true"] {
     padding-right: 0px;
   }
 
+  .lg\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .lg\:pl-10 {
     padding-left: 2.5rem;
   }
@@ -2408,6 +2425,11 @@ button[data-checked="true"] {
 
   .xl\:right-\[16\.666667\%\] {
     right: 16.666667%;
+  }
+
+  .xl\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .xl\:ml-\[25\%\] {
