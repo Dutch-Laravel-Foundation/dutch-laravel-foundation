@@ -7,10 +7,10 @@
     {{ if page.slug == 'home' && show_home_logo == true }}
         <a href="{{ homepage }}" class="flex grow {{ class }}"><img class="h-full max-h-full" src="{{ nav_logo }}" alt="{{ title }}"></a>
     {{ elseif slug == page.slug || segment_1 == page.slug || (segment_1 == 'events' && page.slug == 'agenda') }}
-        <span class="block h-auto my-auto cursor-default border-b-[1px] border-b-transparent {{ class }} {{ active_class }}">{{ title }}</span>
+        <span class="block h-auto my-auto cursor-default border-b border-b-transparent {{ class }} {{ active_class }}">{{ title }}</span>
     {{ else }}
         <a href="/{{ page.slug != 'home' ?= page.slug }}"
-            class="block h-auto my-auto border-b-[1px] border-transparent hover:text-inherit {{ nav_url_class }} {{ class }}">{{
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit {{ nav_url_class }} {{ class }}">{{
             title }}</a>
     {{ /if }}
 {{ /nav:main }}

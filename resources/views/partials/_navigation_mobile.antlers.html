@@ -7,10 +7,10 @@
         </div>
         {{ partial:decoration/line }}
     {{ elseif slug == page.slug || segment_1 == page.slug }}
-        <span class="flex w-full items-center h-auto px-10 py-4 cursor-default border-b-[1px] border-b-transparent {{ class }} {{ active_class }}">{{ title }}</span>
+        <span class="flex w-full items-center h-auto px-10 py-4 cursor-default border-b border-b-transparent {{ class }} {{ active_class }}">{{ title }}</span>
     {{ else }}
         <a href="/{{ page.slug != 'home' ?= page.slug }}"
-            class="flex w-full items-center h-auto px-10 py-4 border-b-[1px] border-transparent hover:bg-primary-accent hover:text-white {{ class }}">{{
+            class="flex w-full items-center h-auto px-10 py-4 border-b border-transparent hover:bg-primary-accent hover:text-white {{ class }}">{{
             title }}</a>
     {{ /if }}
 {{ /nav:main }}
