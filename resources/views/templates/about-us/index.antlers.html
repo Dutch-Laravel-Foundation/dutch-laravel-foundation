@@ -5,12 +5,12 @@
 <div class="container mx-auto">
     {{# Board #}}
     <div>
-        <h2>Bestuur</h2>
-        <p class="block w-full sm:w-3/4 base:w-2/3 lg:w-1/2 3xl:w-2/5 4xl:w-1/3 mb-5">De Dutch Laravel Foundation wordt gerund door een enthousiast bestuur van zes vrijwilligers die in de dagelijkse praktijk ook met Laravel werken.</p>
+        <h2 class="px-6 sm:px-0">Bestuur</h2>
+        <p class="px-6 sm:px-0 block w-full sm:w-3/4 base:w-2/3 lg:w-1/2 3xl:w-2/5 4xl:w-1/3 mb-5">De Dutch Laravel Foundation wordt gerund door een enthousiast bestuur van zes vrijwilligers die in de dagelijkse praktijk ook met Laravel werken.</p>
 
-        <div class="flex flex-wrap -mx-6 overflow-hidden">
+        <div class="flex flex-wrap overflow-hidden w-screen sm:-ml-6 lg:w-full">
             {{ collection:board }}
-            {{ partial:blocks/photo :image="photo" :title="title" :text="function" class="my-6 px-6 overflow-hidden w-1/2 md:w-1/3 xl:w-1/4 { switch between='||xl:mr-[25%]|xl:ml-[25%]||' }" }}
+                {{ partial:blocks/photo :image="photo" :title="title" :text="function" class="p-6 sm:pr-6 lg:pr-6 overflow-hidden w-full sm:w-1/2 md:w-1/3 xl:w-1/4 { switch between='||xl:mr-[25%]|xl:ml-[25%]||' }" }}
             {{ /collection:board }}
         </div>
     </div>
@@ -18,13 +18,16 @@
 
     {{# Founding partners #}}
     <div>
-        <h2>Founding partners</h2>
-        <p class="block w-full sm:w-3/4 base:w-2/3 lg:w-1/2 3xl:w-2/5 4xl:w-1/3 mb-5">De volgende bedrijven hebben in 2019 gezamenlijk gewerkt aan de oprichting van de Dutch Laravel Foundation.</p>
+        <h2 class="px-6 sm:px-0">Founding partners</h2>
+        <p class="px-6 sm:px-0 block w-full sm:w-3/4 base:w-2/3 lg:w-1/2 3xl:w-2/5 4xl:w-1/3 mb-5">De volgende bedrijven hebben in 2019 gezamenlijk gewerkt aan de oprichting van de Dutch Laravel Foundation.</p>
     </div>
 
     <div class="container mx-auto">
         <div class="flex flex-wrap overflow-hidden">
             {{ collection:members founding_partner:is="true" }}
+            {{ partial:company/simple :logo="logo" :title="title" text="{ arr({ city }, { province:title }) | remove_empty | list }" class="p-6 lg:p-10 w-full overflow-hidden sm:w-1/2 xl:w-1/3 3xl:w-1/4 4xl:w-1/5" link="/leden/{ slug }" }}
+            {{ partial:company/simple :logo="logo" :title="title" text="{ arr({ city }, { province:title }) | remove_empty | list }" class="p-6 lg:p-10 w-full overflow-hidden sm:w-1/2 xl:w-1/3 3xl:w-1/4 4xl:w-1/5" link="/leden/{ slug }" }}
+            {{ partial:company/simple :logo="logo" :title="title" text="{ arr({ city }, { province:title }) | remove_empty | list }" class="p-6 lg:p-10 w-full overflow-hidden sm:w-1/2 xl:w-1/3 3xl:w-1/4 4xl:w-1/5" link="/leden/{ slug }" }}
             {{ partial:company/simple :logo="logo" :title="title" text="{ arr({ city }, { province:title }) | remove_empty | list }" class="p-6 lg:p-10 w-full overflow-hidden sm:w-1/2 xl:w-1/3 3xl:w-1/4 4xl:w-1/5" link="/leden/{ slug }" }}
             {{ /collection:members }}
         </div>

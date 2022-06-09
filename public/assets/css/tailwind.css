@@ -611,6 +611,7 @@ body {
 
 h1 {
   margin-bottom: 2.5rem;
+  overflow-wrap: break-word;
   font-size: 48px;
   line-height: 1.167em;
   font-weight: 700;
@@ -620,6 +621,7 @@ h1 {
 
 h2 {
   margin-bottom: 2rem;
+  overflow-wrap: break-word;
   font-size: 36px;
   line-height: 1.333em;
   --tw-text-opacity: 1;
@@ -628,6 +630,7 @@ h2 {
 
 h3 {
   margin-bottom: 1.5rem;
+  overflow-wrap: break-word;
   font-size: 24px;
   line-height: 1.333em;
   --tw-text-opacity: 1;
@@ -636,6 +639,7 @@ h3 {
 
 h4 {
   margin-bottom: 1rem;
+  overflow-wrap: break-word;
   font-size: 18px;
   line-height: 1.333em;
   font-weight: 700;
@@ -645,12 +649,14 @@ h4 {
 
 p {
   margin-bottom: 0.75rem;
+  overflow-wrap: break-word;
   font-size: 16px;
   line-height: 1.5em;
 }
 
 span.meta, span.meta-dark {
   margin-bottom: 0.75rem;
+  overflow-wrap: break-word;
   font-size: 12px;
   line-height: 2em;
   letter-spacing: .12em;
@@ -1018,11 +1024,6 @@ button[data-checked="true"] {
   margin-right: auto;
 }
 
-.mx-0 {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -1036,16 +1037,6 @@ button[data-checked="true"] {
 .mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
-}
-
-.-mx-6 {
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-}
-
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .ml-auto {
@@ -1158,6 +1149,10 @@ button[data-checked="true"] {
 
 .mb-0 {
   margin-bottom: 0px;
+}
+
+.-ml-6 {
+  margin-left: -1.5rem;
 }
 
 .block {
@@ -1797,6 +1792,10 @@ button[data-checked="true"] {
   padding-bottom: 0.5rem;
 }
 
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2088,6 +2087,10 @@ button[data-checked="true"] {
     margin-top: 2.5rem;
   }
 
+  .sm\:-ml-6 {
+    margin-left: -1.5rem;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -2118,6 +2121,10 @@ button[data-checked="true"] {
 
   .sm\:\!w-1\/2 {
     width: 50% !important;
+  }
+
+  .sm\:w-full {
+    width: 100%;
   }
 
   .sm\:-translate-y-10 {
@@ -2171,6 +2178,14 @@ button[data-checked="true"] {
 
   .sm\:pt-0 {
     padding-top: 0px;
+  }
+
+  .sm\:pr-6 {
+    padding-right: 1.5rem;
+  }
+
+  .sm\:pl-0 {
+    padding-left: 0px;
   }
 
   .sm\:text-right {
@@ -2288,14 +2303,14 @@ button[data-checked="true"] {
     right: 0px;
   }
 
-  .lg\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .lg\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+
+  .lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .lg\:mt-16 {
@@ -2322,12 +2337,24 @@ button[data-checked="true"] {
     margin-top: -2.5rem;
   }
 
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .lg\:ml-4 {
     margin-left: 1rem;
   }
 
-  .lg\:mt-10 {
-    margin-top: 2.5rem;
+  .lg\:-ml-0 {
+    margin-left: -0px;
+  }
+
+  .lg\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .lg\:-ml-10 {
+    margin-left: -2.5rem;
   }
 
   .lg\:block {
@@ -2418,6 +2445,10 @@ button[data-checked="true"] {
     padding-left: 2.5rem;
   }
 
+  .lg\:pr-10 {
+    padding-right: 2.5rem;
+  }
+
   .lg\:pr-8 {
     padding-right: 2rem;
   }
@@ -2426,12 +2457,12 @@ button[data-checked="true"] {
     padding-left: 2rem;
   }
 
-  .lg\:pr-10 {
-    padding-right: 2.5rem;
-  }
-
   .lg\:pt-0 {
     padding-top: 0px;
+  }
+
+  .lg\:pr-6 {
+    padding-right: 1.5rem;
   }
 
   .lg\:text-right {
