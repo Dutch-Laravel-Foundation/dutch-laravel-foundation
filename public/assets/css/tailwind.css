@@ -1151,10 +1151,6 @@ button[data-checked="true"] {
   margin-bottom: 0px;
 }
 
-.-ml-6 {
-  margin-left: -1.5rem;
-}
-
 .block {
   display: block;
 }
@@ -1792,8 +1788,8 @@ button[data-checked="true"] {
   padding-bottom: 0.5rem;
 }
 
-.pl-6 {
-  padding-left: 1.5rem;
+.pb-\[1px\] {
+  padding-bottom: 1px;
 }
 
 .text-left {
@@ -2091,6 +2087,10 @@ button[data-checked="true"] {
     margin-left: -1.5rem;
   }
 
+  .sm\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -2107,16 +2107,16 @@ button[data-checked="true"] {
     width: auto;
   }
 
-  .sm\:w-1\/2 {
-    width: 50%;
-  }
-
   .sm\:w-2\/3 {
     width: 66.666667%;
   }
 
   .sm\:w-3\/4 {
     width: 75%;
+  }
+
+  .sm\:w-1\/2 {
+    width: 50%;
   }
 
   .sm\:\!w-1\/2 {
@@ -2184,8 +2184,8 @@ button[data-checked="true"] {
     padding-right: 1.5rem;
   }
 
-  .sm\:pl-0 {
-    padding-left: 0px;
+  .sm\:pr-10 {
+    padding-right: 2.5rem;
   }
 
   .sm\:text-right {
@@ -2272,12 +2272,12 @@ button[data-checked="true"] {
     display: none;
   }
 
-  .base\:w-2\/3 {
-    width: 66.666667%;
-  }
-
   .base\:w-3\/4 {
     width: 75%;
+  }
+
+  .base\:w-2\/3 {
+    width: 66.666667%;
   }
 
   .base\:flex-row {
@@ -2345,16 +2345,8 @@ button[data-checked="true"] {
     margin-left: 1rem;
   }
 
-  .lg\:-ml-0 {
-    margin-left: -0px;
-  }
-
-  .lg\:ml-0 {
-    margin-left: 0px;
-  }
-
-  .lg\:-ml-10 {
-    margin-left: -2.5rem;
+  .lg\:mb-20 {
+    margin-bottom: 5rem;
   }
 
   .lg\:block {
@@ -2391,6 +2383,10 @@ button[data-checked="true"] {
 
   .lg\:w-1\/4 {
     width: 25%;
+  }
+
+  .lg\:w-1\/3 {
+    width: 33.333333%;
   }
 
   .lg\:translate-y-\[calc\(4rem\+3rem\+1\.5rem\)\] {
@@ -2445,8 +2441,8 @@ button[data-checked="true"] {
     padding-left: 2.5rem;
   }
 
-  .lg\:pr-10 {
-    padding-right: 2.5rem;
+  .lg\:pr-6 {
+    padding-right: 1.5rem;
   }
 
   .lg\:pr-8 {
@@ -2457,12 +2453,12 @@ button[data-checked="true"] {
     padding-left: 2rem;
   }
 
-  .lg\:pt-0 {
-    padding-top: 0px;
+  .lg\:pr-10 {
+    padding-right: 2.5rem;
   }
 
-  .lg\:pr-6 {
-    padding-right: 1.5rem;
+  .lg\:pt-0 {
+    padding-top: 0px;
   }
 
   .lg\:text-right {
@@ -2471,6 +2467,10 @@ button[data-checked="true"] {
 }
 
 @media (min-width: 1200px) {
+
+  .xl\:absolute {
+    position: absolute;
+  }
 
   .xl\:right-\[16\.666667\%\] {
     right: 16.666667%;
@@ -2507,6 +2507,10 @@ button[data-checked="true"] {
 
   .xl\:-mt-40 {
     margin-top: -10rem;
+  }
+
+  .xl\:mt-48 {
+    margin-top: 12rem;
   }
 
   .xl\:flex {

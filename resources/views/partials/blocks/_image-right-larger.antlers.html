@@ -1,11 +1,12 @@
-<div
-    class="relative flex flex-row w-full mb-[6.5rem] ml-auto {{ class }}">
-    {{ if image }}
-        <img class="object-cover w-3/4 h-96 ml-auto" style="object-position:{{ featured_image:focus_css }}"
-            src="{{ featured_image }}" alt="{{ featured_image:alt ?? title }}" />
-    {{ /if }}
-    {{ partial:blocks/base class="w-2/3 absolute bottom-0 translate-y-10" }}
-        {{ slot }}
+<div class="relative flex flex-col lg:flex-row w-full mb {{ class }}">
+    <div class="lg:absolute bg-secondary-light h-96 w-full lg:w-3/4 right-0">
+        {{ if image }}
+            <img class="object-cover w-full max-w-full h-full max-h-full" style="object-position:{{ featured_image:focus_css }}"
+                src="{{ featured_image }}" alt="{{ featured_image:alt ?? title }}" />
+        {{ /if }}
+    </div>
+    {{ partial:blocks/base class="relative w-full lg:w-3/4 lg:mt-48 z-10" }}
+    {{ slot }}
         {{ partial:buttons/more :link="link" class="" button_class="" background_class="" }}
     {{ /partial:blocks/base }}
 </div>
