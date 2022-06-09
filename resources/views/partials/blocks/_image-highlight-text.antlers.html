@@ -8,18 +8,17 @@
         <div class="w-full lg:w-1/2 xl:w-2/3">
             {{# Copy of right-larger adjusted for highlight #}}
             <div class="relative flex flex-col xl:flex-row w-full {{ class }}">
-                <div class="xl:absolute bg-secondary-light h-96 w-full xl:w-3/4 right-0">
+                <div class="xl:absolute bg-secondary-light h-96 w-full xl:w-5/6 right-0">
                     {{ if image }}
                         <img class="object-cover w-full max-w-full h-full max-h-full" style="object-position:{{ featured_image:focus_css }}"
                             src="{{ featured_image }}" alt="{{ featured_image:alt ?? title }}" />
                     {{ /if }}
                 </div>
-                {{ partial:blocks/base class="relative w-full xl:w-3/4 xl:mt-48 z-10" }}
-                    {{ slot }}
+                {{ partial:blocks/base class="relative w-full xl:w-2/3 xl:mt-48 z-10" }}
+                {{ slot }}
                     {{ partial:buttons/more :link="link" class="" button_class="" background_class="" }}
                 {{ /partial:blocks/base }}
             </div>
-
         </div>
     </div>
 </div>

@@ -1,14 +1,17 @@
-<div class="relative w-full py-10 mb-16">
-    <div class="relative flex flex-row w-full mb-10 {{ class }}">
-        <div class="absolute w-screen -ml-[50vw] left-1/2 bg-secondary-light bg-floor-primary bg-center bg-no-repeat h-[calc(100%+2.5rem+5rem)] -translate-y-10 -z-10"></div>
-        <div class="relative flex flex-row w-11/12">
+<div
+    class="relative flex flex-row w-full mb ml-auto py-10">
+    <div class="absolute w-screen -ml-[50vw] left-1/2 bg-secondary-light bg-floor-primary bg-center bg-no-repeat h-full -z-10 -translate-y-10 sm:-translate-y-10"></div>
+    {{# Copy of left-large adjusted for highlight #}}
+    <div class="relative flex flex-col xl:flex-row w-full {{ class }}">
+        <div class="xl:absolute bg-secondary-light h-96 w-full xl:w-1/2">
             {{ if image }}
-                <img class="object-cover w-1/2" style="object-position:{{ featured_image:focus_css }}" src="{{ featured_image }}" alt="{{ featured_image:alt ?? title }}" />
+                <img class="object-cover w-full max-w-full h-full max-h-full" style="object-position:{{ featured_image:focus_css }}"
+                    src="{{ featured_image }}" alt="{{ featured_image:alt ?? title }}" />
             {{ /if }}
-            {{ partial:blocks/base class="w-2/3 absolute right-0 bottom-0 translate-y-10" }}
-                {{ slot }}
-                {{ partial:buttons/more :link="link" class="" button_class="" background_class="" }}
-            {{ /partial:blocks/base }}
         </div>
+        {{ partial:blocks/base class="xl:ml-[33.33333%] w-full xl:w-2/3 xl:mt-48 z-10" }}
+            {{ slot }}
+            {{ partial:buttons/more :link="link" class="" button_class="" background_class="" }}
+        {{ /partial:blocks/base }}
     </div>
 </div>

@@ -8,15 +8,17 @@
 <section>
     {{ if insight_count > 0 }}
         {{ collection:insights id:not="{ highlighted_id.0 }" limit="1" }}
-            {{ partial:blocks/image-left-large class="" :image="featured_image" :category="category" link="/insights/{ slug }" }}
-                {{ introduction }}
-            {{ /partial:blocks/image-left-large }}
-        {{ /collection:insights }}
+            <div class="w-full lg:w-11/12">
+                {{ partial:blocks/image-left-large class="" :image="featured_image" :category="category" link="/insights/{ slug }" }}
+                    {{ introduction }}
+                {{ /partial:blocks/image-left-large }}
+            {{ /collection:insights }}
+        </div>
     {{ /if }}
 
     {{ if insight_count > 1 }}
         {{ collection:insights id:not="{ highlighted_id.0 }" limit="1" offset="1" }}
-            {{ partial:blocks/image-left class="!w-11/12 ml-auto" :image="featured_image" :category="category" link="/insights/{ slug }" }}
+            {{ partial:blocks/image-left class="w-full lg:!w-11/12 lg:ml-auto" :image="featured_image" :category="category" link="/insights/{ slug }" }}
                 {{ introduction }}
             {{ /partial:blocks/image-left }}
         {{ /collection:insights }}
@@ -24,7 +26,7 @@
 
     {{ if highlighted_id.0 }}
         {{ collection:insights id:is="{ highlighted_id.0 }" limit="1" }}
-            {{ partial:blocks/image-highlight :image="featured_image" :category="category" link="/insights/{ slug }" }}
+            {{ partial:blocks/image-highlight class="xl:w-11/12" :image="featured_image" :category="category" link="/insights/{ slug }" }}
                 {{ introduction }}
             {{ /partial:blocks/image-highlight }}
         {{ /collection:insights }}
@@ -32,7 +34,7 @@
 
     {{ if insight_count > 2 }}
         {{ collection:insights id:not="{ highlighted_id.0 }" offset="2" }}
-            {{ partial:blocks/image-left class="!w-11/12 { switch between='{{ highlighted_id.0 ? "ml-auto|" : "|ml-auto" }}' }" :image="featured_image" :category="category" link="/insights/{ slug }" }}
+            {{ partial:blocks/image-left class="w-full lg:!w-11/12 { switch between='{{ highlighted_id.0 ? "lg:ml-auto|" : "|lg:ml-auto" }}' }" :image="featured_image" :category="category" link="/insights/{ slug }" }}
                 {{ introduction }}
             {{ /partial:blocks/image-left }}
         {{ /collection:insights }}
