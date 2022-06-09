@@ -1,7 +1,7 @@
 <footer
-    class="container bg-secondary-light mx-0 lg:mx-auto pb-10 px-6 lg:px-10 lg:pt-6 {{ if call_to_action }} mt-36 lg:mt-[12rem] {{ else }} mt-20 {{ /if }}">
+    class="container mx-0 lg:mx-auto px-6 lg:px-10 {{ if call_to_action }} -mt-16 {{ /if }}">
     {{ call_to_action }}
-        {{ partial:blocks/base class="-mt-36 lg:-mt-48 mb-10 z-10 lg:w-11/12 mx-auto" :title="title" category="" }}
+        {{ partial:blocks/base class="z-10 w-[calc(91.666667%-1.5rem)] lg:w-[calc(91.666667%-2.5rem)] mx-auto translate-y-16" :title="title" category="" }}
             <div class="flex flex-col base:flex-row items-center justify-between">
                 <div class="w-full lg:w-2/3 3xl:w-7/12 4xl:w-1/2">{{ description }}</div>
                 <div class="pl-0 pt-6 base:pl-10 base:pt-0 ml-auto w-full sm:w-auto">
@@ -12,55 +12,57 @@
             </div>
         {{ /partial:blocks/base }}
     {{ /call_to_action }}
-    <div class="w-full lg:w-11/12 mx-auto">
-        <h1 id="footer-title" class="text-primary-accent mb-2 lg:mb-10 xl:mb-2">{{ site.name }}</h1>
-        <nav class="w-full hidden xl:flex h-16 space-x-10 align-middle mb-10">
-            {{ partial:navigation class="font-normal" active_class="!border-tertiary-light" style="default" }}
-        </nav>
-        <div class="flex flex-col">
-            <h4 class="hidden lg:block">Leden</h4>
-            <div class="hidden sm:flex flex-col md:flex-row justify-between mb-5">
-                <div class="w-full hidden lg:block md:w-7/12">
-                    <div class="columns-2 lg:columns-3 2xl:columns-4 4xl:columns-5">
-                        <ul class="list-none">
-                            {{ collection:members }}
-                            <li class="pl-0 marker:content-[]"><a href="{{ url }}">{{ title }}</a></li>
-                            {{ /collection:members }}
-                        </ul>
+    <div class="px-6 lg:px-10 pb-10 bg-secondary-light {{ if call_to_action }} pt-32 {{ else }} pt-10 {{ /if }}">
+        <div class="w-full lg:w-11/12 mx-auto">
+            <h1 id="footer-title" class="text-primary-accent mb-2 lg:mb-10 xl:mb-2">{{ site.name }}</h1>
+            <nav class="w-full hidden xl:flex h-16 space-x-10 align-middle mb-10">
+                {{ partial:navigation class="font-normal" active_class="!border-tertiary-light" style="default" }}
+            </nav>
+            <div class="flex flex-col">
+                <h4 class="hidden lg:block">Leden</h4>
+                <div class="hidden sm:flex flex-col md:flex-row justify-between mb-5">
+                    <div class="w-full hidden lg:block md:w-7/12">
+                        <div class="columns-2 lg:columns-3 2xl:columns-4 4xl:columns-5">
+                            <ul class="list-none">
+                                {{ collection:members }}
+                                <li class="pl-0 marker:content-[]"><a href="{{ url }}">{{ title }}</a></li>
+                                {{ /collection:members }}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-5/12 pl-0 lg:pl-10 flex-flex-col">
+                        <div class="mb-5 w-full md:w-3/4 lg:w-full">
+                            De Dutch Laravel Foundation zorgt voor de promotie van Laravel en stimuleert
+                            kennisuitwisseling tussen Laravel developers in Nederland.
+                        </div>
+                        <div class="mb-10 flex flex-row items-center space-x-4">
+                            {{ collection:socials }}
+                                <a href="{{ link }}" target="_blank"><img src="{{ icon }}"></a>
+                            {{ /collection:socials }}
+                        </div>
+                        <div>
+                            <h4>Aanmelden nieuwsbrief</h4>
+                            <form>
+                                {{# TODO: /style form, add icon etc. #}}
+                                {{ csrf_field }}
+                                <input type="text" name="email" class="text-tertiary-regular" placeholder="Jouw E-mailadres">
+                                <button type="submit">Aanmelden</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-                <div class="w-full lg:w-5/12 pl-0 lg:pl-10 flex-flex-col">
-                    <div class="mb-5 w-full md:w-3/4 lg:w-full">
-                        De Dutch Laravel Foundation zorgt voor de promotie van Laravel en stimuleert
-                        kennisuitwisseling tussen Laravel developers in Nederland.
+                <div class="flex flex-col md:flex-row justify-between">
+                    <div class="w-full md:w-7/12">
+                        {{ nav:legal }}
+                            <a href="{{ page.slug }}">{{ title }}</a>
+                            {{ if !last }}
+                                <span class="mx-1">|</span>
+                            {{ /if }}
+                        {{ /nav:legal }}
                     </div>
-                    <div class="mb-10 flex flex-row items-center space-x-4">
-                        {{ collection:socials }}
-                            <a href="{{ link }}" target="_blank"><img src="{{ icon }}"></a>
-                        {{ /collection:socials }}
+                    <div class="w-full md:w-5/12 pl-0 lg:pl-10 text-left: lg:text-right">
+                        &copy 2020 - {{ site.name }}
                     </div>
-                    <div>
-                        <h4>Aanmelden nieuwsbrief</h4>
-                        <form>
-                            {{# TODO: /style form, add icon etc. #}}
-                            {{ csrf_field }}
-                            <input type="text" name="email" class="text-tertiary-regular" placeholder="Jouw E-mailadres">
-                            <button type="submit">Aanmelden</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col md:flex-row justify-between">
-                <div class="w-full md:w-7/12">
-                    {{ nav:legal }}
-                        <a href="{{ page.slug }}">{{ title }}</a>
-                        {{ if !last }}
-                            <span class="mx-1">|</span>
-                        {{ /if }}
-                    {{ /nav:legal }}
-                </div>
-                <div class="w-full md:w-5/12 pl-0 lg:pl-10 text-left: lg:text-right">
-                    &copy 2020 - {{ site.name }}
                 </div>
             </div>
         </div>

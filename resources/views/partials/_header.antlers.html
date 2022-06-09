@@ -81,11 +81,4 @@ function menu() {
 </header>
 
 {{# Optional banner #}}
-{{ if banner }}
-    <div class="banner relative w-full pt-6 xl:pt-0 mt-10 xl:mt-52">
-        <div class="absolute !w-11/12">
-            {{ partial:buttons/primary link="/leden" class="!absolute right-0 bottom-4 z-50" button_class="" background_class="" }}Bekijk al onze leden{{ /partial:buttons/primary }}
-        </div>
-        {{ banner }}
-    </div>
-{{ /if }}
+{{ banner }}
