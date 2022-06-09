@@ -1792,6 +1792,10 @@ button[data-checked="true"] {
   padding-bottom: 1px;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .text-left {
   text-align: left;
 }
