@@ -8,7 +8,7 @@
 <section>
     {{ if insight_count > 0 }}
         {{ collection:insights id:not="{ highlighted_id.0 }" limit="1" }}
-            {{ partial:blocks/image-left-large class="!w-11/12" :image="featured_image" :category="category" link="/insights/{ slug }" }}
+            {{ partial:blocks/image-left-large class="" :image="featured_image" :category="category" link="/insights/{ slug }" }}
                 {{ introduction }}
             {{ /partial:blocks/image-left-large }}
         {{ /collection:insights }}

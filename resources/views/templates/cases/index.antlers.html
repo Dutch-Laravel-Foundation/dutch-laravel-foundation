@@ -2,11 +2,11 @@
     {{ partial src="sets/autoload" }}
 {{ /content }}
 
-<section class="mt-10">
+<section class="mb">
     {{ collection:cases limit="3" }}
         {{ case_block = { switch between='blocks/image-left-larger|blocks/image-right-larger' } }}
-        {{ partial:{ case_block } class="!w-2/3" :image="featured_image" :title="title_long" :category="member:title" link="/cases/{ slug }" }}
-            {{ introduction }}
+        {{ partial:{ case_block } class="lg:!w-3/4 { switch between='|lg:ml-[25%]' }" :image="featured_image" :title="title_long" :category="member:title" link="/cases/{ slug }" }}
+        {{ introduction }}
         {{ /partial:{ case_block } }}
     {{ /collection:cases }}
 </section>
