@@ -36,13 +36,13 @@
         </div>
         <div class="block base:hidden w-full mt-8 text-left sm:text-right"><a class="font-bold" x-on:click="resetFilters()">Filters wissen</a></div>
     </div>
-    <div class="flex flex-wrap overflow-hidden w-screen -mx-6 px-6 lg:px-10">
-        <div x-show="filteredMembers.length === 0" class="w-full p-10 border border-secondary-light text-center">
+    <div class="flex flex-wrap overflow-hidden mb">
+        <div x-show="filteredMembers.length === 0" class="w-full p-6 lg:p-10 mt-6 lg:mt-10 border border-secondary-light text-center">
             Er zijn geen leden gevonden die voldoen aan je zoekopdracht.
         </div>
         <template x-for="item in filteredMembers" :key="item.id">
             {{# This is actually the company/simple template, pasted to save some time #}}
-            <div class="py-6 px-6 w-full overflow-hidden sm:w-1/2 xl:w-1/3 3xl:w-1/4 4xl:w-1/5">
+            <div class="p-6 lg:p-10 w-full overflow-hidden sm:w-1/2 xl:w-1/3 3xl:w-1/4 4xl:w-1/5">
                 <div class="flex flex-col bg-white shadow-custom w-full">
                     <div class="w-full h-64 flex items-center justify-center bg-gradient-to-b from-white to-secondary-light">
                         <img x-show="item.logo" class="block max-w-[66%] max-h-[66%]" :src="item.logo" :alt="item.title">

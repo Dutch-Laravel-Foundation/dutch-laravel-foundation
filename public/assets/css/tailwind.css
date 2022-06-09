@@ -784,6 +784,24 @@ input[type="checkbox"]:focus {
   }
 }
 
+.mt-half {
+  margin-top: 0.75rem;
+}
+
+@media (min-width: 640px) {
+
+  .mt-half {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .mt-half {
+    margin-top: 2.5rem;
+  }
+}
+
 .mb {
   margin-bottom: 1.5rem;
 }
@@ -799,6 +817,24 @@ input[type="checkbox"]:focus {
 
   .mb {
     margin-bottom: 5rem;
+  }
+}
+
+.mb-half {
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 640px) {
+
+  .mb-half {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .mb-half {
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -1016,6 +1052,10 @@ button[data-checked="true"] {
   margin-left: auto;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .mb-auto {
   margin-bottom: auto;
 }
@@ -1060,10 +1100,6 @@ button[data-checked="true"] {
   margin-bottom: 5rem;
 }
 
-.mb-40 {
-  margin-bottom: 10rem;
-}
-
 .mb-\[6\.5rem\] {
   margin-bottom: 6.5rem;
 }
@@ -1082,10 +1118,6 @@ button[data-checked="true"] {
 
 .mb-\[\.3rem\] {
   margin-bottom: .3rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
 }
 
 .mr-auto {
@@ -1717,6 +1749,10 @@ button[data-checked="true"] {
   padding-right: 2.5rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .pl-0 {
   padding-left: 0px;
 }
@@ -1729,12 +1765,8 @@ button[data-checked="true"] {
   padding-bottom: 2.5rem;
 }
 
-.pt-32 {
-  padding-top: 8rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
+.pt-24 {
+  padding-top: 6rem;
 }
 
 .pb-4 {
@@ -1763,10 +1795,6 @@ button[data-checked="true"] {
 
 .pb-2 {
   padding-bottom: 0.5rem;
-}
-
-.pt-24 {
-  padding-top: 6rem;
 }
 
 .text-left {
@@ -2141,10 +2169,6 @@ button[data-checked="true"] {
     padding-left: 1.25rem;
   }
 
-  .sm\:pr-20 {
-    padding-right: 5rem;
-  }
-
   .sm\:pt-0 {
     padding-top: 0px;
   }
@@ -2245,11 +2269,6 @@ button[data-checked="true"] {
     flex-direction: row;
   }
 
-  .base\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
   .base\:pl-10 {
     padding-left: 2.5rem;
   }
@@ -2283,6 +2302,10 @@ button[data-checked="true"] {
     margin-top: 4rem;
   }
 
+  .lg\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .lg\:mb-10 {
     margin-bottom: 2.5rem;
   }
@@ -2303,8 +2326,8 @@ button[data-checked="true"] {
     margin-left: 1rem;
   }
 
-  .lg\:mt-20 {
-    margin-top: 5rem;
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .lg\:block {
@@ -2383,9 +2406,12 @@ button[data-checked="true"] {
     padding-right: 0px;
   }
 
-  .lg\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  .lg\:pt-32 {
+    padding-top: 8rem;
+  }
+
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
   }
 
   .lg\:pl-10 {
@@ -2406,14 +2432,6 @@ button[data-checked="true"] {
 
   .lg\:pt-0 {
     padding-top: 0px;
-  }
-
-  .lg\:pt-10 {
-    padding-top: 2.5rem;
-  }
-
-  .lg\:pt-32 {
-    padding-top: 8rem;
   }
 
   .lg\:text-right {

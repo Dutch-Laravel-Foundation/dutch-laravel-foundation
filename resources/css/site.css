@@ -80,8 +80,16 @@ input[type="checkbox"] {
     @apply mt-6 sm:mt-10 lg:mt-20;
 }
 
+.mt-half {
+    @apply mt-3 sm:mt-10 lg:mt-10;
+}
+
 .mb {
     @apply mb-6 sm:mb-10 lg:mb-20;
+}
+
+.mb-half {
+    @apply mb-3 sm:mb-10 lg:mb-10;
 }
 
 /* Navigation */
