@@ -1,15 +1,17 @@
 {{ number_of_member_insights = { collection:count in="insights" category:is="Leden" } }}
 {{ if number_of_member_insights > 0 }}
-    <section class="mb-20 px-10 lg:px-0">
+    <section class="mb w-full">
         {{ collection:insights category:is="Leden" limit="1" }}
-            {{ partial:blocks/image-left-large class="!w-full xl:!w-11/12" :image="featured_image" :category="category" link="/insights/{ slug }" }}
-                {{ introduction }}
-            {{ /partial:blocks/image-left-large }}
+            <div class="w-full xl:w-11/12 lg:-mt-10 xl:-mt-40">
+                {{ partial:blocks/image-left-large class="" :image="featured_image" :category="category" link="/insights/{ slug }" }}
+                    {{ introduction }}
+                {{ /partial:blocks/image-left-large }}
+            </div>
         {{ /collection:insights }}
         {{ if number_of_member_insights > 1 }}
-            <div class="flex flex-row">
+            <div class="flex flex-col px-6 sm:flex-row sm:px-0">
                 {{ collection:insights category:is="Leden" limit="2" offset="1" }}
-                    {{ partial:blocks/meta-alt class="!w-1/2 { switch between="pr-5|pl-5" }" :text="title" title="Insights - { category }" link="/insights/{ slug }" link_class="text-tertiary-dark hover:text-primary-accent" }}
+                    {{ partial:blocks/meta-alt class="sm:!w-1/2 { switch between="sm:pr-5|sm:pl-5" }" :text="title" title="Insights - { category }" link="/insights/{ slug }" link_class="text-tertiary-dark hover:text-primary-accent" }}
                 {{ /collection:insights }}
             </div>
         {{ /if }}
@@ -17,7 +19,7 @@
 {{ /if }}
 
 {{ if { collection:count in="insights" highlight:is="true" sort="updated:desc" limit="1" } > 0 }}
-    <div class="flex flex-row px-10 lg:px-0">
+    <div class="flex flex-row px-0 lg:px-0">
         {{ collection:insights highlight:is="true" limit="1" }}
             {{ partial:blocks/image-highlight-text :image="featured_image" category="Mis niet" link="/insights/{ slug }" }}
                 {{ introduction }}
@@ -26,7 +28,7 @@
     </div>
 {{ /if }}
 
-<div class="bg-secondary-light px-4 py-4 sm:py-10 sm:px-10 mb-20">
+<div class="bg-secondary-light p-6 lg:p-10 mb-20">
     {{ content }}
         {{ partial src="sets/autoload" }}
     {{ /content }}

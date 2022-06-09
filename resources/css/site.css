@@ -76,6 +76,14 @@ input[type="checkbox"] {
     @apply bg-secondary-light text-primary-accent w-6 h-6 mr-2 focus:ring-primary-accent focus:ring-opacity-25 border border-tertiary-light border-opacity-40 rounded;
 }
 
+.mt {
+    @apply mt-6 sm:mt-10 lg:mt-20;
+}
+
+.mb {
+    @apply mb-6 sm:mb-10 lg:mb-20;
+}
+
 /* Navigation */
 .animated {
     will-change: transform;

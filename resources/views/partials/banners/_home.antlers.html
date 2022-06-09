@@ -1,17 +1,17 @@
 <div class="banner relative w-full">
     <div class="absolute w-screen -ml-[50vw] left-1/2 bg-primary-accent bg-floor-filled-light bg-[right_10rem_top_12rem] bg-no-repeat h-full -z-10"></div>
-    <div class="container mx-auto relative pt-48 pb-48 flex flex-row px-6 lg:px-10 {{ class }}">
-        <div class="w-1/2">
+    <div class="container mx-auto relative py-16 xl:pt-48 xl:pb-36 flex flex-row px-6 lg:px-10 {{ class }}">
+        <div class="w-full sm:w-1/2">
             <h1 class="text-white mb-5">{{ header_title }}</h1>
-            <div class="text-white mb-10">{{ header_content }}</div>
-            <div class="flex flex-row justify-start space-x-5">
+            <div class="text-white mb-16">{{ header_content }}</div>
+            <div class="flex flex-col sm:flex-row justify-start space-y-5 sm:space-y-0 sm:space-x-5">
                 {{ partial:buttons/primary-border link="/leden" }}Zoek Laravel Experts{{ /partial:buttons/primary-border }}
                 {{ partial:buttons/primary-border link="/lid-worden" }}Word lid{{ /partial:buttons/primary-border }}
             </div>
         </div>
         <div class="w-1/2 flex flex-col justify-end items-end">
             {{# Header bottom padding + button height + space #}}
-            {{ partial:buttons/primary link="/leden" class="hidden lg:flex translate-y-[calc(12rem+3rem+1.5rem)] z-50 lg:right-0 xl:right-[16.666667%]" button_class="" background_class="" }}Bekijk al onze leden{{ /partial:buttons/primary }}
+            {{ partial:buttons/primary link="/leden" class="hidden lg:flex lg:translate-y-[calc(4rem+3rem+1.5rem)] xl:translate-y-[calc(9rem+3rem+1.5rem)] z-50 lg:right-0 xl:right-[16.666667%]" button_class="" background_class="" }}Bekijk al onze leden{{ /partial:buttons/primary }}
         </div>
     </div>
 </div>
