@@ -7,23 +7,23 @@ body {
 }
 
 h1 {
-    @apply text-3xl font-bold text-tertiary-dark mb-10 break-words;
+    @apply text-xl md:text-3xl font-bold text-tertiary-dark mb-10 break-words;
 }
 
 h2 {
-    @apply text-2xl text-tertiary-dark mb-8 break-words;
+    @apply text-lg md:text-2xl text-tertiary-dark mb-8 break-words;
 }
 
 h3 {
-    @apply text-xl text-tertiary-dark mb-6 break-words;
+    @apply text-base md:text-xl text-tertiary-dark mb-6 break-words;
 }
 
 h4 {
-    @apply text-lg font-bold text-tertiary-dark mb-4 break-words;
+    @apply text-sm md:text-lg font-bold text-tertiary-dark mb-4 break-words;
 }
 
 p {
-    @apply text-base mb-3 break-words;
+    @apply text-xs md:text-base mb-3 break-words;
 }
 
 span.meta,
