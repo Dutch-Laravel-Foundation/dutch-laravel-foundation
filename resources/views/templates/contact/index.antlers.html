@@ -52,7 +52,7 @@
             <h4 class="w-min">{{ dlf:title }}</h4>
             <p>{{ dlf:address }}<br>{{ dlf:zipcode }} {{ dlf:city }}</p>
             <p>
-                <a href="tel:{{ dlf:phone }}" class="text-primary-accent">{{ dlf:phone }}</a>
+                <a href="tel:{{ dlf:phone regex_replace="[^+0-9]|" }}" class="text-primary-accent">{{ dlf:phone }}</a>
                 <br/><a href="mailto:{{ dlf:email }}" class="text-primary-accent">{{ dlf:email }}</a>
             </p>
             <p>KVK: {{ dlf:coc }}</p>

@@ -1,16 +1,13 @@
-{{ nav_logo = style == 'contrast' ? '/assets/img/logo-alt.svg': '/assets/img/logo.svg' }}
-
 {{ nav:main }}
     {{ if page.slug == 'home' && show_home_logo == true }}
-        <div class="w-full p-10 pb-0">
+        <div class="w-full px-6 pt-10 pb-0">
             <a href="{{ homepage }}" class="flex justify-start w-full {{ class }}"><img class="max-w-full max-h-full" src="{{ nav_logo }}" alt="{{ title }}"></a>
         </div>
         {{ partial:decoration/line }}
-    {{ elseif slug == page.slug || segment_1 == page.slug }}
-        <span class="flex w-full items-center h-auto px-10 py-4 cursor-default border-b border-b-transparent {{ class }} {{ active_class }}">{{ title }}</span>
     {{ else }}
+    {{ navigation_class = (slug == page.slug || segment_1 == page.slug) ? {active_class}: '' }}
         <a href="/{{ page.slug != 'home' ?= page.slug }}"
-            class="flex w-full items-center h-auto px-10 py-4 border-b border-transparent hover:bg-primary-accent hover:text-white {{ class }}">{{
+            class="flex w-full items-center h-auto px-10 py-4 border-b border-transparent hover:bg-primary-accent hover:text-white {{ class }} {{ navigation_class }}">{{
             title }}</a>
     {{ /if }}
 {{ /nav:main }}
