@@ -3,13 +3,13 @@
 {{ /content }}
 
 <div class="container mx-auto" x-data="loadMembers()">
-    <div class="bg-secondary-light py-10 px-4 sm:px-10 w-screen sm:w-full lg:mx-auto">
-        <div class="flex flex-col base:flex-row justify-between items-baseline">
+    <div class="w-screen px-4 py-10 bg-secondary-light sm:px-10 sm:w-full lg:mx-auto">
+        <div class="flex flex-col items-baseline justify-between base:flex-row">
             <h2 class="block mb-8 base:mb-0">Kunnen wij je helpen zoeken?</h2>
             <div class="hidden base:block"><a class="font-bold" x-on:click="resetFilters()">Filters wissen</a></div>
         </div>
-        <div class="flex flex-col lg:grid lg:grid-cols-2 w-full">
-            <div class="lg:pr-8 mt-8">
+        <div class="flex flex-col w-full lg:grid lg:grid-cols-2">
+            <div class="mt-8 lg:pr-8">
                 <span class="block meta-dark">Ik zoek een</span>
                 <div class="flex flex-wrap gap-2">
                     <template x-for="type in types" :key="type">
@@ -17,7 +17,7 @@
                     </template>
                 </div>
             </div>
-            <div class="lg:pl-8 mt-8">
+            <div class="mt-8 lg:pl-8">
                 <span class="block meta-dark">Aantal werknemers</span>
                 <div class="flex flex-wrap gap-2">
                     <template x-for="employee in employees" :key="employee">
@@ -34,27 +34,27 @@
                 </div>
             </div>
         </div>
-        <div class="block base:hidden w-full mt-8 text-left sm:text-right"><a class="font-bold" x-on:click="resetFilters()">Filters wissen</a></div>
+        <div class="block w-full mt-8 text-left base:hidden sm:text-right"><a class="font-bold" x-on:click="resetFilters()">Filters wissen</a></div>
     </div>
     <div class="flex flex-wrap overflow-hidden mb">
-        <div x-show="filteredMembers.length === 0" class="w-full p-6 lg:p-10 mt-6 lg:mt-10 border border-secondary-light text-center">
+        <div x-show="filteredMembers.length === 0" class="w-full p-6 mt-6 text-center border lg:p-10 lg:mt-10 border-secondary-light">
             Er zijn geen leden gevonden die voldoen aan je zoekopdracht.
         </div>
         <template x-for="item in filteredMembers" :key="item.id">
             {{# This is actually the company/simple template, pasted to save some time #}}
-            <div class="p-6 lg:p-10 w-full overflow-hidden sm:w-1/2 xl:w-1/3 3xl:w-1/4 4xl:w-1/5">
-                <div class="flex flex-col bg-white shadow-custom w-full">
-                    <div class="w-full h-64 flex items-center justify-center bg-gradient-to-b from-white to-secondary-light">
+            <div class="w-full p-6 overflow-hidden lg:p-10 sm:w-1/2 xl:w-1/3 3xl:w-1/4 4xl:w-1/5">
+                <div class="flex flex-col w-full bg-white shadow-custom">
+                    <div class="flex items-center justify-center w-full h-64 bg-gradient-to-b from-white to-secondary-light">
                         <img x-show="item.logo" class="block max-w-[66%] max-h-[66%]" :src="item.logo" :alt="item.title">
                     </div>
-                    <div class="relative p-10 pb-12 min-h-40 w-full ">
+                    <div class="relative w-full p-10 pb-12 min-h-40 ">
                         <div class="flex flex-col w-full ">
                             <h4 class="block w-full mb-[.3rem]" x-text="item.title"></h4>
                             <a x-bind:href="'/{{ segment_1 }}/' + item.slug"><span class="meta text-primary-accent" x-text="item.title"></span></a>
                         </div>
                         <a x-bind:href="'/{{ segment_1 }}/' + item.slug" class="relative flex h-12 items-center justify-center group !absolute right-0 bottom-0 " href="/cases/klantportaal-voor-het-loyaliteitsprogramma-van-avia">
-                            <div class="text-xs uppercase whitespace-nowrap font-bold flex items-center justify-center px-8 h-full transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1 z-20 bg-primary-accent text-white w-12 aspect-square ">&gt;</div>
-                            <div class="absolute bottom-0 right-0 w-full h-full border z-10 border-primary-accent "></div>
+                            <div class="z-20 flex items-center justify-center w-12 h-full px-8 text-xs font-bold text-white uppercase transition-transform whitespace-nowrap group-hover:-translate-x-1 group-hover:-translate-y-1 bg-primary-accent aspect-square ">&gt;</div>
+                            <div class="absolute bottom-0 right-0 z-10 w-full h-full border border-primary-accent "></div>
                         </a>
                     </div>
                 </div>

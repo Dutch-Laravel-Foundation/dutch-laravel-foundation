@@ -1,6 +1,12 @@
 <div class="block-meta flex flex-col w-full {{ class }}">
     {{ if title }}
-        <h4 class="block w-full mb-[.3rem]">{{ title }}</h4>
+        {{ if link }}
+            <a href="{{ link }}" title="{{ text }}">
+        {{ /if }}
+            <h4 class="block w-full mb-[.3rem]">{{ title }}</h4>
+        {{ if link }}
+            </a>
+        {{ /if }}
     {{ /if }}
     {{ if text }}
         {{ if link }}

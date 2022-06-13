@@ -3,7 +3,13 @@
         <span class="meta">{{ category }}</span>
     {{ /if }}
     {{ if title }}
-        <h3 class="block w-full">{{ title }}</h3>
+        {{ if link }}
+            <a href="{{ link }}" title="{{ title }}">
+        {{ /if }}
+            <h3 class="block w-full">{{ title }}</h3>
+        {{ if link }}
+            </a>
+        {{ /if }}
     {{ /if }}
     {{ slot }}
 </div>

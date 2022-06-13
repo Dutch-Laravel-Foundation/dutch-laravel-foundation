@@ -1,10 +1,10 @@
-<div class="flex flex-col bg-white shadow-custom w-full">
-    <div class="w-full h-64 flex items-center justify-center bg-gradient-to-b from-white to-secondary-light">
+<div class="flex flex-col w-full bg-white group-block shadow-custom">
+    <a href="{{ link }}" title="{{ title }}" class="flex items-center justify-center w-full h-64 overflow-hidden bg-gradient-to-b from-white to-secondary-light">
         {{ if logo }}
-            <img class="block max-w-[66%] max-h-[66%]" src="{{ logo }}" alt="{{ title }}">
+            <img class="block max-w-[66%] max-h-[66%] transition-transform duration-500 ease-in-out group-block-hover:scale-105" src="{{ logo }}" alt="{{ title }}">
         {{ /if }}
-    </div>
-    <div class="relative p-10 pb-12 min-h-40 w-full ">
+    </a>
+    <div class="relative w-full p-10 pb-12 min-h-40 ">
         {{ slot }}
     </div>
 </div>
