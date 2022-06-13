@@ -41,14 +41,36 @@
                             <a href="{{ link }}" target="_blank"><img src="{{ icon }}"></a>
                         {{ /collection:socials }}
                     </div>
-                    <div>
+                    <div class="w-full md:w-1/2 lg:w-full">
                         <h4>Aanmelden nieuwsbrief</h4>
-                        <form>
-                            {{# TODO: /style form, add icon etc. #}}
-                            {{ csrf_field }}
-                            <input type="text" name="email" class="text-tertiary-regular" placeholder="Jouw E-mailadres">
-                            <button type="submit">Aanmelden</button>
-                        </form>
+                        {{ newsletter_submitted = false }}
+                        {{ form:set is="newsletter" }}
+                            {{ if {form:success} }}
+                                {{ newsletter_submitted = true }}
+                                <div class="w-full">Bedankt voor je aanmelding!</div>
+                            {{ else }}
+                                <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+                                {{ if {form:errors} }}
+                                    {{ newsletter_submitted = true }}
+                                    {{ form:errors }}
+                                        <p class="block w-full text-primary-accent">{{ value }}</p>
+                                    {{ /form:errors }}
+                                {{ /if }}
+                                {{ form:create }}
+                                    <div class="flex flex-row w-full">
+                                        {{ fields }}
+                                            {{ field regex_replace=">$| style='background-color:#fff !important;'>" }}
+                                        {{ /fields }}
+                                        {{ partial:buttons/dark type="submit" class="ml-auto w-full sm:w-auto" button_class="w-full px-0" }}<img src="/assets/img/icons/send.svg" alt="Aanmelden" class="mx-5">{{ /partial:buttons/dark }}
+                                    </div>
+                                {{ /form:create }}
+                            {{ /if }}
+                        {{ /form:set }}
+                        {{ if newsletter_submitted }}
+                            <script>
+                                window.scrollTo(0, document.body.scrollHeight);
+                            </script>
+                        {{ /if }}
                     </div>
                 </div>
             </div>
