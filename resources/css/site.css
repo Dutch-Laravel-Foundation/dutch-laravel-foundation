@@ -53,15 +53,27 @@ footer {
 }
 
 ul {
-    @apply list-disc;
+    @apply list-disc list-outside pl-2;
 }
 
 ul li {
-    @apply pl-[.5em];
+    @apply pl-3;
 }
 
 ul li::marker {
-    @apply text-primary-accent font-bold inline-block w-[1em] -ml-[1em] content-["\2022"];
+    @apply text-primary-accent font-bold inline w-[1em] -ml-[1em] content-["\2022"];
+}
+
+ol {
+    @apply list-decimal list-outside pl-4;
+}
+
+ol li {
+    @apply pl-1;
+}
+
+ol li::marker {
+    @apply inline w-[1em] -ml-[1em];
 }
 
 article img {
@@ -93,6 +105,12 @@ input[type="checkbox"] {
     @apply mb-3 sm:mb-10 lg:mb-10;
 }
 
+/* Bard content */
+blockquote {
+    @apply bg-secondary-light p-6 lg:p-10;
+}
+
+/* Sets */
 .set {
     @apply px-6 sm:px-0;
 }

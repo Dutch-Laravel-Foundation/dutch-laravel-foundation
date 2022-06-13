@@ -11,7 +11,7 @@
         {{ if number_of_member_insights > 1 }}
             <div class="flex flex-col px-6 sm:flex-row sm:px-0">
                 {{ collection:insights category:is="Leden" limit="2" offset="1" }}
-                    {{ partial:blocks/meta-alt class="sm:!w-1/2 { switch between="sm:pr-5|sm:pl-5" }" :text="title" title="Insights - { category }" link="/insights/{ slug }" link_class="text-tertiary-dark hover:text-primary-accent" }}
+                    {{ partial:blocks/meta-alt class="sm:!w-1/2 px-0 { switch between="sm:pr-5|sm:pl-5" }" :text="title" title="Insights - { category }" link="/insights/{ slug }" link_class="text-tertiary-dark hover:text-primary-accent" }}
                 {{ /collection:insights }}
             </div>
         {{ /if }}
@@ -35,7 +35,7 @@
 </div>
 
 <div class="flex justify-center mb-20">
-    <h3 class="block text-center w-full sm:w-2/3 lg:w-1/2 2xl:w-1/3">Klanten van onze leden die vertrouwen op het Laravel framework</h3>
+    <h3 class="block text-center w-full sm:w-2/3 lg:w-1/2 2xl:w-1/3 px-6 lg:px-10">Klanten van onze leden die vertrouwen op het Laravel framework</h3>
 </div>
 
 <div class="flex justify-center mb-20 h-24">

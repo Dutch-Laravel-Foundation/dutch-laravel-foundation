@@ -2,11 +2,13 @@
     <div class="w-full lg:w-2/3 3xl:w-1/2 mb">
         {{ form:become_member }}
             {{ if success }}
-                {{ partial:forms/success }}
+                <div class="px-6 sm:px-0">
+                    {{ partial:forms/success }}
+                </div>
             {{ else }}
 
                 {{ if errors }}
-                    <div class="bg-primary-accent text-primary-contrast p-10 mb-6">
+                    <div class="bg-primary-accent text-primary-contrast p-6 mb-6">
                         {{ errors }}
                             {{ value }}<br>
                         {{ /errors }}

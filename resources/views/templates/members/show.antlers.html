@@ -1,35 +1,35 @@
-<div class="flex flex-row w-full">
-<div class="w-4/6 pr-20">
-    <h1>{{ title }}</h1>
-    {{ description }}
-    {{ if { collection:count in="cases" member:is="{ id }" } > 0 }}
-    {{ collection:cases member:is="{ id }" limit="3" }}
-        {{ if first }}<div class="mt-20">{{ /if }}
-        {{ partial:blocks/image-center-larger :image="featured_image" :title="title_long" :category="member:title" class="" link="/cases/{ slug }" }}
-            {{ introduction }}
-        {{ /partial:blocks/image-center-larger }}
-        {{ if first }}</div>{{ /if }}
-    {{ /collection:cases }}
-    {{ /if }}
-</div>
+<div class="flex flex-col lg:flex-row w-full px-6 lg:px-0">
+    <div class="lg:w-4/6 lg:pr-20 mb">
+        <h1>{{ title }}</h1>
+        {{ description }}
+        {{ if { collection:count in="cases" member:is="{ id }" } > 0 }}
+        {{ collection:cases member:is="{ id }" limit="3" }}
+            {{ if first }}<div class="mt-20">{{ /if }}
+            {{ partial:blocks/image-center-larger :image="featured_image" :title="title_long" :category="member:title" class="" link="/cases/{ slug }" }}
+                {{ introduction }}
+            {{ /partial:blocks/image-center-larger }}
+            {{ if first }}</div>{{ /if }}
+        {{ /collection:cases }}
+        {{ /if }}
+    </div>
 
-<div class="w-2/6">
-    {{ partial:company/base :logo="logo" class="mt-10 pb-10 px-10 w-full overflow-hidden" }}
-        {{ if city || province:title }}
-            {{ partial:blocks/meta-alt title="Locatie" text="{ arr({ city }, { province:title }) | remove_empty | list }" }}
-        {{ /if }}
-        {{ if website }}
-            {{ partial:blocks/meta-alt title="Website" :text="website" link="https://{ website }" }}
-        {{ /if }}
-        {{ if email }}
-            {{ partial:blocks/meta-alt title="E-mail" :text="email" link="mailto:{ email }" }}
-        {{ /if }}
-        {{ if phone }}
-            {{ partial:blocks/meta-alt title="Telefoonnummer" :text="phone" link="tel:{ phone regex_replace="[^+0-9]|" }" }}
-        {{ /if }}
-        {{ number_of_employees }}
-            {{ partial:blocks/meta-alt title="Aantal developers" :text="title" }}
-        {{ /number_of_employees }}
-    {{ /partial:company/base }}
-</div>
+    <div class="lg:w-2/6 mb">
+        {{ partial:company/base :logo="logo" class="mt-10 pb-10 px-10 w-full overflow-hidden" }}
+            {{ if city || province:title }}
+                {{ partial:blocks/meta-alt title="Locatie" text="{ arr({ city }, { province:title }) | remove_empty | list }" class="px-0" }}
+            {{ /if }}
+            {{ if website }}
+                {{ partial:blocks/meta-alt title="Website" :text="website" link="https://{ website }" class="px-0" }}
+            {{ /if }}
+            {{ if email }}
+                {{ partial:blocks/meta-alt title="E-mail" :text="email" link="mailto:{ email }" class="px-0" }}
+            {{ /if }}
+            {{ if phone }}
+                {{ partial:blocks/meta-alt title="Telefoonnummer" :text="phone" link="tel:{ phone regex_replace="[^+0-9]|" }" class="px-0" }}
+            {{ /if }}
+            {{ number_of_employees }}
+                {{ partial:blocks/meta-alt title="Aantal developers" :text="title" class="px-0" }}
+            {{ /number_of_employees }}
+        {{ /partial:company/base }}
+    </div>
 </div>
