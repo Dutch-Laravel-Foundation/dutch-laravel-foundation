@@ -14,7 +14,7 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.82",
         "laravel/tinker": "^2.5",
-        "statamic/cms": "3.3.14"
+        "statamic/cms": "3.3.15"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",
