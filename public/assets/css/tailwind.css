@@ -1711,6 +1711,11 @@ button[data-checked="true"] {
   padding-bottom: 1.5rem;
 }
 
+.\!px-0 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
 .pl-10 {
   padding-left: 2.5rem;
 }
