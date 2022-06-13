@@ -1,12 +1,14 @@
-<div class="flex flex-col lg:flex-row justify-between 3xl:justify-center w-full px-6 sm:px-0">
+<div class="flex flex-col lg:flex-row justify-between 3xl:justify-center w-full">
     <div class="w-full lg:w-1/2 3xl:w-1/3 4xl:w-1/3 mb">
         {{ form:contact }}
             {{ if success }}
-                {{ partial:forms/success }}
+                <div class="px-6 sm:px-0">
+                    {{ partial:forms/success }}
+                </div>
             {{ else }}
 
                 {{ if errors }}
-                    <div class="bg-primary-accent text-primary-contrast p-10 mb-6">
+                    <div class="bg-primary-accent text-primary-contrast p-6 mb-6">
                         Er ging iets mis. Controleer de foutmelding(en) hieronder.
                     </div>
                 {{ else }}
@@ -16,32 +18,34 @@
                 {{ /if }}
 
                 <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
-
-                {{ fields }}
-                    {{ if handle != 'agree' }}
-                        <div class="mb-6 {{ if first }}mt{{ /if }}">
-                            <label for="{{ handle }}"><span class="meta">{{ display }}</span></label>
-                            {{ if instructions_position == 'above' }}
-                                {{ instructions }}
-                            {{ /if }}
-                            {{# Add ID to field #}}
-                            {{ field regex_replace="^<([a-z]+)|<\\1 id='{ handle }'" regex_replace="" }}
-                            {{ if instructions_position == 'below' }}
-                                {{ instructions }}
-                            {{ /if }}
-                            {{ if error }}
-                                <p class="text-primary-accent">{{ error }}</p>
-                            {{ /if }}
-                        </div>
-                    {{ else }}
-                        <div class="flex flex-col lg:flex-row justify-between">
-                            <div class="flex flex-row w-full lg:w-4/6 text-tertiary-light mb">
-                                {{ field replace="<br>|" }}<span class="ml-2">{{ display regex_replace="(privacy statement)|<a href='/privacy-statement'>\\1</a>" }}</span>
+                
+                <div class="px-6 sm:px-0">
+                    {{ fields }}
+                        {{ if handle != 'agree' }}
+                            <div class="mb-6 {{ if first }}mt{{ /if }}">
+                                <label for="{{ handle }}"><span class="meta">{{ display }}</span></label>
+                                {{ if instructions_position == 'above' }}
+                                    {{ instructions }}
+                                {{ /if }}
+                                {{# Add ID to field #}}
+                                {{ field regex_replace="^<([a-z]+)|<\\1 id='{ handle }'" regex_replace="" }}
+                                {{ if instructions_position == 'below' }}
+                                    {{ instructions }}
+                                {{ /if }}
+                                {{ if error }}
+                                    <p class="text-primary-accent">{{ error }}</p>
+                                {{ /if }}
                             </div>
-                            {{ partial:buttons/primary type="submit" class="ml-auto w-full sm:w-auto" button_class="w-full" }}Versturen{{ /partial:buttons/primary }}
-                        </div>
-                    {{ /if }}
-                {{ /fields }}
+                        {{ else }}
+                            <div class="flex flex-col lg:flex-row justify-between">
+                                <div class="flex flex-row w-full lg:w-4/6 text-tertiary-light mb">
+                                    {{ field replace="<br>|" }}<span class="ml-2">{{ display regex_replace="(privacy statement)|<a href='/privacy-statement'>\\1</a>" }}</span>
+                                </div>
+                                {{ partial:buttons/primary type="submit" class="ml-auto w-full sm:w-auto" button_class="w-full" }}Versturen{{ /partial:buttons/primary }}
+                            </div>
+                        {{ /if }}
+                    {{ /fields }}
+                </div>
             {{ /if }}
         {{ /form:contact }}
     </div>

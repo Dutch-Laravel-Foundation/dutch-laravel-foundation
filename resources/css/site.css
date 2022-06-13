@@ -93,6 +93,7 @@ input[type="checkbox"] {
     @apply mb-3 sm:mb-10 lg:mb-10;
 }
 
+/* Sets */
 .set {
     @apply px-6 sm:px-0;
 }
