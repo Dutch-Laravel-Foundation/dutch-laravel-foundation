@@ -2273,6 +2273,10 @@ button[data-checked="true"] {
     display: none;
   }
 
+  .base\:h-96 {
+    height: 24rem;
+  }
+
   .base\:w-3\/4 {
     width: 75%;
   }
@@ -2563,6 +2567,10 @@ button[data-checked="true"] {
     margin-top: 2.5rem;
   }
 
+  .xl\:ml-auto {
+    margin-left: auto;
+  }
+
   .xl\:flex {
     display: flex;
   }
@@ -2616,6 +2624,14 @@ button[data-checked="true"] {
     flex-direction: row;
   }
 
+  .xl\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .xl\:items-center {
+    align-items: center;
+  }
+
   .xl\:bg-primary-accent {
     --tw-bg-opacity: 1;
     background-color: rgb(255 45 32 / var(--tw-bg-opacity));
@@ -2640,6 +2656,10 @@ button[data-checked="true"] {
 
   .xl\:pl-10 {
     padding-left: 2.5rem;
+  }
+
+  .xl\:pl-20 {
+    padding-left: 5rem;
   }
 }
 
@@ -2707,6 +2727,10 @@ button[data-checked="true"] {
   .\34xl\:columns-5 {
     -moz-columns: 5;
          columns: 5;
+  }
+
+  .\34xl\:justify-start {
+    justify-content: flex-start;
   }
 }
 
