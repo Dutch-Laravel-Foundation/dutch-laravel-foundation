@@ -2,9 +2,7 @@
     <div class="w-full lg:w-1/2 3xl:w-1/3 4xl:w-1/3 mb">
         {{ form:contact }}
             {{ if success }}
-                <div class="bg-secondary-light p-10">
-                    We hebben het bericht ontvangen en nemen zo snel mogelijk contact met u op.
-                </div>
+                {{ partial:forms/success }}
             {{ else }}
 
                 {{ if errors }}
