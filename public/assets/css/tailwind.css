@@ -2065,6 +2065,10 @@ button[data-checked="true"] {
     margin-left: -1.5rem;
   }
 
+  .sm\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -2553,6 +2557,10 @@ button[data-checked="true"] {
 
   .xl\:-mt-40 {
     margin-top: -10rem;
+  }
+
+  .xl\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .xl\:flex {
