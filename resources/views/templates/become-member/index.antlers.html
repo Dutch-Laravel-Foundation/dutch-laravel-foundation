@@ -1,5 +1,5 @@
-<div class="flex flex-row w-full">
-    <div class="w-5/6 pr-20">
+<div class="flex flex-col lg:flex-row justify-between 3xl:justify-center w-full">
+    <div class="w-full lg:w-2/3 3xl:w-1/2 mb">
         {{ form:become_member }}
             {{ if success }}
                 <div class="bg-secondary-light p-10">
@@ -22,10 +22,10 @@
 
                 <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
 
-                <div class="grid grid-cols-2 gap-6">
+                <div class="flex flex-col space-y-6 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 px-6 sm:px-0">
                     {{ fields }}
                         {{ if handle != 'agree' }}
-                            <div class="{{ type != "text" ?= 'col-span-2' }}">
+                            <div class="{{ type != "text" ?= 'sm:col-span-2' }}">
                                 <label for="{{ handle }}"><span class="meta">{{ display }}</span></label>
                                 {{ if instructions_position == 'above' }}
                                     {{ instructions }}
@@ -40,9 +40,9 @@
                                 {{ /if }}
                             </div>
                         {{ else }}
-                            <div class="col-span-2 flex flex-row justify-between">
-                                <div class="flex flex-row w-4/6 text-tertiary-light">{{ field replace="<br>|" }}<span class="ml-2">{{ display regex_replace="(privacy statement)|<a href='/privacy-statement'>\\1</a>" }}</span></div>
-                                {{ partial:buttons/primary type="submit" }}Versturen{{ /partial:buttons/primary }}
+                            <div class="col-span-2 flex flex-col lg:flex-row justify-between">
+                                <div class="flex flex-row w-full lg:w-4/6 text-tertiary-light mb">{{ field replace="<br>|" }}<span class="ml-2">{{ display regex_replace="(privacy statement)|<a href='/privacy-statement'>\\1</a>" }}</span></div>
+                                {{ partial:buttons/primary type="submit" class="ml-auto w-full sm:w-auto" button_class="w-full" }}Versturen{{ /partial:buttons/primary }}
                             </div>
                         {{ /if }}
                     {{ /fields }}

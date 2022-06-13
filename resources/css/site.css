@@ -92,6 +92,14 @@ input[type="checkbox"] {
     @apply mb-3 sm:mb-10 lg:mb-10;
 }
 
+.set {
+    @apply px-6 sm:px-0;
+}
+
+.set .set {
+    @apply !px-0;
+}
+
 /* Navigation */
 .animated {
     will-change: transform;
