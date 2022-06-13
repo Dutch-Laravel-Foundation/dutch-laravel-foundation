@@ -22,7 +22,6 @@ module.exports = {
     },
     fontSize: {
       'xs': ['12px', {
-        'letterSpacing': '.12em',
         'lineHeight': '2em',
       }],
       'sm': ['14px', {
@@ -37,10 +36,16 @@ module.exports = {
       'xl': ['24px', {
         'lineHeight': '1.333em',
       }],
-      '2xl': ['36px', {
+      '2xl': ['30px', {
         'lineHeight': '1.333em',
       }],
-      '3xl': ['48px', {
+      '3xl': ['36px', {
+        'lineHeight': '1.333em',
+      }],
+      '4xl': ['42px', {
+        'lineHeight': '1.333em',
+      }],
+      '5xl': ['48px', {
         'lineHeight': '1.167em',
       }],
     },
