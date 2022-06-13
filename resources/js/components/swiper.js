@@ -94,7 +94,6 @@ if(document.body.contains(logosSwiper)) {
         drag:
             logosSwiper.dataset.drag ?? false,
     };
-    console.log(logoSettings);
 
     // Logo swiper
     const logosSwiperSlider = new Swiper(logosSwiper, {

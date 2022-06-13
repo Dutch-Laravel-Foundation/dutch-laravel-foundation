@@ -1162,6 +1162,18 @@ button[data-checked="true"] {
   margin-bottom: 0px;
 }
 
+.mt-32 {
+  margin-top: 8rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
+}
+
+.mt-52 {
+  margin-top: 13rem;
+}
+
 .block {
   display: block;
 }
@@ -1427,6 +1439,10 @@ button[data-checked="true"] {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-end {
@@ -1776,6 +1792,30 @@ button[data-checked="true"] {
   padding-right: 5rem;
 }
 
+.pt-32 {
+  padding-top: 8rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-40 {
+  padding-top: 10rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pt-52 {
+  padding-top: 13rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2070,6 +2110,10 @@ button[data-checked="true"] {
     margin-left: -1.5rem;
   }
 
+  .sm\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -2183,6 +2227,22 @@ button[data-checked="true"] {
 
   .sm\:pr-6 {
     padding-right: 1.5rem;
+  }
+
+  .sm\:pt-32 {
+    padding-top: 8rem;
+  }
+
+  .sm\:pt-64 {
+    padding-top: 16rem;
+  }
+
+  .sm\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .sm\:pt-48 {
+    padding-top: 12rem;
   }
 
   .sm\:text-right {
@@ -2376,6 +2436,10 @@ button[data-checked="true"] {
     margin-left: 1rem;
   }
 
+  .lg\:mt-32 {
+    margin-top: 8rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -2510,6 +2574,10 @@ button[data-checked="true"] {
 
   .lg\:pt-0 {
     padding-top: 0px;
+  }
+
+  .lg\:pt-20 {
+    padding-top: 5rem;
   }
 
   .lg\:text-right {
@@ -2653,6 +2721,10 @@ button[data-checked="true"] {
 
   .xl\:pl-10 {
     padding-left: 2.5rem;
+  }
+
+  .xl\:pt-0 {
+    padding-top: 0px;
   }
 }
 
