@@ -1,11 +1,11 @@
 <div
-    class="relative flex flex-row w-full mb ml-auto py-10">
+    class="relative flex flex-row w-full py-10 ml-auto block-image-hightlight mb">
     <div class="absolute w-screen -ml-[50vw] left-1/2 bg-secondary-light bg-floor-primary bg-center bg-no-repeat h-full -z-10 -translate-y-10 sm:-translate-y-10"></div>
     {{# Copy of left-large adjusted for highlight #}}
     <div class="relative flex flex-col xl:flex-row w-full {{ class }}">
-        <div class="xl:absolute bg-secondary-light h-96 w-full xl:w-1/2">
+        <div class="w-full xl:absolute bg-secondary-light h-96 xl:w-1/2">
             {{ if image }}
-                <img class="object-cover w-full max-w-full h-full max-h-full" style="object-position:{{ featured_image:focus_css }}"
+                <img class="object-cover w-full h-full max-w-full max-h-full" style="object-position:{{ featured_image:focus_css }}"
                     src="{{ featured_image }}" alt="{{ featured_image:alt ?? title }}" />
             {{ /if }}
         </div>

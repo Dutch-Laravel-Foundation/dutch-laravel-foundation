@@ -1,7 +1,7 @@
-<div class="relative flex flex-col lg:flex-row w-full mb {{ class }}">
-    <div class="bg-secondary-light min-h-48 w-full lg:w-1/3">
+<div class="block-image-left relative flex flex-col lg:flex-row w-full mb {{ class }}">
+    <div class="w-full bg-secondary-light min-h-48 lg:w-1/3">
         {{ if image }}
-        <img class="object-cover w-full min-w-full max-w-full min-h-full" style="object-position:{{ featured_image:focus_css }}"
+        <img class="object-cover w-full max-w-full min-w-full min-h-full" style="object-position:{{ featured_image:focus_css }}"
             src="{{ featured_image }}" alt="{{ featured_image:alt ?? title }}" />
         {{ /if }}
     </div>
