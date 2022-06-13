@@ -25,7 +25,7 @@
             {{ partial:blocks/meta-alt title="E-mail" :text="email" link="mailto:{ email }" }}
         {{ /if }}
         {{ if phone }}
-            {{ partial:blocks/meta-alt title="Telefoonnummer" :text="phone" link="tel:{ phone }" }}
+            {{ partial:blocks/meta-alt title="Telefoonnummer" :text="phone" link="tel:{ phone regex_replace="[^+0-9]|" }" }}
         {{ /if }}
         {{ number_of_employees }}
             {{ partial:blocks/meta-alt title="Aantal developers" :text="title" }}
