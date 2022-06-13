@@ -612,7 +612,7 @@ body {
 h1 {
   margin-bottom: 2.5rem;
   overflow-wrap: break-word;
-  font-size: 24px;
+  font-size: 30px;
   line-height: 1.333em;
   font-weight: 700;
   --tw-text-opacity: 1;
@@ -630,7 +630,7 @@ h1 {
 h2 {
   margin-bottom: 2rem;
   overflow-wrap: break-word;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1.333em;
   --tw-text-opacity: 1;
   color: rgb(9 9 16 / var(--tw-text-opacity));
@@ -647,8 +647,8 @@ h2 {
 h3 {
   margin-bottom: 1.5rem;
   overflow-wrap: break-word;
-  font-size: 16px;
-  line-height: 1.5em;
+  font-size: 18px;
+  line-height: 1.333em;
   --tw-text-opacity: 1;
   color: rgb(9 9 16 / var(--tw-text-opacity));
 }
@@ -664,8 +664,8 @@ h3 {
 h4 {
   margin-bottom: 1rem;
   overflow-wrap: break-word;
-  font-size: 14px;
-  line-height: 1.714em;
+  font-size: 16px;
+  line-height: 1.5em;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(9 9 16 / var(--tw-text-opacity));
@@ -682,29 +682,32 @@ h4 {
 p {
   margin-bottom: 0.75rem;
   overflow-wrap: break-word;
-  font-size: 12px;
-  line-height: 2em;
-  letter-spacing: .12em;
-}
-
-@media (min-width: 768px) {
-
-  p {
-    font-size: 16px;
-    line-height: 1.5em;
-  }
+  font-size: 16px;
+  line-height: 1.5em;
 }
 
 span.meta, span.meta-dark {
   margin-bottom: 0.75rem;
   overflow-wrap: break-word;
-  font-size: 12px;
-  line-height: 2em;
-  letter-spacing: .12em;
+  font-size: 16px;
+  line-height: 1.5em;
   font-weight: 600;
   text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(132 132 135 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+
+  span.meta, span.meta-dark {
+    font-size: 12px;
+    line-height: 2em;
+  }
+}
+
+span.meta,
+span.meta-dark {
+    @layer letter-spacing-[.12em];
 }
 
 span.meta-dark {
@@ -1441,10 +1444,6 @@ button[data-checked="true"] {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.cursor-default {
-  cursor: default;
-}
-
 .list-none {
   list-style-type: none;
 }
@@ -1598,10 +1597,6 @@ button[data-checked="true"] {
 .border-secondary-light {
   --tw-border-opacity: 1;
   border-color: rgb(245 245 250 / var(--tw-border-opacity));
-}
-
-.border-b-transparent {
-  border-bottom-color: transparent;
 }
 
 .bg-white {
@@ -1850,14 +1845,13 @@ button[data-checked="true"] {
 }
 
 .text-2xl {
-  font-size: 36px;
+  font-size: 30px;
   line-height: 1.333em;
 }
 
 .text-xs {
   font-size: 12px;
   line-height: 2em;
-  letter-spacing: .12em;
 }
 
 .font-normal {
