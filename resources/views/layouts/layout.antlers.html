@@ -12,8 +12,8 @@
 
 {{# TODO: Multiple background images, adjustable per page #}}
 
-<body class="bg-white font-sans leading-normal text-primary-text">
-    <div class="frontend flex flex-col h-screen justify-between">
+<body class="font-sans leading-normal bg-white text-primary-text">
+    <div class="frontend flex flex-col h-screen justify-between page-{{ slug }}">
         {{ partial:header }}
         {{ partial:content }}
         {{ partial:footer }}
