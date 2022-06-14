@@ -170,3 +170,13 @@ header nav.animated.make-large {
 button[data-checked="true"] {
     @apply border-primary-accent opacity-100 !text-tertiary-dark;
 }
+
+/* Image group hover */
+.group-image-hover > figure img,
+.group-image-hover > div figure img {
+    @apply transition-transform duration-500 ease-in-out
+}
+.group-image-hover:hover > figure img,
+.group-image-hover:hover > div figure img {
+    @apply scale-105
+}

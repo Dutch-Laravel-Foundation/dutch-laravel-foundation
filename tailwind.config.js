@@ -90,7 +90,6 @@ module.exports = {
     plugins: [
       require('@tailwindcss/typography'),
     ],
-    namedGroups: ['block'],
   },
   purge: {
     options: {
@@ -106,6 +105,5 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
-    require('tailwindcss-named-groups'),
   ],
 }
