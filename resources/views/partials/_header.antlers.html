@@ -42,7 +42,7 @@ function menu() {
 
     {{# Desktop navigation #}}
     <div class="container flex-col items-center justify-center hidden p-10 pb-4 mx-auto xl:flex">
-        <nav class="hidden w-full h-20 space-x-8 align-middle animated xl:flex 2xl:space-x-10" x-cloak>
+        <nav class="hidden w-full h-20 space-x-8 align-middle animated xl:flex" x-cloak>
             {{ partial:navigation show_home_logo="true" active_class="text-primary-accent" class="" :style="banner ?= 'contrast'" }}
         </nav>
     </div>
@@ -55,7 +55,7 @@ function menu() {
             {{# Toggle button #}}
             <div class="absolute top-0 right-0 z-10 flex items-center justify-end mt-6 mb-4 ml-4 mr-4 lg:mt-10">
                 <button type="button" @click="toggleMenu()" disabled x-bind:disabled="disabled" class="inline-flex items-center justify-center w-12 h-12 transition duration-150 ease-in-out rounded-md svg-fill text-grey-500 hover:text-grey-500 hover:bg-grey-100 focus:outline-none focus:bg-grey-100 focus:text-grey-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#090910">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="{{ page.slug == 'home' ? '#ffffff' : '#090910' }}">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
