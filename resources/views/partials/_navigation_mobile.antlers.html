@@ -1,13 +1,15 @@
 {{ nav:main }}
     {{ if page.slug == 'home' && show_home_logo == true }}
-        <div class="w-full px-6 pt-10 pb-0">
-            <a href="{{ homepage }}" class="flex justify-start w-full {{ class }}"><img class="max-w-full max-h-full" src="{{ nav_logo }}" alt="{{ title }}"></a>
+        <div class="w-full px-6 pt-[1.5rem] pb-0">
+            <a href="{{ homepage }}" class="flex justify-start w-full {{ class }}">
+                <img class="max-w-full max-h-[3rem] xl:max-h-full" src="{{ nav_logo }}" alt="{{ title }}">
+            </a>
         </div>
         {{ partial:decoration/line }}
     {{ else }}
     {{ navigation_class = (slug == page.slug || segment_1 == page.slug) ? {active_class}: '' }}
         <a href="/{{ page.slug != 'home' ?= page.slug }}"
-            class="flex w-full items-center h-auto px-10 py-4 border-b border-transparent hover:bg-primary-accent hover:text-white {{ class }} {{ navigation_class }}">{{
+            class="{{ if index === 1 }} lg:mt-[-3.5rem] {{ endif }} flex w-full items-center h-auto px-10 py-4 border-b border-transparent hover:bg-primary-accent hover:text-white {{ class }} {{ navigation_class }}">{{
             title }}</a>
     {{ /if }}
 {{ /nav:main }}

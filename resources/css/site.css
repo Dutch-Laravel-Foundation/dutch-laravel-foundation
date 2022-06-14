@@ -6,29 +6,34 @@ body {
     @apply overflow-x-hidden;
 }
 
+.container {
+    width: 100%;
+    max-width: 1890px;
+}
+
 h1 {
-    @apply text-2xl md:text-5xl font-bold text-tertiary-dark mb-10 break-words;
+    @apply mb-10 text-2xl font-bold break-words md:text-5xl text-tertiary-dark;
 }
 
 h2 {
-    @apply text-xl md:text-3xl text-tertiary-dark mb-8 break-words;
+    @apply mb-8 text-xl break-words md:text-3xl text-tertiary-dark;
 }
 
 h3 {
-    @apply text-lg md:text-xl text-tertiary-dark mb-6 break-words;
+    @apply mb-6 text-lg break-words md:text-xl text-tertiary-dark;
 }
 
 h4 {
-    @apply text-base md:text-lg font-bold text-tertiary-dark mb-4 break-words;
+    @apply mb-4 text-base font-bold break-words md:text-lg text-tertiary-dark;
 }
 
 p {
-    @apply text-base mb-3 break-words;
+    @apply mb-3 text-base break-words;
 }
 
 span.meta,
 span.meta-dark {
-    @apply text-base md:text-xs uppercase font-semibold text-tertiary-light mb-3 break-words;
+    @apply mb-3 text-base font-semibold uppercase break-words md:text-xs text-tertiary-light;
     @layer letter-spacing-[.12em];
 }
 
@@ -37,11 +42,11 @@ span.meta-dark {
 }
 
 a {
-    @apply text-tertiary-dark hover:text-primary-accent cursor-pointer transition-all;
+    @apply transition-all cursor-pointer text-tertiary-dark hover:text-primary-accent;
 }
 
 #content a {
-    @apply text-primary-accent hover:text-tertiary-regular transition-colors;
+    @apply transition-colors text-primary-accent hover:text-tertiary-regular;
 }
 
 nav {
@@ -53,7 +58,7 @@ footer {
 }
 
 ul {
-    @apply list-disc list-outside pl-2;
+    @apply pl-2 list-disc list-outside;
 }
 
 ul li {
@@ -65,7 +70,7 @@ ul li::marker {
 }
 
 ol {
-    @apply list-decimal list-outside pl-4;
+    @apply pl-4 list-decimal list-outside;
 }
 
 ol li {
@@ -86,7 +91,7 @@ textarea {
 }
 
 input[type="checkbox"] {
-    @apply bg-secondary-light text-primary-accent w-6 h-6 mr-2 focus:ring-primary-accent focus:ring-opacity-25 border border-tertiary-light border-opacity-40 rounded;
+    @apply w-6 h-6 mr-2 border rounded bg-secondary-light text-primary-accent focus:ring-primary-accent focus:ring-opacity-25 border-tertiary-light border-opacity-40;
 }
 
 .mt {
@@ -107,12 +112,12 @@ input[type="checkbox"] {
 
 /* Bard content */
 blockquote {
-    @apply bg-secondary-light p-6 lg:p-10;
+    @apply p-6 bg-secondary-light lg:p-10;
 }
 
 /* Sets */
 .set {
-    @apply px-6 sm:px-0;
+    @apply px-0;
 }
 
 .set .set {

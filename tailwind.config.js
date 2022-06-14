@@ -5,6 +5,10 @@ module.exports = {
     './resources/**/*.vue',
     './content/**/*.md'
   ],
+  corePlugins: {
+    container: false,
+  },
+  important: false,
   theme: {
     screens: {
       xs: '321px',
