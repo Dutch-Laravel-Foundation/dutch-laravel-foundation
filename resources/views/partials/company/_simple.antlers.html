@@ -1,5 +1,5 @@
 {{# Make sure to edit company/simple as well if anything changes either here or in child components #}}
-<div class="{{ class }}">
+<div class="{{ class }}" data-aos="fade-up" data-aos-delay="{{ index * 100 }}">
     {{ partial:company/base :logo="logo" }}
         {{ partial:blocks/meta :title="title" :text="text" class="" }}
         {{ partial:buttons/more :link="link" class="" button_class="" background_class="" }}

@@ -1,3 +1,4 @@
+/* Main styling */
 html {
     @apply overflow-x-hidden text-tertiary-regular;
 }

@@ -83,3 +83,16 @@ if (!(window.console && window.console.log && window.console.group)) {
 window.console.group('DEVELOPER ALERT!');
 window.console.log('\nHallo daar! Wil jij ook zulke mooie dingen maken zoals deze website? Neem eens een kijkje bij ons op:\n\nwww.vormkracht10.nl\n\n');
 window.console.groupEnd();
+
+// AOS
+import AOS from 'aos';
+
+let aosElement = document.querySelector('[data-aos]');
+
+if (aosElement) {
+    AOS.init({
+        once: true,
+    });
+    
+    window.addEventListener('load', AOS.refresh);
+}
