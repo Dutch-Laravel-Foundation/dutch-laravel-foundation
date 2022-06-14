@@ -41,8 +41,8 @@ function menu() {
 <header class="fixed w-screen z-[999] {{ banner ? 'xl:bg-primary-accent': 'xl:bg-white' }}">
 
     {{# Desktop navigation #}}
-    <div class="container mx-auto hidden xl:flex flex-col items-center justify-center p-10 pb-4">
-        <nav class="animated hidden xl:flex w-full space-x-10 align-middle h-20" x-cloak>
+    <div class="container flex-col items-center justify-center hidden p-10 pb-4 mx-auto xl:flex">
+        <nav class="hidden w-full h-20 space-x-8 align-middle animated xl:flex 2xl:space-x-10" x-cloak>
             {{ partial:navigation show_home_logo="true" active_class="text-primary-accent" class="" :style="banner ?= 'contrast'" }}
         </nav>
     </div>
@@ -50,10 +50,10 @@ function menu() {
     {{# Mobile navigation #}}
     {{ nav_logo = style == 'contrast' ? '/assets/img/logo-alt.svg': '/assets/img/logo.svg' }}
     <div class="relative xl:hidden js-alpine-init {{ banner ? 'bg-primary-accent': 'bg-white' }} pb-6" x-data="menu()" x-init="init()" x-cloak role="navigation">
-        <div class="flex flex-row justify-between mx-auto items-start w-full px-6 pt-10 pb-0">
+        <div class="flex flex-row items-start justify-between w-full px-6 pt-10 pb-0 mx-auto">
             <a href="/" class="flex justify-start w-full"><img class="max-w-full max-h-full" src="{{ banner ? '/assets/img/logo-alt.svg': '/assets/img/logo.svg' }}" alt="Home"></a>
             {{# Toggle button #}}
-            <div class="flex items-center justify-end absolute top-0 right-0 z-10 m-4">
+            <div class="absolute top-0 right-0 z-10 flex items-center justify-end m-4">
                 <button type="button" @click="toggleMenu()" disabled x-bind:disabled="disabled" class="inline-flex items-center justify-center w-12 h-12 transition duration-150 ease-in-out rounded-md svg-fill text-grey-500 hover:text-grey-500 hover:bg-grey-100 focus:outline-none focus:bg-grey-100 focus:text-grey-500">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#090910">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -69,12 +69,12 @@ function menu() {
             x-transition:enter-end="opacity-100" x-transition:leave="duration-100 ease-in"
             x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
             <div class="w-full overflow-scroll">
-                <div class="absolute top-0 flex-col flex left-0 w-full min-h-full bg-primary-contrast">
+                <div class="absolute top-0 left-0 flex flex-col w-full min-h-full bg-primary-contrast">
                     {{# Menu items wrapper #}}
                     <div class="absolute top-0 right-0 z-10">
                         <button type="button" @click="toggleMenu()"
                             disabled x-bind:disabled="disabled"
-                            class="relative m-4 p-2 px-4 bg-primary-accent text-white transition duration-150 ease-in-out svg-fill focus:outline-none uppercase font-heading text-10">
+                            class="relative p-2 px-4 m-4 text-white uppercase transition duration-150 ease-in-out bg-primary-accent svg-fill focus:outline-none font-heading text-10">
                             X
                         </button>
                     </div>
