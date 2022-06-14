@@ -173,10 +173,12 @@ button[data-checked="true"] {
 
 /* Image group hover */
 .group-image-hover > figure img,
-.group-image-hover > div figure img {
+.group-image-hover > div figure img,
+.group-image-hover > a figure img {
     @apply transition-transform duration-500 ease-in-out
 }
 .group-image-hover:hover > figure img,
-.group-image-hover:hover > div figure img {
+.group-image-hover:hover > div figure img,
+.group-image-hover:hover > a figure img {
     @apply scale-105
 }
