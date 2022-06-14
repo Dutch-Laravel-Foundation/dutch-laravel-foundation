@@ -50,15 +50,15 @@ function menu() {
     {{# Mobile navigation #}}
     {{ nav_logo = style == 'contrast' ? '/assets/img/logo-alt.svg': '/assets/img/logo.svg' }}
     <div class="relative xl:hidden js-alpine-init {{ banner ? 'bg-primary-accent': 'bg-white' }} pb-6" x-data="menu()" x-init="init()" x-cloak role="navigation">
-        <div class="flex flex-row items-start justify-between w-full px-6 pt-6 pb-0 mx-auto lg:pt-10">
+        <div class="flex flex-row items-start justify-between w-full px-6 pt-6 pb-0 mx-auto xl:pt-10">
             <a href="/" class="flex justify-start w-full"><img class="max-w-full max-h-[3rem] xl:max-h-full" src="{{ banner ? '/assets/img/logo-alt.svg': '/assets/img/logo.svg' }}" alt="Home"></a>
             {{# Toggle button #}}
-            <button class="z-[999] absolute top-8 right-8 lg:right-20 lg:top-20 h-[2.4rem] w-[2.5rem] cursor-pointer" @click="toggleMenu()" disabled x-bind:disabled="disabled">
+            <button class="z-[999] absolute top-8 right-8 xl:right-20 xl:top-[3rem] h-[2.4rem] w-[2.5rem] cursor-pointer" @click="toggleMenu()" disabled x-bind:disabled="disabled">
                 <div class="relative focus:outline-none">
                     <div class="absolute block w-[4rem]">
-                        <span aria-hidden="true" class="block absolute h-[0.2rem] w-[2.5rem] {{ page.slug == 'home' ? 'bg-white' : 'bg-tertiary-dark' }} transform transition rounded-full duration-300 ease-in-out" :class="{'rotate-45 !bg-white': open,' -translate-y-3 lg:-translate-y-5': !open }"></span>
+                        <span aria-hidden="true" class="block absolute h-[0.2rem] w-[2.5rem] {{ page.slug == 'home' ? 'bg-white' : 'bg-tertiary-dark' }} transform transition rounded-full duration-300 ease-in-out" :class="{'rotate-45 !bg-white': open,' -translate-y-3': !open }"></span>
                         <span aria-hidden="true" class="block absolute h-[0.2rem] w-[2rem] {{ page.slug == 'home' ? 'bg-white' : 'bg-tertiary-dark' }} transform transition rounded-full duration-300 ease-in-out" :class="{'opacity-0': open } "></span>
-                        <span aria-hidden="true" class="block absolute h-[0.2rem] w-[2.5rem] {{ page.slug == 'home' ? 'bg-white' : 'bg-tertiary-dark' }} transform  transition rounded-full duration-300 ease-in-out" :class="{'-rotate-45 !bg-white': open, ' translate-y-3 lg:translate-y-5': !open}"></span>
+                        <span aria-hidden="true" class="block absolute h-[0.2rem] w-[2.5rem] {{ page.slug == 'home' ? 'bg-white' : 'bg-tertiary-dark' }} transform  transition rounded-full duration-300 ease-in-out" :class="{'-rotate-45 !bg-white': open, ' translate-y-3': !open}"></span>
                     </div>
                 </div>
             </button>

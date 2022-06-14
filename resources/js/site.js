@@ -96,3 +96,28 @@ if (aosElement) {
     
     window.addEventListener('load', AOS.refresh);
 }
+
+// GSAP
+import { gsap } from "gsap";
+
+gsap.to('.top-floor-floating-element-bottom', {
+    y: 20, 
+    duration: 5,
+    stagger: {
+        each: 0.6,
+        repeat: -1,
+        yoyo: true,
+    }
+});
+
+gsap.to('.top-floor-floating-element-top', {
+    y: -20, 
+    duration: 5,
+    stagger: {
+        each: 0.6,
+        repeat: -1,
+        yoyo: true,
+    }
+});
+
+
