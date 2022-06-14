@@ -53,13 +53,15 @@ function menu() {
         <div class="flex flex-row items-start justify-between w-full px-6 pt-6 pb-0 mx-auto lg:pt-10">
             <a href="/" class="flex justify-start w-full"><img class="max-w-full max-h-[3rem] xl:max-h-full" src="{{ banner ? '/assets/img/logo-alt.svg': '/assets/img/logo.svg' }}" alt="Home"></a>
             {{# Toggle button #}}
-            <div class="absolute top-0 right-0 z-10 flex items-center justify-end mb-4 ml-4 mr-4 mt-7 lg:mt-10">
-                <button type="button" @click="toggleMenu()" disabled x-bind:disabled="disabled" class="inline-flex items-center justify-center h-[2.5rem] w-[2.5rem] transition duration-150 ease-in-out rounded-md svg-fill text-grey-500 hover:text-grey-500 hover:bg-grey-100 focus:outline-none focus:bg-grey-100 focus:text-grey-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="{{ page.slug == 'home' ? '#ffffff' : '#090910' }}">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
-            </div>
+            <button class="z-[999] absolute top-8 right-8 lg:right-20 lg:top-20 h-[2.4rem] w-[2.5rem] cursor-pointer" @click="toggleMenu()" disabled x-bind:disabled="disabled">
+                <div class="relative focus:outline-none">
+                    <div class="absolute block w-[4rem]">
+                        <span aria-hidden="true" class="block absolute h-[0.2rem] w-[2.5rem] {{ page.slug == 'home' ? 'bg-white' : 'bg-tertiary-dark' }} transform transition rounded-full duration-300 ease-in-out" :class="{'rotate-45 !bg-white': open,' -translate-y-3 lg:-translate-y-5': !open }"></span>
+                        <span aria-hidden="true" class="block absolute h-[0.2rem] w-[2rem] {{ page.slug == 'home' ? 'bg-white' : 'bg-tertiary-dark' }} transform transition rounded-full duration-300 ease-in-out" :class="{'opacity-0': open } "></span>
+                        <span aria-hidden="true" class="block absolute h-[0.2rem] w-[2.5rem] {{ page.slug == 'home' ? 'bg-white' : 'bg-tertiary-dark' }} transform  transition rounded-full duration-300 ease-in-out" :class="{'-rotate-45 !bg-white': open, ' translate-y-3 lg:translate-y-5': !open}"></span>
+                    </div>
+                </div>
+            </button>
         </div>
 
         {{# Mobile menu container with transitions #}}
@@ -74,8 +76,7 @@ function menu() {
                     <div class="absolute top-[1rem] right-0 z-10">
                         <button type="button" @click="toggleMenu()"
                             disabled x-bind:disabled="disabled"
-                            class="relative p-2 px-4 m-4 text-white uppercase transition duration-150 ease-in-out bg-primary-accent svg-fill focus:outline-none font-heading text-10">
-                            <span class="relative top-[0.1rem]">x</span>
+                            class="relative h-[3rem] right-[0.7rem] bottom-[0.2rem] w-[3rem] m-4 text-white uppercase transition duration-150 ease-in-out bg-primary-accent focus:outline-none">
                         </button>
                     </div>
                     {{ partial:navigation_mobile show_home_logo="true" active_class="text-primary-accent" class="" }}
