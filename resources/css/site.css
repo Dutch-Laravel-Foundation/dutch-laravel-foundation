@@ -1,5 +1,5 @@
 html {
-    @apply text-tertiary-regular;
+    @apply overflow-x-hidden text-tertiary-regular;
 }
 
 body {
