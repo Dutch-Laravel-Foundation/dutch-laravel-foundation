@@ -2,10 +2,10 @@
     class="relative flex flex-row w-full py-10 ml-auto block-image-hightlight mb">
     <div class="absolute w-screen -ml-[50vw] left-1/2 bg-secondary-light bg-floor-primary bg-center bg-no-repeat h-full -z-10 -translate-y-10 sm:-translate-y-10"></div>
     {{# Copy of left-large adjusted for highlight #}}
-    <div class="relative group-block flex flex-col xl:flex-row w-full {{ class }}">
+    <div class="relative group-image-hover flex flex-col xl:flex-row w-full {{ class }}">
         <figure class="w-full overflow-hidden xl:absolute bg-secondary-light h-96 xl:w-1/2">
             {{ if image }}
-                <img class="object-cover w-full h-full max-w-full max-h-full transition-transform duration-500 ease-in-out group-block-hover:scale-105" style="object-position:{{ featured_image:focus_css }}"
+                <img class="object-cover w-full h-full max-w-full max-h-full" style="object-position:{{ featured_image:focus_css }}"
                     src="{{ featured_image }}" alt="{{ featured_image:alt ?? title }}" />
             {{ /if }}
         </figure>
