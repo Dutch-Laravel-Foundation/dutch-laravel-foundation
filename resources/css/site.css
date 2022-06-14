@@ -111,6 +111,10 @@ input[type="checkbox"] {
     @apply mb-3 sm:mb-10 lg:mb-10;
 }
 
+[x-cloak] {
+    display: none;
+}
+
 /* Bard content */
 blockquote {
     @apply p-6 bg-secondary-light lg:p-10;
