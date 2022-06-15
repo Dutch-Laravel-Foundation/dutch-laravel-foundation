@@ -35,7 +35,7 @@ description: |-
   Het beheer van de hardware en Docker images wordt gedaan door Kubernetes. De software zorgt ervoor dat een verzameling van hardware tot een cluster gecombineerd wordt. Vervolgens kan er on demand meer vermogen aan het project worden geleverd. Dit kan bijvoorbeeld gebruikt worden, wanneer de queue oploopt en er tijdelijk meer workers nodig zijn.
 featured_image: verbouwing.png
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1653395870
+updated_at: 1655280756
 title_long: 'Weten wat je verbouwing kost, de volgende showcase helpt je daarbij!'
 member: 4a0f57f4-997d-4532-9c9d-c5322a3ae05a
 client: 964d6872-f078-4702-ba76-de96e3123ba5
@@ -60,6 +60,11 @@ content:
       -
         type: text
         text: 'Tot slot was het aan de ervaren spreker Bobby Bouwman om een introductie over Kubernetes te geven om vervolgens in te zoomen op het gebruik van Kubernetes in een Laravel project. Databases, logging, storage, queues en sessies kwamen allemaal voorbij. Net als de drie gouden regels die Bobbie binnen zijn projecten hanteert (zie zijn presentatie). Tot slot kwam ook Laravel Vapor nog even aan de orde.'
+  -
+    type: set
+    attrs:
+      values:
+        type: spacer
   -
     type: set
     attrs:

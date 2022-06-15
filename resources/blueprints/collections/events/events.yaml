@@ -67,6 +67,12 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
+          sets:
+            spacer:
+              display: Spacer
+              fields:
+                -
+                  import: spacer
       -
         handle: featured_image
         field:

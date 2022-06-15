@@ -58,27 +58,27 @@ footer {
     @apply text-sm;
 }
 
-ul {
+#content ul {
     @apply pl-2 list-disc list-outside;
 }
 
-ul li {
+#content ul li {
     @apply pl-3;
 }
 
-ul li::marker {
+#content ul li::marker {
     @apply text-primary-accent font-bold inline w-[1em] -ml-[1em] content-["\2022"];
 }
 
-ol {
+#content ol {
     @apply pl-4 list-decimal list-outside;
 }
 
-ol li {
+#content ol li {
     @apply pl-1;
 }
 
-ol li::marker {
+#content ol li::marker {
     @apply inline w-[1em] -ml-[1em];
 }
 

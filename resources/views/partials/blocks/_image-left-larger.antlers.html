@@ -5,8 +5,8 @@
                 src="{{ featured_image }}" alt="{{ featured_image:alt ?? title }}" />
         {{ /if }}
     </figure>
-    {{ partial:blocks/base class="lg:ml-[33.33%] relative w-full lg:w-2/3 lg:mt-48 z-10" }}
-    {{ slot }}
+    {{ partial:blocks/base class="lg:ml-[33.33%] relative w-full lg:w-2/3 lg:mt-48 z-10 !pb-16" }}
+        {{ slot }}
         {{ partial:buttons/more :link="link" class="" button_class="" background_class="" }}
     {{ /partial:blocks/base }}
 </div>

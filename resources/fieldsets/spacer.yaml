@@ -1,0 +1,11 @@
+title: Spacer
+fields:
+  -
+    handle: spacer
+    field:
+      display: Spacer
+      type: hidden
+      icon: hidden
+      listable: hidden
+      instructions_position: above
+      read_only: false

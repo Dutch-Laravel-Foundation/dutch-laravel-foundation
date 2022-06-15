@@ -4,6 +4,8 @@
         <div class="w-full 2xl:w-2/3 3xl:w-1/2">
             <h1>{{ title }}</h1>
             {{ content }}
+                {{ partial src="sets/autoload" }}
+            {{ /content }}
             {{ partial:decoration/line }}
         </div>
         {{ partial:blocks/base class=" w-screen -ml-6 sm:ml-0 sm:w-fit mb-half !pb-6 lg:!pb-10" title="" }}

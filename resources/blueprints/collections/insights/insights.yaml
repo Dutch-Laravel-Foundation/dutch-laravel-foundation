@@ -95,6 +95,12 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
+          sets:
+            spacer:
+              display: Spacer
+              fields:
+                -
+                  import: spacer
           if:
             highlight: 'equals true'
   sidebar:
