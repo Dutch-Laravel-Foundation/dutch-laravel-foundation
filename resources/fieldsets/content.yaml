@@ -66,6 +66,18 @@ fields:
                     fields:
                       -
                         import: line
+                  video:
+                    display: Video
+                    fields:
+                      -
+                        handle: video
+                        field:
+                          display: Video
+                          type: video
+                          icon: video
+                          listable: hidden
+                          instructions_position: above
+                          read_only: false
                 container: assets
             -
               handle: right
@@ -123,6 +135,18 @@ fields:
                     fields:
                       -
                         import: line
+                  video:
+                    display: Video
+                    fields:
+                      -
+                        handle: video
+                        field:
+                          display: Video
+                          type: video
+                          icon: video
+                          listable: hidden
+                          instructions_position: above
+                          read_only: false
                 container: assets
         3_4_column:
           display: '75% width column'
@@ -176,6 +200,18 @@ fields:
                     fields:
                       -
                         import: line
+                  video:
+                    display: Video
+                    fields:
+                      -
+                        handle: video
+                        field:
+                          display: Video
+                          type: video
+                          icon: video
+                          listable: hidden
+                          instructions_position: above
+                          read_only: false
         image:
           display: Image
           fields:
@@ -196,6 +232,18 @@ fields:
           fields:
             -
               import: line
+        video:
+          display: Video
+          fields:
+            -
+              handle: video
+              field:
+                display: Video
+                type: video
+                icon: video
+                listable: hidden
+                instructions_position: above
+                read_only: false
       buttons:
         - h1
         - h2

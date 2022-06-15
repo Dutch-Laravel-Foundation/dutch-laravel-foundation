@@ -5,9 +5,9 @@
                 src="{{ glide src="{featured_image}" fit="crop_focal" width="1280" }}" alt="{{ featured_image:alt ?? title }}" />
         {{ /if }}
     </figure>
-    <div class="flex flex-row items-center py-4 pl-6 text-lg text-white lg:hidden bg-tertiary-light">{{ date_start format="j M" | strtolower }}</div>
+    <div class="flex flex-row items-center py-4 pl-6 text-lg text-white lg:hidden {{ past_event ? 'bg-tertiary-light': 'bg-primary-accent' }}">{{ date_start format="j M" | strtolower }}</div>
     {{ partial:blocks/base class="relative w-full lg:w-2/3 lg:my-10 z-10 lg:!pl-32 !pb-16" :category="category" }}
-        <div class="absolute top-0 left-0 hidden w-24 h-full p-6 text-center text-white lg:block bg-tertiary-regular">
+        <div class="absolute top-0 left-0 hidden w-24 h-full p-6 text-center text-white lg:block {{ past_event ? 'bg-tertiary-light': 'bg-primary-accent' }}">
             <span class="block text-2xl">{{ date_start format="j" }}</span>
             <span class="block text-lg">{{ date_start format="M" | strtolower }}</span>
         </div>
