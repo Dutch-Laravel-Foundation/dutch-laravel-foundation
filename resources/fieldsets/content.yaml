@@ -171,6 +171,11 @@ fields:
           fields:
             -
               import: meta_block
+        spacer:
+          display: Spacer
+          fields:
+            -
+              import: spacer
       buttons:
         - h1
         - h2
