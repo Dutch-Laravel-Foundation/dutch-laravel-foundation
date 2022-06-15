@@ -53,7 +53,7 @@ function menu() {
         <div class="flex flex-row items-start justify-between w-full px-6 pt-6 pb-0 mx-auto xl:pt-10">
             <a href="/" class="flex justify-start w-full"><img class="max-w-full max-h-[3rem] xl:max-h-full" src="{{ banner ? '/assets/img/logo-alt.svg': '/assets/img/logo.svg' }}" alt="Home"></a>
             {{# Toggle button #}}
-            <button class="z-[999] absolute top-8 right-8 xl:right-20 xl:top-[3rem] h-[2.4rem] w-[2.5rem] cursor-pointer" @click="toggleMenu()" disabled x-bind:disabled="disabled">
+            <button class="z-[999] absolute top-7 right-8 xl:right-20 xl:top-[3rem] h-[2.4rem] w-[2.5rem] cursor-pointer" @click="toggleMenu()" disabled x-bind:disabled="disabled">
                 <div class="relative focus:outline-none">
                     <div class="absolute block w-[4rem]">
                         <span aria-hidden="true" class="block absolute h-[0.2rem] w-[2.5rem] {{ page.slug == 'home' ? 'bg-white' : 'bg-tertiary-dark' }} transform transition rounded-full duration-300 ease-in-out" :class="{'rotate-45 !bg-white': open,' -translate-y-3': !open }"></span>
@@ -73,7 +73,7 @@ function menu() {
             <div class="w-full overflow-scroll">
                 <div class="absolute top-0 left-0 flex flex-col w-full min-h-full bg-primary-contrast">
                     {{# Menu items wrapper #}}
-                    <div class="absolute top-[1rem] right-0 z-10">
+                    <div class="absolute top-[0.8rem] right-0 z-10">
                         <button type="button" @click="toggleMenu()"
                             disabled x-bind:disabled="disabled"
                             class="relative h-[3rem] right-[0.7rem] bottom-[0.2rem] w-[3rem] m-4 text-white uppercase transition duration-150 ease-in-out bg-primary-accent focus:outline-none">

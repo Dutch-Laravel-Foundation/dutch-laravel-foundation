@@ -25,7 +25,7 @@
 
                 <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
 
-                <div class="flex flex-col px-6 space-y-6 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 sm:px-0">
+                <div class="flex flex-col pb-10 space-y-6 sm:pb-0 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 sm:px-0">
                     {{ fields }}
                         {{ if handle != 'agree' }}
                             <div class="{{ type != "text" ?= 'sm:col-span-2' }}">
