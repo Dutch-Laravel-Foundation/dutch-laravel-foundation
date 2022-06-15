@@ -5,29 +5,34 @@
     {{ partial src="sets/autoload" :first="first" :last="last" }}
 {{ /content }}
 
-<div
-    class="w-full swiper js-reviews-swiper bg-secondary-light mb"
-    data-loop="true"
-    spaceBetween="0"
->
-    <div class="swiper-wrapper">
-    {{ client_name = null }}
-    {{ collection:reviews sort="random" }}
+{{ review_count = { collection:count in="reviews" } }}
+{{ if review_count > 0 }}
+    <div
+        class="w-full {{ review_count > 1 ?= 'swiper js-reviews-swiper' }} bg-secondary-light mb"
+        data-loop="true"
+        spaceBetween="0"
+    >
+        <div class="swiper-wrapper">
         {{ client_name = null }}
-        {{ client }}
-            {{ client_name = title }}
-        {{ /client }}
-        <div class="swiper-slide">
-            <div class="w-full px-6 py-6 sm:px-10 sm:py-10 md:px-0 md:py-16 md:w-2/3 xl:w-3/4 4xl:w-10/12 mx-auto h-[24rem] max-h-[24rem] sm:h-[16rem] sm:max-h-[16rem] md:h-[20rem] md:max-h-[20rem] flex flex-col justify-between">
-                <h3>{{ content regex_replace="^<p>|<p>&quot;" regex_replace="</p>$|&quot;</p>" }}</h3>
-                <div class="flex flex-col items-baseline lg:flex-row">
-                    <h4 class="mb-0">{{ title }}</h4>
-                    <span class="meta lg:ml-4 !mb-0">{{ arr({ function }, { client_name }) | remove_empty | list }}</span>
+        {{ collection:reviews sort="random" }}
+            {{ client_name = null }}
+            {{ client }}
+                {{ client_name = title }}
+            {{ /client }}
+            <div class="swiper-slide">
+                <div class="w-full px-6 py-6 sm:px-10 sm:py-10 md:px-0 md:py-16 md:w-2/3 xl:w-3/4 4xl:w-10/12 mx-auto h-[24rem] max-h-[24rem] sm:h-[16rem] sm:max-h-[16rem] md:h-[20rem] md:max-h-[20rem] flex flex-col justify-between">
+                    <h3>{{ content regex_replace="^<p>|<p>&quot;" regex_replace="</p>$|&quot;</p>" }}</h3>
+                    <div class="flex flex-col items-baseline lg:flex-row">
+                        <h4 class="mb-0">{{ title }}</h4>
+                        <span class="meta lg:ml-4 !mb-0">{{ arr({ function }, { client_name }) | remove_empty | list }}</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    {{ /collection:reviews }}
-</div>
-{{ partial:buttons/swiper class="swiper-button-prev" button_class="" background_class="" }}<img src="/assets/img/icons/left.svg">{{ /partial:buttons/swiper }}
-{{ partial:buttons/swiper class="swiper-button-next" button_class="" background_class="" }}<img src="/assets/img/icons/right.svg">{{ /partial:buttons/swiper }}
-</div>
+        {{ /collection:reviews }}
+    </div>
+    {{ if review_count > 1 }}
+        {{ partial:buttons/swiper class="swiper-button-prev" button_class="" background_class="" }}<img src="/assets/img/icons/left.svg">{{ /partial:buttons/swiper }}
+        {{ partial:buttons/swiper class="swiper-button-next" button_class="" background_class="" }}<img src="/assets/img/icons/right.svg">{{ /partial:buttons/swiper }}
+    {{ /if }}
+    </div>
+{{ /if }}
