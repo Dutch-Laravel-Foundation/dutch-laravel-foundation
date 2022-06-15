@@ -1,6 +1,6 @@
 {{ number_of_member_insights = { collection:count in="insights" category:is="Leden" } }}
 {{ if number_of_member_insights > 0 }}
-    <section class="w-full mb">
+    <section class="relative w-full mb">
         {{ collection:insights category:is="Leden" limit="1" }}
             <div class="w-full xl:w-11/12 lg:-mt-10 xl:-mt-40">
                 {{ partial:blocks/image-left-large class="" :image="featured_image" :category="category" link="/insights/{ slug }" }}
@@ -15,6 +15,13 @@
                 {{ /collection:insights }}
             </div>
         {{ /if }}
+
+        {{# Background image #}}
+        <div class="absolute z-[-1] flex items-center justify-center sm:top-[12rem] top-[20rem] md:top-[10rem] lg:top-[-4rem] left-[-28rem]">
+            <div>
+                <img src="/assets/img/backgrounds/floor-mid-half-gray.svg" class="w-[1000px] h-[600px]"/>
+            </div>
+        </div>
     </section>
 {{ /if }}
 
