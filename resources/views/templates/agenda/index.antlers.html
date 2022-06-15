@@ -5,9 +5,23 @@
     {{ partial src="sets/autoload" }}
 {{ /content }}
 
-<section>
+<section class="mb-half">
     {{ if { collection:count in="events" sort="date_start:desc" date_start:is_after="{today | modify_date:-1 day}" } > 0 }}
         {{ collection:events sort="date_start:desc" date_start:is_after="{today | modify_date:-1 day}" }}
+            {{ partial:blocks/event :image="image" :category="location" link="/events/{{ slug }}" }}
+                {{ introduction }}
+            {{ /partial:blocks/event }}
+        {{ /collection:events }}
+    {{ /if }}
+</section>
+
+<section class="mb-half">
+    <div class="w-full px-0 set set-double-column lg:w-1/2 lg:mr-auto">
+        <h2>Eerdere evenementen</h2>
+    </div>
+    <p class="w-full md:w-3/4 lg:w-1/2 mb-half">Benieuwd welke evenementen de foundation in het verleden heeft georganiseerd? Zie onderstaand een overzicht van eerdere evenementen.</p>
+    {{ if { collection:count in="events" sort="date_start:desc" date_start:is_before="{today}" } > 0 }}
+        {{ collection:events sort="date_start:desc" date_start:is_before="{today}" }}
             {{ partial:blocks/event :image="image" :category="location" link="/events/{{ slug }}" }}
                 {{ introduction }}
             {{ /partial:blocks/event }}

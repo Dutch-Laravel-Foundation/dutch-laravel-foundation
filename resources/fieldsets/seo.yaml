@@ -8,7 +8,7 @@ fields:
       display: 'Meta title'
       type: text
       icon: text
-      instructions: 'Overrules page title, but keeps site name. Global title is only used when no page title or item title is set.'
+      instructions: 'Overrules page title and always appends global SEO title or app name.'
       listable: hidden
       instructions_position: above
       read_only: false

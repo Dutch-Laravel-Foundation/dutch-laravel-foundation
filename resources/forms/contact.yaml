@@ -2,5 +2,6 @@ title: Contact
 honeypot: address
 email:
   -
-    to: yoni@vormkracht10.nl
-    subject: 'DLF: Ingevuld contactformulier'
+    to: info@dutchlaravelfoundation.nl
+    subject: 'DLF contact: {{ name }}'
+    reply_to: '{{ email }}'
