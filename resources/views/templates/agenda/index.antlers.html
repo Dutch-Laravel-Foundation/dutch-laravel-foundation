@@ -22,7 +22,7 @@
     <p class="w-full md:w-3/4 lg:w-1/2 mb-half">Benieuwd welke evenementen de foundation in het verleden heeft georganiseerd? Zie onderstaand een overzicht van eerdere evenementen.</p>
     {{ if { collection:count in="events" sort="date_start:desc" date_start:is_before="{today}" } > 0 }}
         {{ collection:events sort="date_start:desc" date_start:is_before="{today}" }}
-            {{ partial:blocks/event :image="image" :category="location" link="/events/{{ slug }}" }}
+            {{ partial:blocks/event :image="image" :category="location" link="/events/{{ slug }}" image_class="grayscale" }}
                 {{ introduction }}
             {{ /partial:blocks/event }}
         {{ /collection:events }}
