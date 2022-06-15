@@ -26,6 +26,16 @@
     {{ if meta_keywords_text }}
         <meta name="keywords" content="{{ meta_keywords_text }}"/>
     {{ /if }}
+    <meta property="og:title" content="{{ if title_text }}{{ title_text }} - {{ /if }}{{ site:name }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ current_url }}" />
+    {{ meta_description_text = meta_description ? meta_description : seo:meta_description }}
+    {{ if meta_description_text }}
+        <meta property="og:description" content="{{ meta_description_text }}">
+    {{ /if }}
+    <meta property="og:image" content="{{ site_url }}/og-image.png" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://use.typekit.net/oap5ojy.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ mix src='assets/css/tailwind.css' }}">
@@ -34,8 +44,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body class="font-sans leading-normal bg-white text-primary-text">
