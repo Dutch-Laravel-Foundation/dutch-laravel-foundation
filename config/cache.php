@@ -77,6 +77,9 @@ return [
             'driver' => 'redis',
             'connection' => 'cache',
             'lock_connection' => 'default',
+            'options' => [
+                'prefix' => basename(base_path()).'_',
+            ],
         ],
 
         'dynamodb' => [
