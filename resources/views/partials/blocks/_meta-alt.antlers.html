@@ -4,7 +4,7 @@
     {{ /if }}
     {{ if text }}
         {{ if link }}
-            <a href="{{ link }}" {{ if target == 'blank' }} target="_blank" {{ /if }} title="{{ text }}"><h4 class="text-primary-accent block w-full {{ link_class }}">{{ text }}</h4></a>
+            <a href="{{ link }}" {{ target ?= 'target="{ target }"' }} title="{{ text }}"><h4 class="text-primary-accent block w-full {{ link_class }}">{{ text }}</h4></a>
         {{ else }}
             <h4 class="block w-full">{{ text }}</h4>
         {{ /if }}

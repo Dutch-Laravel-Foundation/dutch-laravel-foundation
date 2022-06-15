@@ -12,7 +12,7 @@
             <div class="flex flex-col space-y-6 sm:table">
                 {{ if type }}
                     <div class="flex flex-col sm:table-row">
-                        <div class="font-semibold sm:table-cell pr-6 lg:pr-10">Soort event</div>
+                        <div class="pr-6 font-semibold sm:table-cell lg:pr-10">Soort event</div>
                         <div class="sm:table-cell ">{{ type }}</div>
                     </div>
                 {{ /if }}
@@ -24,19 +24,19 @@
                 {{ /if }}
                 {{ if time_start }}
                     <div class="flex flex-col sm:table-row">
-                        <div class="font-semibold sm:table-cell pr-6 lg:pr-10"></div>
+                        <div class="pr-6 font-semibold sm:table-cell lg:pr-10"></div>
                         <div class="sm:table-cell ">{{ time_start }}{{ time_end ?= ' - { time_end }' }}</div>
                     </div>
                 {{ /if }}
                 {{ if location }}
                     <div class="flex flex-col sm:table-row">
-                        <div class="font-semibold sm:table-cell pr-6 lg:pr-10">Locatie</div>
+                        <div class="pr-6 font-semibold sm:table-cell lg:pr-10">Locatie</div>
                         <div class="sm:table-cell ">{{ location }}</div>
                     </div>
                 {{ /if }}
                 {{ if address }}
                     <div class="flex flex-col sm:table-row">
-                        <div class="font-semibold sm:table-cell pr-6 lg:pr-10">Soort event</div>
+                        <div class="pr-6 font-semibold sm:table-cell lg:pr-10">Soort event</div>
                         <div class="sm:table-cell ">{{ location }}</div>
                     </div>
                 {{ /if }}
@@ -44,7 +44,7 @@
         {{ /partial:blocks/base }}
         {{ if signup_link }}
         <div class="flex mx-auto mb">
-            {{ partial:buttons/primary :link="signup_link" }}Inschrijven{{ /partial:buttons/primary }}
+            {{ partial:buttons/primary :link="signup_link" target="_blank" }}Inschrijven{{ /partial:buttons/primary }}
         </div>
         {{ /if }}
     </div>
