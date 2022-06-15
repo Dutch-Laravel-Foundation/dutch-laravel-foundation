@@ -11,5 +11,11 @@
             </a>
         {{ /if }}
     {{ /if }}
-    {{ slot }}
+    {{ if link }}
+        <a href="{{ link }}" title="{{ title }}" class="!text-primary-text">
+    {{ /if }}
+        {{ slot }}
+    {{ if link }}
+        </a>
+    {{ /if }}
 </div>
