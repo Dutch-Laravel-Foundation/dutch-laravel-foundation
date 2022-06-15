@@ -33,7 +33,8 @@
     {{ if meta_description_text }}
         <meta property="og:description" content="{{ meta_description_text }}">
     {{ /if }}
-    <meta property="og:image" content="{{ site_url }}/og-image.png" />
+    {{ opengraph_image = opengraph:opengraph_image ?? "{site:url}og-image.png" }}
+    <meta property="og:image" content="{{ opengraph_image }}" />
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://use.typekit.net/oap5ojy.css">
