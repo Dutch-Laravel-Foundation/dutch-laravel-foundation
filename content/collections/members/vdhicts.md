@@ -2,11 +2,11 @@
 id: d219ae1c-6ec1-4020-b6cf-6e84efde05bb
 blueprint: members
 title: Vdhicts
-founding_partner: false
+founding_partner: true
 type: Bedrijf
 employees: 1-10
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655120355
+updated_at: 1655318091
 provincie: Zuid-Holland
 city: 'Den Haag'
 email: info@vdhicts.nl
