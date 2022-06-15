@@ -4,7 +4,7 @@ blueprint: pages
 title: 'Wat is Laravel?'
 template: templates/what-is-laravel/index
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655317466
+updated_at: 1655319736
 call_to_action: c3238da9-592c-4906-9b11-183e37e4b2d3
 content:
   -
@@ -39,7 +39,7 @@ content:
             content:
               -
                 type: text
-                text: 'Laravel: het #1 framework binnen PHP'
+                text: 'Laravel: het #1 PHP framework'
   -
     type: set
     attrs:
