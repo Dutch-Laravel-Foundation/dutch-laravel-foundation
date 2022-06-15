@@ -1,2 +1,8 @@
 title: Nieuwsbrief
 honeypot: name
+email:
+  -
+    to: '{{ email }}'
+    subject: 'Je nieuwsbrief inschrijving bij {{ site:name }}'
+    html: mail/newsletter
+    text: mail/newsletter
