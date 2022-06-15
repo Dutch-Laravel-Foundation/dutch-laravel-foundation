@@ -1,4 +1,4 @@
-<div class="flex flex-col lg:flex-row w-full px-6 lg:px-0">
+<div class="flex flex-col w-full lg:flex-row">
     <div class="lg:w-4/6 lg:pr-20 mb">
         <h1>{{ title }}</h1>
         {{ description }}
@@ -13,8 +13,8 @@
         {{ /if }}
     </div>
 
-    <div class="lg:w-2/6 mb">
-        {{ partial:company/base :logo="logo" class="mt-10 pb-10 px-10 w-full overflow-hidden" }}
+    <div class="mb-16 lg:w-2/6">
+        {{ partial:company/base :logo="logo" class="w-full px-10 pb-10 mt-10 overflow-hidden" }}
             {{ if city || province:title }}
                 {{ partial:blocks/meta-alt title="Locatie" text="{ arr({ city }, { province:title }) | remove_empty | list }" class="px-0" }}
             {{ /if }}

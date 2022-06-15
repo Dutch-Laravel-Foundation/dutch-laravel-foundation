@@ -9,7 +9,7 @@
     {{ else }}
     {{ navigation_class = (slug == page.slug || segment_1 == page.slug) ? {active_class}: '' }}
         <a href="/{{ page.slug != 'home' ?= page.slug }}"
-            class="{{ if index === 1 }} lg:mt-[-3.5rem] {{ endif }} flex w-full items-center h-auto px-10 py-4 border-b border-transparent hover:bg-primary-accent hover:text-white {{ class }} {{ navigation_class }}">{{
+            class="{{ if index === 1 }} md:mt-[-1rem] {{ endif }} flex w-full items-center h-auto px-10 py-4 border-b border-transparent hover:bg-primary-accent hover:text-white {{ class }} {{ navigation_class }}">{{
             title }}</a>
     {{ /if }}
 {{ /nav:main }}
