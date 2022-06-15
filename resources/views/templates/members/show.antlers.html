@@ -19,7 +19,7 @@
                 {{ partial:blocks/meta-alt title="Locatie" text="{ arr({ city }, { province:title }) | remove_empty | list }" class="px-0" }}
             {{ /if }}
             {{ if website }}
-                {{ partial:blocks/meta-alt target="blank" title="Website" :text="website" link="https://{ website }" class="px-0" }}
+                {{ partial:blocks/meta-alt target="_blank" title="Website" :text="website" link="https://{ website }" class="px-0" }}
             {{ /if }}
             {{ if email }}
                 {{ partial:blocks/meta-alt title="E-mail" :text="email" link="mailto:{ email }" class="px-0" }}
