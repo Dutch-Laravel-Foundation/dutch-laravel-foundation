@@ -2,7 +2,7 @@
     {{ if !image }}
         <div class="w-full sm:w-2/3 md:w-7/12 aspect-photo bg-secondary-light"></div>
     {{ else }}
-        <img class="block object-cover w-full sm:w-2/3 md:w-7/12 aspect-photo" src="{{ image }}" alt="{{ arr({ title }, { text }) | remove_empty | list }}" style="object-position:{{ image:focus_css }}">
+        <img class="block object-cover w-full sm:w-2/3 md:w-7/12 aspect-photo" src="{{ glide src="{image}" fit="crop_focal" width="1280" }}" alt="{{ arr({ title }, { text }) | remove_empty | list }}" style="object-position:{{ image:focus_css }}">
     {{ /if }}
     {{ partial:blocks/meta :title="title" :text="text" class="my-6" }}
 </div>

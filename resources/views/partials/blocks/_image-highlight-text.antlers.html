@@ -13,7 +13,7 @@
                 <figure class="right-0 w-full overflow-hidden xl:absolute bg-secondary-light h-96 xl:w-5/6">
                     {{ if image }}
                         <img class="object-cover w-full h-full max-w-full max-h-full" style="object-position:{{ featured_image:focus_css }}"
-                            src="{{ featured_image }}" alt="{{ featured_image:alt ?? title }}" />
+                            src="{{ glide src="{featured_image}" fit="crop_focal" width="1280" }}" alt="{{ featured_image:alt ?? title }}" />
                     {{ /if }}
                 </figure>
                 {{ partial:blocks/base class="relative z-10 w-full xl:w-2/3 xl:mt-48 !pb-16" }}
