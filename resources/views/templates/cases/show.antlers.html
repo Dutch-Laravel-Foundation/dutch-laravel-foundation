@@ -2,7 +2,7 @@
     <img src="{{ featured_image }}" class="object-cover w-full h-96 lg:h-[48rem] mb" style="object-position:{{ featured_image:focus_css }}">
     <div class="flex flex-col-reverse lg:flex-row w-full">
         {{ partial:company/simple :logo="member:logo" :title="member:title" text="Dutch Laravel Foundation lid" class="w-full lg:absolute lg:w-3/12 lg:top-[40rem] lg:right-0 lg:z-20 mb" link="/leden/{ member:slug }" }}
-        <div class="relative w-full lg:w-11/12 lg:mx-auto bg-white lg:-mt-64 min-h-[10rem] px-6 sm:px-0 lg:px-10 lg:pt-10 z-10 mb">
+        <div class="relative w-full lg:w-11/12 lg:mx-auto bg-white lg:-mt-64 min-h-[10rem] px-6 sm:px-0 lg:px-10 lg:pt-10 z-10 mb-half">
             <div class="w-full lg:w-4/6 mb-half">
                 <h1>{{ title_long }}</h1>
                 <div class="mb-half">{{ introduction }}</div>
