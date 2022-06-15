@@ -5,3 +5,8 @@ email:
     to: info@dutchlaravelfoundation.nl
     subject: 'DLF contact: {{ name }}'
     reply_to: '{{ email }}'
+  -
+    to: '{{ email }}'
+    subject: 'Je bericht aan {{ site:name }}'
+    html: mail/contact
+    text: mail/contact

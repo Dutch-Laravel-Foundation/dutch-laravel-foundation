@@ -5,3 +5,8 @@ email:
     to: info@dutchlaravelfoundation.nl
     subject: 'DLF Aanmelding: {{ company_name }}'
     reply_to: '{{ email }}'
+  -
+    to: '{{ email }}'
+    subject: 'Je aanmelding bij {{ site:name }}'
+    html: mail/become-member
+    text: mail/become-member
