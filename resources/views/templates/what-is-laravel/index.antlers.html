@@ -8,7 +8,7 @@
 {{ review_count = { collection:count in="reviews" } }}
 {{ if review_count > 0 }}
     <div
-        class="w-full {{ review_count > 1 ?= 'swiper js-reviews-swiper' }} bg-secondary-light mb"
+        class="w-full {{ review_count > 1 ?= 'swiper js-reviews-swiper' }} relative bg-secondary-light mb"
         data-loop="true"
         spaceBetween="0"
     >
