@@ -108,7 +108,7 @@ input[type="checkbox"] {
 }
 
 .mb-half {
-    @apply mb-3 sm:mb-10 lg:mb-10;
+    @apply mb-10;
 }
 
 [x-cloak] {
