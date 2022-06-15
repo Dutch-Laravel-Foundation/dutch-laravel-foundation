@@ -46,8 +46,7 @@
                         {{ newsletter_submitted = false }}
                         {{ form:set is="newsletter" }}
                             {{ if {form:success} }}
-                                {{ newsletter_submitted = true }}
-                                <div class="w-full">Bedankt voor je aanmelding!</div>
+                                {{ redirect to="/newsletter" }}
                             {{ else }}
                                 <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
                                 {{ if {form:errors} }}

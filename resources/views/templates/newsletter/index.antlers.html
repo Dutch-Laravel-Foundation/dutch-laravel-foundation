@@ -1,0 +1,13 @@
+<div class="flex flex-col justify-between w-full lg:flex-row">
+    <div class="w-full lg:w-2/3 mb">
+        <div class="px-6 sm:px-0">
+            {{ content }}
+                {{ partial src="sets/autoload" }}
+            {{ /content }}
+            <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6">
+                {{ partial:buttons/primary link="/agenda" class="w-full sm:w-auto" button_class="w-full" }}Bekijk onze agenda{{ /partial:buttons/primary }}
+                {{ partial:buttons/light link="/over-ons" class="w-full sm:w-auto" button_class="w-full" }}Lees meer over ons{{ /partial:buttons/light }}
+            </div>
+        </div>
+    </div>
+</div>
