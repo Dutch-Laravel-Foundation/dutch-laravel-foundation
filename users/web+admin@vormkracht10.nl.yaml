@@ -28,6 +28,7 @@ preferences:
         - title
         - date_start
         - location
+        - type
     cases:
       columns:
         - title
