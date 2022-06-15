@@ -4,7 +4,7 @@ blueprint: pages
 title: 'Lid worden'
 template: templates/become-member/index
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655317011
+updated_at: 1655317961
 call_to_action: c3238da9-592c-4906-9b11-183e37e4b2d3
 content:
   -
@@ -27,7 +27,7 @@ content:
             content:
               -
                 type: text
-                text: 'De Dutch Laravel Foundation zorgt voor de promotie van Laravel en stimuleert kennisuitwisseling tussen Laravel developers in Nederland. Opdrachtgevers van webapplicaties kunnen via de stichting geschikte Laravel developers vinden.'
+                text: 'Zowel bureaus, ZZP’ers als ontwikkelteams die met Laravel werken kunnen lid worden van de Dutch Laravel Foundation. Naast de toegang tot een groot netwerk van Laravel specialisten krijg je exclusief toegang tot Laravel events en een keurmerk voor je organisatie. Bureaus en ZZP’ers krijgen toegang tot leads van potentiële opdrachtgevers.'
   -
     type: set
     attrs:
@@ -39,8 +39,7 @@ content:
             content:
               -
                 type: text
-                text: 'Laravel is een veelzijdig, open-source PHP framework dat multi-functioneel ingezet kan worden voor alle soorten en maten webapplicaties. Gesteund door een enorme community in de rug en frequente updates voor een optimale veilige basis.'
-        right:
+                text: 'Als lid kun je rekenen op de volgende voordelen:'
           -
             type: bullet_list
             content:
@@ -52,7 +51,7 @@ content:
                     content:
                       -
                         type: text
-                        text: 'Het is betrouwbaar en veilig'
+                        text: 'Kennisuitwisseling voor developers en managers tijdens leuke events.'
               -
                 type: list_item
                 content:
@@ -61,7 +60,7 @@ content:
                     content:
                       -
                         type: text
-                        text: 'Het is open source, dus overdraagbaar'
+                        text: 'Een keurmerk voor je organisatie.'
               -
                 type: list_item
                 content:
@@ -70,7 +69,7 @@ content:
                     content:
                       -
                         type: text
-                        text: 'Het is licht en snel'
+                        text: 'Promotie van het framework onder opdrachtgevers.'
               -
                 type: list_item
                 content:
@@ -79,7 +78,7 @@ content:
                     content:
                       -
                         type: text
-                        text: 'Het is goed te onderhouden en uitbreidbaar'
+                        text: 'Leads voor nieuwe projecten.'
               -
                 type: list_item
                 content:
@@ -88,7 +87,7 @@ content:
                     content:
                       -
                         type: text
-                        text: 'Het is betrouwbaar en veilig'
+                        text: 'Korting op Laravel trainingen.'
               -
                 type: list_item
                 content:
@@ -97,7 +96,7 @@ content:
                     content:
                       -
                         type: text
-                        text: 'Het is open source, dus overdraagbaar'
+                        text: 'Korting op deelname aan Laracon.'
               -
                 type: list_item
                 content:
@@ -106,16 +105,14 @@ content:
                     content:
                       -
                         type: text
-                        text: 'Het is licht en snel'
+                        text: 'Korting op het Laravel Certified Program.'
+        right:
+          -
+            type: paragraph
+            content:
               -
-                type: list_item
-                content:
-                  -
-                    type: paragraph
-                    content:
-                      -
-                        type: text
-                        text: 'Het is goed te onderhouden en uitbreidbaar'
+                type: text
+                text: 'De Dutch Laravel Foundation zorgt voor de promotie van Laravel en stimuleert kennisuitwisseling tussen Laravel developers in Nederland. Opdrachtgevers van webapplicaties kunnen via de stichting geschikte Laravel developers vinden.'
         title:
           -
             type: heading
@@ -133,7 +130,7 @@ content:
             content:
               -
                 type: text
-                text: Voordelen
+                text: 'Voordelen voor leden'
   -
     type: heading
     attrs:
