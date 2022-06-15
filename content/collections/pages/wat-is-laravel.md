@@ -4,7 +4,7 @@ blueprint: pages
 title: 'Wat is Laravel?'
 template: templates/what-is-laravel/index
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1653472741
+updated_at: 1655317466
 call_to_action: c3238da9-592c-4906-9b11-183e37e4b2d3
 content:
   -
@@ -66,13 +66,7 @@ content:
             content:
               -
                 type: text
-                text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.'
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Cum sociis. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.'
+                text: 'Laravel is een veelzijdig, open-source PHP framework dat multi-functioneel ingezet kan worden voor alle soorten en maten webapplicaties. Gesteund door een enorme community in de rug en frequente updates voor een optimale veilige basis.'
         right:
           -
             type: bullet_list
