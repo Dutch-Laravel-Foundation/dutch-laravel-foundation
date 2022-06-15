@@ -180,7 +180,6 @@ sections:
           options:
             Leden: null
             Netwerk: null
-            'Mis niet': null
             Inspiratie: null
           multiple: false
           clearable: false
