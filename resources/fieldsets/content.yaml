@@ -61,6 +61,11 @@ fields:
                     fields:
                       -
                         import: spacer
+                  line:
+                    display: Line
+                    fields:
+                      -
+                        import: line
                 container: assets
             -
               handle: right
@@ -113,6 +118,11 @@ fields:
                     fields:
                       -
                         import: spacer
+                  line:
+                    display: Line
+                    fields:
+                      -
+                        import: line
                 container: assets
         3_4_column:
           display: '75% width column'
@@ -161,6 +171,11 @@ fields:
                     fields:
                       -
                         import: spacer
+                  line:
+                    display: Line
+                    fields:
+                      -
+                        import: line
         image:
           display: Image
           fields:
@@ -176,6 +191,11 @@ fields:
           fields:
             -
               import: spacer
+        line:
+          display: Line
+          fields:
+            -
+              import: line
       buttons:
         - h1
         - h2

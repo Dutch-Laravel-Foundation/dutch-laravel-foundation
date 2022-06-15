@@ -1,0 +1,11 @@
+title: Line
+fields:
+  -
+    handle: line
+    field:
+      display: Line
+      type: hidden
+      icon: hidden
+      listable: hidden
+      instructions_position: above
+      read_only: false

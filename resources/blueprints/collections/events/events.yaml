@@ -73,6 +73,11 @@ sections:
               fields:
                 -
                   import: spacer
+            line:
+              display: Line
+              fields:
+                -
+                  import: line
       -
         handle: featured_image
         field:

@@ -101,6 +101,11 @@ sections:
               fields:
                 -
                   import: spacer
+            line:
+              display: Line
+              fields:
+                -
+                  import: line
           if:
             highlight: 'equals true'
   sidebar:
