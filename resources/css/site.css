@@ -187,3 +187,11 @@ button[data-checked="true"] {
 .group-image-hover:hover > a figure img {
     @apply scale-105
 }
+
+/* Safari CSS fixes */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    #content ul {
+        @apply pl-5;
+    }
+}}
