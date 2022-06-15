@@ -2,7 +2,7 @@
 id: 9a7a90ec-54fe-490d-a60f-924505e82da7
 blueprint: cases
 title: 'De Verbouwcalculator'
-introduction: 'Een huis verbouwen.. een nieuwe woning naar jouw wensen maken of jouw huidige woning een opknapbeurt geven. Vaak een kostbaar project en waar moet je beginnen?'
+introduction: 'Een huis verbouwen.. een nieuwe woning naar jouw wensen maken of jouw huidige woning een opknapbeurt geven. Vaak een kostbaar project en waar moet je beginnen? De Verbouwcalculator helpt inzicht te geven in de kosten die bij een verbouwing komen kijken. Dit helpt niet alleen om inzicht te geven of een verbouwing wel mogelijk is, maar ook kan er middels het gebruik van de Verbouwcalculator worden bepaald of je een woning überhaupt wel wilt kopen. Nadat de keuze voor het verbouwen gemaakt is, kan het rapport gebruikt worden om de juiste aannemer voor de klus te vinden.'
 description: |-
   Een huis verbouwen.. een nieuwe woning naar jouw wensen maken of jouw huidige woning een opknapbeurt geven. Vaak een kostbaar project en waar moet je beginnen? De Verbouwcalculator helpt inzicht te geven in de kosten die bij een verbouwing komen kijken. Dit helpt niet alleen om inzicht te geven of een verbouwing wel mogelijk is, maar ook kan er middels het gebruik van de Verbouwcalculator worden bepaald of je een woning überhaupt wel wilt kopen. Nadat de keuze voor het verbouwen gemaakt is, kan het rapport gebruikt worden om de juiste aannemer voor de klus te vinden.
 
@@ -35,15 +35,21 @@ description: |-
   Het beheer van de hardware en Docker images wordt gedaan door Kubernetes. De software zorgt ervoor dat een verzameling van hardware tot een cluster gecombineerd wordt. Vervolgens kan er on demand meer vermogen aan het project worden geleverd. Dit kan bijvoorbeeld gebruikt worden, wanneer de queue oploopt en er tijdelijk meer workers nodig zijn.
 featured_image: verbouwing.png
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655280756
+updated_at: 1655318296
 title_long: 'Weten wat je verbouwing kost, de volgende showcase helpt je daarbij!'
 member: 4a0f57f4-997d-4532-9c9d-c5322a3ae05a
 client: 964d6872-f078-4702-ba76-de96e3123ba5
 content:
   -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Voordat er via de Verbouwcalculator aan de woning gesleuteld kan worden, moet de woning eerst worden ingevoerd door een bouwtechnisch keurder. Het invoeren van de woning gebeurt tijdens een inspectie in de woning zelf. Hierdoor is een gebruiksvriendelijke en snelle interface en offline-first approach erg belangrijk.'
+  -
     type: heading
     attrs:
-      level: 3
+      level: 2
     content:
       -
         type: text
@@ -53,24 +59,39 @@ content:
     content:
       -
         type: text
-        text: 'Vervolgens nam Ruud Schaaphuizen de aanwezigen mee in zijn ervaringen met meertaligheid in applicaties. Welke valkuilen kom je daarbij tegen, welke technische oplossingen zijn er beschikbaar en welke oplossing gebruikt hij binnen Sqits. En als bonus heeft Ruud een tipje van de sluier opgelicht over een package die zij momenteel ontwikkelen voor vertalingen in een single page application (vue.js).'
+        text: 'Het framework van Laravel is het ideale startpunt geweest voor de ontwikkeling van de Verbouwcalculator. Het heeft een all-in package waardoor het niet alleen makkelijk is tijdens de implementatie, maar ook eenvoudig uit te breiden in de toekomst.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'Tot slot was het aan de ervaren spreker Bobby Bouwman om een introductie over Kubernetes te geven om vervolgens in te zoomen op het gebruik van Kubernetes in een Laravel project. Databases, logging, storage, queues en sessies kwamen allemaal voorbij. Net als de drie gouden regels die Bobbie binnen zijn projecten hanteert (zie zijn presentatie). Tot slot kwam ook Laravel Vapor nog even aan de orde.'
+        text: 'Laravel''s "Convention over Configuration" filosofie zorgt voor een eenduidige denkwijze onder haar gebruikers. De filosofie zorgt ervoor dat de custom code in de applicatie enkel bestaat uit de business logic van de klant. Hierdoor blijft de applicatie eenvoudig te begrijpen voor andere developers. Door het volgen van standaardoplossingen uit het framework blijft de applicatie te aller tijde snel en veilig.'
   -
-    type: set
-    attrs:
-      values:
-        type: spacer
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Testing tool kits zijn beschikbaar in het framework, tests zijn alleen nog nodig voor het controleren van de business logic van de klant.'
   -
-    type: set
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Voor de communicatie tussen de front end en back end is in de Verbouwcalculator gebruik gemaakt van GraphQL. De door Facebook ontwikkelde techniek maakt het mogelijk om, via een gestandaardiseerd protocol, efficiënter data uit te wisselen. Het GraphQL package voor Laravel zorgt voor een interactieve en geautomatiseerde documentatie van de queries, welke dienen als aanspreekpunt voor de API. Hierdoor is het ook mogelijk om offline-first te ontwikkelen.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Het gebruik van het framework van Laravel in combinatie met het GraphQL package heeft er zowel in de front- als de backend voor gezorgd dat de custom code alleen bestaat uit de business logic van de klant. Door het gebruiken van eigen testen op de business logic kunnen wij waarborgen dat de applicatie eenvoudig, snel en schaalbaar blijft.'
+  -
+    type: heading
     attrs:
-      values:
-        type: image
-        image: whatis-main@2x.jpg
+      level: 2
+    content:
+      -
+        type: text
+        text: Techniek
   -
     type: heading
     attrs:
@@ -78,41 +99,59 @@ content:
     content:
       -
         type: text
-        text: Techniek
+        text: Autorisatie
   -
     type: paragraph
     content:
       -
         type: text
-        marks:
-          -
-            type: bold
-        text: Authorisatie
+        text: 'Voor de autorisatie van gebruikers wordt het Oauth 2.0 protocol gebruikt, waarbij de gebruiker een toegangstoken ontvangt om de GraphQL API aan te spreken. Deze veelgebruikte standaard zorgt ervoor dat de API met kant-en-klare Oauth plugins wordt aangesproken.'
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        text: 'Resource identificatie'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'Vervolgens nam Ruud Schaaphuizen de aanwezigen mee in zijn ervaringen met meertaligheid in applicaties. Welke valkuilen kom je daarbij tegen, welke technische oplossingen zijn er beschikbaar en welke oplossing gebruikt hij binnen Sqits. En als bonus heeft Ruud een tipje van de sluier opgelicht over een package die zij momenteel ontwikkelen voor vertalingen in een single page application (vue.js).'
+        text: 'Alle GraphQL Types vormen een deel van het platform, zoals “Building”, “Area”, “Element”, etc. Om deze terug te vinden in de database, hebben zij elk een eigen universally unique identifier (UUID) nodig. Om de front end in staat te stellen, om zonder internetverbinding, nieuwe resources aan te maken en aan elkaar te linken, maakt het systeem gebruik van deze UUID’s. Een algoritme genereert een code die als identifier door het systeem gebruikt wordt. De kans dat het algoritme een code genereert die al voorkomt in het systeem is niet gelijk aan nul, maar wel zo laag dat het verwaarloosbaar is.'
   -
-    type: paragraph
+    type: heading
+    attrs:
+      level: 3
     content:
       -
         type: text
-        text: 'Tot slot was het aan de ervaren spreker Bobby Bouwman om een introductie over Kubernetes te geven om vervolgens in te zoomen op het gebruik van Kubernetes in een Laravel project. Databases, logging, storage, queues en sessies kwamen allemaal voorbij. Net als de drie gouden regels die Bobbie binnen zijn projecten hanteert (zie zijn presentatie). Tot slot kwam ook Laravel Vapor nog even aan de orde.'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        marks:
-          -
-            type: bold
         text: Queue
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'Tot slot was het aan de ervaren spreker Bobby Bouwman om een introductie over Kubernetes te geven om vervolgens in te zoomen op het gebruik van Kubernetes in een Laravel project. Databases, logging, storage, queues en sessies kwamen allemaal voorbij. Net als de drie gouden regels die Bobbie binnen zijn projecten hanteert (zie zijn presentatie). Tot slot kwam ook Laravel Vapor nog even aan de orde.'
+        text: 'Om sommige tijdrovende taken op een later moment op de server te verwerken kan een queue gebruikt worden. De queue wordt uitgelezen door een aantal “workers” die één voor één de opdrachten oppakken en verwerken. Denk hierbij aan opdrachten zoals het verzenden van mails, genereren van pdf-bestanden en onderhoudstaken. Daarnaast kunnen door het gebruik van een queue gefaalde opdrachten (na het verhelpen van het probleem) eenvoudig opnieuw gestart worden.'
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        text: 'Kubernetes & Docker'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Docker stelt ons in staat de back end applicatie te compileren tot een virtuele computer. Dit geeft de mogelijkheid de gewenste software mee te verpakken in de image. Op het moment dat er een release nodig is die extra software vereist kunnen we dit meenemen in de Docker image. Hierdoor is het niet langer nodig om tijdens het deployen de software op de server aan te passen.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Het beheer van de hardware en Docker images wordt gedaan door Kubernetes. De software zorgt ervoor dat een verzameling van hardware tot een cluster gecombineerd wordt. Vervolgens kan er on demand meer vermogen aan het project worden geleverd. Dit kan bijvoorbeeld gebruikt worden, wanneer de queue oploopt en er tijdelijk meer workers nodig zijn.'
 ---

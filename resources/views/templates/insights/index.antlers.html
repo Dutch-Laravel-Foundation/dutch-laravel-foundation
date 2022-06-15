@@ -10,7 +10,7 @@
 {{ insight_count = { collection:count in="insights" id:not="{ highlighted_id.0 }" } }}
 <section class="pb-10">
     {{ if insight_count > 0 }}
-        {{ collection:insights id:not="{ highlighted_id.0 }" limit="1" }}
+        {{ collection:insights id:not="{ highlighted_id.0 }" limit="1" sort="date:desc" }}
             <div class="w-full lg:w-11/12">
                 {{ partial:blocks/image-left-large class="" :image="featured_image" :category="category" link="/insights/{ slug }" }}
                     {{ introduction }}
@@ -20,7 +20,7 @@
     {{ /if }}
 
     {{ if insight_count > 1 }}
-        {{ collection:insights id:not="{ highlighted_id.0 }" limit="1" offset="1" }}
+        {{ collection:insights id:not="{ highlighted_id.0 }" limit="1" offset="1" sort="date:desc" }}
             {{ partial:blocks/image-left class="w-full lg:!w-11/12 lg:ml-auto" :image="featured_image" :category="category" link="/insights/{ slug }" }}
                 {{ introduction }}
             {{ /partial:blocks/image-left }}
@@ -36,7 +36,7 @@
     {{ /if }}
 
     {{ if insight_count > 2 }}
-        {{ collection:insights id:not="{ highlighted_id.0 }" offset="2" }}
+        {{ collection:insights id:not="{ highlighted_id.0 }" offset="2" sort="date:desc" }}
             {{ partial:blocks/image-left class="w-full lg:!w-11/12 { switch between='{{ highlighted_id.0 ? "lg:ml-auto|" : "|lg:ml-auto" }}' }" :image="featured_image" :category="category" link="/insights/{ slug }" }}
                 {{ introduction }}
             {{ /partial:blocks/image-left }}
