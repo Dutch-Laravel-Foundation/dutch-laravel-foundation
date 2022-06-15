@@ -56,6 +56,11 @@ fields:
                     fields:
                       -
                         import: image
+                  spacer:
+                    display: Spacer
+                    fields:
+                      -
+                        import: spacer
                 container: assets
             -
               handle: right
@@ -103,6 +108,11 @@ fields:
                     fields:
                       -
                         import: image
+                  spacer:
+                    display: Spacer
+                    fields:
+                      -
+                        import: spacer
                 container: assets
         3_4_column:
           display: '75% width column'
@@ -145,6 +155,12 @@ fields:
                 listable: hidden
                 instructions_position: above
                 read_only: false
+                sets:
+                  spacer:
+                    display: Spacer
+                    fields:
+                      -
+                        import: spacer
         image:
           display: Image
           fields:
