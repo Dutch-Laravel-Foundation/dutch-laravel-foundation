@@ -48,25 +48,10 @@
 <div class="flex justify-center h-24 mb-20">
     <div class="absolute w-screen -ml-[50vw] left-1/2 h-24">
     {{# <div class="w-full h-24"> #}}
-        <div
-            class="w-full h-full js-logos-swiper"
-            data-autoplay="true"
-            data-delay="5000"
-            data-drag="true"
-            data-loop="true"
-            data-items="auto"
-            data-maxItems="6"
-            data-nav="false"
-            data-order="left"
-            data-orderDirection="ASC"
-            data-random="false"
-            data-swiper="true"
-            data-speed="3000"
-            data-space="40"
-        >
+        <div class="w-full h-full js-logos-swiper">
             <div class="flex swiper-wrapper">
                 {{ collection:clients logo:isset="true" sort="random" }}
-                <div class="swiper-slide flex justify-center items-center px-4 mx-auto xl:!w-48 lg:!max-w-24 md:!w-1/4 !w-1/2">
+                <div class="flex items-center justify-center px-4 mx-auto swiper-slide">
                     <img src="{{ logo }}" alt="{{ title }} logo" class="max-h-24" />
                 </div>
                 {{ /collection:clients }}
