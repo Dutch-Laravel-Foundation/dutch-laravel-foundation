@@ -1,7 +1,7 @@
 {{ number_of_member_insights = { collection:count in="insights" category:is="Leden" } }}
 {{ if number_of_member_insights > 0 }}
     <section class="relative w-full mb">
-        {{ collection:insights category:is="Leden" limit="1" }}
+        {{ collection:insights category:is="Leden" limit="1" sort="date:desc" }}
             <div class="w-full xl:w-11/12 lg:-mt-10 xl:-mt-40">
                 {{ partial:blocks/image-left-large class="" :image="featured_image" :category="category" link="/insights/{ slug }" }}
                     {{ introduction }}
@@ -10,7 +10,7 @@
         {{ /collection:insights }}
         {{ if number_of_member_insights > 1 }}
             <div class="flex flex-col px-6 sm:flex-row sm:px-0">
-                {{ collection:insights category:is="Leden" limit="2" offset="1" }}
+                {{ collection:insights category:is="Leden" limit="2" offset="1" sort="date:desc" }}
                     {{ partial:blocks/meta-alt class="sm:!w-1/2 px-0 { switch between="sm:pr-5|sm:pl-5" }" :text="title" title="Insights - { category }" link="/insights/{ slug }" link_class="text-tertiary-dark hover:text-primary-accent" }}
                 {{ /collection:insights }}
             </div>

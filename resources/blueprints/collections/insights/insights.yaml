@@ -188,7 +188,7 @@ sections:
           taggable: false
           push_tags: false
           cast_booleans: false
-          default: network
+          default: Netwerk
           display: Category
           type: select
           icon: select
