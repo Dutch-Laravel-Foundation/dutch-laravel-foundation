@@ -2,5 +2,6 @@ title: 'Lid worden'
 honeypot: address
 email:
   -
-    to: yoni@vormkracht10.nl
-    subject: 'DLF: Aanmelding lid'
+    to: info@dutchlaravelfoundation.nl
+    subject: 'DLF Aanmelding: {{ company_name }}'
+    reply_to: '{{ email }}'
