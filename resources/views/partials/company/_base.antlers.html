@@ -1,7 +1,9 @@
 <div class="flex flex-col w-full bg-white group-image-hover shadow-custom">
     <a href="{{ link }}" title="{{ title }}" class="flex items-center justify-center w-full h-64 overflow-hidden bg-gradient-to-b from-white to-secondary-light">
         {{ if logo }}
-            <img class="block max-w-[66%] max-h-[66%]" src="{{ logo }}" alt="{{ title }}">
+            <figure class="flex items-center justify-center w-full h-full overflow-hidden">
+                <img class="block max-w-[66%] max-h-[66%]" src="{{ logo }}" alt="{{ title }}">
+            </figure>
         {{ /if }}
     </a>
     <div class="relative w-full p-10 pb-12 min-h-40 ">
