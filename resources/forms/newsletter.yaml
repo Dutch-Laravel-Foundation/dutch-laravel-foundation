@@ -3,6 +3,6 @@ honeypot: name
 email:
   -
     to: '{{ email }}'
-    subject: 'Je nieuwsbrief inschrijving bij {{ site:name }}'
+    subject: 'Je nieuwsbrief inschrijving bij Dutch Laravel Foundation'
     html: mail/newsletter
     text: mail/newsletter

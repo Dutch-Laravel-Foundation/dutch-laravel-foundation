@@ -34,19 +34,77 @@ sections:
       -
         handle: content
         field:
-          type: markdown
-          localizable: true
-          display: Omschrijving
-          instructions_position: above
-          listable: hidden
-          read_only: false
-          restrict: false
-          automatic_line_breaks: true
-          automatic_links: false
-          escape_markup: false
-          smartypants: false
-          antlers: false
+          always_show_set_button: false
+          sets:
+            heading:
+              display: Heading
+              fields:
+                -
+                  import: heading
+            image:
+              display: Image
+              fields:
+                -
+                  handle: image
+                  field:
+                    mode: list
+                    container: insights
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    display: Image
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
+            line:
+              display: Line
+              fields:
+                -
+                  import: line
+            spacer:
+              display: Spacer
+              fields:
+                -
+                  import: spacer
+            video:
+              display: Video
+              fields:
+                -
+                  import: video
+          buttons:
+            - h1
+            - h2
+            - h3
+            - h4
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
           container: insights
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: true
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          display: Content
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+          read_only: false
       -
         handle: featured_image
         field:

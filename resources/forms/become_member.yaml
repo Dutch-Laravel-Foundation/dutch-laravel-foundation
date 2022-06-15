@@ -7,6 +7,6 @@ email:
     reply_to: '{{ email }}'
   -
     to: '{{ email }}'
-    subject: 'Je aanmelding bij {{ site:name }}'
+    subject: 'Je aanmelding bij Dutch Laravel Foundation'
     html: mail/become-member
     text: mail/become-member

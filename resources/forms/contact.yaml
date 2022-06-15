@@ -7,6 +7,6 @@ email:
     reply_to: '{{ email }}'
   -
     to: '{{ email }}'
-    subject: 'Je bericht aan {{ site:name }}'
+    subject: 'Je bericht aan Dutch Laravel Foundation'
     html: mail/contact
     text: mail/contact
