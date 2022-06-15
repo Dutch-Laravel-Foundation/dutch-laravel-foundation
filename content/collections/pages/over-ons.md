@@ -4,7 +4,7 @@ blueprint: pages
 title: 'Over ons'
 template: templates/about-us/index
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655280440
+updated_at: 1655317215
 call_to_action: 6bc4ea55-2728-4615-8d45-75d49d29d157
 content:
   -
@@ -52,53 +52,7 @@ content:
             content:
               -
                 type: text
-                text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.'
-          -
-            type: bullet_list
-            content:
-              -
-                type: list_item
-                content:
-                  -
-                    type: paragraph
-                    content:
-                      -
-                        type: text
-                        text: 'Het is betrouwebaar en veilig'
-              -
-                type: list_item
-                content:
-                  -
-                    type: paragraph
-                    content:
-                      -
-                        type: text
-                        text: 'Het is open source, dus overdraagbaar'
-              -
-                type: list_item
-                content:
-                  -
-                    type: paragraph
-                    content:
-                      -
-                        type: text
-                        text: 'Het is licht en snel'
-              -
-                type: list_item
-                content:
-                  -
-                    type: paragraph
-                    content:
-                      -
-                        type: text
-                        text: 'Het is goed te onderhouden en uitbreidbaar'
-        right:
-          -
-            type: set
-            attrs:
-              values:
-                type: image
-                image: AboutUs_b@2x.jpg
+                text: 'Zowel bureaus, ZZP’ers als ontwikkelteams die met Laravel werken kunnen lid worden van de Dutch Laravel Foundation. Naast de toegang tot een groot netwerk van Laravel specialisten krijg je exclusief toegang tot Laravel events en een keurmerk voor je organisatie. Bureaus en ZZP’ers krijgen toegang tot leads van potentiële opdrachtgevers.'
           -
             type: paragraph
             content:
@@ -111,6 +65,96 @@ content:
               -
                 type: text
                 text: 'Als stichting zijn we in Nederland tevens actief in het promoten van Laravel onder potentiële opdrachtgevers voor nieuwe webapplicaties.'
+        right:
+          -
+            type: set
+            attrs:
+              values:
+                type: image
+                image: AboutUs_b@2x.jpg
+          -
+            type: heading
+            attrs:
+              level: 3
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: 'Voordelen voor leden'
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Als lid kun je rekenen op de volgende voordelen:'
+          -
+            type: bullet_list
+            content:
+              -
+                type: list_item
+                content:
+                  -
+                    type: paragraph
+                    content:
+                      -
+                        type: text
+                        text: 'Kennisuitwisseling voor developers en managers tijdens leuke events.'
+              -
+                type: list_item
+                content:
+                  -
+                    type: paragraph
+                    content:
+                      -
+                        type: text
+                        text: 'Een keurmerk voor je organisatie.'
+              -
+                type: list_item
+                content:
+                  -
+                    type: paragraph
+                    content:
+                      -
+                        type: text
+                        text: 'Promotie van het framework onder opdrachtgevers.'
+              -
+                type: list_item
+                content:
+                  -
+                    type: paragraph
+                    content:
+                      -
+                        type: text
+                        text: 'Leads voor nieuwe projecten.'
+              -
+                type: list_item
+                content:
+                  -
+                    type: paragraph
+                    content:
+                      -
+                        type: text
+                        text: 'Korting op Laravel trainingen.'
+              -
+                type: list_item
+                content:
+                  -
+                    type: paragraph
+                    content:
+                      -
+                        type: text
+                        text: 'Korting op deelname aan Laracon.'
+              -
+                type: list_item
+                content:
+                  -
+                    type: paragraph
+                    content:
+                      -
+                        type: text
+                        text: 'Korting op het Laravel Certified Program.'
         heading:
           -
             type: heading
