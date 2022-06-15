@@ -1,0 +1,36 @@
+---
+id: 82d17488-9b4d-4298-98d2-b97b4e4ee880
+blueprint: events
+title: 'Laravel Hackathon'
+introduction: 'Op 21 juni gingen 7 development teams de strijd met elkaar aan. In 8 uur dienden de teams een werkende applicatie te realiseren met gebruik van het open source PHP framework Laravel. De deelnemers moesten vervolgens deze applicatie presenteren aan alle deelnemers en een professionele jury.'
+featured_image: hackathon.jpeg
+type: Meetup
+date_start: '2019-06-21'
+updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
+updated_at: 1655300681
+content:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Robert Verboon, voorzitter van de Dutch Laravel Foundation: “Developers van diverse bedrijven en studenten uit heel Nederland kwamen samen om te strijden voor de overwinning. Het winnende team bedacht en realiseerde een applicatie voor de Dutch Laravel Foundation. Met de applicatie kunnen developers hun kennis over programmeren, Laravel, serverinrichting, etc. bijspijkeren en developers kunnen vervolgens hun vaardigheden aan de Laravel community laten zien. Een dergelijke applicatie draagt sterk bij aan kennisuitwisseling, één van de doelstellingen van de foundation. Het team won hiermee dan ook een bokaal en per teamlid een\_PlayStation Classic. De Hackathon heeft bewezen dat er met behulp van Laravel snel productiewaardige applicaties gebouwd kunnen worden.”"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Michel van Velde, community manager van de stichting “De eerste hackathon is succesvol gebleken. Het was vanwege de hitte even spannend hoeveel deelnemers zich zouden inschrijven. We zijn dan ook erg blij met de grote opkomst. Deelnemers waren erg enthousiast en de teamspirit was goed. We hebben dan ook als Dutch Laravel Foundation besloten de Laravel hackathon jaarlijks te gaan organiseren. De Laravel hackathon is daarmee de eerste in een serie van evenementen die georganiseerd zullen worden door de stichting.” \_\_"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Tussen het hacken door werden de deelnemers geïnspireerd door sprekers waaronder Shawn McCool, de organisator van Laracon en het Laravel Certification program. De dag bood ook een mooie gelegenheid om van andere Laravel specialisten te leren en te ervaren wat je in één dag kunt bouwen met het framework.\_"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "De\_Hackathon\_werd georganiseerd door de Dutch Laravel Foundation. Deze door Taylor Otwell goedgekeurde stichting promoot het gebruik van Laravel in Nederland en stimuleert kennisuitwisseling tussen de gebruikers van het framework."
+---

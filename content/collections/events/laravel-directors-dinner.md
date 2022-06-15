@@ -6,12 +6,12 @@ introduction: 'Op 29 augustus organiseren wij na Laracon EU het internationale L
 type: 'Directors Dinner'
 location: 'IJkantine in Amsterdam'
 address: 'NDSM Kade 5, 1033 PG Amsterdam'
-date_start: '2021-08-29'
+date_start: '2019-08-29'
 time_start: '18:00'
 time_end: '23:00'
 signup_link: 'https://www.eventbrite.com/e/laravel-directors-dinner-2019-tickets-67190329083?aff=eac2'
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655294915
+updated_at: 1655300605
 featured_image: directors-dinner.jpeg
 content:
   -
