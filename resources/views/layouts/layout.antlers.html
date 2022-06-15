@@ -15,8 +15,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {{ title_text = meta_title ? meta_title: (title ? title: (seo:meta_title ? seo:meta_title: '')) }}
-    <title>{{ if title_text }}{{ title_text }} - {{ /if }}{{ site:name }}</title>
+    {{ site_title = meta_title ?? title }}
+    {{ site_name = seo:meta_title ?? site:name  }}
+    <title>{{ if site_title }}{{ site_title }} - {{ /if }}{{ site_name }}</title>
     {{ meta_description_text = meta_description ? meta_description : seo:meta_description }}
     {{ if meta_description_text }}
         <meta name="description" content="{{ meta_description_text }}"/>
