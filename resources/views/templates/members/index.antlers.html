@@ -83,7 +83,7 @@ var members = [{{ members = {collection:members} }}{{ noparse }}{ {{ /noparse }}
 types = members.map((obj) => { return obj.type; }).filter((item, index, arr) => { return item.length > 0 && arr.indexOf(item) == index; }),
 employees = members.map((obj) => { return obj.employees; }).filter((item, index, arr) => { return item.length > 0 && arr.indexOf(item) == index; }),
 provinces = members.map((obj) => { return obj.province; }).filter((item, index, arr) => { return item.length > 0 && arr.indexOf(item) == index; });
-console.log(provinces);
+//console.log(provinces);
 function loadMembers() {
     return {
         dataToFilter: members,
