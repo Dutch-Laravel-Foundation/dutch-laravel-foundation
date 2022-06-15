@@ -191,4 +191,9 @@ sections:
           read_only: false
           validate:
             - url
+  seo:
+    display: SEO
+    fields:
+      -
+        import: seo
 title: Evenementen

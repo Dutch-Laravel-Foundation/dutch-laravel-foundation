@@ -15,7 +15,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ if title }}{{ title }} - {{/if}}{{ site:name }}</title>
+    {{ title_text = meta_title ? meta_title: (title ? title: (seo:meta_title ? seo:meta_title: '')) }}
+    <title>{{ if title_text }}{{ title_text }} - {{ /if }}{{ site:name }}</title>
+    {{ meta_description_text = meta_description ? meta_description : seo:meta_description }}
+    {{ if meta_description_text }}
+        <meta name="description" content="{{ meta_description_text }}"/>
+    {{ /if }}
+    {{ meta_keywords_text = meta_keywords ? meta_keywords : seo:meta_keywords }}
+    {{ if meta_keywords_text }}
+        <meta name="keywords" content="{{ meta_keywords_text }}"/>
+    {{ /if }}
     <link rel="stylesheet" href="https://use.typekit.net/oap5ojy.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ mix src='assets/css/tailwind.css' }}">

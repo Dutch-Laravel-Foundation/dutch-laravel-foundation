@@ -88,4 +88,9 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
+  seo:
+    display: SEO
+    fields:
+      -
+        import: seo
 title: Cases

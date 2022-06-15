@@ -103,4 +103,9 @@ sections:
           read_only: false
           if:
             title: 'equals Home'
+  seo:
+    display: SEO
+    fields:
+      -
+        import: seo
 title: 'Pagina''s'

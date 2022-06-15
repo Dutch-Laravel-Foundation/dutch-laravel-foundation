@@ -1,0 +1,37 @@
+title: SEO
+fields:
+  -
+    handle: meta_title
+    field:
+      input_type: text
+      antlers: false
+      display: 'Meta title'
+      type: text
+      icon: text
+      instructions: 'Overrules page title, but keeps site name. Global title is only used when no page title or item title is set.'
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    handle: meta_description
+    field:
+      input_type: text
+      character_limit: 160
+      antlers: false
+      display: 'Meta description'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    handle: meta_keywords
+    field:
+      input_type: text
+      antlers: false
+      display: 'Meta keywords'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      read_only: false
