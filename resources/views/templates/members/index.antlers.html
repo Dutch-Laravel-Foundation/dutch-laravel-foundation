@@ -39,7 +39,7 @@
         </div>
         <div class="block w-full mt-8 text-left base:hidden sm:text-right"><a class="font-bold" x-on:click="resetFilters()">Filters wissen</a></div>
     </div>
-    <div class="flex flex-wrap overflow-hidden mb">
+    <div class="relative flex flex-wrap overflow-visible mb">
         <div x-show="filteredMembers.length === 0" class="w-full p-6 mt-6 text-center border lg:p-10 lg:mt-10 border-secondary-light">
             Er zijn geen leden gevonden die voldoen aan je zoekopdracht.
         </div>
@@ -67,6 +67,13 @@
                 </div>
             </div>
         </template>
+
+        {{# Background image #}}
+        <div class="absolute z-[-1] h-full w-full flex items-center left-[-10rem] top-0">
+            <div>
+                <img src="/assets/img/backgrounds/floor-mid-gray.svg" class="w-[1120px] h-[900px]"/>
+            </div>
+        </div>
     </div>
 </div>
 
