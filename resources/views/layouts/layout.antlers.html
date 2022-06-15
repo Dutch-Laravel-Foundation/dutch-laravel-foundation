@@ -48,7 +48,11 @@
 </head>
 
 <body class="font-sans leading-normal bg-white text-primary-text">
-{{ site:url }}
+    <div class="frontend relative page-{{ slug }}">
+        {{ partial:header }}
+        {{ partial:content }}
+        {{ partial:footer }}
+    </div>
     <script src="{{ mix src='assets/js/site.js' }}"></script>
 </body>
 
