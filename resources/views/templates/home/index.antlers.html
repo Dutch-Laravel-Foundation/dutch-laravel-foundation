@@ -50,11 +50,26 @@
     {{# <div class="w-full h-24"> #}}
         <div class="w-full h-full js-logos-swiper">
             <div class="flex swiper-wrapper">
-                {{ collection:clients logo:isset="true" sort="random" }}
+                {{ collection:clients logo:isset="true" sort="ASC" }}
                 <div class="flex items-center justify-center px-4 mx-auto swiper-slide">
                     <img src="{{ logo }}" alt="{{ title }} logo" class="max-h-24" />
                 </div>
                 {{ /collection:clients }}
+
+                {{# Temporaily add a 2nd and 3rd loop for filling clients,
+                    and use full width with the SwiperJS loop that needs at least 6 items,
+                    and currently there are 3 actual clients #}}
+                {{ collection:clients logo:isset="true" sort="DESC" }}
+                <div class="flex items-center justify-center px-4 mx-auto swiper-slide">
+                    <img src="{{ logo }}" alt="{{ title }} logo" class="max-h-24" />
+                </div>
+                {{ /collection:clients }}
+                {{ collection:clients logo:isset="true" sort="DESC" }}
+                <div class="flex items-center justify-center px-4 mx-auto swiper-slide">
+                    <img src="{{ logo }}" alt="{{ title }} logo" class="max-h-24" />
+                </div>
+                {{ /collection:clients }}
+                {{# End 2nd and 3rd loop #}}
             </div>
         </div>
     </div>
