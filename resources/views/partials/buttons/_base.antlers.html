@@ -1,5 +1,5 @@
 {{ tag = type == 'submit' ? 'button': 'a' }}
 <{{ tag }} {{ type ?= 'type="{ type }"' }} class="relative flex h-12 items-center justify-center group {{ class }}" {{ if tag == "a"}}href="{{ link }}"{{ /if }}>
-    <div class="text-xs uppercase whitespace-nowrap sm:px-8 font-bold flex items-center justify-center w-full h-full transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1 z-20 {{ button_class }}">{{ slot }}</div>
+    <div class="text-xs uppercase whitespace-nowrap px-8 font-bold flex items-center justify-center w-full h-full transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1 z-20 {{ button_class }}">{{ slot }}</div>
     <div class="absolute bottom-0 right-0 w-full h-full border z-10 {{ background_class }}"></div>
 </{{ tag }}>
