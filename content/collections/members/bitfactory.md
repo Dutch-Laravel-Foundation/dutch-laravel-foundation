@@ -5,7 +5,7 @@ title: Bitfactory
 number_of_employees: 51-100
 founding_partner: false
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655120420
+updated_at: 1655319518
 province: zuid-holland
 city: Rotterdam
 member_type: bedrijf
@@ -21,4 +21,5 @@ description: |-
 email: info@bitfactory.nl
 website: www.bitfactory.nl/
 phone: '+31 (0)10 477 40 32'
+logo: bitfactory.jpeg
 ---

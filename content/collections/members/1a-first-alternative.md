@@ -6,7 +6,7 @@ founding_partner: false
 type: Bedrijf
 employees: 1-10
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655120393
+updated_at: 1655319507
 description: |-
   1A First Alternative levert ICT-diensten aan het MKB in Nederland via een landelijk netwerk van gecertificeerde 1A-partners. Deze ICT-diensten zijn vooral gericht op bedrijven van 5-100 medewerkers.
 
@@ -18,4 +18,5 @@ city: Delft
 email: info@1afa.com
 website: www.1afa.com
 phone: '+31 (0)88 00 164 01'
+logo: first-alternative.png
 ---
