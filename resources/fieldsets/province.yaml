@@ -7,6 +7,15 @@ fields:
         Drenthe: null
         Flevoland: null
         Friesland: null
+        Gelderland: null
+        Groningen: null
+        Limburg: null
+        Noord-Brabant: null
+        Noord-Holland: null
+        Overijssel: null
+        Utrecht: null
+        Zeeland: null
+        Zuid-Holland: null
       multiple: false
       max_items: 1
       clearable: false
