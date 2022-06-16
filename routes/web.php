@@ -46,7 +46,28 @@ Route::permanentRedirect('/our-members/21', '/leden/dij');
 Route::permanentRedirect('/our-members/{id?}', '/leden');
 
 // Insight redirects
-Route::permanentRedirect('/news/{id?}', '/insights');
+Route::permanentRedirect('/news/oprichting-stichting-laravel-nederland', '/insights/stichting-laravel-nederland-gaat-gebruik-van-laravel-promoten');
+Route::permanentRedirect('/news/dutch-laravel-foundation-hackathon', '/insights/eerste-nederlandse-laravel-hackathon');
+Route::permanentRedirect('/news/true-blogt-over-laravel-en-de-dutch-laravel-foundation', '/insights/true-blogt-over-laravel-en-de-dutch-laravel-foundation');
+Route::permanentRedirect('/news/bezoek-ons-op-laracon-amsterdam-2019', '/insights/bezoek-ons-op-laracon');
+Route::permanentRedirect('/news/nieuw-lid-studio-september', '/insights/nieuw-lid-studio-september');
+Route::permanentRedirect('/news/ook-enrise-kiest-voor-deelname-dlf', '/insights/ook-enrise-kiest-voor-deelname-dlf');
+Route::permanentRedirect('/news/wederom-een-nieuw-lid-swis', '/insights/wederom-een-nieuw-lid-swis');
+Route::permanentRedirect('/news/eerste-laravel-meetup-groot-succes', '/insights/eerste-laravel-meetup-groot-succes');
+Route::permanentRedirect('/news/bitfactory-nieuwste-lid-dutch-laravel-foundation', '/insights/bitfactory-nieuwste-lid-dutch-laravel-foundation');
+Route::permanentRedirect('/news/ook-web-whales-is-enthousiast', '/insights/ook-web-whales-is-enthousiast');
+Route::permanentRedirect('/news/noardcode-heeft-zich-aangesloten', '/insights/noardcode-sluit-zich-aan-bij-dutch-laravel-foundation');
+Route::permanentRedirect('/news/juridisch-loket-geopend-voor-dlf-leden', '/insights/juridisch-loket-geopend-voor-dlf-leden');
+Route::permanentRedirect('/news/eerste-interne-ontwikkelteam-sluit-zich-aan', '/insights/eerste-interne-ontwikkelteam-sluit-zich-aan');
+Route::permanentRedirect('/news/ef2-gelooft-in-het-succes-van-laravel', '/insights/ef2-gelooft-in-het-succes-van-laravel');
+Route::permanentRedirect('/news/innovatief-betaalplatform-mollie-aangesloten-bij-dlf', '/insights/innovatief-betaalplatform-mollie-aangesloten-bij-dlf');
+Route::permanentRedirect('/news/de-eerste-showcase-is-online', '/insights/de-eerste-laravel-showcase-is-online');
+Route::permanentRedirect('/news/showcase-de-verbouwcalculator', '/insights/showcase-de-verbouwcalculator');
+Route::permanentRedirect('/news/ambitieus-rl-webdiensten-sluit-zich-aan-bij-dlf', '/insights/ambitieus-rl-webdiensten-sluit-zich-aan-bij-dlf');
+Route::permanentRedirect('/news/showcase-viaavia', '/insights/showcase-viaavia');
+Route::permanentRedirect('/news/early-laravel-adopter-vormkracht10-treedt-tot-dlf-toe', '/insights/early-laravel-adopter-vormkracht10-treedt-tot-dlf-toe');
+Route::permanentRedirect('/news/showcase-ov-chipkaart-app', '/insights/showcase-ov-chipkaart-app');
+Route::permanentRedirect('/news/{slug?}', '/insights');
 
 // Agenda/event redirects
 Route::permanentRedirect('/calendar/laravel-directors-dinner', '/events/laravel-directors-dinner');
