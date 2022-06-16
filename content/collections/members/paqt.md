@@ -1,12 +1,12 @@
 ---
 id: 021218ab-e57c-4e6b-a3d9-b45a1c13f40d
 blueprint: members
-title: PAQT.com
+title: PAQT
 founding_partner: true
 type: Bedrijf
 employees: 1-10
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655371848
+updated_at: 1655377789
 logo: paqt.svg
 description: |-
   Digitaliseren voor iedereen mogelijk en vooral ook makkelijk maken - PAQT bewijst dat het kan. De techniek, hoe geavanceerd en complex ook, is inmiddels de uitdaging niet meer. Waar het om gaat is het in lijn brengen van mensen, processen en technologie. We doorgronden de uitdagingen en ambities van de business en voorzien in werkelijk alles wat er maar nodig is voor succes.
