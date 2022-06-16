@@ -18,11 +18,11 @@ city: Nijmegen
 website: vormkracht10.nl
 phone: '+31 (0)24 260 0000'
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655371755
+updated_at: 1655377996
 logo: vormkracht10-logo.png
 founding_partner: false
 member_type: bedrijf
 type: Bedrijf
-employees: 11-50
+employees: 1-10
 email: info@vormkracht10.nl
 ---
