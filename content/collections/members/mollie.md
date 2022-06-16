@@ -6,7 +6,7 @@ founding_partner: false
 type: Bedrijf
 employees: 1-10
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655370732
+updated_at: 1655371875
 logo: mollie.svg
 description: |-
   Mollie is one of Europe's fastest growing fin-tech companies. From day one, we’ve changed the payments industry with effortless payments, which were easier, cheaper and more flexible than what banks had to offer.
@@ -20,7 +20,7 @@ description: |-
   Nu, meer dan tien jaar later, blijft het ons doel om betalingen makkelijker te maken en vertrouwen er meer dan 90.000 organisaties op onze innovatieve oplossingen. Hiermee draagt Mollie bij aan het belangrijkste: de groei van onze klanten.
 
   Onze technologie maakt dit mogelijk: met onze gratis plugins integreer je zonder technische kennis in één keer alle bekende betaalmethodes in je e-commerce platform. Custom made platformen profiteren van onze uitgebreide maar simpele API, om een geheel eigen betaalomgeving te bouwen. Onze Laravel package sluit aan bij onze developer-first approach.
-provincie: Noord-Holland
+province: Noord-Holland
 city: Amsterdam
 website: mollie.com
 phone: '+31 (0)20 820 2070'

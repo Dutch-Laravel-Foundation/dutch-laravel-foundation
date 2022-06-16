@@ -5,13 +5,12 @@ title: PXL.Widgets
 number_of_employees: 1-10
 founding_partner: true
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655362871
-province: noord-holland
+updated_at: 1655371845
 city: Haarlem
 member_type: bedrijf
 type: Bedrijf
 employees: 11-50
-provincie: Noord-Holland
+province: Noord-Holland
 logo: pxl.widgets.png
 description: |-
   PXL.Widgets. In 15 jaar uitgegroeid tot een succesvol Haarlems digital agency. Een digital agency waar we met online creaties grenzen overbruggen en ongebaande paden betreden. Waar we het verschil willen en durven maken. En waar we niet alleen streven naar ons succes, maar juist ook naar het jouwe.

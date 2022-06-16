@@ -19,4 +19,4 @@ sections:
           required: true
           validate:
             - required
-title: Provincie
+title: Province

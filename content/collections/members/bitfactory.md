@@ -5,13 +5,12 @@ title: Bitfactory
 number_of_employees: 51-100
 founding_partner: false
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655363605
-province: zuid-holland
+updated_at: 1655371887
 city: Rotterdam
 member_type: bedrijf
 type: Bedrijf
 employees: 11-50
-provincie: Zuid-Holland
+province: Zuid-Holland
 description: |-
   Bitfactory is een digital agency voor strategie, design en technologie. Wij helpen onze klanten steeds de volgende stap te maken in de digitalisering van hun business.
 

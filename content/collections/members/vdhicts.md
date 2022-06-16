@@ -6,8 +6,8 @@ founding_partner: true
 type: Bedrijf
 employees: 1-10
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655319674
-provincie: Zuid-Holland
+updated_at: 1655371758
+province: Zuid-Holland
 city: 'Den Haag'
 email: info@vdhicts.nl
 website: www.vdhicts.nl
