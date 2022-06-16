@@ -6,8 +6,8 @@ founding_partner: false
 type: Bedrijf
 employees: 1-10
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655371842
-logo: rl-webdiensten.jpeg
+updated_at: 1655373009
+logo: rl-webdiensten.png
 description: |-
   RL Webdiensten is een jong en creatief bedrijf gespecialiseerd in webapplicaties ontwikkelen. Door direct contact met de developer wordt uw project altijd snel en zorgvuldig uitgevoerd. RL Webdiensten is in staat om complete Laravel webapplicaties te ontwikkelen aan de hand van uw specifieke wensen en behoeften.
 
