@@ -33,11 +33,9 @@ sections:
       -
         handle: link
         field:
-          input_type: text
-          antlers: false
           display: Link
-          type: text
-          icon: text
+          type: link
+          icon: link
           listable: hidden
           instructions_position: above
           read_only: false
