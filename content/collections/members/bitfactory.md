@@ -5,11 +5,11 @@ title: Bitfactory
 number_of_employees: 51-100
 founding_partner: false
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655319518
+updated_at: 1655363605
 province: zuid-holland
 city: Rotterdam
 member_type: bedrijf
-type: Ontwikkelteam
+type: Bedrijf
 employees: 11-50
 provincie: Zuid-Holland
 description: |-
@@ -19,7 +19,7 @@ description: |-
 
   Vanuit onze ‘factory' in Rotterdam werken we samen met klanten zoals: Tony's Chocolonely, Dr. Oetker, TNO, Bayer, NPO, Samskip en andere ambitieuze merken.
 email: info@bitfactory.nl
-website: www.bitfactory.nl/
+website: bitfactory.nl
 phone: '+31 (0)10 477 40 32'
 logo: bitfactory.jpeg
 ---
