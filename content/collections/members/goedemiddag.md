@@ -6,8 +6,8 @@ founding_partner: true
 type: Bedrijf
 employees: 1-10
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655363565
-logo: goedemiddag.jpeg
+updated_at: 1655370503
+logo: goedemiddag.png
 description: |-
   Goedemiddag! werkt sinds 2014 met veel enthousiasme met het Laravel Framework. Ons bureau bouwt en beheert webapplicaties voor een breed scala aan opdrachtgevers, van ZZP’ers tot een aantal grote multinationals en van vastgoedbeheerders tot internationale DJ’s.
 

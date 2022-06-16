@@ -6,8 +6,8 @@ founding_partner: true
 type: Bedrijf
 employees: 1-10
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655362362
-logo: sqits.png
+updated_at: 1655369357
+logo: sqits.svg
 description: |-
   Digitaliseren voor iedereen mogelijk en vooral ook makkelijk maken - PAQT bewijst dat het kan. De techniek, hoe geavanceerd en complex ook, is inmiddels de uitdaging niet meer. Waar het om gaat is het in lijn brengen van mensen, processen en technologie. We doorgronden de uitdagingen en ambities van de business en voorzien in werkelijk alles wat er maar nodig is voor succes.
 

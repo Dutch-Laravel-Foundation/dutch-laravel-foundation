@@ -6,8 +6,8 @@ founding_partner: false
 type: Bedrijf
 employees: 1-10
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655363436
-logo: september.png
+updated_at: 1655369346
+logo: september.svg
 description: |-
   Hey, leuk je te ontmoeten. Wij zijn September. Samen maken we realiteit van jouw sterke ideeen. Dit doen we met een team van creatieve denkers, designers en engineers. Met creativiteit in het hart en strategie in het hoofd.
 

@@ -6,8 +6,8 @@ founding_partner: false
 type: Bedrijf
 employees: 11-50
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655362814
-logo: enrise.png
+updated_at: 1655369279
+logo: enrise.svg
 description: |-
   Enrise bouwt digitale producten die we in hoog tempo op de markt brengen. Met een 100% Agile aanpak ontwikkelen onze zelfsturende teams online applicaties voor klanten als ABN Amro, Simpel, Beslist, VodafoneZiggo, Thuisbezorgd, Rijksoverheid.
 

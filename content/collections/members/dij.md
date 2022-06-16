@@ -6,7 +6,7 @@ founding_partner: false
 type: Bedrijf
 employees: 11-50
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655319531
+updated_at: 1655369250
 description: |-
   DIJ is een digital development agency dat zich richt op het bouwen van complexe digitale platformen om de organisaties van onze klanten te helpen een digitale koploper te worden in hun markt. Onze Dedicated Teams maken op basis van jouw hulpvraag een 'Roadmap' waarin er een duidelijk en transparant aanvalsplan wordt uitgewerkt hoe we dit kunnen aanpakken. Zij sluiten onze specialistenteams (Front-end, Cloud) waar nodig aan. Wij werken het liefst in Laravel, React en AWS.
 
@@ -29,5 +29,5 @@ city: Apeldoorn
 email: info@dij.digital
 website: dij.digital/
 phone: '+31 (0)55 750 7811'
-logo: dij.jpeg
+logo: dij.svg
 ---
