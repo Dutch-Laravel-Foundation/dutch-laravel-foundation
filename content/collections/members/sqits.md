@@ -6,14 +6,12 @@ founding_partner: true
 type: Bedrijf
 employees: 1-10
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655371838
+updated_at: 1655378069
 logo: sqits.svg
 description: |-
-  Digitaliseren voor iedereen mogelijk en vooral ook makkelijk maken - PAQT bewijst dat het kan. De techniek, hoe geavanceerd en complex ook, is inmiddels de uitdaging niet meer. Waar het om gaat is het in lijn brengen van mensen, processen en technologie. We doorgronden de uitdagingen en ambities van de business en voorzien in werkelijk alles wat er maar nodig is voor succes.
+  Sqits is een creatief, digitaal bureau. Wij helpen je om je business en processen te digitaliseren door middel van slimme procesoptimalisatie. Wij zetten comlexe vraagstukken om in gebruiksvriendelijke interfaces, waarbij jij je geen zorgen hoeft te maken over de ingewikkelde backend. Hiermee verlagen wij je proceskosten en verhogen de kwaliteit van je diensten.
 
-  Cloud native software, mobiele apps of de integratie van systemen? Start je project vandaag nog online. Kies je ideale team. En hou continu feeling en controle.
-
-  Op het platform PAQT.com werk je als opdrachtgever direct en intensief samen met een betrokken team dat je begrijpt, meedenkt en voor jou door het vuur gaat. Het is de centrale plek voor alle acties en voor alle communicatie. Transparant, begrijpelijk en vooral: makkelijk.
+  Elk bedrijf is uniek, daarom ontwikkelen wij unieke oplossingen die op maat zijn gemaakt. Ben je bijvoorbeeld op zoek naar een goed vindbare en mobielvriendelijke website, een mobiele applicatie of maatwerkapplicatie? Dan ben je bij ons aan het goede adres! Wij ontwerpen, onwikkelen en optimaliseren veel via het Laravel framework voor jouw wensen en behoeften. Onze oplossingen worden volledig in-house en ambachtelijk ontwikkeld, tegen een eerlijke prijs.
 province: Zuid-Holland
 city: Zoetermeer
 email: info@sqits.nl
