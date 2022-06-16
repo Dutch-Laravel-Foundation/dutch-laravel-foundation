@@ -49,7 +49,14 @@ Route::permanentRedirect('/our-members/{id?}', '/leden');
 Route::permanentRedirect('/news/{id?}', '/insights');
 
 // Agenda/event redirects
-Route::permanentRedirect('/calendar/{id?}', '/agenda');
+Route::permanentRedirect('/calendar/laravel-directors-dinner', '/events/laravel-directors-dinner');
+Route::permanentRedirect('/calendar/laravel-meetup', '/events/laravel-meetup');
+Route::permanentRedirect('/calendar/larcon-online-2020-viewing-party', '/events/laracon-online-2020-viewing-party');
+Route::permanentRedirect('/calendar/webinar-twill-16-april-2020', '/events/webinar-twill-an-open-source-cms-toolkit-for-laravel');
+Route::permanentRedirect('/calendar/online-meet-up-mohamed-said-over-laravel-queues-in-action', '/events/online-meet-up-mohamed-said-over-laravel-queues-in-action');
+Route::permanentRedirect('/calendar/meetup-met-freek-van-der-herten-over-debugging-met-ray', '/events/meetup-met-freek-van-der-herten-over-debugging-met-ray');
+Route::permanentRedirect('/calendar/meetup-over-generics-debugging-en-the-best-of-all-frameworks', '/events/meetup-over-generics-debugging-en-the-best-of-all-frameworks');
+Route::permanentRedirect('/calendar/{slug?}', '/agenda');
 
 // Cases redirects
 Route::permanentRedirect('/showcases/intersafe-employee-safety-manager-by-bitfactory', '/cases/intersafe-employee-safety-manager-by-bitfactory');
