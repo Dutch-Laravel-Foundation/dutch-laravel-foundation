@@ -6,7 +6,7 @@
 {{ /content }}
 
 <section class="mb">
-    {{ collection:cases limit="3" }}
+    {{ collection:cases limit="9" sort="date:desc" }}
         {{ case_block = { switch between='blocks/image-left-larger|blocks/image-right-larger' } }}
         {{ partial:{ case_block } class="lg:!w-3/4 py-4 lg:py-0 { switch between='|lg:ml-[25%]' }" :image="featured_image" :title="title_long" :category="member:title" link="/cases/{ slug }" }}
         {{ introduction }}
