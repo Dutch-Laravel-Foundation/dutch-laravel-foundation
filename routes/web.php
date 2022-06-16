@@ -50,3 +50,10 @@ Route::permanentRedirect('/news/{id?}', '/insights');
 
 // Agenda/event redirects
 Route::permanentRedirect('/calendar/{id?}', '/agenda');
+
+// Cases redirects
+Route::permanentRedirect('/showcases/intersafe-employee-safety-manager-by-bitfactory', '/cases/intersafe-employee-safety-manager-by-bitfactory');
+Route::permanentRedirect('/showcases/de-verbouwcalculator', '/cases/de-verbouwcalculator');
+Route::permanentRedirect('/showcases/klantenportaal-voor-het-loyaliteitsprogramma-van-avia', '/cases/klantenportaal-voor-het-loyaliteitsprogramma-van-avia');
+Route::permanentRedirect('/showcases/mobiele-app-api-en-adminpanel-als-mvp-voor-toetsing-onder-duizenden-reizigers', '/cases/ov-chipkaart-app-voor-internationale-studenten');
+Route::permanentRedirect('/showcases/{slug?}', '/cases');
