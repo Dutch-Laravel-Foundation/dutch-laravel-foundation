@@ -8,6 +8,7 @@ preferences:
       columns:
         - title
         - highlight
+        - date
     socials:
       columns:
         - title
