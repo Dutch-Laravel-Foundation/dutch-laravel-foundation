@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="mt-8" x-show="employees.length > 1">
-                <span class="block meta-dark">Aantal werknemers</span>
+                <span class="block meta-dark">Aantal Laravel developers</span>
                 <div class="flex flex-wrap gap-2">
                     <template x-for="employee in employees" :key="employee">
                         <button x-on:click="updateFilter(event.target)" data-checked="false" data-type="employees" :data-value="employee" x-text="employee" class="flex items-center justify-center w-full sm:w-auto h-12 px-8 text-xs font-bold uppercase whitespace-nowrap transition-colors bg-transparent border border-tertiary-light !text-tertiary-regular hover:!text-tertiary-dark hover:border-primary-accent opacity-80 hover:opacity-100"></button>
