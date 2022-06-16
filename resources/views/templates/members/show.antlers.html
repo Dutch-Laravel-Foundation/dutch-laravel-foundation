@@ -4,7 +4,7 @@
         {{ description }}
         {{ if { collection:count in="cases" member:is="{ id }" } > 0 }}
         {{ collection:cases member:is="{ id }" limit="3" }}
-            {{ if first }}<div class="mt-20">{{ /if }}
+            {{ if first }}<div class="mt-6 md:mt-20">{{ /if }}
             {{ partial:blocks/image-center-larger :image="featured_image" :title="title_long" :category="member:title" class="" link="/cases/{ slug }" }}
                 {{ introduction }}
             {{ /partial:blocks/image-center-larger }}

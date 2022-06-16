@@ -1,5 +1,5 @@
 <div
-    class="block-image-center-larger relative flex flex-row justify-center w-full pt-64 mb-20 {{ class }}">
+    class="block-image-center-larger relative flex flex-row justify-center w-full pt-64 mb-10 md:mb-20 {{ class }}">
     {{ if image }}
         <img class="absolute top-0 left-0 object-cover w-full h-96" style="object-position:{{ featured_image:focus_css }}"
             src="{{ glide src="{featured_image}" fit="crop_focal" width="1280" }}" alt="{{ featured_image:alt ?? title }}" />
