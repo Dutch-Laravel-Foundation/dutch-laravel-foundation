@@ -110,9 +110,6 @@ sections:
     display: Contactgegevens
     fields:
       -
-        handle: provincie
-        field: provincie.province
-      -
         handle: city
         field:
           input_type: text
@@ -123,6 +120,8 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
+      -
+        import: province
       -
         handle: email
         field:

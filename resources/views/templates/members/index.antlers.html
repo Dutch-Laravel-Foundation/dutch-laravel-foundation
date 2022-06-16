@@ -6,13 +6,13 @@
 {{ /content }}
 
 <div class="container mx-auto" x-data="loadMembers()">
-    <div class="px-6 mr-[-2rem] ml-[-2rem] sm:mx-auto py-10 bg-secondary-light px-8 sm:px-10 sm:w-full">
+    <div class="mr-[-2rem] ml-[-2rem] sm:mx-auto py-10 bg-secondary-light px-8 sm:px-10 sm:w-full" x-show="types.length > 1 || provinces.length > 1 || employees.length > 1">
         <div class="flex flex-col items-baseline justify-between base:flex-row">
             <h2 class="block mb-8 base:mb-0">Kunnen wij je helpen zoeken?</h2>
             <div class="hidden base:block"><a class="font-bold" x-on:click="resetFilters()">Filters wissen</a></div>
         </div>
-        <div class="flex flex-col w-full lg:grid lg:grid-cols-2">
-            <div class="mt-8 lg:pr-8">
+        <div class="flex flex-col w-full lg:grid lg:grid-cols-2 lg:gap-x-8">
+            <div class="mt-8" x-show="types.length > 1">
                 <span class="block meta-dark">Ik zoek een</span>
                 <div class="flex flex-wrap gap-2">
                     <template x-for="type in types" :key="type">
@@ -20,7 +20,7 @@
                     </template>
                 </div>
             </div>
-            <div class="mt-8 lg:pl-8">
+            <div class="mt-8" x-show="employees.length > 1">
                 <span class="block meta-dark">Aantal werknemers</span>
                 <div class="flex flex-wrap gap-2">
                     <template x-for="employee in employees" :key="employee">
@@ -28,7 +28,7 @@
                     </template>
                 </div>
             </div>
-            <div class="col-span-2 mt-8">
+            <div class="col-span-2 mt-8" x-show="provinces.length > 1">
                 <span class="block meta-dark">Provincie</span>
                 <div class="flex flex-wrap gap-2">
                     <template x-for="province in provinces" :key="province">
@@ -52,14 +52,14 @@
                             <img x-show="item.logo" class="block max-w-[66%] max-h-[66%]" :src="item.logo" :alt="item.title">
                         </figure>
                     </a>
-                    <div class="relative w-full p-10 pb-12 min-h-40 !pb-16">
+                    <div class="relative w-full p-10 min-h-40 !pb-16">
                         <a x-bind:href="'/{{ segment_1 }}/' + item.slug">
                             <div class="flex flex-col w-full ">
                                 <h4 class="block w-full mb-[.3rem]" x-text="item.title"></h4>
                             <span class="meta text-primary-accent" x-text="item.title"></span>
                             </div>
                         </a>
-                        <a x-bind:href="'/{{ segment_1 }}/' + item.slug" class="relative flex h-12 items-center justify-center group !absolute right-0 bottom-0 " href="/cases/klantportaal-voor-het-loyaliteitsprogramma-van-avia">
+                        <a x-bind:href="'/{{ segment_1 }}/' + item.slug" class="flex h-12 items-center justify-center group !absolute right-0 bottom-0 ">
                             <div class="z-20 flex items-center justify-center w-12 h-full px-8 text-xs font-bold text-white uppercase transition-transform whitespace-nowrap group-hover:-translate-x-1 group-hover:-translate-y-1 bg-primary-accent aspect-square ">&gt;</div>
                             <div class="absolute bottom-0 right-0 z-10 w-full h-full border border-primary-accent "></div>
                         </a>
@@ -79,11 +79,11 @@
 
 {{# Fix the initiation of members later, maybe somehow with Statamics to_json #}}
 <script>
-var members = [{{ members = {collection:members} }}{{ noparse }}{ {{ /noparse }}{{ "id:'" + $id + "',slug:'" + $slug + "',title:'" + $title + "',logo:'" + $logo + "',type:'" + $type + "',employees:'" + $employees + "',province:'" + $province + "',city:'" + $city + "'" }}{{ noparse }}}{{ /noparse }}{{ !last ?= ',' }}{{ /members }}],
-types = members.map((obj) => { return obj.type; }).filter((item, index, arr) => { return item.length > 0 && arr.indexOf(item) == index; }),
-employees = members.map((obj) => { return obj.employees; }).filter((item, index, arr) => { return item.length > 0 && arr.indexOf(item) == index; }),
-provinces = members.map((obj) => { return obj.province; }).filter((item, index, arr) => { return item.length > 0 && arr.indexOf(item) == index; });
-//console.log(provinces);
+var members = [{{ members = {collection:members sort="random"} }}{{ noparse }}{ {{ /noparse }}{{ "id:'" + $id + "',slug:'" + $slug + "',title:'" + $title + "',logo:'" + $logo + "',type:'" + $type + "',employees:'" + $employees + "',province:'" + $province + "',city:'" + $city + "'" }}{{ noparse }}}{{ /noparse }}{{ !last ?= ',' }}{{ /members }}],
+types = members.map((obj) => { return obj.type; }).filter((item, index, arr) => { return item.length > 0 && arr.indexOf(item) == index; }).sort(),
+employees = members.map((obj) => { return obj.employees; }).filter((item, index, arr) => { return item.length > 0 && arr.indexOf(item) == index; }).sort(),
+provinces = members.map((obj) => { return obj.province; }).filter((item, index, arr) => { return item.length > 0 && arr.indexOf(item) == index; }).sort();
+
 function loadMembers() {
     return {
         dataToFilter: members,

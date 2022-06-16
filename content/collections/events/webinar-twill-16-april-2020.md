@@ -9,7 +9,7 @@ introduction: |-
 type: Online
 signup_link: 'https://www.meetup.com/nl-NL/meetup-group-NBzJdgRH/events/269886294/'
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655300547
+updated_at: 1655366327
 featured_image: twill.svg
 date_start: '2020-04-16'
 time_start: '16:00'

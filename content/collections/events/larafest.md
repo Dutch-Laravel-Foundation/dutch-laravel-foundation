@@ -6,7 +6,7 @@ introduction: |-
   Tijdens de afgelopen meet-up hebben we het al aangekondigd: LaraFest! Op 16 juni a.s. organiseren we vanuit de DLF voor onze leden een feestje. Wat kan je verwachten; muziek, hapjes, drankjes, een paar Laravel talks en vooral veel gezelligheid aan het strand van Zandvoort nu dat weer kan en mag!
 
   Het aantal plaatsen bij dit unieke evenement is beperkt! We willen jullie daarom alvast vragen om je agenda te reserveren voor dit feestje als je erbij wilt zijn!
-featured_image: larafest.jpeg
+featured_image: zandvoort-strand.jpg
 type: Meetup
 location: 'Strandtent Tent 6'
 address: 'Boulevard Paulus Loot, Zandvoort'
@@ -15,7 +15,7 @@ time_start: '16:30'
 time_end: '23:00'
 signup_link: 'https://www.meetup.com/meetup-group-NBzJdgRH/events/285689702/'
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655281697
+updated_at: 1655373386
 content:
   -
     type: paragraph

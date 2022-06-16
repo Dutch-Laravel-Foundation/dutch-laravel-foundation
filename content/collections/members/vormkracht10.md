@@ -13,17 +13,16 @@ description: |-
 
   Wij gebruiken Laravel omdat we op deze manier kwaliteit kunnen garanderen aan onze klanten, zowel op de korte termijn met het ontwikkelen van een snelle Minimum Viable Product (MVP) maar ook voor de langere termijn. Waarin de continuerende vraagstukken van onze klanten over de jaren heen doorontwikkeld moeten worden en het leveren van onderhoud en services steeds belangrijker is geworden.
 number_of_employees: 1-10
-province: gelderland
+province: Gelderland
 city: Nijmegen
 website: vormkracht10.nl
 phone: '+31 (0)24 260 0000'
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655318126
+updated_at: 1655371755
 logo: vormkracht10-logo.png
 founding_partner: false
 member_type: bedrijf
 type: Bedrijf
 employees: 11-50
-provincie: Gelderland
 email: info@vormkracht10.nl
 ---

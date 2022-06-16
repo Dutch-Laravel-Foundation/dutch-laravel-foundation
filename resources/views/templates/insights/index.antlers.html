@@ -29,7 +29,7 @@
 
     {{ if highlighted_id.0 }}
         {{ collection:insights id:is="{ highlighted_id.0 }" limit="1" }}
-            {{ partial:blocks/image-highlight class="xl:w-11/12" :image="featured_image" :category="category" link="/insights/{ slug }" }}
+            {{ partial:blocks/image-highlight class="xl:w-11/12" :image="featured_image" category="Mis niet" link="/insights/{ slug }" }}
                 {{ introduction }}
             {{ /partial:blocks/image-highlight }}
         {{ /collection:insights }}

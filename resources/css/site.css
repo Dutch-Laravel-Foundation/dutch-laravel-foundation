@@ -17,11 +17,11 @@ h1 {
 }
 
 h2 {
-    @apply mb-3 text-xl break-words md:mb-8 md:text-3xl text-tertiary-dark;
+    @apply mt-5 mb-3 text-xl break-words md:mb-4 md:text-3xl text-tertiary-dark;
 }
 
 h3 {
-    @apply mb-6 text-lg break-words md:text-xl text-tertiary-dark;
+    @apply mt-5 mb-6 text-lg break-words md:text-xl text-tertiary-dark;
 }
 
 h4 {

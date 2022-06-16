@@ -15,7 +15,7 @@ time_start: '18:00'
 time_end: '22:00'
 signup_link: 'https://www.meetup.com/meetup-group-NBzJdgRH/events/281564479/'
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655298047
+updated_at: 1655365621
 content:
   -
     type: paragraph
