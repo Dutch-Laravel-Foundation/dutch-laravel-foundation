@@ -28,14 +28,14 @@
 
     {{# Founding partners #}}
     <div>
-        <h2>Founding partners</h2>
+        <h2>Founding partnersx</h2>
         <p class="block w-full mb-5 sm:px-0 sm:w-3/4 base:w-2/3 lg:w-1/2 3xl:w-2/5 4xl:w-1/3">De volgende bedrijven hebben in 2019 gezamenlijk gewerkt aan de oprichting van de Dutch Laravel Foundation.</p>
     </div>
 
     <div class="container mx-auto mb-10 md:mb-20">
         <div class="flex flex-wrap overflow-hidden">
             {{ collection:members founding_partner:is="true" }}
-                {{ partial:company/simple :logo="logo" :title="title" text="{ arr({ city }, { province:title }) | remove_empty | list }" class="w-full p-6 overflow-hidden lg:p-10 sm:w-1/2 xl:w-1/3" link="/leden/{ slug }" index="4"}}
+                {{ partial:company/simple :logo="logo" :title="title" text="{ arr({ city }, { province }) | remove_empty | list }" class="w-full p-6 overflow-hidden lg:p-10 sm:w-1/2 xl:w-1/3" link="/leden/{ slug }" index="4"}}
             {{ /collection:members }}
         </div>
     </div>
