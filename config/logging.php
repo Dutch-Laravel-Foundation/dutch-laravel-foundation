@@ -50,8 +50,13 @@ return [
     'channels' => [
         'stack' => [
             'driver' => 'stack',
-            'channels' => ['single'],
+            'channels' => ['rocketeers', 'daily'],
             'ignore_exceptions' => false,
+        ],
+
+        'rocketeers' => [
+            'driver' => 'rocketeers',
+            'level' => 'debug',
         ],
 
         'single' => [
