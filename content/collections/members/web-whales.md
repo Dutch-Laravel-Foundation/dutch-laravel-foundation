@@ -5,7 +5,7 @@ title: 'Web Whales'
 number_of_employees: 1-10
 founding_partner: false
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655371751
+updated_at: 1655480825
 city: 'Den Haag'
 description: |-
   Bij Web Whales krijgen we energie van uitdagende projecten, digitale puzzels en nieuwe technologieën. Met een team van specialisten, zowel technisch als creatief, bouwen we dagelijks aan de weboplossingen van morgen.
@@ -17,6 +17,6 @@ phone: '+31 (0)70 205 4810'
 email: info@webwhales.nl
 member_type: bedrijf
 type: Bedrijf
-employees: 51-100
+employees: 1-10
 province: Zuid-Holland
 ---
