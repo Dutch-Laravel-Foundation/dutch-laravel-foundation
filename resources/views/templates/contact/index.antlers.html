@@ -1,6 +1,6 @@
 <div class="flex flex-col justify-between w-full lg:flex-row">
     <div class="w-full lg:w-1/2 mb">
-        {{ form:contact }}
+        {{ form:contact redirect="/contact?no-cache={timestamp}" }}
             {{ if success }}
                 <div class="px-6 sm:px-0">
                     {{ partial:forms/success }}
@@ -18,7 +18,7 @@
                 {{ /if }}
 
                 <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
-                
+
                 <div class="sm:px-0" data-aos="fade-up" data-aos-delay="250">
                     {{ fields }}
                         {{ if handle != 'agree' }}
