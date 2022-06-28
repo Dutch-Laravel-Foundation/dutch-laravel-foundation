@@ -46,3 +46,6 @@ preferences:
     newsletter:
       columns:
         - email
+  assets:
+    assets:
+      mode: grid
