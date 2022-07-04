@@ -46,7 +46,13 @@ preferences:
     newsletter:
       columns:
         - email
+        - datestamp
     contact:
+      columns:
+        - name
+        - company_name
+        - datestamp
+    become_member:
       columns:
         - name
         - company_name
