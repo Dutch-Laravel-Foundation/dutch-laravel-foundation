@@ -16,7 +16,7 @@
         "laravel/tinker": "^2.5",
         "pecotamic/sitemap": "^1.4",
         "rocketeers-app/rocketeers-laravel": "dev-master",
-        "statamic/cms": "3.3.16",
+        "statamic/cms": "3.3.17",
         "webographen/statamic-dynamic-token": "^1.0"
     },
     "require-dev": {
