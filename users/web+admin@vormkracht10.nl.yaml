@@ -46,6 +46,11 @@ preferences:
     newsletter:
       columns:
         - email
+    contact:
+      columns:
+        - name
+        - company_name
+        - datestamp
   assets:
     assets:
       mode: grid
