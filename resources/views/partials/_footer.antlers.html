@@ -44,7 +44,7 @@
                     <div class="w-full md:w-1/2 lg:w-full">
                         <h4>Aanmelden nieuwsbrief</h4>
                         {{ newsletter_submitted = false }}
-                        {{ form:set is="newsletter" redirect="/newsletter?no-cache={timestamp}" }}
+                        {{ form:set is="newsletter" redirect="/newsletter" }}
                             {{ if {form:success} }}
                                 {{ redirect to="/newsletter" }}
                             {{ else }}

@@ -1,6 +1,6 @@
 <div class="flex flex-col justify-between w-full lg:flex-row">
     <div class="w-full lg:w-1/2 mb">
-        {{ form:contact redirect="/contact?no-cache={timestamp}" }}
+        {{ form:contact redirect="/contact" }}
             {{ if success }}
                 <div class="px-6 sm:px-0">
                     {{ partial:forms/success }}
