@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f36795edb82c342981bcbc20dfcb2202",
+    "content-hash": "b8bb4976f69fb932b6a08541048e8302",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -68,6 +68,53 @@
                 "source": "https://github.com/ajthinking/archetype/tree/v1.1.4"
             },
             "time": "2022-05-25T07:35:55+00:00"
+        },
+        {
+            "name": "anakadote/statamic-recaptcha",
+            "version": "1.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anakadote/statamic-recaptcha.git",
+                "reference": "c39fb6b7d8fb00b11b9860e03b499b48ec844f91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/anakadote/statamic-recaptcha/zipball/c39fb6b7d8fb00b11b9860e03b499b48ec844f91",
+                "reference": "c39fb6b7d8fb00b11b9860e03b499b48ec844f91",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Statamic reCAPTCHA (v3 and v2)",
+                    "description": "A reCAPTCHA v3 and v2 addon."
+                },
+                "laravel": {
+                    "providers": [
+                        "Anakadote\\StatamicRecaptcha\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Anakadote\\StatamicRecaptcha\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Collins",
+                    "homepage": "https://endif.io"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/anakadote/statamic-recaptcha/issues",
+                "source": "https://github.com/anakadote/statamic-recaptcha/tree/1.0.7"
+            },
+            "time": "2022-02-07T23:37:45+00:00"
         },
         {
             "name": "asm89/stack-cors",
