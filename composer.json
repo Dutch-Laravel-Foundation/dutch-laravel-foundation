@@ -15,6 +15,7 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.82",
         "laravel/tinker": "^2.5",
+        "octoper/statamic-html-minify": "^0.0.5",
         "pecotamic/sitemap": "^1.4",
         "rocketeers-app/rocketeers-laravel": "dev-master",
         "statamic/cms": "3.3.17",
