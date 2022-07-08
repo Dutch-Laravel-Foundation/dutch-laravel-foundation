@@ -195,3 +195,7 @@ button[data-checked="true"] {
         @apply pl-5;
     }
 }}
+
+.grecaptcha-badge {
+    opacity: 0;
+}
