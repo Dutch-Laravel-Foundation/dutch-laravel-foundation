@@ -6,14 +6,18 @@ founding_partner: true
 type: Bedrijf
 employees: 1-10
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655377789
+updated_at: 1658326608
 logo: paqt.svg
 description: |-
-  Digitaliseren voor iedereen mogelijk en vooral ook makkelijk maken - PAQT bewijst dat het kan. De techniek, hoe geavanceerd en complex ook, is inmiddels de uitdaging niet meer. Waar het om gaat is het in lijn brengen van mensen, processen en technologie. We doorgronden de uitdagingen en ambities van de business en voorzien in werkelijk alles wat er maar nodig is voor succes.
+  PAQT bedenkt, bouwt én onderhoudt de allerbeste softwareoplossingen in de markt. Voor jou, of voor jouw klanten. Met 50 gedreven professionals staan we als techpartner aan je zijde.
 
-  Cloud native software, mobiele apps of de integratie van systemen? Start je project vandaag nog online. Kies je ideale team. En hou continu feeling en controle.
+  PAQT ontwikkeld software vanuit een bedrijfskundige visie en altijd in nauwe samenwerking met onze opdrachtgevers. Omdat onze ontwikkelaars het strategisch belang van jouw oplossing volledig begrijpen, gaan ze in iedere fase van het proces voor je door het vuur.
 
-  Op het platform PAQT.com werk je als opdrachtgever direct en intensief samen met een betrokken team dat je begrijpt, meedenkt en voor jou door het vuur gaat. Het is de centrale plek voor alle acties en voor alle communicatie. Transparant, begrijpelijk en vooral: makkelijk.
+  Het proces hebben we tot in de puntjes gestroomlijnd in onze unieke werkwijze Rise. Via ons eigen PAQT samenwerkingsplatform werk je volledig transparant samen met onze ontwikkelaars en consultants. Eén overzichtelijke plek, met één waarheid voor iedereen. Zo creëren we oplossingen die impact maken. Want wij geloven dat alleen de allerbeste software het leven van miljoenen mensen dagelijks beter maakt.
+
+  Hoewel je nooit aan ons vastzit, blijft jouw eigen PAQT-team ook na livegang jouw techpartner. Handig voor support, onderhoud en doorontwikkeling, want onze teams kennen jouw product én ambities als geen ander.
+
+  **PAQT** - Go digital. Create impact.
 province: Utrecht
 city: Utrecht
 email: maurits.dijkgraaf@paqt.com
