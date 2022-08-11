@@ -18,7 +18,7 @@
         "octoper/statamic-html-minify": "^0.0.5",
         "pecotamic/sitemap": "^1.4",
         "rocketeers-app/rocketeers-laravel": "dev-master",
-        "statamic/cms": "3.3.17",
+        "statamic/cms": "3.3.27",
         "webographen/statamic-dynamic-token": "^1.0"
     },
     "require-dev": {
