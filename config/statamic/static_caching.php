@@ -54,6 +54,7 @@ return [
 
     'exclude' => [
         '/contact*',
+        '/leden*',
         '/lid-worden*',
     ],
 
