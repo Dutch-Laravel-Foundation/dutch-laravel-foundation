@@ -4,9 +4,9 @@ blueprint: members
 title: PAQT
 founding_partner: true
 type: Bedrijf
-employees: 1-10
+employees: 51-100
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1658326608
+updated_at: 1661351934
 logo: paqt.svg
 description: |-
   PAQT bedenkt, bouwt én onderhoudt de allerbeste softwareoplossingen in de markt. Voor jou, of voor jouw klanten. Met 50 gedreven professionals staan we als techpartner aan je zijde.
