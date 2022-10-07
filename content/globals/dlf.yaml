@@ -3,7 +3,7 @@ data:
   logo: LaravelBrandMark.svg
   title: 'Dutch Laravel Foundation'
   address: 'Prismalaan West 49'
-  zipcode: 2665PC
+  zipcode: '2665 PC'
   city: Bleiswijk
   phone: '+31 (0)88 73 33 319'
   email: info@dutchlaravelfoundation.nl
