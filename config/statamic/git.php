@@ -125,9 +125,9 @@ return [
     */
 
     'commands' => [
-        'sudo git config --global safe.directory "*"',
-        'sudo git add {{ paths }}',
-        'sudo git -c "user.name={{ name }}" -c "user.email={{ email }}" commit -m "{{ message }}"',
+        'git config --global safe.directory "*"',
+        'git add {{ paths }}',
+        'git -c "user.name={{ name }}" -c "user.email={{ email }}" commit -m "{{ message }}"',
     ],
 
     /*
