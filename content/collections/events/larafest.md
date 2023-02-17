@@ -1,7 +1,7 @@
 ---
 id: 7c239062-0cdf-451b-a9df-9e4e4649b2ee
 blueprint: events
-title: LaraFest
+title: 'LaraFest 2022'
 introduction: |-
   Tijdens de afgelopen meet-up hebben we het al aangekondigd: LaraFest! Op 16 juni a.s. organiseren we vanuit de DLF voor onze leden een feestje. Wat kan je verwachten; muziek, hapjes, drankjes, een paar Laravel talks en vooral veel gezelligheid aan het strand van Zandvoort nu dat weer kan en mag!
 
@@ -15,7 +15,8 @@ time_start: '16:30'
 time_end: '23:00'
 signup_link: 'https://www.meetup.com/meetup-group-NBzJdgRH/events/285689702/'
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655373386
+updated_at: 1676554359
+published: true
 content:
   -
     type: paragraph

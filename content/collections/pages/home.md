@@ -5,7 +5,7 @@ title: Home
 template: templates/home/index
 author: 9342694a-2c6c-4640-8da1-91a61cfda771
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655319368
+updated_at: 1666624339
 call_to_action: ee5d33de-9a24-4860-92dd-3503740b62af
 highlight_text:
   -
@@ -77,6 +77,7 @@ header_content:
         type: text
         text: 'De Dutch Laravel Foundation zorgt voor de promotie van Laravel en stimuleert kennisuitwisseling tussen Laravel developers in Nederland. Opdrachtgevers van webapplicaties kunnen via de stichting geschikte Laravel developers vinden.'
 meta_title: 'Dutch Laravel Foundation - Stichting voor promotie en kennisdeling over Laravel'
+published: true
 content:
   -
     type: set
