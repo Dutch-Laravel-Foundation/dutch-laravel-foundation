@@ -6,8 +6,8 @@
 {{ /content }}
 
 <section class="mb-half">
-    {{ if { collection:count in="events" sort="date_start:desc" date_start:is_after="{today}" } > 0 }}
-        {{ collection:events sort="date_start:desc" date_start:is_after="{today}" }}
+    {{ if { collection:count in="events" sort="date_start:asc" date_start:is_after="{today}" } > 0 }}
+        {{ collection:events sort="date_start:asc" date_start:is_after="{today}" }}
             {{ partial:blocks/event :image="image" :category="type" link="/events/{{ slug }}" }}
                 {{ introduction }}
             {{ /partial:blocks/event }}
