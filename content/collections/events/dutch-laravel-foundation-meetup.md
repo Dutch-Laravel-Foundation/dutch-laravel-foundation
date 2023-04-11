@@ -11,7 +11,11 @@ location: Bitfactory
 address: 'Goudsesingel 164, 3011 KD Rotterdam'
 date_start: '2023-03-07'
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1676642740
+updated_at: 1677059754
+featured_image: laravel-meetup.jpeg
+time_start: '18:00'
+time_end: '21:00'
+signup_link: 'https://www.meetup.com/meetup-group-nbzjdgrh/events/291176725/'
 published: true
 content:
   -
@@ -25,7 +29,13 @@ content:
     content:
       -
         type: text
-        text: 'We kunnen maximaal 40 gasten ontvangen, dus wil je graag aanwezig zijn, meld je dan snel aan! Dit evenement is ook open voor geïnteresseerden welke (nog) niet lid zijn van de Dutch Laravel Foundation.'
+        text: 'We kunnen maximaal 40 gasten ontvangen, dus wil je graag aanwezig zijn, meld je dan snel aan! '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Dit evenement is ook open voor geïnteresseerden welke (nog) niet lid zijn van de Dutch Laravel Foundation.'
   -
     type: heading
     attrs:
@@ -75,12 +85,15 @@ content:
         type: hard_break
       -
         type: text
-        text: '18:45 - Spreker 1'
+        text: "18:45 - Silvano Allemekinders (Goedemiddag!) -\_Laravel & Packages: Locked & Loaded"
       -
         type: hard_break
+        marks:
+          -
+            type: bold
       -
         type: text
-        text: '19:30 - Spreker 2'
+        text: '19:30 - Ruben Maas (Crew Engagement Solutions) - Event Driven Architecture'
       -
         type: hard_break
       -
@@ -113,7 +126,7 @@ content:
     content:
       -
         type: text
-        text: 'Op deze dag verzorgen Bitfactory en de DLF wat te eten in de avond en wat te versnaperen tussendoor. Dit hoef je dus niet mee te nemen, tenzij je speciale dieetwensen hebt.'
+        text: 'Op deze dag verzorgen Bitfactory en de DLF wat te eten in de avond en wat te versnaperen tussendoor. Dit hoef je dus niets mee te nemen, tenzij je speciale dieetwensen hebt.'
   -
     type: heading
     attrs:
@@ -130,7 +143,21 @@ content:
     content:
       -
         type: text
-        text: 'Wil je ook aanwezig zijn? Aanmelden kan nog steeds. Meld je dan hier aan via Meetup.'
+        text: 'Wil je ook aanwezig zijn? Aanmelden kan nog steeds. '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://www.meetup.com/meetup-group-nbzjdgrh/events/291176725/'
+              rel: null
+              target: _blank
+              title: null
+        text: 'Meld je dan hier aan via Meetup'
+      -
+        type: text
+        text: .
   -
     type: heading
     attrs:
