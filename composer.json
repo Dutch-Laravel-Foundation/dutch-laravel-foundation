@@ -1,15 +1,8 @@
 {
-    "name": "statamic/statamic",
-    "description": "Statamic",
-    "keywords": [
-        "statamic",
-        "cms",
-        "flat file",
-        "laravel"
-    ],
+    "name": "vormkracht10/dutch-laravel-foundation",
     "type": "project",
     "require": {
-        "php": "^7.4 || ^8.0",
+        "php": "^8.0",
         "anakadote/statamic-recaptcha": "^1.0",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
