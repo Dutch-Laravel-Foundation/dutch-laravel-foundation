@@ -1,0 +1,414 @@
+1680932191s:17328:"<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <url>
+        <loc>https://dutchlaravelfoundation.nl</loc>
+        <lastmod>2022-10-24T15:12:19+00:00</lastmod>
+                <priority> 1
+                    </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/agenda</loc>
+        <lastmod>2022-06-15T18:51:47+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/cases</loc>
+        <lastmod>2022-06-15T18:24:58+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/contact</loc>
+        <lastmod>2022-05-25T09:59:39+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights</loc>
+        <lastmod>2022-05-25T09:59:53+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden</loc>
+        <lastmod>2022-06-01T12:14:05+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/lid-worden</loc>
+        <lastmod>2022-06-15T18:32:41+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/newsletter</loc>
+        <lastmod>2022-06-15T10:05:15+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/over-ons</loc>
+        <lastmod>2022-06-15T18:20:15+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/privacy-statement</loc>
+        <lastmod>2022-06-15T08:35:02+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/terms-and-conditions</loc>
+        <lastmod>2022-06-16T08:30:22+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/wat-is-laravel</loc>
+        <lastmod>2022-06-15T19:02:16+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/cases/intersafe-employee-safety-manager-by-bitfactory</loc>
+        <lastmod>2022-06-16T07:26:30+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/cases/de-verbouwcalculator</loc>
+        <lastmod>2022-06-16T07:26:26+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/cases/klantenportaal-voor-het-loyaliteitsprogramma-van-avia</loc>
+        <lastmod>2022-06-16T07:26:22+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/cases/mobiele-app-api-en-adminpanel-als-mvp-voor-toetsing-onder-duizenden-reizigers</loc>
+        <lastmod>2022-06-16T07:59:29+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/cases/platform-voor-recycling-printercartridges</loc>
+        <lastmod>2022-06-28T08:43:26+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/cases/teamflow-app</loc>
+        <lastmod>2022-10-24T15:11:58+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/events/dlf-hackaton</loc>
+        <lastmod>2022-06-17T15:51:02+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/events/laracon-online-2020-viewing-party</loc>
+        <lastmod>2022-06-15T13:42:55+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/events/laravel-directors-dinner</loc>
+        <lastmod>2022-06-15T13:43:25+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/events/laravel-hackathon</loc>
+        <lastmod>2022-06-15T13:44:41+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/events/laravel-meetup</loc>
+        <lastmod>2022-06-15T13:43:10+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/events/meetup-met-freek-van-der-herten-over-debugging-met-ray</loc>
+        <lastmod>2022-06-16T07:47:01+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/events/meetup-over-generics-debugging-en-the-best-of-all-frameworks</loc>
+        <lastmod>2022-06-15T13:41:04+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/events/online-meet-up-mohamed-said-over-laravel-queues-in-action</loc>
+        <lastmod>2022-06-15T13:48:12+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/events/webinar-twill-16-april-2020</loc>
+        <lastmod>2022-06-16T07:58:47+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/events/larafest-2023</loc>
+        <lastmod>2023-02-16T15:04:12+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/events/larafest</loc>
+        <lastmod>2023-02-17T14:23:55+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/events/dutch-laravel-foundation-meetup</loc>
+        <lastmod>2023-02-22T09:55:54+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/oprichting-stichting-laravel-nederland</loc>
+        <lastmod>2022-06-16T07:56:27+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/dutch-laravel-foundation-hackathon</loc>
+        <lastmod>2022-06-16T07:57:07+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/true-blogt-over-laravel-en-de-dutch-laravel-foundation</loc>
+        <lastmod>2022-06-15T17:49:24+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/bezoek-ons-op-laracon-amsterdam-2019</loc>
+        <lastmod>2022-06-16T07:57:31+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/nieuw-lid-studio-september</loc>
+        <lastmod>2022-06-15T17:49:07+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/ook-enrise-kiest-voor-deelname-dlf</loc>
+        <lastmod>2022-06-15T17:49:02+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/wederom-een-nieuw-lid-swis</loc>
+        <lastmod>2022-06-15T17:48:54+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/eerste-laravel-meetup-groot-succes</loc>
+        <lastmod>2022-06-15T17:48:50+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/bitfactory-nieuwste-lid-dutch-laravel-foundation</loc>
+        <lastmod>2022-06-15T17:48:45+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/ook-web-whales-is-enthousiast</loc>
+        <lastmod>2022-06-15T17:48:41+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/noardcode-heeft-zich-aangesloten</loc>
+        <lastmod>2022-06-16T07:57:56+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/juridisch-loket-geopend-voor-dlf-leden</loc>
+        <lastmod>2022-06-15T17:48:30+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/eerste-interne-ontwikkelteam-sluit-zich-aan</loc>
+        <lastmod>2022-06-15T17:48:25+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/ef2-gelooft-in-het-succes-van-laravel</loc>
+        <lastmod>2022-06-15T17:48:21+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/innovatief-betaalplatform-mollie-aangesloten-bij-dlf</loc>
+        <lastmod>2022-06-15T17:48:16+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/de-eerste-laravel-showcase-is-online</loc>
+        <lastmod>2022-06-15T18:03:00+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/showcase-de-verbouwcalculator</loc>
+        <lastmod>2022-06-16T07:53:40+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/ambitieus-rl-webdiensten-sluit-zich-aan-bij-dlf</loc>
+        <lastmod>2022-06-15T17:48:01+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/showcase-viaavia</loc>
+        <lastmod>2022-06-16T07:54:15+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/early-laravel-adopter-vormkracht10-treedt-tot-dlf-toe</loc>
+        <lastmod>2022-08-23T09:21:19+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/showcase-ov-chipkaart-app</loc>
+        <lastmod>2022-06-21T13:11:24+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/nieuwe-website-voor-dlf-met-ruimte-voor-groei</loc>
+        <lastmod>2022-06-16T11:44:32+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/geslaagde-eerste-editie-larafest</loc>
+        <lastmod>2022-06-17T14:48:25+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/de-eerste-laraward-gaat-naar-orangetalent</loc>
+        <lastmod>2022-06-21T13:10:08+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/synetic-bouwt-op-laravel-als-open-source-development-agency</loc>
+        <lastmod>2022-09-07T09:22:38+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/nieuwe-case-beter-leren-samenwerken-door-de-laravel-app-van-teamflow</loc>
+        <lastmod>2022-10-24T15:13:36+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/delen-van-ervaringen-tijdens-geslaagd-cxo-diner</loc>
+        <lastmod>2022-12-14T15:30:31+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/drukbezochte-laravel-meetup-bij-bitfactory</loc>
+        <lastmod>2023-03-14T09:23:19+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/1a-first-alternative</loc>
+        <lastmod>2022-06-16T09:37:17+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/bitfactory</loc>
+        <lastmod>2022-06-16T10:08:25+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/dij</loc>
+        <lastmod>2022-06-16T11:12:49+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/ef2</loc>
+        <lastmod>2022-06-16T09:31:23+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/enrise</loc>
+        <lastmod>2022-06-16T09:31:21+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/goedemiddag</loc>
+        <lastmod>2022-06-16T10:08:56+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/ixperience</loc>
+        <lastmod>2022-06-16T09:49:57+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/mollie</loc>
+        <lastmod>2022-06-16T11:09:39+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/noardcode</loc>
+        <lastmod>2022-06-16T09:30:53+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/one-shoe</loc>
+        <lastmod>2022-06-16T09:30:51+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/orangetalent</loc>
+        <lastmod>2022-06-16T10:11:09+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/paqt</loc>
+        <lastmod>2022-08-24T14:38:54+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/endeavour</loc>
+        <lastmod>2023-03-24T15:53:49+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/rl-webdiensten</loc>
+        <lastmod>2022-06-16T11:15:11+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/september</loc>
+        <lastmod>2022-06-16T09:30:40+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/sqits</loc>
+        <lastmod>2022-06-16T11:14:29+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/swis</loc>
+        <lastmod>2022-06-16T09:30:36+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/synetic</loc>
+        <lastmod>2022-06-28T07:54:52+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/vdhicts</loc>
+        <lastmod>2022-06-16T09:50:49+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/vormkracht10</loc>
+        <lastmod>2022-06-16T11:13:16+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/web-whales</loc>
+        <lastmod>2022-06-17T15:47:05+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/studio-fifteen</loc>
+        <lastmod>2022-10-07T15:25:32+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/23g</loc>
+        <lastmod>2023-02-17T15:17:36+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+
+</urlset>
+";
