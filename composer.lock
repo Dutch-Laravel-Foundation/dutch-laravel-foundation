@@ -4,8 +4,74 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9d789331895188e2b3bd710691f8eec9",
+    "content-hash": "e9c6e1ea61865f57cc8428676b1ad223",
     "packages": [
+        {
+            "name": "aerni/fathom",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aerni/statamic-fathom.git",
+                "reference": "0524297bd1c1656f71936cee586eb86b233fe04b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aerni/statamic-fathom/zipball/0524297bd1c1656f71936cee586eb86b233fe04b",
+                "reference": "0524297bd1c1656f71936cee586eb86b233fe04b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7.0 || ^8.0",
+                "php": "^7.4 || ^8.0",
+                "statamic/cms": "^3.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0",
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Fathom",
+                    "description": "Easily navigate to your shared Fathom site from Statamic's control panel"
+                },
+                "laravel": {
+                    "providers": [
+                        "Aerni\\Fathom\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Aerni\\Fathom\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Aerni",
+                    "email": "hello@michaelaerni.ch",
+                    "homepage": "https://www.michaelaerni.ch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily navigate to your shared Fathom site from Statamic's control panel",
+            "homepage": "https://github.com/aerni/statamic-fathom",
+            "keywords": [
+                "addon",
+                "fathom",
+                "statamic",
+                "v3"
+            ],
+            "support": {
+                "issues": "https://github.com/aerni/statamic-fathom/issues",
+                "source": "https://github.com/aerni/statamic-fathom/tree/v1.0.0"
+            },
+            "time": "2021-02-22T09:38:41+00:00"
+        },
         {
             "name": "ajthinking/archetype",
             "version": "v1.1.4",

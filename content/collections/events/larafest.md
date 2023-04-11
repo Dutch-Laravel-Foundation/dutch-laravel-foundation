@@ -15,7 +15,7 @@ time_start: '16:30'
 time_end: '23:00'
 signup_link: 'https://www.meetup.com/meetup-group-NBzJdgRH/events/285689702/'
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1676554359
+updated_at: 1676643835
 published: true
 content:
   -
@@ -29,21 +29,7 @@ content:
     content:
       -
         type: text
-        text: 'Op dit moment is het event enkel open voor inschrijving voor leden van de Dutch Laravel Foundation ('
-      -
-        type: text
-        marks:
-          -
-            type: link
-            attrs:
-              href: 'https://www.dutchlaravelfoundation.nl'
-              rel: null
-              target: null
-              title: null
-        text: 'https://www.dutchlaravelfoundation.nl'
-      -
-        type: text
-        text: '). In een later stadium kan dit wellicht aangepast worden. LaraFest is 100% gratis voor developers van de Dutch Laravel Foundation leden!'
+        text: 'Op dit moment is het event enkel open voor inschrijving voor leden van de Dutch Laravel Foundation. In een later stadium kan dit wellicht aangepast worden. LaraFest is 100% gratis voor developers van de Dutch Laravel Foundation leden!'
   -
     type: paragraph
     content:

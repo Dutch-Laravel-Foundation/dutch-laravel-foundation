@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1T344V7V5E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1T344V7V5E');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <title>Drukbezochte Laravel meetup bij Bitfactory - Dutch Laravel Foundation</title>
+    
+    
+        <meta name="description" content="De kennis- en brancheorganisatie voor Laravel developers"/>
+    
+    
+    
+        <meta name="keywords" content="Laravel, PHP, Larafest, Taylor Otwell, Dutch Laravel Foundation, DLF, kennisorganisatie"/>
+    
+    <meta property="og:title" content="Dutch Laravel Foundation" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dutchlaravelfoundation.nl/insights/drukbezochte-laravel-meetup-bij-bitfactory" />
+    
+    
+        <meta property="og:description" content="De kennis- en brancheorganisatie voor Laravel developers">
+    
+    
+    <meta property="og:image" content="https://dutchlaravelfoundation.nl/og-image.png" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://use.typekit.net/oap5ojy.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/tailwind.css?id=6b4f49acc5c2ad3f0d683830197fe5e9">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+</head>
+
+<body class="font-sans leading-normal bg-white text-primary-text">
+    <div class="frontend relative page-drukbezochte-laravel-meetup-bij-bitfactory">
+        
+
+
+<script>
+// Menu toggle
+function isiOS() {
+    return (
+        ['iPad Simulator', 'iPhone Simulator', 'iPod Simulator', 'iPad', 'iPhone', 'iPod'].includes(navigator.platform) ||
+        (navigator.userAgent.includes('Mac') && 'ontouchend' in document)
+    );
+}
+
+function menu() {
+    return {
+        open: false,
+        disabled: true,
+        init() {
+            this.disabled = false;
+        },
+        toggleMenu() {
+            const content = document.querySelector('.frontend');
+            this.disabled = true;
+            this.open = !this.open;
+            if (this.open === true) {
+                content.style.position = 'fixed';
+                content.style.top = `-${window.pageYOffset}px`;
+                // Fixes bug in Safari iOS 15.2 where screen height is not fully filled due to empty space address bar on bottom
+                if(isiOS() === true) document.documentElement.style.height = window.innerHeight + 'px';
+            } else {
+                content.style.removeProperty('position');
+                content.style.removeProperty('top');
+                window.scrollTo(0, window.pageYOffset);
+                if(isiOS() === true) document.documentElement.style.removeProperty('height');
+            }
+            this.disabled = false;
+        },
+    };
+}
+</script>
+
+<header class="fixed top-0 left-0 w-screen z-[999] xl:bg-white">
+
+    
+    <div class="container flex-col items-center justify-center hidden p-10 pb-4 mx-auto xl:flex">
+        <nav class="hidden w-full h-20 space-x-8 align-middle animated xl:flex" x-cloak>
+            
+
+
+
+
+    
+        <a href="https://dutchlaravelfoundation.nl" class="flex grow "><img class="h-full max-h-full" src="/assets/img/logo.svg" alt="Home"></a>
+    
+
+    
+        
+        
+        <a href="/wat-is-laravel"
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit hover:border-primary-accent ">Wat is Laravel?</a>
+    
+
+    
+        
+        
+        <a href="/over-ons"
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit hover:border-primary-accent ">Over ons</a>
+    
+
+    
+        
+        
+        <a href="/leden"
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit hover:border-primary-accent ">Onze leden</a>
+    
+
+    
+        
+        
+        <a href="/cases"
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit hover:border-primary-accent ">Cases</a>
+    
+
+    
+        
+        
+            
+        
+        <a href="/insights"
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit text-primary-accent ">Insights</a>
+    
+
+    
+        
+        
+        <a href="/agenda"
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit hover:border-primary-accent ">Agenda</a>
+    
+
+    
+        
+        
+        <a href="/contact"
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit hover:border-primary-accent ">Contact</a>
+    
+
+    
+        
+        
+        <a href="/lid-worden"
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit hover:border-primary-accent ">Lid worden</a>
+    
+
+        </nav>
+    </div>
+
+    
+    
+    <div class="relative xl:hidden js-alpine-init bg-white pb-6" x-data="menu()" x-init="init()" x-cloak role="navigation">
+        <div class="flex flex-row items-start justify-between w-full px-6 pt-6 pb-0 mx-auto xl:pt-10">
+            <a href="/" class="flex justify-start w-full"><img class="max-w-full max-h-[3rem] xl:max-h-full" src="/assets/img/logo.svg" alt="Home"></a>
+            
+            <button class="z-[999] absolute top-7 right-8 xl:right-20 xl:top-[3rem] h-[2.4rem] w-[2.5rem] cursor-pointer" @click="toggleMenu()" disabled x-bind:disabled="disabled">
+                <div class="relative focus:outline-none">
+                    <div class="absolute block w-[4rem]">
+                        <span aria-hidden="true" class="block absolute h-[0.2rem] w-[2.5rem] bg-tertiary-dark transform transition rounded-full duration-300 ease-in-out" :class="{'rotate-45 !bg-white': open,' -translate-y-3': !open }"></span>
+                        <span aria-hidden="true" class="block absolute h-[0.2rem] w-[2rem] bg-tertiary-dark transform transition rounded-full duration-300 ease-in-out" :class="{'opacity-0': open } "></span>
+                        <span aria-hidden="true" class="block absolute h-[0.2rem] w-[2.5rem] bg-tertiary-dark transform  transition rounded-full duration-300 ease-in-out" :class="{'-rotate-45 !bg-white': open, ' translate-y-3': !open}"></span>
+                    </div>
+                </div>
+            </button>
+        </div>
+
+        
+        <div class="fixed inset-x-0 top-0 z-50 w-screen h-screen overflow-scroll transition origin-top-right transform"
+            x-show="open" @click.outside="open = false"
+            x-transition:enter="duration-200 ease-out" x-transition:enter-start="opacity-0"
+            x-transition:enter-end="opacity-100" x-transition:leave="duration-100 ease-in"
+            x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+            <div class="w-full overflow-scroll">
+                <div class="absolute top-0 left-0 flex flex-col w-full min-h-full bg-primary-contrast">
+                    
+                    <div class="absolute top-[0.8rem] right-0 z-10">
+                        <button type="button" @click="toggleMenu()"
+                            disabled x-bind:disabled="disabled"
+                            class="relative h-[3rem] right-[0.7rem] bottom-[0.2rem] w-[3rem] m-4 text-white uppercase transition duration-150 ease-in-out bg-primary-accent focus:outline-none">
+                        </button>
+                    </div>
+                    
+    
+        <div class="w-full px-6 pt-[1.5rem] pb-0">
+            <a href="https://dutchlaravelfoundation.nl" class="flex justify-start w-full ">
+                <img class="max-w-full max-h-[3rem] xl:max-h-full" src="/assets/img/logo.svg" alt="Home">
+            </a>
+        </div>
+        <div class="h-10 border-b border-tertiary-dark opacity-20 mb-half"></div>
+    
+
+    
+    
+        <a href="/wat-is-laravel"
+            class=" md:mt-[-1rem]  flex w-full items-center h-auto px-10 py-4 border-b border-transparent hover:bg-primary-accent hover:text-white  ">Wat is Laravel?</a>
+    
+
+    
+    
+        <a href="/over-ons"
+            class=" flex w-full items-center h-auto px-10 py-4 border-b border-transparent hover:bg-primary-accent hover:text-white  ">Over ons</a>
+    
+
+    
+    
+        <a href="/leden"
+            class=" flex w-full items-center h-auto px-10 py-4 border-b border-transparent hover:bg-primary-accent hover:text-white  ">Onze leden</a>
+    
+
+    
+    
+        <a href="/cases"
+            class=" flex w-full items-center h-auto px-10 py-4 border-b border-transparent hover:bg-primary-accent hover:text-white  ">Cases</a>
+    
+
+    
+    
+        <a href="/insights"
+            class=" flex w-full items-center h-auto px-10 py-4 border-b border-transparent hover:bg-primary-accent hover:text-white  text-primary-accent">Insights</a>
+    
+
+    
+    
+        <a href="/agenda"
+            class=" flex w-full items-center h-auto px-10 py-4 border-b border-transparent hover:bg-primary-accent hover:text-white  ">Agenda</a>
+    
+
+    
+    
+        <a href="/contact"
+            class=" flex w-full items-center h-auto px-10 py-4 border-b border-transparent hover:bg-primary-accent hover:text-white  ">Contact</a>
+    
+
+    
+    
+        <a href="/lid-worden"
+            class=" flex w-full items-center h-auto px-10 py-4 border-b border-transparent hover:bg-primary-accent hover:text-white  ">Lid worden</a>
+    
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+        <div id="content" class="container  pt-16 sm:pt-10 xl:pt-0 mt-10 sm:mt-20 lg:mt-20 xl:mt-52  px-6 lg:px-10 mb-auto mx-auto flex flex-col items-left justify-center">
+    <article class="mb-half">
+    <img src="/img/asset/aW5zaWdodHMvZHNjMDYzNDYuanBn?fit=crop&w=1500&s=07e37b955b5d6cd76a5f1ca7c37144d5" class="object-cover w-full h-96 lg:h-[48rem] mb" style="object-position:50% 50%">
+    <div class="relative w-full lg:w-11/12 lg:mx-auto bg-white lg:-mt-64 min-h-[10rem] px-6 sm:px-0 lg:p-10 z-10">
+        <h1>Drukbezochte Laravel meetup bij Bitfactory</h1>
+        
+            
+
+
+
+    
+
+
+
+
+    
+
+
+
+
+
+    <div class="set"><p>Ruim 40 Laravel developers waren dinsdag 7 maart te gast bij DLF-lid Bitfactory. Het prachtige kantoor van Bitfactory in Rotterdam was deze avond het toneel voor drie interessante talks. Eerst was het echter tijd voor een pizza en een welkomstdrankje.</p><p>DLF vrijwilligers Dennis Koster en Robert Verboon gaven na de opening van de meetup direct het woord aan Johannes Hartman, eigenaar bij Bitfactory. Johannes vertelde hoe Bitfactory haar opdrachtgevers helpt met digitale producten die klanten blij maken en hun business laten groeien. Daarna werd snel doorgeschakeld naar de drie sprekers van deze avond. Graag nemen we jullie kort mee in de drie talks.</p><h3><strong>Talk 1: Jetze Sikkema (Sikkema Software) - PHP &amp; ChatGPT</strong></h3><p>Vandaag de dag vliegen de termen AI en ChatGPT ons met enige regelmaat om de oren. Maar wat is het nu eigenlijk? En hoe pas je het toe als Laravel developer? Helemaal overgekomen uit Groningen zette Jetze Sikkema, na een korte historie van AI in het algemeen, duidelijk uiteen wat de mogelijkheden, maar ook juist de onmogelijkheden van ChatGPT zijn. Van eenvoudige integratie met PHP tot het finetunen van machine learning modellen kwam aan bod. Als Laravel developer bestaat er nu geen reden meer om niet met ChatGPT en machine learning aan de slag te gaan!</p><h3><strong>Talk 2: Ruben Maas (Development Manager RB Logbook bij CAE - Crew Engagement Solutions) - Event Driven Architecture</strong></h3><p>Ruben deelde zijn ervaringen rondom Event Driven Architecture. Een software architectuur die veel mogelijkheden biedt om schaalbare oplossingen te ontwikkelen, maar welke tegelijkertijd enkele belangrijke valkuilen kent. Microservices met een single purpose voorkomen echter een hoop van deze problemen. Zeer waardevol voor iedere Laravel developer die zijn applicaties in de groei beter schaalbaar wil maken.</p><h3><strong>Talk 3: Maarten Bode (Teamlead Development &amp; Design bij OrangeTalent) - Je team organiseren alsof het een Formule 1-team is</strong></h3><p>Wat heeft een Formule 1-team met je development-team te maken? Een heleboel volgens Maarten Bode! Regelmatig komt hij teams tegen waar problemen wel worden opgelost, maar waar deze problemen niet grondig worden nabesproken waardoor ze in de toekomst wellicht nogmaals kunnen voorkomen. De eerste prioriteit is uiteraard om een applicatie met een probleem weer op de rails te krijgen, maar gebruik deze kennis om kleine incrementele verbeteringen toe te passen om je team naar een nieuw niveau te brengen: precies als in de formule 1 dus!</p><h3><strong>Geslaagde avond</strong></h3><p>Na afloop van de meetup bleven veel developers nog hangen voor een drankje en een rondleiding door het kantoor van Bitfactory. Inhoudelijk werd er nog fanatiek doorgepraat over de verschillende onderwerpen die deze avond zijn besproken.</p><p>Vanuit de Dutch Laravel Foundation kijken we terug op een zeer geslaagde meetup. Een bedankje voor alle vrijwilligers die dit hebben mogelijk gemaakt, voor de mensen van Bitfactory en uiteraard ook voor alle sprekers!</p><p>En, <a target="_blank" href="https://photos.app.goo.gl/aY36gx5nhBYX87iF9">gelukkig hebben we de foto&#039;s nog</a>!</p></div>
+
+
+
+        
+    </div>
+</article>
+<div class="flex w-full px-6 mx-auto mb lg:w-11/12 sm:px-0 lg:px-10">
+    
+<a   class="relative flex h-12 items-center justify-center group " href="/insights">
+    <div class="text-xs uppercase whitespace-nowrap px-8 font-bold flex items-center justify-center w-full h-full transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1 z-20 bg-primary-contrast !text-tertiary-dark border border-primary-accent ">Naar alle insights</div>
+    <div class="absolute bottom-0 right-0 w-full h-full border z-10 border-primary-accent "></div>
+</a>
+</div>
+</div>
+        <footer
+    class="container relative mx-auto sm:px-6 lg:px-10 ">
+    
+    <div class="px-6 lg:px-10 pb-10 bg-secondary-light  pt-6 lg:pt-10 ">
+        <h2 id="footer-title" class="mb-2 text-[25px] lg:text-[48px] font-bold text-primary-accent lg:mb-10 xl:mb-2">Dutch Laravel Foundation</h2>
+        <nav class="hidden w-full h-16 mb-10 space-x-10 align-middle xl:flex">
+            
+
+
+
+
+    
+        
+        
+        <a href="/"
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit hover:border-primary-accent font-normal">Home</a>
+    
+
+    
+        
+        
+        <a href="/wat-is-laravel"
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit hover:border-primary-accent font-normal">Wat is Laravel?</a>
+    
+
+    
+        
+        
+        <a href="/over-ons"
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit hover:border-primary-accent font-normal">Over ons</a>
+    
+
+    
+        
+        
+        <a href="/leden"
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit hover:border-primary-accent font-normal">Onze leden</a>
+    
+
+    
+        
+        
+        <a href="/cases"
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit hover:border-primary-accent font-normal">Cases</a>
+    
+
+    
+        
+        
+            
+        
+        <a href="/insights"
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit !border-tertiary-light font-normal">Insights</a>
+    
+
+    
+        
+        
+        <a href="/agenda"
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit hover:border-primary-accent font-normal">Agenda</a>
+    
+
+    
+        
+        
+        <a href="/contact"
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit hover:border-primary-accent font-normal">Contact</a>
+    
+
+    
+        
+        
+        <a href="/lid-worden"
+            class="block h-auto my-auto border-b border-transparent hover:text-inherit hover:border-primary-accent font-normal">Lid worden</a>
+    
+
+        </nav>
+        <div class="flex flex-col">
+            <h4 class="hidden lg:block">Leden</h4>
+            <div class="flex-col justify-between hidden mb-5 sm:flex md:flex-row">
+                <div class="hidden w-full lg:block md:w-7/12">
+                    <div class="columns-2 lg:columns-3 2xl:columns-4 4xl:columns-5">
+                        <ul class="list-none">
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/1a-first-alternative">1A First Alternative</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/23g">23G</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/bitfactory">Bitfactory</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/dij">DIJ</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/ef2">EF2</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/endeavour">Endeavour</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/enrise">Enrise</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/goedemiddag">Goedemiddag!</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/ixperience">iXperience</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/mollie">Mollie</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/noardcode">NoardCode</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/one-shoe">One Shoe</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/orangetalent">OrangeTalent</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/paqt">PAQT</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/rl-webdiensten">RL Webdiensten</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/september">September</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/sqits">Sqits</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/studio-fifteen">Studio Fifteen</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/swis">SWIS</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/synetic">Synetic</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/vdhicts">Vdhicts</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/vormkracht10">Vormkracht10</a></li>
+                            
+                            <li class="pl-0 marker:content-[]"><a href="/leden/web-whales">Web Whales</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full pl-0 lg:w-5/12 lg:pl-10 flex-flex-col">
+                    <div class="w-full mb-5 md:w-3/4 lg:w-full">
+                        De Dutch Laravel Foundation zorgt voor de promotie van Laravel en stimuleert
+                        kennisuitwisseling tussen Laravel developers in Nederland.
+                    </div>
+                    <div class="flex flex-row items-center mb-10 space-x-4">
+                        
+                            <a href="https://www.linkedin.com/company/dutch-laravel-foundation" target="_blank"><img src="/assets/uploads/socials/linkedin.svg"></a>
+                        
+                            <a href="https://www.meetup.com/nl-NL/meetup-group-NBzJdgRH/" target="_blank"><img src="/assets/uploads/socials/iconmeetup@3x.svg"></a>
+                        
+                            <a href="https://twitter.com/dutchlaravel" target="_blank"><img src="/assets/uploads/socials/icontwitter@3x.svg"></a>
+                        
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-full">
+                        <h4>Aanmelden nieuwsbrief</h4>
+                        
+                        
+                            
+                                <input type="text" class="hidden" name="honeypot">
+                                
+                                <form method="POST" action="https://dutchlaravelfoundation.nl/!/forms/newsletter"><input type="hidden" name="_token" value="STATAMIC_CSRF_TOKEN">
+                                    <div class="flex flex-row w-full">
+                                        
+                                            <input
+    type="text"
+    name="email"
+    value=""
+    placeholder="Jouw e-mailadres"
+    
+    
+    required
+ style='background-color:#fff !important;'>
+                                        
+                                        
+<button type="submit"  class="relative flex h-12 items-center justify-center group " >
+    <div class="text-xs uppercase whitespace-nowrap px-8 font-bold flex items-center justify-center w-full h-full transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1 z-20 bg-tertiary-dark text-white w-12 !px-0"><img src="/assets/img/icons/send.svg" alt="Aanmelden" class="mx-5"></div>
+    <div class="absolute bottom-0 right-0 w-full h-full border z-10 border-tertiary-dark "></div>
+</button>
+                                    </div>
+                                </form>
+                            
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col justify-between md:flex-row">
+                <div class="w-full md:w-7/12">
+                    
+                        <a href="/privacy-statement">Privacy statement</a>
+                        
+                    
+                </div>
+                <div class="w-full pl-0 md:w-5/12 lg:pl-10 text-left: lg:text-right">
+                    &copy 2023 - Dutch Laravel Foundation | <a href="https://vormkracht10.nl" class="text-primary-text hover:text-primary-text" title="Gerealiseerd door het team van Vormkracht10" target="_blank">VK<span class="!text-primary-accent">10</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="absolute bottom-[18rem] right-[-5rem] md:right-[-25rem] z-[-1] w-screen flex justify-end">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1129 908" class="w-[1120px] h-[900px]">
+        <g fill="none" stroke="#ECECEC" opacity=".5">
+            <path d="m225.8 476.687 74.255 42.237-74.255 42.238-74.255-42.238 74.255-42.237Zm0-102.562 74.255 42.238L225.8 458.6l-74.255-42.237 74.255-42.238Z"/>
+            <path d="m225.8 303.556 74.255 42.237L225.8 388.03l-74.255-42.237 74.255-42.237Zm-75.267 43.282 74.256 42.238-74.256 42.237-74.255-42.237 74.255-42.238Zm225.8 59.279 74.256 42.237-74.256 42.238-74.255-42.238 74.255-42.237Zm150.534-15.996 74.255 42.238-74.255 42.237-74.256-42.237 74.256-42.238Zm150.533 0 74.255 42.238-74.255 42.237-74.255-42.237L677.4 390.12Zm150.533 0 74.256 42.238-74.256 42.237-74.255-42.237 74.255-42.238Zm-526.866-43.283 74.255 42.238-74.255 42.237-74.256-42.237 74.256-42.238Zm150.533 0 74.255 42.238-74.255 42.237-74.255-42.237 74.255-42.238Zm150.533 0 74.256 42.238-74.256 42.237-74.255-42.237 74.255-42.238Zm150.534 0 74.255 42.238-74.255 42.237-74.256-42.237 74.256-42.238Zm150.533 0 74.255 42.238-74.255 42.237-74.255-42.237 74.255-42.238Z"/>
+            <path d="m451.6 433.404 74.255 42.237L451.6 517.88l-74.255-42.238 74.255-42.237ZM376.333 216.99l74.256 42.237-74.256 42.237-74.255-42.237 74.255-42.237ZM677.4 303.556l74.255 42.237L677.4 388.03l-74.255-42.237 74.255-42.237Zm-301.067 0 74.256 42.237-74.256 42.237-74.255-42.237 74.255-42.237Zm150.534 0 74.255 42.237-74.255 42.237-74.256-42.237 74.256-42.237Zm75.266 129.848 74.256 42.237-74.256 42.238-74.255-42.238 74.255-42.237Zm225.8-113.853 74.256 42.238-74.256 42.237-74.255-42.237 74.255-42.238Zm-526.866-59.278 74.255 42.237-74.255 42.237-74.256-42.237 74.256-42.237Zm301.066 0 74.256 42.237-74.256 42.237-74.255-42.237 74.255-42.237Zm150.534 0 74.255 42.237-74.255 42.237-74.256-42.237 74.256-42.237Zm150.533 0 74.255 42.237-74.255 42.237-74.255-42.237 74.255-42.237Z"/>
+            <path d="m451.6 244.277 74.255 42.237-74.255 42.237-74.255-42.237 74.255-42.237Zm225.8-27.287 74.255 42.237-74.255 42.237-74.255-42.237L677.4 216.99Z"/>
+            <path d="m526.867 216.99 74.255 42.237-74.255 42.237-74.256-42.237 74.256-42.237Zm301.066 0 74.256 42.237-74.256 42.237-74.255-42.237 74.255-42.237Zm-451.6 432.829 74.256 42.237-74.256 42.237-74.255-42.237 74.255-42.237Zm150.534 0 74.255 42.237-74.255 42.237-74.256-42.237 74.256-42.237Zm150.533 0 74.255 42.237-74.255 42.237-74.255-42.237 74.255-42.237Zm150.533 0 74.256 42.237-74.256 42.237-74.255-42.237 74.255-42.237ZM451.6 606.536l74.255 42.237L451.6 691.01l-74.255-42.237 74.255-42.237Zm150.533 0 74.256 42.237-74.256 42.237-74.255-42.237 74.255-42.237Zm150.534-15.996 74.255 42.237-74.255 42.237-74.256-42.237 74.256-42.237ZM903.2 606.536l74.255 42.237L903.2 691.01l-74.255-42.237 74.255-42.237ZM451.6 709.098l74.255 42.237-74.255 42.237-74.255-42.237 74.255-42.237Zm-75.267-232.411 74.256 42.237-74.256 42.238-74.255-42.238 74.255-42.237Z"/>
+            <path d="m677.4 563.253 74.255 42.237-74.255 42.237-74.255-42.237 74.255-42.237Zm-301.067 0 74.256 42.237-74.256 42.237-74.255-42.237 74.255-42.237Zm150.534-15.996 74.255 42.237-74.255 42.238-74.256-42.238 74.256-42.237Zm75.266 145.845 74.256 42.237-74.256 42.237-74.255-42.237 74.255-42.237Zm225.8-129.849 74.256 42.237-74.256 42.237-74.255-42.237 74.255-42.237Z"/>
+            <path d="m602.133 519.97 74.256 42.237-74.256 42.237-74.255-42.237 74.255-42.237Zm150.534 0 74.255 42.237-74.255 42.237-74.256-42.237 74.256-42.237Zm150.533 0 74.255 42.237-74.255 42.237-74.255-42.237L903.2 519.97Zm-451.6 0 74.255 42.237-74.255 42.237-74.255-42.237L451.6 519.97Zm225.8-43.283 74.255 42.237-74.255 42.238-74.255-42.238 74.255-42.237Zm-150.533 0 74.255 42.237-74.255 42.238-74.256-42.238 74.256-42.237Zm301.066 0 74.256 42.237-74.256 42.238-74.255-42.238 74.255-42.237Zm-75.266-43.283 74.255 42.237-74.255 42.238-74.256-42.238 74.256-42.237Zm-451.6 0 74.255 42.237-74.255 42.238-74.256-42.238 74.256-42.237Zm0 173.132 74.255 42.237-74.255 42.237-74.256-42.237 74.256-42.237Zm225.8 129.849 74.255 42.237-74.255 42.237-74.256-42.237 74.256-42.237Zm150.533 0 74.255 42.237-74.255 42.237-74.255-42.237 74.255-42.237Zm150.533 0 74.256 42.237-74.256 42.237-74.255-42.237 74.255-42.237ZM903.2 433.404l74.255 42.237L903.2 517.88l-74.255-42.238 74.255-42.237ZM451.6 173.707l74.255 42.237-74.255 42.237-74.255-42.237 74.255-42.237Zm-75.267-43.283 74.256 42.237-74.256 42.237-74.255-42.237 74.255-42.237ZM903.2 173.707l74.255 42.237-74.255 42.237-74.255-42.237 74.255-42.237Z"/>
+            <path d="m978.467 146.42 74.255 42.237-74.255 42.237-74.256-42.237 74.256-42.237Zm-451.6-15.996 74.255 42.237-74.255 42.237-74.256-42.237 74.256-42.237ZM677.4 114.428l74.255 42.237-74.255 42.237-74.255-42.237 74.255-42.237Z"/>
+            <path d="m602.133 87.141 74.256 42.237-74.256 42.237-74.255-42.237 74.255-42.237Zm0-86.566 74.256 42.237-74.256 42.238-74.255-42.238L602.133.575Zm0 173.132 74.256 42.237-74.256 42.237-74.255-42.237 74.255-42.237ZM301.067 519.97l74.255 42.237-74.255 42.237-74.256-42.237 74.256-42.237Zm-225.8-43.283 74.255 42.237-74.255 42.238L1.01 518.924l74.256-42.237Zm301.066 259.698 74.256 42.237-74.256 42.237-74.255-42.237 74.255-42.237Zm-150.533 0 74.255 42.237-74.255 42.237-74.255-42.237 74.255-42.237Zm451.6 86.565 74.255 42.238-74.255 42.237-74.255-42.237L677.4 822.95Zm376.333-389.546 74.256 42.237-74.256 42.238-74.255-42.238 74.255-42.237ZM75.267 303.556l74.255 42.237-74.255 42.237L1.01 345.793l74.256-42.237Zm978.466 302.98 74.256 42.237-74.256 42.237-74.255-42.237 74.255-42.237ZM451.6.575l74.255 42.237L451.6 85.05l-74.255-42.238L451.6.575Z"/>
+        </g>
+        </svg>
+    </div>
+</footer>
+
+    </div>
+
+    
+            <script>
+                if (document.querySelectorAll('form input[name="_token"]').length > 0) {
+                    async function setToken() {
+                        let token = await fetch('/!/DynamicToken/refresh')
+                            .then((res) => res.json())
+                            .then((data) => { 
+                                return data.csrf_token 
+                            })
+                            .catch(function (error) {
+                                console.error('Error:', error)
+                            })
+                        document.querySelectorAll('form input[name="_token"]').forEach(function(item) {
+                            item.value = token
+                        });
+                    }
+            
+                    setToken()
+            
+                    setInterval(setToken, 15 * 60 * 1000)
+                }
+            </script>
+        
+    <script src="/assets/js/site.js?id=1ca358a46adaca2733cc03e781fc921a"></script>
+        <script type="text/javascript">
+      window.recaptchaV3 = {}
+      window.recaptchaV3.siteKey = '6LelMtUgAAAAADnf5qwyvZwlPXzFT4RG0Xdd5Z-0'
+      window.recaptchaV3.action = 'insights/drukbezochte_laravel_meetup_bij_bitfactory'
+    </script>
+    <script src="/vendor/statamic-recaptcha/js/recaptcha-v3.js"></script>
+<script type="text/javascript">var els = document.getElementsByClassName('nocache');
+var map = {};
+for (var i = 0; i < els.length; i++) {
+    var section = els[i].getAttribute('data-nocache');
+    map[section] = els[i];
+}
+
+fetch('/!/nocache', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+        url: window.location.href,
+        sections: Object.keys(map)
+    })
+})
+.then((response) => response.json())
+.then((data) => {
+    const regions = data.regions;
+    for (var key in regions) {
+        if (map[key]) map[key].outerHTML = regions[key];
+    }
+
+    for (const input of document.querySelectorAll('input[value=STATAMIC_CSRF_TOKEN]')) {
+        input.value = data.csrf;
+    }
+
+    for (const meta of document.querySelectorAll('meta[content=STATAMIC_CSRF_TOKEN]')) {
+        meta.content = data.csrf;
+    }
+});</script></body>
+
+</html>
