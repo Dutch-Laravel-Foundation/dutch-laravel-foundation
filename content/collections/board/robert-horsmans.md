@@ -1,5 +1,6 @@
 ---
 id: 5d2fdce1-9975-4310-be8b-b8390239362c
+published: false
 blueprint: board
 title: 'Robert Horsmans'
 function: Ledenwerving

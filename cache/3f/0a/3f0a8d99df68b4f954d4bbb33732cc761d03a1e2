@@ -1,4 +1,4 @@
-1682011060s:17328:"<?xml version="1.0" encoding="UTF-8"?>
+1684903900s:18260:"<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
@@ -95,6 +95,16 @@
                 <priority> 0.8         </priority>
     </url>
     <url>
+        <loc>https://dutchlaravelfoundation.nl/cases/de-recyclingsindustrie-digitaliseren-met-laravel</loc>
+        <lastmod>2023-05-09T11:04:08+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/cases/zelfontwikkeling-platform-voor-jongeren</loc>
+        <lastmod>2023-05-17T12:49:11+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
         <loc>https://dutchlaravelfoundation.nl/events/dlf-hackaton</loc>
         <lastmod>2022-06-17T15:51:02+00:00</lastmod>
                 <priority> 0.8         </priority>
@@ -152,6 +162,11 @@
     <url>
         <loc>https://dutchlaravelfoundation.nl/events/dutch-laravel-foundation-meetup</loc>
         <lastmod>2023-02-22T09:55:54+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/events/laravel-groningen-meetup-1-juni-2023</loc>
+        <lastmod>2023-05-17T14:26:26+00:00</lastmod>
                 <priority> 0.8         </priority>
     </url>
     <url>
@@ -295,6 +310,11 @@
                 <priority> 0.8         </priority>
     </url>
     <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/nieuwe-bestuursleden-voor-de-foundation-wij-stellen-ze-voor</loc>
+        <lastmod>2023-05-22T08:17:25+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
         <loc>https://dutchlaravelfoundation.nl/leden/1a-first-alternative</loc>
         <lastmod>2022-06-16T09:37:17+00:00</lastmod>
                 <priority> 0.8         </priority>
@@ -366,7 +386,7 @@
     </url>
     <url>
         <loc>https://dutchlaravelfoundation.nl/leden/sqits</loc>
-        <lastmod>2022-06-16T11:14:29+00:00</lastmod>
+        <lastmod>2023-05-17T10:00:24+00:00</lastmod>
                 <priority> 0.8         </priority>
     </url>
     <url>
@@ -377,11 +397,6 @@
     <url>
         <loc>https://dutchlaravelfoundation.nl/leden/synetic</loc>
         <lastmod>2022-06-28T07:54:52+00:00</lastmod>
-                <priority> 0.8         </priority>
-    </url>
-    <url>
-        <loc>https://dutchlaravelfoundation.nl/leden/vdhicts</loc>
-        <lastmod>2022-06-16T09:50:49+00:00</lastmod>
                 <priority> 0.8         </priority>
     </url>
     <url>
@@ -407,6 +422,11 @@
     <url>
         <loc>https://dutchlaravelfoundation.nl/leden/endeavour</loc>
         <lastmod>2023-03-24T15:53:49+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/avocado-media</loc>
+        <lastmod>2023-05-17T12:43:44+00:00</lastmod>
                 <priority> 0.8         </priority>
     </url>
 
