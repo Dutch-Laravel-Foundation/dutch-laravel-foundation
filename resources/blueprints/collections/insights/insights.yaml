@@ -12,9 +12,22 @@ sections:
           display: Titel
           instructions_position: above
           listable: hidden
-          read_only: false
           input_type: text
           antlers: false
+      -
+        handle: featured_image
+        field:
+          mode: grid
+          container: insights
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'Featured image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
       -
         handle: introduction
         field:
@@ -29,7 +42,6 @@ sections:
           icon: markdown
           listable: hidden
           instructions_position: above
-          read_only: false
           container: insights
       -
         handle: content
@@ -104,22 +116,6 @@ sections:
           icon: bard
           listable: hidden
           instructions_position: above
-          read_only: false
-      -
-        handle: featured_image
-        field:
-          mode: grid
-          container: insights
-          restrict: false
-          allow_uploads: true
-          show_filename: true
-          max_files: 1
-          display: 'Featured image'
-          type: assets
-          icon: assets
-          listable: hidden
-          instructions_position: above
-          read_only: false
       -
         handle: highlight_content
         field:
@@ -152,7 +148,6 @@ sections:
           icon: bard
           listable: hidden
           instructions_position: above
-          read_only: false
           sets:
             spacer:
               display: Spacer
@@ -193,7 +188,6 @@ sections:
           icon: select
           listable: hidden
           instructions_position: above
-          read_only: false
       -
         handle: date
         field:
@@ -214,7 +208,6 @@ sections:
           icon: entries
           listable: hidden
           instructions_position: above
-          read_only: false
           instructions: 'Shown on the insight detail page'
       -
         handle: highlight
@@ -225,7 +218,6 @@ sections:
           icon: toggle
           listable: hidden
           instructions_position: above
-          read_only: false
   seo:
     display: SEO
     fields:

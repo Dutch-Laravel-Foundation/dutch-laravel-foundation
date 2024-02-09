@@ -10,8 +10,8 @@ date_start: '2023-06-22'
 time_start: '16:30'
 time_end: '22:00'
 signup_link: 'https://www.meetup.com/meetup-group-nbzjdgrh/events/291177340/'
-updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1676559852
+updated_by: 50f8ca13-10c1-43f9-b0a5-20bab3cf4f86
+updated_at: 1686312198
 featured_image: zandvoort-strand.jpg
 published: true
 content:
@@ -90,6 +90,69 @@ content:
         marks:
           -
             type: bold
+        text: 'True'
+      -
+        type: hard_break
+        marks:
+          -
+            type: bold
+      -
+        type: text
+        text: 'Voor LaraFest 2023 zijn wij verheugd om '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://true.nl'
+              rel: null
+              target: _blank
+              title: null
+        text: 'True'
+      -
+        type: text
+        text: ' te mogen verwelkomen als sponsor! True zal voor de meeste developers geen onbekende zijn en we zijn daarom enthousiast om een naam als True aan ons mooie event te mogen koppelen.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'De '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'pubquiz by True'
+      -
+        type: text
+        text: ' wordt in zijn geheel gesponsord door True en daarnaast zal de sponsoring ook helpen om het event nog verder aan te kleden dan dat jullie al gewend waren.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Talk: Thijs Feryn'
+      -
+        type: hard_break
+        marks:
+          -
+            type: bold
+      -
+        type: text
+        text: 'Thijs Feryn is technisch evangelist bij Varnish Software, het bedrijf achter de open source-technologie Varnish Cache. Wie wel eens wat events af gaat zal hem ongetwijfeld al eens zijn tegengekomen want hij heeft inmiddels meer dan 290 presentaties op zijn naam staan. Tevens is Thijs auteur van het boek "Getting Started with Varnish cache", uitgebracht door O''Reilly. We zijn erg blij Thijs te mogen verwelkomen op LaraFest 2023 om ons als Laravel programmeurs meer te leren over de toepassingen van Varnish!'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
         text: Programma
   -
     type: bullet_list
@@ -120,7 +183,7 @@ content:
             content:
               -
                 type: text
-                text: '17.40 - 18.10 / Talk (Spreker wordt nog aangekondigd)'
+                text: '17.40 - 17.45 / Introductie True (sponsor LaraFest 2023)'
       -
         type: list_item
         content:
@@ -129,7 +192,7 @@ content:
             content:
               -
                 type: text
-                text: '18.10 - 18.40 / LarAwards 2023'
+                text: '17.45 - 18.15 / Talk Thijs Feryn'
       -
         type: list_item
         content:
@@ -138,7 +201,34 @@ content:
             content:
               -
                 type: text
-                text: '19:00 - ... BBQ (Met voldoende vegetarische opties!)'
+                text: '18.15 - 19.20 / LarAwards 2023'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: '19:20 - 20.25 / BBQ (Met voldoende vegetarische opties!)'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: '20.25 - 20.30 / LarAwards 2023 prijsuitreiking'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: '20.30 - 21.30 / Pubquiz sponsored by True'
   -
     type: paragraph
     content:
