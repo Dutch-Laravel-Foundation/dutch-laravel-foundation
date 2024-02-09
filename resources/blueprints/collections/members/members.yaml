@@ -139,7 +139,7 @@ sections:
           input_type: url
           prepend: "https://"
           antlers: false
-          display: Vacature website
+          display: "Vacature website"
           type: text
           icon: text
           listable: hidden
