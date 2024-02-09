@@ -2,3 +2,17 @@ name: 'Mark van Eijk'
 super: true
 id: 28c0a799-7234-4581-b869-6eda5a36a8e2
 password_hash: $2y$10$scQOmL4qHG.1aFo/LXsWKuFob/mfVW0k.uYbzL9KgrLeRzMWpvw.K
+preferences:
+  collections:
+    insights:
+      columns:
+        - title
+        - date
+      after_save: continue_editing
+    events:
+      columns:
+        - title
+        - date_start
+  assets:
+    events:
+      mode: grid

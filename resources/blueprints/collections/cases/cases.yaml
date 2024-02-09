@@ -19,24 +19,6 @@ sections:
           icon: text
           listable: hidden
           instructions_position: above
-          read_only: false
-      -
-        handle: introduction
-        field:
-          type: markdown
-          localizable: true
-          display: Introductie
-          instructions_position: above
-          listable: hidden
-          read_only: false
-          restrict: false
-          automatic_line_breaks: true
-          automatic_links: false
-          escape_markup: false
-          smartypants: false
-          antlers: false
-      -
-        import: content
       -
         handle: featured_image
         field:
@@ -51,7 +33,22 @@ sections:
           icon: assets
           listable: hidden
           instructions_position: above
-          read_only: false
+      -
+        handle: introduction
+        field:
+          type: markdown
+          localizable: true
+          display: Introductie
+          instructions_position: above
+          listable: hidden
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+      -
+        import: content
   sidebar:
     display: Sidebar
     fields:
@@ -73,7 +70,6 @@ sections:
           icon: entries
           listable: hidden
           instructions_position: above
-          read_only: false
       -
         handle: client
         field:
@@ -87,7 +83,13 @@ sections:
           icon: entries
           listable: hidden
           instructions_position: above
-          read_only: false
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
   seo:
     display: SEO
     fields:

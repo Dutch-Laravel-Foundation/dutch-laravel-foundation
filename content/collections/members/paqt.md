@@ -6,10 +6,10 @@ founding_partner: true
 type: Bedrijf
 employees: 51-100
 updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1661351934
+updated_at: 1700496193
 logo: paqt.svg
 description: |-
-  PAQT bedenkt, bouwt én onderhoudt de allerbeste softwareoplossingen in de markt. Voor jou, of voor jouw klanten. Met 50 gedreven professionals staan we als techpartner aan je zijde.
+  PAQT bedenkt, bouwt én onderhoudt de allerbeste softwareoplossingen in de markt. Voor jou, of voor jouw klanten. Met 60 gedreven professionals staan we als techpartner aan je zijde.
 
   PAQT ontwikkeld software vanuit een bedrijfskundige visie en altijd in nauwe samenwerking met onze opdrachtgevers. Omdat onze ontwikkelaars het strategisch belang van jouw oplossing volledig begrijpen, gaan ze in iedere fase van het proces voor je door het vuur.
 
@@ -23,4 +23,5 @@ city: Utrecht
 email: maurits.dijkgraaf@paqt.com
 website: paqt.com
 phone: '+31 (0)30 820 03 58'
+published: true
 ---
