@@ -1,4 +1,4 @@
-1707467288s:22367:"<?xml version="1.0" encoding="UTF-8"?>
+1711101920s:22597:"<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
@@ -191,7 +191,7 @@
     </url>
     <url>
         <loc>https://dutchlaravelfoundation.nl/events/tech-meetup</loc>
-        <lastmod>2024-02-03T08:57:51+00:00</lastmod>
+        <lastmod>2024-02-27T12:49:26+00:00</lastmod>
                 <priority> 0.8         </priority>
     </url>
     <url>
@@ -400,6 +400,11 @@
                 <priority> 0.8         </priority>
     </url>
     <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/dutch-laravel-foundation-steunt-larabelles</loc>
+        <lastmod>2024-02-22T07:03:57+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
         <loc>https://dutchlaravelfoundation.nl/leden/1a-first-alternative</loc>
         <lastmod>2022-06-16T09:37:17+00:00</lastmod>
                 <priority> 0.8         </priority>
@@ -435,11 +440,6 @@
                 <priority> 0.8         </priority>
     </url>
     <url>
-        <loc>https://dutchlaravelfoundation.nl/leden/paqt</loc>
-        <lastmod>2023-11-20T16:03:13+00:00</lastmod>
-                <priority> 0.8         </priority>
-    </url>
-    <url>
         <loc>https://dutchlaravelfoundation.nl/leden/rl-webdiensten</loc>
         <lastmod>2022-06-16T11:15:11+00:00</lastmod>
                 <priority> 0.8         </priority>
@@ -460,18 +460,8 @@
                 <priority> 0.8         </priority>
     </url>
     <url>
-        <loc>https://dutchlaravelfoundation.nl/leden/vormkracht10</loc>
-        <lastmod>2022-06-16T11:13:16+00:00</lastmod>
-                <priority> 0.8         </priority>
-    </url>
-    <url>
         <loc>https://dutchlaravelfoundation.nl/leden/web-whales</loc>
         <lastmod>2022-06-17T15:47:05+00:00</lastmod>
-                <priority> 0.8         </priority>
-    </url>
-    <url>
-        <loc>https://dutchlaravelfoundation.nl/leden/studio-fifteen</loc>
-        <lastmod>2024-02-01T13:07:58+00:00</lastmod>
                 <priority> 0.8         </priority>
     </url>
     <url>
@@ -500,11 +490,6 @@
                 <priority> 0.8         </priority>
     </url>
     <url>
-        <loc>https://dutchlaravelfoundation.nl/leden/goedemiddag</loc>
-        <lastmod>2023-06-20T08:50:41+00:00</lastmod>
-                <priority> 0.8         </priority>
-    </url>
-    <url>
         <loc>https://dutchlaravelfoundation.nl/leden/cloud-plus-plus</loc>
         <lastmod>2023-06-21T09:40:32+00:00</lastmod>
                 <priority> 0.8         </priority>
@@ -520,8 +505,28 @@
                 <priority> 0.8         </priority>
     </url>
     <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/paqt</loc>
+        <lastmod>2023-11-20T16:03:13+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/studio-fifteen</loc>
+        <lastmod>2024-02-01T13:07:58+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
         <loc>https://dutchlaravelfoundation.nl/leden/cyberfusion</loc>
         <lastmod>2024-02-07T14:10:32+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/vormkracht10</loc>
+        <lastmod>2024-02-09T10:17:28+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/goedemiddag</loc>
+        <lastmod>2024-02-09T10:26:47+00:00</lastmod>
                 <priority> 0.8         </priority>
     </url>
 

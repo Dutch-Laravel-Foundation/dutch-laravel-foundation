@@ -2,7 +2,8 @@ sections:
   main:
     display: Main
     fields:
-      - handle: title
+      -
+        handle: title
         field:
           type: text
           required: true
@@ -11,17 +12,16 @@ sections:
           display: Naam
           instructions_position: above
           listable: hidden
-          read_only: false
           input_type: text
           antlers: false
-      - handle: description
+      -
+        handle: description
         field:
           type: markdown
           localizable: true
           display: Omschrijving
           instructions_position: above
           listable: hidden
-          read_only: false
           restrict: false
           automatic_line_breaks: true
           automatic_links: false
@@ -29,7 +29,8 @@ sections:
           smartypants: false
           antlers: false
           container: members
-      - handle: logo
+      -
+        handle: logo
         field:
           mode: list
           container: members
@@ -42,24 +43,25 @@ sections:
           icon: assets
           listable: hidden
           instructions_position: above
-          read_only: false
   sidebar:
     display: Sidebar
     fields:
-      - handle: slug
+      -
+        handle: slug
         field:
           type: slug
           localizable: true
-      - handle: founding_partner
+      -
+        handle: founding_partner
         field:
           default: false
-          display: "Founding partner"
+          display: 'Founding partner'
           type: toggle
           icon: toggle
           listable: hidden
           instructions_position: above
-          read_only: false
-      - handle: type
+      -
+        handle: type
         field:
           options:
             ZZPer: null
@@ -73,13 +75,13 @@ sections:
           push_tags: false
           cast_booleans: false
           default: Bedrijf
-          display: "Type lid"
+          display: 'Type lid'
           type: select
           icon: select
           listable: hidden
           instructions_position: above
-          read_only: false
-      - handle: employees
+      -
+        handle: employees
         field:
           options:
             1-10: null
@@ -93,16 +95,16 @@ sections:
           push_tags: false
           cast_booleans: false
           default: 1-10
-          display: "Aantal werknemers"
+          display: 'Aantal werknemers'
           type: select
           icon: select
           listable: hidden
           instructions_position: above
-          read_only: false
   contact:
     display: Contactgegevens
     fields:
-      - handle: city
+      -
+        handle: city
         field:
           input_type: text
           antlers: false
@@ -111,9 +113,10 @@ sections:
           icon: text
           listable: hidden
           instructions_position: above
-          read_only: false
-      - import: province
-      - handle: email
+      -
+        import: province
+      -
+        handle: email
         field:
           input_type: text
           antlers: false
@@ -122,30 +125,8 @@ sections:
           icon: text
           listable: hidden
           instructions_position: above
-          read_only: false
-      - handle: website
-        field:
-          input_type: url
-          prepend: "https://"
-          antlers: false
-          display: Website
-          type: text
-          icon: text
-          listable: hidden
-          instructions_position: above
-          read_only: false
-      - handle: recruitment_website
-        field:
-          input_type: url
-          prepend: "https://"
-          antlers: false
-          display: "Vacature website"
-          type: text
-          icon: text
-          listable: hidden
-          instructions_position: above
-          read_only: false
-      - handle: phone
+      -
+        handle: phone
         field:
           input_type: text
           antlers: false
@@ -154,9 +135,32 @@ sections:
           icon: text
           listable: hidden
           instructions_position: above
-          read_only: false
+      -
+        handle: website
+        field:
+          input_type: url
+          prepend: 'https://'
+          antlers: false
+          display: Website
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: recruitment_website
+        field:
+          input_type: text
+          prepend: 'https://'
+          antlers: false
+          display: 'Vacature website'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
   seo:
     display: SEO
     fields:
-      - import: seo
+      -
+        import: seo
 title: Leden

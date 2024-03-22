@@ -13,6 +13,10 @@ preferences:
       columns:
         - title
         - date_start
+    members:
+      columns:
+        - title
+        - slug
   assets:
     events:
       mode: grid

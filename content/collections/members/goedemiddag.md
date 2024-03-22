@@ -5,8 +5,8 @@ title: Goedemiddag!
 founding_partner: true
 type: Bedrijf
 employees: 11-50
-updated_by: 56dfbdc8-dfe6-463c-8129-227705aace57
-updated_at: 1687251041
+updated_by: 28c0a799-7234-4581-b869-6eda5a36a8e2
+updated_at: 1707474407
 logo: goedemiddag.png
 description: |-
   Goedemiddag! werkt sinds 2014 met veel enthousiasme met het Laravel Framework. We bouwen online oplossingen voor een breed scala aan opdrachtgevers. Van bank tot DJ, van bejaardentehuis tot liefhebber van klassieke auto's en van gamification platform tot vastgoedbeheerder.
@@ -19,5 +19,6 @@ city: Delft
 email: robert@goedemiddag.nl
 website: goedemiddag.nl
 phone: '+31 (0)88 733 33 33'
+recruitment_website: goedemiddag.recruitee.com
 published: true
 ---
