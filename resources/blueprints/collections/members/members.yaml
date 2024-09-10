@@ -158,6 +158,15 @@ sections:
           listable: hidden
           instructions_position: above
           visibility: visible
+      -
+        handle: video
+        field:
+          display: Video
+          type: video
+          icon: video
+          listable: hidden
+          instructions_position: above
+          visibility: visible
   seo:
     display: SEO
     fields:
