@@ -1,12 +1,16 @@
 <div class="flex flex-col w-full lg:flex-row">
     <div class="lg:w-4/6 lg:pr-20 mb">
         <h1>{{ title }}</h1>
-        {{ if video | is_embeddable }}
-            <!-- Youtube and Vimeo -->
-            <iframe src="{{ video | embed_url }}" ...></iframe>
-        {{ else }}
-            <!-- Other HTML5 video types -->
-            <video src="{{ video | embed_url }}" ...></video>
+        {{ if video }}
+        <div class="relative" style="padding-top: 50%; margin-bottom: 20px;">
+            {{ if video | is_embeddable }}
+                <!-- Youtube and Vimeo -->
+                <iframe src="{{ video | embed_url }}&byline=0&color=ff2d20&title=0&transparent=1" class="absolute inset-0 w-full h-full" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"></iframe>
+            {{ else }}
+                <!-- Other HTML5 video types -->
+                <video src="{{ video | embed_url }}" class="absolute inset-0 w-full h-full" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"></video>
+            {{ /if }}
+        </div>
         {{ /if }}
         {{ description }}
         {{ if { collection:count in="cases" member:is="{ id }" } > 0 }}
