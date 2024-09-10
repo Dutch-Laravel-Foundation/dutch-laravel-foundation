@@ -1,4 +1,4 @@
-1711101920s:22597:"<?xml version="1.0" encoding="UTF-8"?>
+1725903835s:24445:"<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
@@ -115,6 +115,16 @@
                 <priority> 0.8         </priority>
     </url>
     <url>
+        <loc>https://dutchlaravelfoundation.nl/cases/eurosafe</loc>
+        <lastmod>2024-03-22T13:30:19+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/cases/dropday</loc>
+        <lastmod>2024-05-15T12:10:49+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
         <loc>https://dutchlaravelfoundation.nl/events/dlf-hackaton</loc>
         <lastmod>2022-06-17T15:51:02+00:00</lastmod>
                 <priority> 0.8         </priority>
@@ -190,23 +200,23 @@
                 <priority> 0.8         </priority>
     </url>
     <url>
-        <loc>https://dutchlaravelfoundation.nl/events/tech-meetup</loc>
-        <lastmod>2024-02-27T12:49:26+00:00</lastmod>
-                <priority> 0.8         </priority>
-    </url>
-    <url>
-        <loc>https://dutchlaravelfoundation.nl/events/larafest-en-larawards-2024</loc>
-        <lastmod>2024-02-03T09:01:34+00:00</lastmod>
-                <priority> 0.8         </priority>
-    </url>
-    <url>
         <loc>https://dutchlaravelfoundation.nl/events/laravel-hackathon-2024</loc>
         <lastmod>2024-02-03T09:04:05+00:00</lastmod>
                 <priority> 0.8         </priority>
     </url>
     <url>
         <loc>https://dutchlaravelfoundation.nl/events/cxo-diner-2024</loc>
-        <lastmod>2024-02-03T09:07:10+00:00</lastmod>
+        <lastmod>2024-05-21T05:53:16+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/events/tech-meetup</loc>
+        <lastmod>2024-02-27T12:49:26+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/events/larafest-en-larawards-2024</loc>
+        <lastmod>2024-04-17T09:13:36+00:00</lastmod>
                 <priority> 0.8         </priority>
     </url>
     <url>
@@ -405,8 +415,28 @@
                 <priority> 0.8         </priority>
     </url>
     <url>
-        <loc>https://dutchlaravelfoundation.nl/leden/1a-first-alternative</loc>
-        <lastmod>2022-06-16T09:37:17+00:00</lastmod>
+        <loc>https://dutchlaravelfoundation.nl/insights/meetup-paqt</loc>
+        <lastmod>2024-04-24T12:26:17+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/larafest-2024-beach</loc>
+        <lastmod>2024-07-02T09:04:25+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/web-whales-met-trippz-winnaar-laraward-2024</loc>
+        <lastmod>2024-07-23T08:23:01+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/laravel-meer-dan-een-framework</loc>
+        <lastmod>2024-09-02T06:57:07+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/insights/laravel-haalt-57-miljoen-investering-op</loc>
+        <lastmod>2024-09-05T14:15:06+00:00</lastmod>
                 <priority> 0.8         </priority>
     </url>
     <url>
@@ -425,18 +455,8 @@
                 <priority> 0.8         </priority>
     </url>
     <url>
-        <loc>https://dutchlaravelfoundation.nl/leden/mollie</loc>
-        <lastmod>2022-06-16T11:09:39+00:00</lastmod>
-                <priority> 0.8         </priority>
-    </url>
-    <url>
         <loc>https://dutchlaravelfoundation.nl/leden/noardcode</loc>
         <lastmod>2022-06-16T09:30:53+00:00</lastmod>
-                <priority> 0.8         </priority>
-    </url>
-    <url>
-        <loc>https://dutchlaravelfoundation.nl/leden/orangetalent</loc>
-        <lastmod>2022-06-16T10:11:09+00:00</lastmod>
                 <priority> 0.8         </priority>
     </url>
     <url>
@@ -460,11 +480,6 @@
                 <priority> 0.8         </priority>
     </url>
     <url>
-        <loc>https://dutchlaravelfoundation.nl/leden/web-whales</loc>
-        <lastmod>2022-06-17T15:47:05+00:00</lastmod>
-                <priority> 0.8         </priority>
-    </url>
-    <url>
         <loc>https://dutchlaravelfoundation.nl/leden/23g</loc>
         <lastmod>2023-02-17T15:17:36+00:00</lastmod>
                 <priority> 0.8         </priority>
@@ -480,11 +495,6 @@
                 <priority> 0.8         </priority>
     </url>
     <url>
-        <loc>https://dutchlaravelfoundation.nl/leden/avocado-media</loc>
-        <lastmod>2023-05-17T12:43:44+00:00</lastmod>
-                <priority> 0.8         </priority>
-    </url>
-    <url>
         <loc>https://dutchlaravelfoundation.nl/leden/no-pulp</loc>
         <lastmod>2023-05-24T08:49:04+00:00</lastmod>
                 <priority> 0.8         </priority>
@@ -492,11 +502,6 @@
     <url>
         <loc>https://dutchlaravelfoundation.nl/leden/cloud-plus-plus</loc>
         <lastmod>2023-06-21T09:40:32+00:00</lastmod>
-                <priority> 0.8         </priority>
-    </url>
-    <url>
-        <loc>https://dutchlaravelfoundation.nl/leden/pionect</loc>
-        <lastmod>2023-06-21T09:41:16+00:00</lastmod>
                 <priority> 0.8         </priority>
     </url>
     <url>
@@ -526,7 +531,47 @@
     </url>
     <url>
         <loc>https://dutchlaravelfoundation.nl/leden/goedemiddag</loc>
-        <lastmod>2024-02-09T10:26:47+00:00</lastmod>
+        <lastmod>2024-05-15T09:56:35+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/clarity</loc>
+        <lastmod>2024-03-22T12:51:51+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/lajos-nl</loc>
+        <lastmod>2024-04-09T08:30:21+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/1a-first-alternative</loc>
+        <lastmod>2024-04-17T11:52:58+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/web-whales</loc>
+        <lastmod>2024-04-17T12:09:59+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/orangetalent</loc>
+        <lastmod>2024-04-18T14:04:35+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/pionect</loc>
+        <lastmod>2024-04-23T11:36:47+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/blauwfruit</loc>
+        <lastmod>2024-05-15T11:53:18+00:00</lastmod>
+                <priority> 0.8         </priority>
+    </url>
+    <url>
+        <loc>https://dutchlaravelfoundation.nl/leden/emble</loc>
+        <lastmod>2024-06-19T15:06:55+00:00</lastmod>
                 <priority> 0.8         </priority>
     </url>
 

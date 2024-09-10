@@ -15,7 +15,8 @@ province: Zuid-Holland
 email: info@pionect.nl
 website: www.pionect.com
 phone: '+31 10 340 0308'
-updated_by: 28c0a799-7234-4581-b869-6eda5a36a8e2
-updated_at: 1687340476
+updated_by: 56dfbdc8-dfe6-463c-8129-227705aace57
+updated_at: 1713872207
 published: true
+recruitment_website: pionect.jobs/jobs-overview
 ---

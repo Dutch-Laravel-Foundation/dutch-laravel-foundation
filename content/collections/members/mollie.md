@@ -1,12 +1,13 @@
 ---
 id: 8c63f24d-9a1c-4e38-8a4f-5f0a137b7fda
+published: false
 blueprint: members
 title: Mollie
 founding_partner: false
 type: Bedrijf
 employees: 1-10
-updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655377779
+updated_by: 28c0a799-7234-4581-b869-6eda5a36a8e2
+updated_at: 1715766622
 logo: mollie.svg
 description: |-
   Mollie is one of Europe's fastest growing fin-tech companies. From day one, we’ve changed the payments industry with effortless payments, which were easier, cheaper and more flexible than what banks had to offer.

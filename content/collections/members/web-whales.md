@@ -4,8 +4,8 @@ blueprint: members
 title: 'Web Whales'
 number_of_employees: 1-10
 founding_partner: false
-updated_by: 8d873b47-ad86-4fd3-9e95-27842ea80beb
-updated_at: 1655480825
+updated_by: 56dfbdc8-dfe6-463c-8129-227705aace57
+updated_at: 1713355799
 city: 'Den Haag'
 description: |-
   Bij Web Whales krijgen we energie van uitdagende projecten, digitale puzzels en nieuwe technologieën. Met een team van specialisten, zowel technisch als creatief, bouwen we dagelijks aan de weboplossingen van morgen.
@@ -19,4 +19,6 @@ member_type: bedrijf
 type: Bedrijf
 employees: 1-10
 province: Zuid-Holland
+published: true
+recruitment_website: webwhales.nl/vacatures/
 ---

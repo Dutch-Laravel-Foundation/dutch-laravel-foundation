@@ -20,3 +20,10 @@ preferences:
   assets:
     events:
       mode: grid
+  forms:
+    become_member:
+      columns:
+        - datestamp
+        - name
+        - email
+        - company_name
