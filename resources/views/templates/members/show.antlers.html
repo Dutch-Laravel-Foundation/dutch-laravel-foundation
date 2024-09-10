@@ -1,6 +1,13 @@
 <div class="flex flex-col w-full lg:flex-row">
     <div class="lg:w-4/6 lg:pr-20 mb">
         <h1>{{ title }}</h1>
+        {{ if video | is_embeddable }}
+            <!-- Youtube and Vimeo -->
+            <iframe src="{{ video | embed_url }}" ...></iframe>
+        {{ else }}
+            <!-- Other HTML5 video types -->
+            <video src="{{ video | embed_url }}" ...></video>
+        {{ /if }}
         {{ description }}
         {{ if { collection:count in="cases" member:is="{ id }" } > 0 }}
         {{ collection:cases member:is="{ id }" limit="3" }}
