@@ -1,0 +1,226 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+          display: Titel
+          instructions_position: above
+          listable: hidden
+          input_type: text
+          antlers: false
+      -
+        handle: featured_image
+        field:
+          mode: grid
+          container: knowledge
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'Featured image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+      -
+        handle: introduction
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: Introductietekst
+          type: markdown
+          icon: markdown
+          listable: hidden
+          instructions_position: above
+          container: knowledge
+      -
+        handle: content
+        field:
+          always_show_set_button: false
+          sets:
+            heading:
+              display: Heading
+              fields:
+                -
+                  import: heading
+            image:
+              display: Image
+              fields:
+                -
+                  handle: image
+                  field:
+                    mode: list
+                    container: knowledge
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    display: Image
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
+            line:
+              display: Line
+              fields:
+                -
+                  import: line
+            spacer:
+              display: Spacer
+              fields:
+                -
+                  import: spacer
+            video:
+              display: Video
+              fields:
+                -
+                  import: video
+          buttons:
+            - h1
+            - h2
+            - h3
+            - h4
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          container: knowledge
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: true
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          display: Content
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+      -
+        handle: highlight_content
+        field:
+          always_show_set_button: false
+          buttons:
+            - h1
+            - h2
+            - h3
+            - h4
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - anchor
+            - removeformat
+          container: assets
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: true
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          display: 'Uitgelicht content'
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+          sets:
+            spacer:
+              display: Spacer
+              fields:
+                -
+                  import: spacer
+            line:
+              display: Line
+              fields:
+                -
+                  import: line
+          if:
+            highlight: 'equals true'
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: category
+        field:
+          options:
+            Leden: null
+            Netwerk: null
+            Inspiratie: null
+          multiple: false
+          clearable: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          default: Netwerk
+          display: Category
+          type: select
+          icon: select
+          listable: hidden
+          instructions_position: above
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
+      -
+        handle: call_to_action
+        field:
+          max_items: 1
+          mode: select
+          create: true
+          collections:
+            - cta
+          display: 'Call to action'
+          type: entries
+          icon: entries
+          listable: hidden
+          instructions_position: above
+          instructions: 'Shown on the insight detail page'
+      -
+        handle: highlight
+        field:
+          default: false
+          display: Uitgelicht
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+  seo:
+    display: SEO
+    fields:
+      -
+        import: seo
+title: Insights
