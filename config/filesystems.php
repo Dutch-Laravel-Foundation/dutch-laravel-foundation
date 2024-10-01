@@ -38,7 +38,7 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            'url' => env('APP_URL') . '/storage',
             'visibility' => 'public',
         ],
 
@@ -65,6 +65,13 @@ return [
             'driver' => 'local',
             'root' => public_path('assets/uploads/insights'),
             'url' => '/assets/uploads/insights',
+            'visibility' => 'public',
+        ],
+
+        'knowledge' => [
+            'driver' => 'local',
+            'root' => public_path('assets/uploads/knowledge'),
+            'url' => '/assets/uploads/knowledge',
             'visibility' => 'public',
         ],
 
