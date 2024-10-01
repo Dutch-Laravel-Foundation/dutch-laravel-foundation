@@ -1,12 +1,13 @@
 <article class="mb-half">
-    <img src="{{ glide src="{featured_image}" fit="crop_focal" width="1500" }}" class="object-cover w-full h-96 lg:h-[48rem] mb" style="object-position:{{ featured_image:focus_css }}">
+    <img src="{{ glide src=" {featured_image}" fit="crop_focal" width="1500" }}"
+        class="object-cover w-full h-96 lg:h-[48rem] mb" style="object-position:{{ featured_image:focus_css }}">
     <div class="relative w-full lg:w-11/12 lg:mx-auto bg-white lg:-mt-64 min-h-[10rem] px-6 sm:px-0 lg:p-10 z-10">
         <h1>{{ title }}</h1>
         {{ content }}
-            {{ partial src="sets/autoload" }}
+        {{ partial src="sets/autoload" }}
         {{ /content }}
     </div>
 </article>
 <div class="flex w-full px-6 mx-auto mb lg:w-11/12 sm:px-0 lg:px-10">
-    {{ partial:buttons/light link="/{{ segment_1 }}" }}Naar alle kenniskennis{{ /partial:buttons/light }}
+    {{ partial:buttons/light link="/{{ segment_1 }}" }}Naar alle kennis{{ /partial:buttons/light }}
 </div>
