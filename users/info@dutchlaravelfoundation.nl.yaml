@@ -2,3 +2,9 @@ name: 'Robert Verboon'
 super: true
 id: 56dfbdc8-dfe6-463c-8129-227705aace57
 password_hash: $2y$10$cJ1Ch8AMJca4PUfWP2mY7.o.4rI5al2E9fCFctgzS/HyRo5TSC2JK
+preferences:
+  collections:
+    events:
+      columns:
+        - slug
+        - date_start
