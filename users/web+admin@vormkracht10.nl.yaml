@@ -42,6 +42,11 @@ preferences:
       columns:
         - title
         - function
+    knowledge:
+      columns:
+        - title
+        - slug
+        - date
   forms:
     newsletter:
       columns:
