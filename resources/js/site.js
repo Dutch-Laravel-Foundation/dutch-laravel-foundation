@@ -1,5 +1,34 @@
 // Headroom.js
-import Headroom from "headroom.js";
+import Headroom from 'headroom.js';
+
+import hljs from 'highlight.js/lib/core';
+import bash from 'highlight.js/lib/languages/bash';
+import css from 'highlight.js/lib/languages/css';
+import graphql from 'highlight.js/lib/languages/graphql';
+import javascript from 'highlight.js/lib/languages/javascript';
+import json from 'highlight.js/lib/languages/json';
+import php from 'highlight.js/lib/languages/php';
+import shell from 'highlight.js/lib/languages/shell';
+import sql from 'highlight.js/lib/languages/sql';
+import xml from 'highlight.js/lib/languages/xml';
+
+import 'highlight.js/styles/github.css';
+
+hljs.registerLanguage('bash', bash);
+hljs.registerLanguage('css', css);
+hljs.registerLanguage('graphql', graphql);
+hljs.registerLanguage('javascript', javascript);
+hljs.registerLanguage('json', json);
+hljs.registerLanguage('php', php);
+hljs.registerLanguage('shell', shell);
+hljs.registerLanguage('sql', sql);
+hljs.registerLanguage('xml', xml);
+
+window.addEventListener('load', (event) => {
+    document.querySelectorAll('pre code').forEach((el) => {
+        hljs.highlightElement(el);
+    });
+});
 
 var header = document.querySelector('header'),
     banner = document.querySelector('.banner'),
@@ -36,7 +65,7 @@ if (header != null && isIE === false) {
     );
 
     window.addEventListener('scroll', (event) => {
-        if (window.scrollY > (bannerHeight/2)) {
+        if (window.scrollY > (bannerHeight / 2)) {
             nav.classList.add('make-small');
             nav.classList.remove('make-large');
         } else {
@@ -47,7 +76,7 @@ if (header != null && isIE === false) {
 }
 
 function combinedHeaderHeight(includeBanner = true) {
-    return header.offsetHeight + (includeBanner && banner ? banner.offsetHeight: 0);
+    return header.offsetHeight + (includeBanner && banner ? banner.offsetHeight : 0);
 }
 
 // SwiperJS
@@ -63,7 +92,7 @@ var footer = document.querySelector('footer'),
     footerTitle = footer.querySelector('#footer-title');
 
 function moveFooterTitle() {
-    if (((document.documentElement.clientWidth-footer.offsetWidth)/2) >= 64) {
+    if (((document.documentElement.clientWidth - footer.offsetWidth) / 2) >= 64) {
         footerTitle.classList.add('-translate-x-[7.25rem]');
         return;
     }
@@ -93,7 +122,7 @@ if (aosElement) {
     AOS.init({
         once: true,
     });
-    
+
     window.addEventListener('load', AOS.refresh);
 }
 
@@ -101,7 +130,7 @@ if (aosElement) {
 import { gsap } from "gsap";
 
 gsap.to('.top-floor-floating-element-bottom', {
-    y: 20, 
+    y: 20,
     duration: 5,
     stagger: {
         each: 0.6,
@@ -111,7 +140,7 @@ gsap.to('.top-floor-floating-element-bottom', {
 });
 
 gsap.to('.top-floor-floating-element-top', {
-    y: -20, 
+    y: -20,
     duration: 5,
     stagger: {
         each: 0.6,
@@ -119,5 +148,3 @@ gsap.to('.top-floor-floating-element-top', {
         yoyo: true,
     }
 });
-
-
