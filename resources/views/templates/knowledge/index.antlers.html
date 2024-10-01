@@ -1,0 +1,19 @@
+{{# Top background image #}}
+{{ partial:decoration/floor-background background="floor-top-knowledge" /}}
+
+{{ content }}
+    {{ partial src="sets/autoload" }}
+{{ /content }}
+
+{{ insight_count = { collection:count in="knowledge" id:not="{ highlighted_id.0 }" } }}
+<section class="pb-10">
+    {{ if insight_count > 0 }}
+        {{ collection:knowledge sort="date:desc" }}
+            <div class="w-full lg:w-11/12">
+                {{ partial:blocks/image-left-large class="" :image="featured_image" :category="category" link="/kennis/{ slug }" }}
+                    {{ introduction }}
+                {{ /partial:blocks/image-left-large }}
+            {{ /collection:knowledge }}
+        </div>
+    {{ /if }}
+</section>
