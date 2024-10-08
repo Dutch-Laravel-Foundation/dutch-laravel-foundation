@@ -6,3 +6,5 @@ preferences:
   collections:
     insights:
       after_save: continue_editing
+    knowledge:
+      after_save: continue_editing
