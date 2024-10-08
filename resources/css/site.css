@@ -88,7 +88,7 @@ article img {
 
 input:not([type="checkbox"]),
 textarea {
-    @apply w-full !bg-secondary-light border-transparent !ring-0 focus:!outline-none focus:border-primary-accent;
+    @apply w-full !bg-secondary-light border-transparent !ring-0 focus:border-primary-accent;
 }
 
 input[type="checkbox"] {
@@ -138,6 +138,7 @@ blockquote {
     -o-transition: transform 200ms linear;
     transition: transform 200ms linear;
 }
+
 .animated.slideDown {
     -webkit-transform: translateY(0%);
     -moz-transform: translateY(0%);
@@ -145,6 +146,7 @@ blockquote {
     -ms-transform: translateY(0%);
     transform: translateY(0%);
 }
+
 .animated.slideUp {
     -webkit-transform: translateY(-100%);
     -moz-transform: translateY(-100%);
@@ -177,25 +179,32 @@ button[data-checked="true"] {
 }
 
 /* Image group hover */
-.group-image-hover > figure img,
-.group-image-hover > div figure img,
-.group-image-hover > a figure img {
+.group-image-hover>figure img,
+.group-image-hover>div figure img,
+.group-image-hover>a figure img {
     @apply transition-transform duration-500 ease-in-out
 }
-.group-image-hover:hover > figure img,
-.group-image-hover:hover > div figure img,
-.group-image-hover:hover > a figure img {
+
+.group-image-hover:hover>figure img,
+.group-image-hover:hover>div figure img,
+.group-image-hover:hover>a figure img {
     @apply scale-105
 }
 
 /* Safari CSS fixes */
-@media not all and (min-resolution:.001dpcm)
-{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-    #content ul {
-        @apply pl-5;
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+        #content ul {
+            @apply pl-5;
+        }
     }
-}}
+}
 
 .grecaptcha-badge {
     opacity: 0;
+}
+
+pre code,
+pre.hljs {
+    @apply !bg-gray-50 block rounded-sm shadow-inner my-10 !p-5 overflow-x-auto text-gray-900
 }
