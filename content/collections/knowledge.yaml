@@ -2,7 +2,7 @@ title: Knowledge
 template: knowledge/show
 layout: layout
 revisions: false
-route: '/knowledge/{slug}'
+route: '/{slug}'
 date: true
 sort_dir: desc
 date_behavior:
