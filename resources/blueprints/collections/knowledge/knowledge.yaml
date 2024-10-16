@@ -105,7 +105,7 @@ sections:
           icon: entries
           listable: hidden
           instructions_position: above
-          instructions: 'Shown on the insight detail page'
+          instructions: 'Shown on the knowledge detail page'
       -
         handle: highlight
         field:
