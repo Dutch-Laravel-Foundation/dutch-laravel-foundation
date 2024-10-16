@@ -17,6 +17,11 @@ preferences:
       columns:
         - title
         - slug
+    knowledge:
+      columns:
+        - title
+        - slug
+        - date
   assets:
     events:
       mode: grid
